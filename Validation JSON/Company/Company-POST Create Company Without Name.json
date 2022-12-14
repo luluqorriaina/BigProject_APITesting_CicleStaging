@@ -1,0 +1,821 @@
+{
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "default": {},
+    "title": "Root Schema",
+    "required": [
+        "message",
+        "user",
+        "newCompany",
+        "token"
+    ],
+    "properties": {
+        "message": {
+            "type": "string",
+            "default": "",
+            "title": "The message Schema",
+            "examples": [
+                "Successfully create company user"
+            ]
+        },
+        "user": {
+            "type": "object",
+            "default": {},
+            "title": "The user Schema",
+            "required": [
+                "_id",
+                "googleId",
+                "email",
+                "fullName",
+                "photoUrl",
+                "bio",
+                "status",
+                "companies",
+                "createdAt",
+                "updatedAt",
+                "__v",
+                "defaultCompany",
+                "password"
+            ],
+            "properties": {
+                "_id": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The _id Schema",
+                    "examples": [
+                        "636a309d20de7c7a7f116719"
+                    ]
+                },
+                "googleId": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The googleId Schema",
+                    "examples": [
+                        "114498059136746820038"
+                    ]
+                },
+                "email": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The email Schema",
+                    "examples": [
+                        "luluqatesting@gmail.com"
+                    ]
+                },
+                "fullName": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The fullName Schema",
+                    "examples": [
+                        "Lulu Qorri Aina"
+                    ]
+                },
+                "photoUrl": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The photoUrl Schema",
+                    "examples": [
+                        "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c"
+                    ]
+                },
+                "bio": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The bio Schema",
+                    "examples": [
+                        "a lifelong learner"
+                    ]
+                },
+                "status": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The status Schema",
+                    "examples": [
+                        "student"
+                    ]
+                },
+                "companies": {
+                    "type": "array",
+                    "default": [],
+                    "title": "The companies Schema",
+                    "items": {},
+                    "examples": [
+                        []
+                    ]
+                },
+                "createdAt": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The createdAt Schema",
+                    "examples": [
+                        "2022-11-08T10:34:05.472Z"
+                    ]
+                },
+                "updatedAt": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The updatedAt Schema",
+                    "examples": [
+                        "2022-11-15T09:24:58.910Z"
+                    ]
+                },
+                "__v": {
+                    "type": "integer",
+                    "default": 0,
+                    "title": "The __v Schema",
+                    "examples": [
+                        0
+                    ]
+                },
+                "defaultCompany": {
+                    "type": "object",
+                    "default": {},
+                    "title": "The defaultCompany Schema",
+                    "required": [
+                        "workloadCapacityDefault",
+                        "_id",
+                        "name",
+                        "desc",
+                        "logo",
+                        "admins",
+                        "membersJoined",
+                        "members",
+                        "teams",
+                        "createdAt",
+                        "updatedAt",
+                        "__v"
+                    ],
+                    "properties": {
+                        "workloadCapacityDefault": {
+                            "type": "object",
+                            "default": {},
+                            "title": "The workloadCapacityDefault Schema",
+                            "required": [
+                                "value",
+                                "measurement"
+                            ],
+                            "properties": {
+                                "value": {
+                                    "type": "integer",
+                                    "default": 0,
+                                    "title": "The value Schema",
+                                    "examples": [
+                                        7
+                                    ]
+                                },
+                                "measurement": {
+                                    "type": "string",
+                                    "default": "",
+                                    "title": "The measurement Schema",
+                                    "examples": [
+                                        "Hours"
+                                    ]
+                                }
+                            },
+                            "examples": [{
+                                "value": 7,
+                                "measurement": "Hours"
+                            }]
+                        },
+                        "_id": {
+                            "type": "string",
+                            "default": "",
+                            "title": "The _id Schema",
+                            "examples": [
+                                "63735aea0a02aab479d7b76d"
+                            ]
+                        },
+                        "name": {
+                            "type": "string",
+                            "default": "",
+                            "title": "The name Schema",
+                            "examples": [
+                                ""
+                            ]
+                        },
+                        "desc": {
+                            "type": "string",
+                            "default": "",
+                            "title": "The desc Schema",
+                            "examples": [
+                                "Company Without Name"
+                            ]
+                        },
+                        "logo": {
+                            "type": "string",
+                            "default": "",
+                            "title": "The logo Schema",
+                            "examples": [
+                                "/public/images/company-default.png"
+                            ]
+                        },
+                        "admins": {
+                            "type": "array",
+                            "default": [],
+                            "title": "The admins Schema",
+                            "items": {
+                                "type": "string",
+                                "default": "",
+                                "title": "A Schema",
+                                "examples": [
+                                    "636a309d20de7c7a7f116719"
+                                ]
+                            },
+                            "examples": [
+                                [
+                                    "636a309d20de7c7a7f116719"]
+                            ]
+                        },
+                        "membersJoined": {
+                            "type": "array",
+                            "default": [],
+                            "title": "The membersJoined Schema",
+                            "items": {
+                                "type": "object",
+                                "default": {},
+                                "title": "A Schema",
+                                "required": [
+                                    "member",
+                                    "joinedAt",
+                                    "_id"
+                                ],
+                                "properties": {
+                                    "member": {
+                                        "type": "string",
+                                        "default": "",
+                                        "title": "The member Schema",
+                                        "examples": [
+                                            "636a309d20de7c7a7f116719"
+                                        ]
+                                    },
+                                    "joinedAt": {
+                                        "type": "string",
+                                        "default": "",
+                                        "title": "The joinedAt Schema",
+                                        "examples": [
+                                            "2022-11-15T09:24:58.885Z"
+                                        ]
+                                    },
+                                    "_id": {
+                                        "type": "string",
+                                        "default": "",
+                                        "title": "The _id Schema",
+                                        "examples": [
+                                            "63735aea0a02aab479d7b76e"
+                                        ]
+                                    }
+                                },
+                                "examples": [{
+                                    "member": "636a309d20de7c7a7f116719",
+                                    "joinedAt": "2022-11-15T09:24:58.885Z",
+                                    "_id": "63735aea0a02aab479d7b76e"
+                                }]
+                            },
+                            "examples": [
+                                [{
+                                    "member": "636a309d20de7c7a7f116719",
+                                    "joinedAt": "2022-11-15T09:24:58.885Z",
+                                    "_id": "63735aea0a02aab479d7b76e"
+                                }]
+                            ]
+                        },
+                        "members": {
+                            "type": "array",
+                            "default": [],
+                            "title": "The members Schema",
+                            "items": {
+                                "type": "string",
+                                "default": "",
+                                "title": "A Schema",
+                                "examples": [
+                                    "636a309d20de7c7a7f116719"
+                                ]
+                            },
+                            "examples": [
+                                [
+                                    "636a309d20de7c7a7f116719"]
+                            ]
+                        },
+                        "teams": {
+                            "type": "array",
+                            "default": [],
+                            "title": "The teams Schema",
+                            "items": {},
+                            "examples": [
+                                []
+                            ]
+                        },
+                        "createdAt": {
+                            "type": "string",
+                            "default": "",
+                            "title": "The createdAt Schema",
+                            "examples": [
+                                "2022-11-15T09:24:58.891Z"
+                            ]
+                        },
+                        "updatedAt": {
+                            "type": "string",
+                            "default": "",
+                            "title": "The updatedAt Schema",
+                            "examples": [
+                                "2022-11-15T09:24:58.891Z"
+                            ]
+                        },
+                        "__v": {
+                            "type": "integer",
+                            "default": 0,
+                            "title": "The __v Schema",
+                            "examples": [
+                                0
+                            ]
+                        }
+                    },
+                    "examples": [{
+                        "workloadCapacityDefault": {
+                            "value": 7,
+                            "measurement": "Hours"
+                        },
+                        "_id": "63735aea0a02aab479d7b76d",
+                        "name": "",
+                        "desc": "Company Without Name",
+                        "logo": "/public/images/company-default.png",
+                        "admins": [
+                            "636a309d20de7c7a7f116719"
+                        ],
+                        "membersJoined": [{
+                            "member": "636a309d20de7c7a7f116719",
+                            "joinedAt": "2022-11-15T09:24:58.885Z",
+                            "_id": "63735aea0a02aab479d7b76e"
+                        }],
+                        "members": [
+                            "636a309d20de7c7a7f116719"
+                        ],
+                        "teams": [],
+                        "createdAt": "2022-11-15T09:24:58.891Z",
+                        "updatedAt": "2022-11-15T09:24:58.891Z",
+                        "__v": 0
+                    }]
+                },
+                "password": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The password Schema",
+                    "examples": [
+                        "$2b$10$Jgwx2Tv0mPgQUDtlqnBKuekT6u..IIN37F1zXcxcuz.q6ifHkWRi6"
+                    ]
+                }
+            },
+            "examples": [{
+                "_id": "636a309d20de7c7a7f116719",
+                "googleId": "114498059136746820038",
+                "email": "luluqatesting@gmail.com",
+                "fullName": "Lulu Qorri Aina",
+                "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c",
+                "bio": "a lifelong learner",
+                "status": "student",
+                "companies": [],
+                "createdAt": "2022-11-08T10:34:05.472Z",
+                "updatedAt": "2022-11-15T09:24:58.910Z",
+                "__v": 0,
+                "defaultCompany": {
+                    "workloadCapacityDefault": {
+                        "value": 7,
+                        "measurement": "Hours"
+                    },
+                    "_id": "63735aea0a02aab479d7b76d",
+                    "name": "",
+                    "desc": "Company Without Name",
+                    "logo": "/public/images/company-default.png",
+                    "admins": [
+                        "636a309d20de7c7a7f116719"
+                    ],
+                    "membersJoined": [{
+                        "member": "636a309d20de7c7a7f116719",
+                        "joinedAt": "2022-11-15T09:24:58.885Z",
+                        "_id": "63735aea0a02aab479d7b76e"
+                    }],
+                    "members": [
+                        "636a309d20de7c7a7f116719"
+                    ],
+                    "teams": [],
+                    "createdAt": "2022-11-15T09:24:58.891Z",
+                    "updatedAt": "2022-11-15T09:24:58.891Z",
+                    "__v": 0
+                },
+                "password": "$2b$10$Jgwx2Tv0mPgQUDtlqnBKuekT6u..IIN37F1zXcxcuz.q6ifHkWRi6"
+            }]
+        },
+        "newCompany": {
+            "type": "object",
+            "default": {},
+            "title": "The newCompany Schema",
+            "required": [
+                "workloadCapacityDefault",
+                "_id",
+                "name",
+                "desc",
+                "logo",
+                "admins",
+                "membersJoined",
+                "members",
+                "teams",
+                "createdAt",
+                "updatedAt",
+                "__v"
+            ],
+            "properties": {
+                "workloadCapacityDefault": {
+                    "type": "object",
+                    "default": {},
+                    "title": "The workloadCapacityDefault Schema",
+                    "required": [
+                        "value",
+                        "measurement"
+                    ],
+                    "properties": {
+                        "value": {
+                            "type": "integer",
+                            "default": 0,
+                            "title": "The value Schema",
+                            "examples": [
+                                7
+                            ]
+                        },
+                        "measurement": {
+                            "type": "string",
+                            "default": "",
+                            "title": "The measurement Schema",
+                            "examples": [
+                                "Hours"
+                            ]
+                        }
+                    },
+                    "examples": [{
+                        "value": 7,
+                        "measurement": "Hours"
+                    }]
+                },
+                "_id": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The _id Schema",
+                    "examples": [
+                        "63735aea0a02aab479d7b76d"
+                    ]
+                },
+                "name": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The name Schema",
+                    "examples": [
+                        ""
+                    ]
+                },
+                "desc": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The desc Schema",
+                    "examples": [
+                        "Company Without Name"
+                    ]
+                },
+                "logo": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The logo Schema",
+                    "examples": [
+                        "/public/images/company-default.png"
+                    ]
+                },
+                "admins": {
+                    "type": "array",
+                    "default": [],
+                    "title": "The admins Schema",
+                    "items": {
+                        "type": "object",
+                        "default": {},
+                        "title": "A Schema",
+                        "required": [
+                            "_id",
+                            "fullName",
+                            "photoUrl"
+                        ],
+                        "properties": {
+                            "_id": {
+                                "type": "string",
+                                "default": "",
+                                "title": "The _id Schema",
+                                "examples": [
+                                    "636a309d20de7c7a7f116719"
+                                ]
+                            },
+                            "fullName": {
+                                "type": "string",
+                                "default": "",
+                                "title": "The fullName Schema",
+                                "examples": [
+                                    "Lulu Qorri Aina"
+                                ]
+                            },
+                            "photoUrl": {
+                                "type": "string",
+                                "default": "",
+                                "title": "The photoUrl Schema",
+                                "examples": [
+                                    "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c"
+                                ]
+                            }
+                        },
+                        "examples": [{
+                            "_id": "636a309d20de7c7a7f116719",
+                            "fullName": "Lulu Qorri Aina",
+                            "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c"
+                        }]
+                    },
+                    "examples": [
+                        [{
+                            "_id": "636a309d20de7c7a7f116719",
+                            "fullName": "Lulu Qorri Aina",
+                            "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c"
+                        }]
+                    ]
+                },
+                "membersJoined": {
+                    "type": "array",
+                    "default": [],
+                    "title": "The membersJoined Schema",
+                    "items": {
+                        "type": "object",
+                        "default": {},
+                        "title": "A Schema",
+                        "required": [
+                            "member",
+                            "joinedAt",
+                            "_id"
+                        ],
+                        "properties": {
+                            "member": {
+                                "type": "string",
+                                "default": "",
+                                "title": "The member Schema",
+                                "examples": [
+                                    "636a309d20de7c7a7f116719"
+                                ]
+                            },
+                            "joinedAt": {
+                                "type": "string",
+                                "default": "",
+                                "title": "The joinedAt Schema",
+                                "examples": [
+                                    "2022-11-15T09:24:58.885Z"
+                                ]
+                            },
+                            "_id": {
+                                "type": "string",
+                                "default": "",
+                                "title": "The _id Schema",
+                                "examples": [
+                                    "63735aea0a02aab479d7b76e"
+                                ]
+                            }
+                        },
+                        "examples": [{
+                            "member": "636a309d20de7c7a7f116719",
+                            "joinedAt": "2022-11-15T09:24:58.885Z",
+                            "_id": "63735aea0a02aab479d7b76e"
+                        }]
+                    },
+                    "examples": [
+                        [{
+                            "member": "636a309d20de7c7a7f116719",
+                            "joinedAt": "2022-11-15T09:24:58.885Z",
+                            "_id": "63735aea0a02aab479d7b76e"
+                        }]
+                    ]
+                },
+                "members": {
+                    "type": "array",
+                    "default": [],
+                    "title": "The members Schema",
+                    "items": {
+                        "type": "object",
+                        "default": {},
+                        "title": "A Schema",
+                        "required": [
+                            "_id",
+                            "fullName",
+                            "photoUrl",
+                            "bio",
+                            "status"
+                        ],
+                        "properties": {
+                            "_id": {
+                                "type": "string",
+                                "default": "",
+                                "title": "The _id Schema",
+                                "examples": [
+                                    "636a309d20de7c7a7f116719"
+                                ]
+                            },
+                            "fullName": {
+                                "type": "string",
+                                "default": "",
+                                "title": "The fullName Schema",
+                                "examples": [
+                                    "Lulu Qorri Aina"
+                                ]
+                            },
+                            "photoUrl": {
+                                "type": "string",
+                                "default": "",
+                                "title": "The photoUrl Schema",
+                                "examples": [
+                                    "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c"
+                                ]
+                            },
+                            "bio": {
+                                "type": "string",
+                                "default": "",
+                                "title": "The bio Schema",
+                                "examples": [
+                                    "a lifelong learner"
+                                ]
+                            },
+                            "status": {
+                                "type": "string",
+                                "default": "",
+                                "title": "The status Schema",
+                                "examples": [
+                                    "student"
+                                ]
+                            }
+                        },
+                        "examples": [{
+                            "_id": "636a309d20de7c7a7f116719",
+                            "fullName": "Lulu Qorri Aina",
+                            "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c",
+                            "bio": "a lifelong learner",
+                            "status": "student"
+                        }]
+                    },
+                    "examples": [
+                        [{
+                            "_id": "636a309d20de7c7a7f116719",
+                            "fullName": "Lulu Qorri Aina",
+                            "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c",
+                            "bio": "a lifelong learner",
+                            "status": "student"
+                        }]
+                    ]
+                },
+                "teams": {
+                    "type": "array",
+                    "default": [],
+                    "title": "The teams Schema",
+                    "items": {},
+                    "examples": [
+                        []
+                    ]
+                },
+                "createdAt": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The createdAt Schema",
+                    "examples": [
+                        "2022-11-15T09:24:58.891Z"
+                    ]
+                },
+                "updatedAt": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The updatedAt Schema",
+                    "examples": [
+                        "2022-11-15T09:24:58.891Z"
+                    ]
+                },
+                "__v": {
+                    "type": "integer",
+                    "default": 0,
+                    "title": "The __v Schema",
+                    "examples": [
+                        0
+                    ]
+                }
+            },
+            "examples": [{
+                "workloadCapacityDefault": {
+                    "value": 7,
+                    "measurement": "Hours"
+                },
+                "_id": "63735aea0a02aab479d7b76d",
+                "name": "",
+                "desc": "Company Without Name",
+                "logo": "/public/images/company-default.png",
+                "admins": [{
+                    "_id": "636a309d20de7c7a7f116719",
+                    "fullName": "Lulu Qorri Aina",
+                    "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c"
+                }],
+                "membersJoined": [{
+                    "member": "636a309d20de7c7a7f116719",
+                    "joinedAt": "2022-11-15T09:24:58.885Z",
+                    "_id": "63735aea0a02aab479d7b76e"
+                }],
+                "members": [{
+                    "_id": "636a309d20de7c7a7f116719",
+                    "fullName": "Lulu Qorri Aina",
+                    "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c",
+                    "bio": "a lifelong learner",
+                    "status": "student"
+                }],
+                "teams": [],
+                "createdAt": "2022-11-15T09:24:58.891Z",
+                "updatedAt": "2022-11-15T09:24:58.891Z",
+                "__v": 0
+            }]
+        },
+        "token": {
+            "type": "string",
+            "default": "",
+            "title": "The token Schema",
+            "examples": [
+                "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjYzNmEzMDlkMjBkZTdjN2E3ZjExNjcxOSIsImdvb2dsZUlkIjoiMTE0NDk4MDU5MTM2NzQ2ODIwMDM4IiwiZW1haWwiOiJsdWx1cWF0ZXN0aW5nQGdtYWlsLmNvbSIsImZ1bGxOYW1lIjoiTHVsdSBRb3JyaSBBaW5hIiwicGhvdG9VcmwiOiJodHRwczovL2xoMy5nb29nbGV1c2VyY29udGVudC5jb20vYS9BTG01d3UyaFZrb2JyZDE0YnE4a3ctR0hYTG12U3hLMzBFX3pkRzMwd05EVj1zOTYtYyIsImJpbyI6ImEgbGlmZWxvbmcgbGVhcm5lciIsInN0YXR1cyI6InN0dWRlbnQiLCJjcmVhdGVkQXQiOiIyMDIyLTExLTA4VDEwOjM0OjA1LjQ3MloiLCJ1cGRhdGVkQXQiOiIyMDIyLTExLTE1VDA5OjI0OjU4LjkxMFoiLCJfX3YiOjAsImRlZmF1bHRDb21wYW55IjoiNjM3MzVhZWEwYTAyYWFiNDc5ZDdiNzZkIn0sImlhdCI6MTY2ODUwNDI5OCwiZXhwIjoxNjcxMDk2Mjk4fQ.tPV6YzOFcc63Ad6-UkC_jVD39Z02PDakMcIPddxkNpU"
+            ]
+        }
+    },
+    "examples": [{
+        "message": "Successfully create company user",
+        "user": {
+            "_id": "636a309d20de7c7a7f116719",
+            "googleId": "114498059136746820038",
+            "email": "luluqatesting@gmail.com",
+            "fullName": "Lulu Qorri Aina",
+            "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c",
+            "bio": "a lifelong learner",
+            "status": "student",
+            "companies": [],
+            "createdAt": "2022-11-08T10:34:05.472Z",
+            "updatedAt": "2022-11-15T09:24:58.910Z",
+            "__v": 0,
+            "defaultCompany": {
+                "workloadCapacityDefault": {
+                    "value": 7,
+                    "measurement": "Hours"
+                },
+                "_id": "63735aea0a02aab479d7b76d",
+                "name": "",
+                "desc": "Company Without Name",
+                "logo": "/public/images/company-default.png",
+                "admins": [
+                    "636a309d20de7c7a7f116719"
+                ],
+                "membersJoined": [{
+                    "member": "636a309d20de7c7a7f116719",
+                    "joinedAt": "2022-11-15T09:24:58.885Z",
+                    "_id": "63735aea0a02aab479d7b76e"
+                }],
+                "members": [
+                    "636a309d20de7c7a7f116719"
+                ],
+                "teams": [],
+                "createdAt": "2022-11-15T09:24:58.891Z",
+                "updatedAt": "2022-11-15T09:24:58.891Z",
+                "__v": 0
+            },
+            "password": "$2b$10$Jgwx2Tv0mPgQUDtlqnBKuekT6u..IIN37F1zXcxcuz.q6ifHkWRi6"
+        },
+        "newCompany": {
+            "workloadCapacityDefault": {
+                "value": 7,
+                "measurement": "Hours"
+            },
+            "_id": "63735aea0a02aab479d7b76d",
+            "name": "",
+            "desc": "Company Without Name",
+            "logo": "/public/images/company-default.png",
+            "admins": [{
+                "_id": "636a309d20de7c7a7f116719",
+                "fullName": "Lulu Qorri Aina",
+                "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c"
+            }],
+            "membersJoined": [{
+                "member": "636a309d20de7c7a7f116719",
+                "joinedAt": "2022-11-15T09:24:58.885Z",
+                "_id": "63735aea0a02aab479d7b76e"
+            }],
+            "members": [{
+                "_id": "636a309d20de7c7a7f116719",
+                "fullName": "Lulu Qorri Aina",
+                "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c",
+                "bio": "a lifelong learner",
+                "status": "student"
+            }],
+            "teams": [],
+            "createdAt": "2022-11-15T09:24:58.891Z",
+            "updatedAt": "2022-11-15T09:24:58.891Z",
+            "__v": 0
+        },
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjYzNmEzMDlkMjBkZTdjN2E3ZjExNjcxOSIsImdvb2dsZUlkIjoiMTE0NDk4MDU5MTM2NzQ2ODIwMDM4IiwiZW1haWwiOiJsdWx1cWF0ZXN0aW5nQGdtYWlsLmNvbSIsImZ1bGxOYW1lIjoiTHVsdSBRb3JyaSBBaW5hIiwicGhvdG9VcmwiOiJodHRwczovL2xoMy5nb29nbGV1c2VyY29udGVudC5jb20vYS9BTG01d3UyaFZrb2JyZDE0YnE4a3ctR0hYTG12U3hLMzBFX3pkRzMwd05EVj1zOTYtYyIsImJpbyI6ImEgbGlmZWxvbmcgbGVhcm5lciIsInN0YXR1cyI6InN0dWRlbnQiLCJjcmVhdGVkQXQiOiIyMDIyLTExLTA4VDEwOjM0OjA1LjQ3MloiLCJ1cGRhdGVkQXQiOiIyMDIyLTExLTE1VDA5OjI0OjU4LjkxMFoiLCJfX3YiOjAsImRlZmF1bHRDb21wYW55IjoiNjM3MzVhZWEwYTAyYWFiNDc5ZDdiNzZkIn0sImlhdCI6MTY2ODUwNDI5OCwiZXhwIjoxNjcxMDk2Mjk4fQ.tPV6YzOFcc63Ad6-UkC_jVD39Z02PDakMcIPddxkNpU"
+    }]
+}

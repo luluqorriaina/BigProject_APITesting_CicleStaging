@@ -1,0 +1,44 @@
+{
+  "message":"Create post successful",
+  "blast":{
+    "_id":"6373b898fef0c6ab2e29fb18",
+    "posts":[
+      {
+        "_id":"63747d20fef0c6ab2e2b6723",
+        "title":"Blast Lulu API",
+        "content":"<p>API testing</p>",
+        "creator":{
+          "_id":"636a309d20de7c7a7f116719",
+          "fullName":"Lulu Q.A.",
+          "photoUrl":"https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c"
+        },
+        "comments":[
+        ],
+        "cheers":[
+        ],
+        "subscribers":[
+        ],
+        "archived":{
+          "status":false
+        },
+        "isPublic":true,
+        "autoComplete":{
+          "status":true,
+          "date":"2021-09-28T12:39:00.000Z"
+        },
+        "isNotified":{
+          "dueOneHour":false,
+          "dueOneDay":false
+        },
+        "complete":{
+          "status":false
+        },
+        "createdAt":"2022-11-16T06:03:12.359Z",
+        "updatedAt":"2022-11-16T06:03:12.359Z",
+        "__v":0
+      }],
+    "createdAt":"2022-11-15T16:04:40.669Z",
+    "updatedAt":"2022-11-16T06:03:12.367Z",
+    "__v":0
+  }
+}

@@ -1,0 +1,181 @@
+{
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "default": {},
+    "title": "Root Schema",
+    "required": [
+        "message",
+        "user"
+    ],
+    "properties": {
+        "message": {
+            "type": "string",
+            "default": "",
+            "title": "The message Schema",
+            "examples": [
+                "Successfully get user"
+            ]
+        },
+        "user": {
+            "type": "object",
+            "default": {},
+            "title": "The user Schema",
+            "required": [
+                "_id",
+                "googleId",
+                "email",
+                "fullName",
+                "photoUrl",
+                "bio",
+                "status",
+                "companies",
+                "createdAt",
+                "updatedAt",
+                "__v",
+                "defaultCompany",
+                "password"
+            ],
+            "properties": {
+                "_id": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The _id Schema",
+                    "examples": [
+                        "636a309d20de7c7a7f116719"
+                    ]
+                },
+                "googleId": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The googleId Schema",
+                    "examples": [
+                        "114498059136746820038"
+                    ]
+                },
+                "email": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The email Schema",
+                    "examples": [
+                        "luluqatesting@gmail.com"
+                    ]
+                },
+                "fullName": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The fullName Schema",
+                    "examples": [
+                        "Lulu Qorri Aina"
+                    ]
+                },
+                "photoUrl": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The photoUrl Schema",
+                    "examples": [
+                        "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c"
+                    ]
+                },
+                "bio": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The bio Schema",
+                    "examples": [
+                        "a lifelong learner"
+                    ]
+                },
+                "status": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The status Schema",
+                    "examples": [
+                        "student"
+                    ]
+                },
+                "companies": {
+                    "type": "array",
+                    "default": [],
+                    "title": "The companies Schema",
+                    "items": {},
+                    "examples": [
+                        []
+                    ]
+                },
+                "createdAt": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The createdAt Schema",
+                    "examples": [
+                        "2022-11-08T10:34:05.472Z"
+                    ]
+                },
+                "updatedAt": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The updatedAt Schema",
+                    "examples": [
+                        "2022-11-15T09:33:29.520Z"
+                    ]
+                },
+                "__v": {
+                    "type": "integer",
+                    "default": 0,
+                    "title": "The __v Schema",
+                    "examples": [
+                        0
+                    ]
+                },
+                "defaultCompany": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The defaultCompany Schema",
+                    "examples": [
+                        "63735ce9fef0c6ab2e0cf2ba"
+                    ]
+                },
+                "password": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The password Schema",
+                    "examples": [
+                        "$2b$10$Jgwx2Tv0mPgQUDtlqnBKuekT6u..IIN37F1zXcxcuz.q6ifHkWRi6"
+                    ]
+                }
+            },
+            "examples": [{
+                "_id": "636a309d20de7c7a7f116719",
+                "googleId": "114498059136746820038",
+                "email": "luluqatesting@gmail.com",
+                "fullName": "Lulu Qorri Aina",
+                "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c",
+                "bio": "a lifelong learner",
+                "status": "student",
+                "companies": [],
+                "createdAt": "2022-11-08T10:34:05.472Z",
+                "updatedAt": "2022-11-15T09:33:29.520Z",
+                "__v": 0,
+                "defaultCompany": "63735ce9fef0c6ab2e0cf2ba",
+                "password": "$2b$10$Jgwx2Tv0mPgQUDtlqnBKuekT6u..IIN37F1zXcxcuz.q6ifHkWRi6"
+            }]
+        }
+    },
+    "examples": [{
+        "message": "Successfully get user",
+        "user": {
+            "_id": "636a309d20de7c7a7f116719",
+            "googleId": "114498059136746820038",
+            "email": "luluqatesting@gmail.com",
+            "fullName": "Lulu Qorri Aina",
+            "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c",
+            "bio": "a lifelong learner",
+            "status": "student",
+            "companies": [],
+            "createdAt": "2022-11-08T10:34:05.472Z",
+            "updatedAt": "2022-11-15T09:33:29.520Z",
+            "__v": 0,
+            "defaultCompany": "63735ce9fef0c6ab2e0cf2ba",
+            "password": "$2b$10$Jgwx2Tv0mPgQUDtlqnBKuekT6u..IIN37F1zXcxcuz.q6ifHkWRi6"
+        }
+    }]
+}

@@ -1,0 +1,2462 @@
+{
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "default": {},
+    "title": "Root Schema",
+    "required": [
+        "companies",
+        "company"
+    ],
+    "properties": {
+        "companies": {
+            "type": "array",
+            "default": [],
+            "title": "The companies Schema",
+            "items": {
+                "type": "object",
+                "title": "A Schema",
+                "required": [
+                    "workloadCapacityDefault",
+                    "_id",
+                    "logo",
+                    "admins",
+                    "members",
+                    "teams",
+                    "name",
+                    "desc",
+                    "membersJoined",
+                    "createdAt",
+                    "updatedAt",
+                    "__v"
+                ],
+                "properties": {
+                    "workloadCapacityDefault": {
+                        "type": "object",
+                        "title": "The workloadCapacityDefault Schema",
+                        "required": [
+                            "value",
+                            "measurement"
+                        ],
+                        "properties": {
+                            "value": {
+                                "type": "integer",
+                                "title": "The value Schema",
+                                "examples": [
+                                    7
+                                ]
+                            },
+                            "measurement": {
+                                "type": "string",
+                                "title": "The measurement Schema",
+                                "examples": [
+                                    "Hours"
+                                ]
+                            }
+                        },
+                        "examples": [{
+                            "value": 7,
+                            "measurement": "Hours"
+                        },
+                        {
+                            "value": 7,
+                            "measurement": "Hours"
+                        },
+                        {
+                            "value": 7,
+                            "measurement": "Hours"
+                        },
+                        {
+                            "value": 7,
+                            "measurement": "Hours"
+                        },
+                        {
+                            "value": 7,
+                            "measurement": "Hours"
+                        },
+                        {
+                            "value": 7,
+                            "measurement": "Hours"
+                        },
+                        {
+                            "value": 7,
+                            "measurement": "Hours"
+                        }]
+                    },
+                    "_id": {
+                        "type": "string",
+                        "title": "The _id Schema",
+                        "examples": [
+                            "61eba2c85080f47b25ddc8f8",
+                            "637359b066ccc7048f82ff35",
+                            "63735a49fef0c6ab2e0cea77",
+                            "63735aea0a02aab479d7b76d",
+                            "63735b9a66ccc7048f8300fd",
+                            "63735c6666ccc7048f83018a",
+                            "63735ce9fef0c6ab2e0cf2ba"
+                        ]
+                    },
+                    "logo": {
+                        "type": "string",
+                        "title": "The logo Schema",
+                        "examples": [
+                            "https://storage.googleapis.com/production-cicle-app/61eba2c85080f47b25ddc8f8/c9030fb4ab8f92019eda8f6459b89f9e/Logo_Main_QA.png",
+                            "/public/images/company-default.png"
+                        ]
+                    },
+                    "admins": {
+                        "type": "array",
+                        "title": "The admins Schema",
+                        "items": {
+                            "type": "object",
+                            "title": "A Schema",
+                            "required": [
+                                "_id",
+                                "fullName",
+                                "photoUrl"
+                            ],
+                            "properties": {
+                                "_id": {
+                                    "type": "string",
+                                    "title": "The _id Schema",
+                                    "examples": [
+                                        "5f8640963a36b417e2f0f166",
+                                        "636a309d20de7c7a7f116719"
+                                    ]
+                                },
+                                "fullName": {
+                                    "type": "string",
+                                    "title": "The fullName Schema",
+                                    "examples": [
+                                        "Ryry Rizky Asri",
+                                        "Lulu Qorri Aina"
+                                    ]
+                                },
+                                "photoUrl": {
+                                    "type": "string",
+                                    "title": "The photoUrl Schema",
+                                    "examples": [
+                                        "https://storage.googleapis.com/production-cicle-app/5f8640963a36b417e2f0f166/83be9ae63156f412a65485ce9a0e11d5/FBC52788-0F81-4482-A82B-A60948E3CA8C.jpeg",
+                                        "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c"
+                                    ]
+                                }
+                            },
+                            "examples": [{
+                                "_id": "5f8640963a36b417e2f0f166",
+                                "fullName": "Ryry Rizky Asri",
+                                "photoUrl": "https://storage.googleapis.com/production-cicle-app/5f8640963a36b417e2f0f166/83be9ae63156f412a65485ce9a0e11d5/FBC52788-0F81-4482-A82B-A60948E3CA8C.jpeg"
+                            },
+                            {
+                                "_id": "636a309d20de7c7a7f116719",
+                                "fullName": "Lulu Qorri Aina",
+                                "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c"
+                            },
+                            {
+                                "_id": "636a309d20de7c7a7f116719",
+                                "fullName": "Lulu Qorri Aina",
+                                "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c"
+                            },
+                            {
+                                "_id": "636a309d20de7c7a7f116719",
+                                "fullName": "Lulu Qorri Aina",
+                                "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c"
+                            },
+                            {
+                                "_id": "636a309d20de7c7a7f116719",
+                                "fullName": "Lulu Qorri Aina",
+                                "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c"
+                            },
+                            {
+                                "_id": "636a309d20de7c7a7f116719",
+                                "fullName": "Lulu Qorri Aina",
+                                "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c"
+                            },
+                            {
+                                "_id": "636a309d20de7c7a7f116719",
+                                "fullName": "Lulu Qorri Aina",
+                                "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c"
+                            }]
+                        },
+                        "examples": [
+                            [{
+                                "_id": "5f8640963a36b417e2f0f166",
+                                "fullName": "Ryry Rizky Asri",
+                                "photoUrl": "https://storage.googleapis.com/production-cicle-app/5f8640963a36b417e2f0f166/83be9ae63156f412a65485ce9a0e11d5/FBC52788-0F81-4482-A82B-A60948E3CA8C.jpeg"
+                            }],
+                            [{
+                                "_id": "636a309d20de7c7a7f116719",
+                                "fullName": "Lulu Qorri Aina",
+                                "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c"
+                            }],
+                            [{
+                                "_id": "636a309d20de7c7a7f116719",
+                                "fullName": "Lulu Qorri Aina",
+                                "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c"
+                            }],
+                            [{
+                                "_id": "636a309d20de7c7a7f116719",
+                                "fullName": "Lulu Qorri Aina",
+                                "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c"
+                            }],
+                            [{
+                                "_id": "636a309d20de7c7a7f116719",
+                                "fullName": "Lulu Qorri Aina",
+                                "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c"
+                            }],
+                            [{
+                                "_id": "636a309d20de7c7a7f116719",
+                                "fullName": "Lulu Qorri Aina",
+                                "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c"
+                            }],
+                            [{
+                                "_id": "636a309d20de7c7a7f116719",
+                                "fullName": "Lulu Qorri Aina",
+                                "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c"
+                            }]
+                        ]
+                    },
+                    "members": {
+                        "type": "array",
+                        "title": "The members Schema",
+                        "items": {
+                            "type": "object",
+                            "title": "A Schema",
+                            "required": [
+                                "_id",
+                                "fullName",
+                                "photoUrl"
+                            ],
+                            "properties": {
+                                "_id": {
+                                    "type": "string",
+                                    "title": "The _id Schema",
+                                    "examples": [
+                                        "635000bc2e20d88b28b61c00",
+                                        "635001379411977405a23eda",
+                                        "62f63f5d93a55ccbaaaee181",
+                                        "62f65277e646dee8e8cd89d0",
+                                        "62f652fa98ae1e904837debf",
+                                        "62f60e2ce646dee8e8cd5a65",
+                                        "62f6526793a55ccbaaaeec13",
+                                        "62f5f90d98ae1e90483795af",
+                                        "636639313e7ccfa63708d9fb",
+                                        "62f64f9298ae1e904837d6f8",
+                                        "6360974523737249aa5df5ac",
+                                        "6352a5782e20d88b28bcddd8",
+                                        "633fddd364aa3fb18abb4bc4",
+                                        "636a309d20de7c7a7f116719"
+                                    ]
+                                },
+                                "fullName": {
+                                    "type": "string",
+                                    "title": "The fullName Schema",
+                                    "examples": [
+                                        "Nanda Dwi Mahendra",
+                                        "Aji Setyawan",
+                                        "Moch Nova Setyawan",
+                                        "Muhammad Hafizh Abdillah",
+                                        "nisa khoirun",
+                                        "Lulu Q.A.",
+                                        "Ghifari Naufal Rahman",
+                                        "work business58",
+                                        "Qori'atul Maghfiroh",
+                                        "test device001",
+                                        "QA Testing",
+                                        "Sandi Kurnia",
+                                        "Lulu Qorri Aina"
+                                    ]
+                                },
+                                "photoUrl": {
+                                    "type": "string",
+                                    "title": "The photoUrl Schema",
+                                    "examples": [
+                                        "https://lh3.googleusercontent.com/a/ALm5wu0-LlWrXjcsCDkEQiYetYJvs_MMhzEJePr83uyNxA=s96-c",
+                                        "https://lh3.googleusercontent.com/a/ALm5wu26psG3sLpUkDRa9blKHR_Gu2SitSdQ1LArnaHU=s96-c",
+                                        "https://lh3.googleusercontent.com/a-/AFdZucrnAjT3I6nzDMfohdc_LU1GY0dcaVMeXxORykNq=s96-c",
+                                        "https://lh3.googleusercontent.com/a-/AFdZucr7Eu9VJ1FQWLBAQIaNCrrm43qhm7krTG_BAJJ2uzg=s96-c",
+                                        "https://lh3.googleusercontent.com/a-/AFdZucp3YKbkexnApOshS4YCTMudD8UOWLBf2H3RCgF08w=s96-c",
+                                        "https://lh3.googleusercontent.com/a-/AFdZucoAXeNCaxGmhR75ngyG1TL_SFrkMJIoVcAxgdbzEA=s96-c",
+                                        "https://lh3.googleusercontent.com/a/AItbvmnfmU_tKa9Fz4ArWWve4UGYHrkRxZ80rQVvhlPS=s96-c",
+                                        "https://lh3.googleusercontent.com/a/AItbvmlTIcnLWAk3Ep8xozZU48XwfoeFlYtKjoAuzrBw=s96-c",
+                                        "https://lh3.googleusercontent.com/a/ALm5wu0IstKQkHB2jaEfcZhrmOBjLcJXBDMbAXjnZkyI=s96-c",
+                                        "https://lh3.googleusercontent.com/a-/AFdZucrOT9d7asP-HXxcbgFKZf9i1a5PqEXLiVHtxOXM-4Y=s96-c",
+                                        "https://lh3.googleusercontent.com/a/ALm5wu1JunzW9Q35S4vI5UO7NnucyJTvAApUDNLELwSr=s96-c",
+                                        "https://lh3.googleusercontent.com/a/ALm5wu2yVMkTKlkETPFaZAgLZ3m3z_tfcSgzthTDgCGD=s96-c",
+                                        "https://lh3.googleusercontent.com/a/ALm5wu0ZOHhoqZ9_iRXC40H8IFc6L_4_8mFP0PQuIWI6=s96-c",
+                                        "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c"
+                                    ]
+                                }
+                            },
+                            "examples": [{},
+                            {
+                                "_id": "635000bc2e20d88b28b61c00",
+                                "fullName": "Nanda Dwi Mahendra",
+                                "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu0-LlWrXjcsCDkEQiYetYJvs_MMhzEJePr83uyNxA=s96-c"
+                            },
+                            {
+                                "_id": "635001379411977405a23eda",
+                                "fullName": "Aji Setyawan",
+                                "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu26psG3sLpUkDRa9blKHR_Gu2SitSdQ1LArnaHU=s96-c"
+                            },
+                            {
+                                "_id": "62f63f5d93a55ccbaaaee181",
+                                "fullName": "Moch Nova Setyawan",
+                                "photoUrl": "https://lh3.googleusercontent.com/a-/AFdZucrnAjT3I6nzDMfohdc_LU1GY0dcaVMeXxORykNq=s96-c"
+                            },
+                            {
+                                "_id": "62f65277e646dee8e8cd89d0",
+                                "fullName": "Muhammad Hafizh Abdillah",
+                                "photoUrl": "https://lh3.googleusercontent.com/a-/AFdZucr7Eu9VJ1FQWLBAQIaNCrrm43qhm7krTG_BAJJ2uzg=s96-c"
+                            },
+                            {
+                                "_id": "62f652fa98ae1e904837debf",
+                                "fullName": "nisa khoirun",
+                                "photoUrl": "https://lh3.googleusercontent.com/a-/AFdZucp3YKbkexnApOshS4YCTMudD8UOWLBf2H3RCgF08w=s96-c"
+                            },
+                            {
+                                "_id": "62f60e2ce646dee8e8cd5a65",
+                                "fullName": "Lulu Q.A.",
+                                "photoUrl": "https://lh3.googleusercontent.com/a-/AFdZucoAXeNCaxGmhR75ngyG1TL_SFrkMJIoVcAxgdbzEA=s96-c"
+                            },
+                            {
+                                "_id": "62f6526793a55ccbaaaeec13",
+                                "fullName": "Ghifari Naufal Rahman",
+                                "photoUrl": "https://lh3.googleusercontent.com/a/AItbvmnfmU_tKa9Fz4ArWWve4UGYHrkRxZ80rQVvhlPS=s96-c"
+                            },
+                            {},
+                            {
+                                "_id": "62f5f90d98ae1e90483795af",
+                                "fullName": "work business58",
+                                "photoUrl": "https://lh3.googleusercontent.com/a/AItbvmlTIcnLWAk3Ep8xozZU48XwfoeFlYtKjoAuzrBw=s96-c"
+                            },
+                            {
+                                "_id": "636639313e7ccfa63708d9fb",
+                                "fullName": "Moch Nova Setyawan",
+                                "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu0IstKQkHB2jaEfcZhrmOBjLcJXBDMbAXjnZkyI=s96-c"
+                            },
+                            {
+                                "_id": "62f64f9298ae1e904837d6f8",
+                                "fullName": "Qori'atul Maghfiroh",
+                                "photoUrl": "https://lh3.googleusercontent.com/a-/AFdZucrOT9d7asP-HXxcbgFKZf9i1a5PqEXLiVHtxOXM-4Y=s96-c"
+                            },
+                            {
+                                "_id": "6360974523737249aa5df5ac",
+                                "fullName": "test device001",
+                                "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu1JunzW9Q35S4vI5UO7NnucyJTvAApUDNLELwSr=s96-c"
+                            },
+                            {
+                                "_id": "6352a5782e20d88b28bcddd8",
+                                "fullName": "QA Testing",
+                                "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2yVMkTKlkETPFaZAgLZ3m3z_tfcSgzthTDgCGD=s96-c"
+                            },
+                            {
+                                "_id": "633fddd364aa3fb18abb4bc4",
+                                "fullName": "Sandi Kurnia",
+                                "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu0ZOHhoqZ9_iRXC40H8IFc6L_4_8mFP0PQuIWI6=s96-c"
+                            },
+                            {
+                                "_id": "636a309d20de7c7a7f116719",
+                                "fullName": "Lulu Qorri Aina",
+                                "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c"
+                            },
+                            {
+                                "_id": "636a309d20de7c7a7f116719",
+                                "fullName": "Lulu Qorri Aina",
+                                "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c"
+                            },
+                            {
+                                "_id": "636a309d20de7c7a7f116719",
+                                "fullName": "Lulu Qorri Aina",
+                                "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c"
+                            },
+                            {
+                                "_id": "636a309d20de7c7a7f116719",
+                                "fullName": "Lulu Qorri Aina",
+                                "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c"
+                            },
+                            {
+                                "_id": "636a309d20de7c7a7f116719",
+                                "fullName": "Lulu Qorri Aina",
+                                "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c"
+                            },
+                            {
+                                "_id": "636a309d20de7c7a7f116719",
+                                "fullName": "Lulu Qorri Aina",
+                                "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c"
+                            },
+                            {
+                                "_id": "636a309d20de7c7a7f116719",
+                                "fullName": "Lulu Qorri Aina",
+                                "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c"
+                            }]
+                        },
+                        "examples": [
+                            [{}, {
+                                "_id": "635000bc2e20d88b28b61c00",
+                                "fullName": "Nanda Dwi Mahendra",
+                                "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu0-LlWrXjcsCDkEQiYetYJvs_MMhzEJePr83uyNxA=s96-c"
+                            },
+                            {
+                                "_id": "635001379411977405a23eda",
+                                "fullName": "Aji Setyawan",
+                                "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu26psG3sLpUkDRa9blKHR_Gu2SitSdQ1LArnaHU=s96-c"
+                            },
+                            {
+                                "_id": "62f63f5d93a55ccbaaaee181",
+                                "fullName": "Moch Nova Setyawan",
+                                "photoUrl": "https://lh3.googleusercontent.com/a-/AFdZucrnAjT3I6nzDMfohdc_LU1GY0dcaVMeXxORykNq=s96-c"
+                            },
+                            {
+                                "_id": "62f65277e646dee8e8cd89d0",
+                                "fullName": "Muhammad Hafizh Abdillah",
+                                "photoUrl": "https://lh3.googleusercontent.com/a-/AFdZucr7Eu9VJ1FQWLBAQIaNCrrm43qhm7krTG_BAJJ2uzg=s96-c"
+                            },
+                            {
+                                "_id": "62f652fa98ae1e904837debf",
+                                "fullName": "nisa khoirun",
+                                "photoUrl": "https://lh3.googleusercontent.com/a-/AFdZucp3YKbkexnApOshS4YCTMudD8UOWLBf2H3RCgF08w=s96-c"
+                            },
+                            {
+                                "_id": "62f60e2ce646dee8e8cd5a65",
+                                "fullName": "Lulu Q.A.",
+                                "photoUrl": "https://lh3.googleusercontent.com/a-/AFdZucoAXeNCaxGmhR75ngyG1TL_SFrkMJIoVcAxgdbzEA=s96-c"
+                            },
+                            {
+                                "_id": "62f6526793a55ccbaaaeec13",
+                                "fullName": "Ghifari Naufal Rahman",
+                                "photoUrl": "https://lh3.googleusercontent.com/a/AItbvmnfmU_tKa9Fz4ArWWve4UGYHrkRxZ80rQVvhlPS=s96-c"
+                            },
+                            {},
+                            {
+                                "_id": "62f5f90d98ae1e90483795af",
+                                "fullName": "work business58",
+                                "photoUrl": "https://lh3.googleusercontent.com/a/AItbvmlTIcnLWAk3Ep8xozZU48XwfoeFlYtKjoAuzrBw=s96-c"
+                            },
+                            {
+                                "_id": "636639313e7ccfa63708d9fb",
+                                "fullName": "Moch Nova Setyawan",
+                                "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu0IstKQkHB2jaEfcZhrmOBjLcJXBDMbAXjnZkyI=s96-c"
+                            },
+                            {
+                                "_id": "62f64f9298ae1e904837d6f8",
+                                "fullName": "Qori'atul Maghfiroh",
+                                "photoUrl": "https://lh3.googleusercontent.com/a-/AFdZucrOT9d7asP-HXxcbgFKZf9i1a5PqEXLiVHtxOXM-4Y=s96-c"
+                            },
+                            {
+                                "_id": "6360974523737249aa5df5ac",
+                                "fullName": "test device001",
+                                "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu1JunzW9Q35S4vI5UO7NnucyJTvAApUDNLELwSr=s96-c"
+                            },
+                            {
+                                "_id": "6352a5782e20d88b28bcddd8",
+                                "fullName": "QA Testing",
+                                "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2yVMkTKlkETPFaZAgLZ3m3z_tfcSgzthTDgCGD=s96-c"
+                            },
+                            {
+                                "_id": "633fddd364aa3fb18abb4bc4",
+                                "fullName": "Sandi Kurnia",
+                                "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu0ZOHhoqZ9_iRXC40H8IFc6L_4_8mFP0PQuIWI6=s96-c"
+                            },
+                            {
+                                "_id": "636a309d20de7c7a7f116719",
+                                "fullName": "Lulu Qorri Aina",
+                                "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c"
+                            }],
+                            [{
+                                "_id": "636a309d20de7c7a7f116719",
+                                "fullName": "Lulu Qorri Aina",
+                                "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c"
+                            }],
+                            [{
+                                "_id": "636a309d20de7c7a7f116719",
+                                "fullName": "Lulu Qorri Aina",
+                                "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c"
+                            }],
+                            [{
+                                "_id": "636a309d20de7c7a7f116719",
+                                "fullName": "Lulu Qorri Aina",
+                                "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c"
+                            }],
+                            [{
+                                "_id": "636a309d20de7c7a7f116719",
+                                "fullName": "Lulu Qorri Aina",
+                                "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c"
+                            }],
+                            [{
+                                "_id": "636a309d20de7c7a7f116719",
+                                "fullName": "Lulu Qorri Aina",
+                                "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c"
+                            }],
+                            [{
+                                "_id": "636a309d20de7c7a7f116719",
+                                "fullName": "Lulu Qorri Aina",
+                                "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c"
+                            }]
+                        ]
+                    },
+                    "teams": {
+                        "type": "array",
+                        "title": "The teams Schema",
+                        "items": {
+                            "type": "object",
+                            "title": "A Schema",
+                            "required": [
+                                "archived",
+                                "_id",
+                                "members",
+                                "boards",
+                                "name",
+                                "desc",
+                                "type",
+                                "createdAt",
+                                "updatedAt",
+                                "__v",
+                                "blast",
+                                "bucket",
+                                "checkIn",
+                                "groupChat",
+                                "schedule"
+                            ],
+                            "properties": {
+                                "archived": {
+                                    "type": "object",
+                                    "title": "The archived Schema",
+                                    "required": [
+                                        "status"
+                                    ],
+                                    "properties": {
+                                        "status": {
+                                            "type": "boolean",
+                                            "title": "The status Schema",
+                                            "examples": [
+                                                false
+                                            ]
+                                        }
+                                    },
+                                    "examples": [{
+                                        "status": false
+                                    },
+                                    {
+                                        "status": false
+                                    }]
+                                },
+                                "_id": {
+                                    "type": "string",
+                                    "title": "The _id Schema",
+                                    "examples": [
+                                        "61ebaf065080f41e1cdde13c",
+                                        "635367ba699bc04871c0f855"
+                                    ]
+                                },
+                                "members": {
+                                    "type": "array",
+                                    "title": "The members Schema",
+                                    "items": {
+                                        "type": "object",
+                                        "title": "A Schema",
+                                        "required": [
+                                            "_id",
+                                            "photoUrl"
+                                        ],
+                                        "properties": {
+                                            "_id": {
+                                                "type": "string",
+                                                "title": "The _id Schema",
+                                                "examples": [
+                                                    "5f8634a83a36b417e2f0f15a",
+                                                    "603359f77a297efcc3cd0a0b",
+                                                    "5f8670be3a36b417e2f0f326",
+                                                    "5f8648613a36b417e2f0f168",
+                                                    "5f863ff43a36b417e2f0f165",
+                                                    "5fcef83793be506800a0e63e",
+                                                    "635001379411977405a23eda",
+                                                    "62f63f5d93a55ccbaaaee181",
+                                                    "62f652fa98ae1e904837debf",
+                                                    "62f60e2ce646dee8e8cd5a65",
+                                                    "6214988e48c88f6184e24c76",
+                                                    "635000bc2e20d88b28b61c00",
+                                                    "62f5f90d98ae1e90483795af"
+                                                ]
+                                            },
+                                            "photoUrl": {
+                                                "type": "string",
+                                                "title": "The photoUrl Schema",
+                                                "examples": [
+                                                    "/public/uploads/df609e44f8b317832089c1f39987e728ee17f562eea158f18321c18a00b5c023433513c23fd26fc0719cf6d8f48f25c1a334c8f30eafcd2c33cd8f9e30c7daa7.png",
+                                                    "https://lh5.googleusercontent.com/-pAz79_aRNbU/AAAAAAAAAAI/AAAAAAAAAAA/AMZuucmNpoIds_mGo_mEn6ETc6b9p2hmtg/s96-c/photo.jpg",
+                                                    "https://storage.googleapis.com/production-cicle-app/5f8670be3a36b417e2f0f326/2ccbe4503d82122dd22891f8fbf5a0d8/_MG_9340.JPG",
+                                                    "/public/uploads/05785d56ecb632ca-transparent-line-art-cartoon-head-nose-snout-telegram-ice-bear5dafc43a9ca098.0860380215718001226416.jpg",
+                                                    "https://storage.googleapis.com/production-cicle-app/5f863ff43a36b417e2f0f165/9ce859788dd479999720fd96ed0261d6/WhatsApp_Image_2022-04-20_at_10.00.41_AM.jpeg",
+                                                    "https://storage.googleapis.com/production-cicle-app/5fcef83793be506800a0e63e/bef2e55a31bab224be17ad0f5de7d59b/WhatsApp_Image_2022-03-14_at_11.53.27_AM.jpeg",
+                                                    "https://lh3.googleusercontent.com/a/ALm5wu26psG3sLpUkDRa9blKHR_Gu2SitSdQ1LArnaHU=s96-c",
+                                                    "https://lh3.googleusercontent.com/a-/AFdZucrnAjT3I6nzDMfohdc_LU1GY0dcaVMeXxORykNq=s96-c",
+                                                    "https://lh3.googleusercontent.com/a-/AFdZucp3YKbkexnApOshS4YCTMudD8UOWLBf2H3RCgF08w=s96-c",
+                                                    "https://lh3.googleusercontent.com/a-/AFdZucoAXeNCaxGmhR75ngyG1TL_SFrkMJIoVcAxgdbzEA=s96-c",
+                                                    "https://lh3.googleusercontent.com/a-/AOh14Gg6XtIErfNY2UhMA5QkOyoYYtx-CC_nMPl3fUnvKg=s96-c",
+                                                    "https://lh3.googleusercontent.com/a/ALm5wu0-LlWrXjcsCDkEQiYetYJvs_MMhzEJePr83uyNxA=s96-c",
+                                                    "https://lh3.googleusercontent.com/a/AItbvmlTIcnLWAk3Ep8xozZU48XwfoeFlYtKjoAuzrBw=s96-c"
+                                                ]
+                                            }
+                                        },
+                                        "examples": [{
+                                            "_id": "5f8634a83a36b417e2f0f15a",
+                                            "photoUrl": "/public/uploads/df609e44f8b317832089c1f39987e728ee17f562eea158f18321c18a00b5c023433513c23fd26fc0719cf6d8f48f25c1a334c8f30eafcd2c33cd8f9e30c7daa7.png"
+                                        },
+                                        {
+                                            "_id": "603359f77a297efcc3cd0a0b",
+                                            "photoUrl": "https://lh5.googleusercontent.com/-pAz79_aRNbU/AAAAAAAAAAI/AAAAAAAAAAA/AMZuucmNpoIds_mGo_mEn6ETc6b9p2hmtg/s96-c/photo.jpg"
+                                        },
+                                        {
+                                            "_id": "5f8670be3a36b417e2f0f326",
+                                            "photoUrl": "https://storage.googleapis.com/production-cicle-app/5f8670be3a36b417e2f0f326/2ccbe4503d82122dd22891f8fbf5a0d8/_MG_9340.JPG"
+                                        },
+                                        {
+                                            "_id": "5f8648613a36b417e2f0f168",
+                                            "photoUrl": "/public/uploads/05785d56ecb632ca-transparent-line-art-cartoon-head-nose-snout-telegram-ice-bear5dafc43a9ca098.0860380215718001226416.jpg"
+                                        },
+                                        {
+                                            "_id": "5f863ff43a36b417e2f0f165",
+                                            "photoUrl": "https://storage.googleapis.com/production-cicle-app/5f863ff43a36b417e2f0f165/9ce859788dd479999720fd96ed0261d6/WhatsApp_Image_2022-04-20_at_10.00.41_AM.jpeg"
+                                        },
+                                        {
+                                            "_id": "5fcef83793be506800a0e63e",
+                                            "photoUrl": "https://storage.googleapis.com/production-cicle-app/5fcef83793be506800a0e63e/bef2e55a31bab224be17ad0f5de7d59b/WhatsApp_Image_2022-03-14_at_11.53.27_AM.jpeg"
+                                        },
+                                        {
+                                            "_id": "635001379411977405a23eda",
+                                            "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu26psG3sLpUkDRa9blKHR_Gu2SitSdQ1LArnaHU=s96-c"
+                                        },
+                                        {
+                                            "_id": "62f63f5d93a55ccbaaaee181",
+                                            "photoUrl": "https://lh3.googleusercontent.com/a-/AFdZucrnAjT3I6nzDMfohdc_LU1GY0dcaVMeXxORykNq=s96-c"
+                                        },
+                                        {
+                                            "_id": "62f652fa98ae1e904837debf",
+                                            "photoUrl": "https://lh3.googleusercontent.com/a-/AFdZucp3YKbkexnApOshS4YCTMudD8UOWLBf2H3RCgF08w=s96-c"
+                                        },
+                                        {
+                                            "_id": "62f60e2ce646dee8e8cd5a65",
+                                            "photoUrl": "https://lh3.googleusercontent.com/a-/AFdZucoAXeNCaxGmhR75ngyG1TL_SFrkMJIoVcAxgdbzEA=s96-c"
+                                        },
+                                        {
+                                            "_id": "6214988e48c88f6184e24c76",
+                                            "photoUrl": "https://lh3.googleusercontent.com/a-/AOh14Gg6XtIErfNY2UhMA5QkOyoYYtx-CC_nMPl3fUnvKg=s96-c"
+                                        },
+                                        {
+                                            "_id": "635000bc2e20d88b28b61c00",
+                                            "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu0-LlWrXjcsCDkEQiYetYJvs_MMhzEJePr83uyNxA=s96-c"
+                                        },
+                                        {
+                                            "_id": "62f5f90d98ae1e90483795af",
+                                            "photoUrl": "https://lh3.googleusercontent.com/a/AItbvmlTIcnLWAk3Ep8xozZU48XwfoeFlYtKjoAuzrBw=s96-c"
+                                        }]
+                                    },
+                                    "examples": [
+                                        [{
+                                            "_id": "5f8634a83a36b417e2f0f15a",
+                                            "photoUrl": "/public/uploads/df609e44f8b317832089c1f39987e728ee17f562eea158f18321c18a00b5c023433513c23fd26fc0719cf6d8f48f25c1a334c8f30eafcd2c33cd8f9e30c7daa7.png"
+                                        },
+                                        {
+                                            "_id": "603359f77a297efcc3cd0a0b",
+                                            "photoUrl": "https://lh5.googleusercontent.com/-pAz79_aRNbU/AAAAAAAAAAI/AAAAAAAAAAA/AMZuucmNpoIds_mGo_mEn6ETc6b9p2hmtg/s96-c/photo.jpg"
+                                        },
+                                        {
+                                            "_id": "5f8670be3a36b417e2f0f326",
+                                            "photoUrl": "https://storage.googleapis.com/production-cicle-app/5f8670be3a36b417e2f0f326/2ccbe4503d82122dd22891f8fbf5a0d8/_MG_9340.JPG"
+                                        },
+                                        {
+                                            "_id": "5f8648613a36b417e2f0f168",
+                                            "photoUrl": "/public/uploads/05785d56ecb632ca-transparent-line-art-cartoon-head-nose-snout-telegram-ice-bear5dafc43a9ca098.0860380215718001226416.jpg"
+                                        },
+                                        {
+                                            "_id": "5f863ff43a36b417e2f0f165",
+                                            "photoUrl": "https://storage.googleapis.com/production-cicle-app/5f863ff43a36b417e2f0f165/9ce859788dd479999720fd96ed0261d6/WhatsApp_Image_2022-04-20_at_10.00.41_AM.jpeg"
+                                        },
+                                        {
+                                            "_id": "5fcef83793be506800a0e63e",
+                                            "photoUrl": "https://storage.googleapis.com/production-cicle-app/5fcef83793be506800a0e63e/bef2e55a31bab224be17ad0f5de7d59b/WhatsApp_Image_2022-03-14_at_11.53.27_AM.jpeg"
+                                        }],
+                                        [{
+                                            "_id": "635001379411977405a23eda",
+                                            "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu26psG3sLpUkDRa9blKHR_Gu2SitSdQ1LArnaHU=s96-c"
+                                        },
+                                        {
+                                            "_id": "62f63f5d93a55ccbaaaee181",
+                                            "photoUrl": "https://lh3.googleusercontent.com/a-/AFdZucrnAjT3I6nzDMfohdc_LU1GY0dcaVMeXxORykNq=s96-c"
+                                        },
+                                        {
+                                            "_id": "62f652fa98ae1e904837debf",
+                                            "photoUrl": "https://lh3.googleusercontent.com/a-/AFdZucp3YKbkexnApOshS4YCTMudD8UOWLBf2H3RCgF08w=s96-c"
+                                        },
+                                        {
+                                            "_id": "62f60e2ce646dee8e8cd5a65",
+                                            "photoUrl": "https://lh3.googleusercontent.com/a-/AFdZucoAXeNCaxGmhR75ngyG1TL_SFrkMJIoVcAxgdbzEA=s96-c"
+                                        },
+                                        {
+                                            "_id": "6214988e48c88f6184e24c76",
+                                            "photoUrl": "https://lh3.googleusercontent.com/a-/AOh14Gg6XtIErfNY2UhMA5QkOyoYYtx-CC_nMPl3fUnvKg=s96-c"
+                                        },
+                                        {
+                                            "_id": "635000bc2e20d88b28b61c00",
+                                            "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu0-LlWrXjcsCDkEQiYetYJvs_MMhzEJePr83uyNxA=s96-c"
+                                        },
+                                        {
+                                            "_id": "62f5f90d98ae1e90483795af",
+                                            "photoUrl": "https://lh3.googleusercontent.com/a/AItbvmlTIcnLWAk3Ep8xozZU48XwfoeFlYtKjoAuzrBw=s96-c"
+                                        }]
+                                    ]
+                                },
+                                "boards": {
+                                    "type": "array",
+                                    "title": "The boards Schema",
+                                    "items": {
+                                        "type": "string",
+                                        "title": "A Schema",
+                                        "examples": [
+                                            "622abda70e74e019ac0952ee",
+                                            "635367ba699bc04871c0f858"
+                                        ]
+                                    },
+                                    "examples": [
+                                        [
+                                            "622abda70e74e019ac0952ee"],
+                                        [
+                                            "635367ba699bc04871c0f858"]
+                                    ]
+                                },
+                                "name": {
+                                    "type": "string",
+                                    "default": "",
+                                    "title": "The name Schema",
+                                    "examples": [
+                                        "Kelas A"
+                                    ]
+                                },
+                                "desc": {
+                                    "type": "string",
+                                    "default": "",
+                                    "title": "The desc Schema",
+                                    "examples": [
+                                        ""
+                                    ]
+                                },
+                                "type": {
+                                    "type": "string",
+                                    "default": "",
+                                    "title": "The type Schema",
+                                    "examples": [
+                                        "team"
+                                    ]
+                                },
+                                "createdAt": {
+                                    "type": "string",
+                                    "default": "",
+                                    "title": "The createdAt Schema",
+                                    "examples": [
+                                        "2022-10-22T03:47:06.238Z"
+                                    ]
+                                },
+                                "updatedAt": {
+                                    "type": "string",
+                                    "default": "",
+                                    "title": "The updatedAt Schema",
+                                    "examples": [
+                                        "2022-11-10T09:56:40.635Z"
+                                    ]
+                                },
+                                "__v": {
+                                    "type": "integer",
+                                    "default": 0,
+                                    "title": "The __v Schema",
+                                    "examples": [
+                                        0
+                                    ]
+                                },
+                                "blast": {
+                                    "type": "string",
+                                    "default": "",
+                                    "title": "The blast Schema",
+                                    "examples": [
+                                        "635367ba699bc04871c0f85a"
+                                    ]
+                                },
+                                "bucket": {
+                                    "type": "string",
+                                    "default": "",
+                                    "title": "The bucket Schema",
+                                    "examples": [
+                                        "635367ba699bc04871c0f85d"
+                                    ]
+                                },
+                                "checkIn": {
+                                    "type": "string",
+                                    "default": "",
+                                    "title": "The checkIn Schema",
+                                    "examples": [
+                                        "635367ba699bc04871c0f85b"
+                                    ]
+                                },
+                                "groupChat": {
+                                    "type": "string",
+                                    "default": "",
+                                    "title": "The groupChat Schema",
+                                    "examples": [
+                                        "635367ba699bc04871c0f859"
+                                    ]
+                                },
+                                "schedule": {
+                                    "type": "string",
+                                    "default": "",
+                                    "title": "The schedule Schema",
+                                    "examples": [
+                                        "635367ba699bc04871c0f85c"
+                                    ]
+                                }
+                            },
+                            "examples": [{
+                                "archived": {
+                                    "status": false
+                                },
+                                "_id": "61ebaf065080f41e1cdde13c",
+                                "members": [{
+                                    "_id": "5f8634a83a36b417e2f0f15a",
+                                    "photoUrl": "/public/uploads/df609e44f8b317832089c1f39987e728ee17f562eea158f18321c18a00b5c023433513c23fd26fc0719cf6d8f48f25c1a334c8f30eafcd2c33cd8f9e30c7daa7.png"
+                                },
+                                {
+                                    "_id": "603359f77a297efcc3cd0a0b",
+                                    "photoUrl": "https://lh5.googleusercontent.com/-pAz79_aRNbU/AAAAAAAAAAI/AAAAAAAAAAA/AMZuucmNpoIds_mGo_mEn6ETc6b9p2hmtg/s96-c/photo.jpg"
+                                },
+                                {
+                                    "_id": "5f8670be3a36b417e2f0f326",
+                                    "photoUrl": "https://storage.googleapis.com/production-cicle-app/5f8670be3a36b417e2f0f326/2ccbe4503d82122dd22891f8fbf5a0d8/_MG_9340.JPG"
+                                },
+                                {
+                                    "_id": "5f8648613a36b417e2f0f168",
+                                    "photoUrl": "/public/uploads/05785d56ecb632ca-transparent-line-art-cartoon-head-nose-snout-telegram-ice-bear5dafc43a9ca098.0860380215718001226416.jpg"
+                                },
+                                {
+                                    "_id": "5f863ff43a36b417e2f0f165",
+                                    "photoUrl": "https://storage.googleapis.com/production-cicle-app/5f863ff43a36b417e2f0f165/9ce859788dd479999720fd96ed0261d6/WhatsApp_Image_2022-04-20_at_10.00.41_AM.jpeg"
+                                },
+                                {
+                                    "_id": "5fcef83793be506800a0e63e",
+                                    "photoUrl": "https://storage.googleapis.com/production-cicle-app/5fcef83793be506800a0e63e/bef2e55a31bab224be17ad0f5de7d59b/WhatsApp_Image_2022-03-14_at_11.53.27_AM.jpeg"
+                                }],
+                                "boards": [
+                                    "622abda70e74e019ac0952ee"
+                                ]
+                            },
+                            {},
+                            {
+                                "archived": {
+                                    "status": false
+                                },
+                                "_id": "635367ba699bc04871c0f855",
+                                "name": "Kelas A",
+                                "desc": "",
+                                "members": [{
+                                    "_id": "635001379411977405a23eda",
+                                    "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu26psG3sLpUkDRa9blKHR_Gu2SitSdQ1LArnaHU=s96-c"
+                                },
+                                {
+                                    "_id": "62f63f5d93a55ccbaaaee181",
+                                    "photoUrl": "https://lh3.googleusercontent.com/a-/AFdZucrnAjT3I6nzDMfohdc_LU1GY0dcaVMeXxORykNq=s96-c"
+                                },
+                                {
+                                    "_id": "62f652fa98ae1e904837debf",
+                                    "photoUrl": "https://lh3.googleusercontent.com/a-/AFdZucp3YKbkexnApOshS4YCTMudD8UOWLBf2H3RCgF08w=s96-c"
+                                },
+                                {
+                                    "_id": "62f60e2ce646dee8e8cd5a65",
+                                    "photoUrl": "https://lh3.googleusercontent.com/a-/AFdZucoAXeNCaxGmhR75ngyG1TL_SFrkMJIoVcAxgdbzEA=s96-c"
+                                },
+                                {
+                                    "_id": "6214988e48c88f6184e24c76",
+                                    "photoUrl": "https://lh3.googleusercontent.com/a-/AOh14Gg6XtIErfNY2UhMA5QkOyoYYtx-CC_nMPl3fUnvKg=s96-c"
+                                },
+                                {
+                                    "_id": "635000bc2e20d88b28b61c00",
+                                    "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu0-LlWrXjcsCDkEQiYetYJvs_MMhzEJePr83uyNxA=s96-c"
+                                },
+                                {
+                                    "_id": "62f5f90d98ae1e90483795af",
+                                    "photoUrl": "https://lh3.googleusercontent.com/a/AItbvmlTIcnLWAk3Ep8xozZU48XwfoeFlYtKjoAuzrBw=s96-c"
+                                }],
+                                "boards": [
+                                    "635367ba699bc04871c0f858"
+                                ],
+                                "type": "team",
+                                "createdAt": "2022-10-22T03:47:06.238Z",
+                                "updatedAt": "2022-11-10T09:56:40.635Z",
+                                "__v": 0,
+                                "blast": "635367ba699bc04871c0f85a",
+                                "bucket": "635367ba699bc04871c0f85d",
+                                "checkIn": "635367ba699bc04871c0f85b",
+                                "groupChat": "635367ba699bc04871c0f859",
+                                "schedule": "635367ba699bc04871c0f85c"
+                            },
+                            {}]
+                        },
+                        "examples": [
+                            [{
+                                "archived": {
+                                    "status": false
+                                },
+                                "_id": "61ebaf065080f41e1cdde13c",
+                                "members": [{
+                                    "_id": "5f8634a83a36b417e2f0f15a",
+                                    "photoUrl": "/public/uploads/df609e44f8b317832089c1f39987e728ee17f562eea158f18321c18a00b5c023433513c23fd26fc0719cf6d8f48f25c1a334c8f30eafcd2c33cd8f9e30c7daa7.png"
+                                },
+                                {
+                                    "_id": "603359f77a297efcc3cd0a0b",
+                                    "photoUrl": "https://lh5.googleusercontent.com/-pAz79_aRNbU/AAAAAAAAAAI/AAAAAAAAAAA/AMZuucmNpoIds_mGo_mEn6ETc6b9p2hmtg/s96-c/photo.jpg"
+                                },
+                                {
+                                    "_id": "5f8670be3a36b417e2f0f326",
+                                    "photoUrl": "https://storage.googleapis.com/production-cicle-app/5f8670be3a36b417e2f0f326/2ccbe4503d82122dd22891f8fbf5a0d8/_MG_9340.JPG"
+                                },
+                                {
+                                    "_id": "5f8648613a36b417e2f0f168",
+                                    "photoUrl": "/public/uploads/05785d56ecb632ca-transparent-line-art-cartoon-head-nose-snout-telegram-ice-bear5dafc43a9ca098.0860380215718001226416.jpg"
+                                },
+                                {
+                                    "_id": "5f863ff43a36b417e2f0f165",
+                                    "photoUrl": "https://storage.googleapis.com/production-cicle-app/5f863ff43a36b417e2f0f165/9ce859788dd479999720fd96ed0261d6/WhatsApp_Image_2022-04-20_at_10.00.41_AM.jpeg"
+                                },
+                                {
+                                    "_id": "5fcef83793be506800a0e63e",
+                                    "photoUrl": "https://storage.googleapis.com/production-cicle-app/5fcef83793be506800a0e63e/bef2e55a31bab224be17ad0f5de7d59b/WhatsApp_Image_2022-03-14_at_11.53.27_AM.jpeg"
+                                }],
+                                "boards": [
+                                    "622abda70e74e019ac0952ee"
+                                ]
+                            },
+                            {},
+                            {
+                                "archived": {
+                                    "status": false
+                                },
+                                "_id": "635367ba699bc04871c0f855",
+                                "name": "Kelas A",
+                                "desc": "",
+                                "members": [{
+                                    "_id": "635001379411977405a23eda",
+                                    "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu26psG3sLpUkDRa9blKHR_Gu2SitSdQ1LArnaHU=s96-c"
+                                },
+                                {
+                                    "_id": "62f63f5d93a55ccbaaaee181",
+                                    "photoUrl": "https://lh3.googleusercontent.com/a-/AFdZucrnAjT3I6nzDMfohdc_LU1GY0dcaVMeXxORykNq=s96-c"
+                                },
+                                {
+                                    "_id": "62f652fa98ae1e904837debf",
+                                    "photoUrl": "https://lh3.googleusercontent.com/a-/AFdZucp3YKbkexnApOshS4YCTMudD8UOWLBf2H3RCgF08w=s96-c"
+                                },
+                                {
+                                    "_id": "62f60e2ce646dee8e8cd5a65",
+                                    "photoUrl": "https://lh3.googleusercontent.com/a-/AFdZucoAXeNCaxGmhR75ngyG1TL_SFrkMJIoVcAxgdbzEA=s96-c"
+                                },
+                                {
+                                    "_id": "6214988e48c88f6184e24c76",
+                                    "photoUrl": "https://lh3.googleusercontent.com/a-/AOh14Gg6XtIErfNY2UhMA5QkOyoYYtx-CC_nMPl3fUnvKg=s96-c"
+                                },
+                                {
+                                    "_id": "635000bc2e20d88b28b61c00",
+                                    "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu0-LlWrXjcsCDkEQiYetYJvs_MMhzEJePr83uyNxA=s96-c"
+                                },
+                                {
+                                    "_id": "62f5f90d98ae1e90483795af",
+                                    "photoUrl": "https://lh3.googleusercontent.com/a/AItbvmlTIcnLWAk3Ep8xozZU48XwfoeFlYtKjoAuzrBw=s96-c"
+                                }],
+                                "boards": [
+                                    "635367ba699bc04871c0f858"
+                                ],
+                                "type": "team",
+                                "createdAt": "2022-10-22T03:47:06.238Z",
+                                "updatedAt": "2022-11-10T09:56:40.635Z",
+                                "__v": 0,
+                                "blast": "635367ba699bc04871c0f85a",
+                                "bucket": "635367ba699bc04871c0f85d",
+                                "checkIn": "635367ba699bc04871c0f85b",
+                                "groupChat": "635367ba699bc04871c0f859",
+                                "schedule": "635367ba699bc04871c0f85c"
+                            },
+                            {}],
+                            [],
+                            [],
+                            [],
+                            [],
+                            [],
+                            []
+                        ]
+                    },
+                    "name": {
+                        "type": "string",
+                        "title": "The name Schema",
+                        "examples": [
+                            "Sekolah QA Cilsy",
+                            "Edit Company Name",
+                            "Lulu's Company",
+                            "",
+                            "Company Without Description"
+                        ]
+                    },
+                    "desc": {
+                        "type": "string",
+                        "title": "The desc Schema",
+                        "examples": [
+                            "belajar QA di cilsy aja",
+                            "Company for API testing",
+                            "Company Without Name",
+                            ""
+                        ]
+                    },
+                    "membersJoined": {
+                        "type": "array",
+                        "title": "The membersJoined Schema",
+                        "items": {
+                            "type": "object",
+                            "title": "A Schema",
+                            "required": [
+                                "member",
+                                "joinedAt",
+                                "_id"
+                            ],
+                            "properties": {
+                                "member": {
+                                    "type": "string",
+                                    "title": "The member Schema",
+                                    "examples": [
+                                        "636a309d20de7c7a7f116719"
+                                    ]
+                                },
+                                "joinedAt": {
+                                    "type": "string",
+                                    "title": "The joinedAt Schema",
+                                    "examples": [
+                                        "2022-11-15T09:19:44.332Z",
+                                        "2022-11-15T09:22:17.431Z",
+                                        "2022-11-15T09:24:58.885Z",
+                                        "2022-11-15T09:27:54.570Z",
+                                        "2022-11-15T09:31:18.931Z",
+                                        "2022-11-15T09:33:29.202Z"
+                                    ]
+                                },
+                                "_id": {
+                                    "type": "string",
+                                    "title": "The _id Schema",
+                                    "examples": [
+                                        "637359b066ccc7048f82ff36",
+                                        "63735a49fef0c6ab2e0cea78",
+                                        "63735aea0a02aab479d7b76e",
+                                        "63735b9a66ccc7048f8300fe",
+                                        "63735c6666ccc7048f83018b",
+                                        "63735ce9fef0c6ab2e0cf2bb"
+                                    ]
+                                }
+                            },
+                            "examples": [{},
+                            {
+                                "member": "636a309d20de7c7a7f116719",
+                                "joinedAt": "2022-11-15T09:19:44.332Z",
+                                "_id": "637359b066ccc7048f82ff36"
+                            },
+                            {
+                                "member": "636a309d20de7c7a7f116719",
+                                "joinedAt": "2022-11-15T09:22:17.431Z",
+                                "_id": "63735a49fef0c6ab2e0cea78"
+                            },
+                            {
+                                "member": "636a309d20de7c7a7f116719",
+                                "joinedAt": "2022-11-15T09:24:58.885Z",
+                                "_id": "63735aea0a02aab479d7b76e"
+                            },
+                            {
+                                "member": "636a309d20de7c7a7f116719",
+                                "joinedAt": "2022-11-15T09:27:54.570Z",
+                                "_id": "63735b9a66ccc7048f8300fe"
+                            },
+                            {
+                                "member": "636a309d20de7c7a7f116719",
+                                "joinedAt": "2022-11-15T09:31:18.931Z",
+                                "_id": "63735c6666ccc7048f83018b"
+                            },
+                            {
+                                "member": "636a309d20de7c7a7f116719",
+                                "joinedAt": "2022-11-15T09:33:29.202Z",
+                                "_id": "63735ce9fef0c6ab2e0cf2bb"
+                            }]
+                        },
+                        "examples": [
+                            [{}],
+                            [{
+                                "member": "636a309d20de7c7a7f116719",
+                                "joinedAt": "2022-11-15T09:19:44.332Z",
+                                "_id": "637359b066ccc7048f82ff36"
+                            }],
+                            [{
+                                "member": "636a309d20de7c7a7f116719",
+                                "joinedAt": "2022-11-15T09:22:17.431Z",
+                                "_id": "63735a49fef0c6ab2e0cea78"
+                            }],
+                            [{
+                                "member": "636a309d20de7c7a7f116719",
+                                "joinedAt": "2022-11-15T09:24:58.885Z",
+                                "_id": "63735aea0a02aab479d7b76e"
+                            }],
+                            [{
+                                "member": "636a309d20de7c7a7f116719",
+                                "joinedAt": "2022-11-15T09:27:54.570Z",
+                                "_id": "63735b9a66ccc7048f8300fe"
+                            }],
+                            [{
+                                "member": "636a309d20de7c7a7f116719",
+                                "joinedAt": "2022-11-15T09:31:18.931Z",
+                                "_id": "63735c6666ccc7048f83018b"
+                            }],
+                            [{
+                                "member": "636a309d20de7c7a7f116719",
+                                "joinedAt": "2022-11-15T09:33:29.202Z",
+                                "_id": "63735ce9fef0c6ab2e0cf2bb"
+                            }]
+                        ]
+                    },
+                    "createdAt": {
+                        "type": "string",
+                        "title": "The createdAt Schema",
+                        "examples": [
+                            "2022-01-22T06:23:04.507Z",
+                            "2022-11-15T09:19:44.338Z",
+                            "2022-11-15T09:22:17.437Z",
+                            "2022-11-15T09:24:58.891Z",
+                            "2022-11-15T09:27:54.574Z",
+                            "2022-11-15T09:31:18.933Z",
+                            "2022-11-15T09:33:29.291Z"
+                        ]
+                    },
+                    "updatedAt": {
+                        "type": "string",
+                        "title": "The updatedAt Schema",
+                        "examples": [
+                            "2022-11-15T06:34:57.828Z",
+                            "2022-11-15T09:48:37.726Z",
+                            "2022-11-15T09:22:17.437Z",
+                            "2022-11-15T09:24:58.891Z",
+                            "2022-11-15T09:27:54.574Z",
+                            "2022-11-15T09:31:18.933Z",
+                            "2022-11-15T09:33:29.291Z"
+                        ]
+                    },
+                    "__v": {
+                        "type": "integer",
+                        "title": "The __v Schema",
+                        "examples": [
+                            0
+                        ]
+                    }
+                },
+                "examples": [{
+                    "workloadCapacityDefault": {
+                        "value": 7,
+                        "measurement": "Hours"
+                    },
+                    "_id": "61eba2c85080f47b25ddc8f8",
+                    "logo": "https://storage.googleapis.com/production-cicle-app/61eba2c85080f47b25ddc8f8/c9030fb4ab8f92019eda8f6459b89f9e/Logo_Main_QA.png",
+                    "admins": [{
+                        "_id": "5f8640963a36b417e2f0f166",
+                        "fullName": "Ryry Rizky Asri",
+                        "photoUrl": "https://storage.googleapis.com/production-cicle-app/5f8640963a36b417e2f0f166/83be9ae63156f412a65485ce9a0e11d5/FBC52788-0F81-4482-A82B-A60948E3CA8C.jpeg"
+                    }],
+                    "members": [{},
+                    {
+                        "_id": "635000bc2e20d88b28b61c00",
+                        "fullName": "Nanda Dwi Mahendra",
+                        "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu0-LlWrXjcsCDkEQiYetYJvs_MMhzEJePr83uyNxA=s96-c"
+                    },
+                    {
+                        "_id": "635001379411977405a23eda",
+                        "fullName": "Aji Setyawan",
+                        "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu26psG3sLpUkDRa9blKHR_Gu2SitSdQ1LArnaHU=s96-c"
+                    },
+                    {
+                        "_id": "62f63f5d93a55ccbaaaee181",
+                        "fullName": "Moch Nova Setyawan",
+                        "photoUrl": "https://lh3.googleusercontent.com/a-/AFdZucrnAjT3I6nzDMfohdc_LU1GY0dcaVMeXxORykNq=s96-c"
+                    },
+                    {
+                        "_id": "62f65277e646dee8e8cd89d0",
+                        "fullName": "Muhammad Hafizh Abdillah",
+                        "photoUrl": "https://lh3.googleusercontent.com/a-/AFdZucr7Eu9VJ1FQWLBAQIaNCrrm43qhm7krTG_BAJJ2uzg=s96-c"
+                    },
+                    {
+                        "_id": "62f652fa98ae1e904837debf",
+                        "fullName": "nisa khoirun",
+                        "photoUrl": "https://lh3.googleusercontent.com/a-/AFdZucp3YKbkexnApOshS4YCTMudD8UOWLBf2H3RCgF08w=s96-c"
+                    },
+                    {
+                        "_id": "62f60e2ce646dee8e8cd5a65",
+                        "fullName": "Lulu Q.A.",
+                        "photoUrl": "https://lh3.googleusercontent.com/a-/AFdZucoAXeNCaxGmhR75ngyG1TL_SFrkMJIoVcAxgdbzEA=s96-c"
+                    },
+                    {
+                        "_id": "62f6526793a55ccbaaaeec13",
+                        "fullName": "Ghifari Naufal Rahman",
+                        "photoUrl": "https://lh3.googleusercontent.com/a/AItbvmnfmU_tKa9Fz4ArWWve4UGYHrkRxZ80rQVvhlPS=s96-c"
+                    },
+                    {},
+                    {
+                        "_id": "62f5f90d98ae1e90483795af",
+                        "fullName": "work business58",
+                        "photoUrl": "https://lh3.googleusercontent.com/a/AItbvmlTIcnLWAk3Ep8xozZU48XwfoeFlYtKjoAuzrBw=s96-c"
+                    },
+                    {
+                        "_id": "636639313e7ccfa63708d9fb",
+                        "fullName": "Moch Nova Setyawan",
+                        "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu0IstKQkHB2jaEfcZhrmOBjLcJXBDMbAXjnZkyI=s96-c"
+                    },
+                    {
+                        "_id": "62f64f9298ae1e904837d6f8",
+                        "fullName": "Qori'atul Maghfiroh",
+                        "photoUrl": "https://lh3.googleusercontent.com/a-/AFdZucrOT9d7asP-HXxcbgFKZf9i1a5PqEXLiVHtxOXM-4Y=s96-c"
+                    },
+                    {
+                        "_id": "6360974523737249aa5df5ac",
+                        "fullName": "test device001",
+                        "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu1JunzW9Q35S4vI5UO7NnucyJTvAApUDNLELwSr=s96-c"
+                    },
+                    {
+                        "_id": "6352a5782e20d88b28bcddd8",
+                        "fullName": "QA Testing",
+                        "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2yVMkTKlkETPFaZAgLZ3m3z_tfcSgzthTDgCGD=s96-c"
+                    },
+                    {
+                        "_id": "633fddd364aa3fb18abb4bc4",
+                        "fullName": "Sandi Kurnia",
+                        "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu0ZOHhoqZ9_iRXC40H8IFc6L_4_8mFP0PQuIWI6=s96-c"
+                    },
+                    {
+                        "_id": "636a309d20de7c7a7f116719",
+                        "fullName": "Lulu Qorri Aina",
+                        "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c"
+                    }],
+                    "teams": [{
+                        "archived": {
+                            "status": false
+                        },
+                        "_id": "61ebaf065080f41e1cdde13c",
+                        "members": [{
+                            "_id": "5f8634a83a36b417e2f0f15a",
+                            "photoUrl": "/public/uploads/df609e44f8b317832089c1f39987e728ee17f562eea158f18321c18a00b5c023433513c23fd26fc0719cf6d8f48f25c1a334c8f30eafcd2c33cd8f9e30c7daa7.png"
+                        },
+                        {
+                            "_id": "603359f77a297efcc3cd0a0b",
+                            "photoUrl": "https://lh5.googleusercontent.com/-pAz79_aRNbU/AAAAAAAAAAI/AAAAAAAAAAA/AMZuucmNpoIds_mGo_mEn6ETc6b9p2hmtg/s96-c/photo.jpg"
+                        },
+                        {
+                            "_id": "5f8670be3a36b417e2f0f326",
+                            "photoUrl": "https://storage.googleapis.com/production-cicle-app/5f8670be3a36b417e2f0f326/2ccbe4503d82122dd22891f8fbf5a0d8/_MG_9340.JPG"
+                        },
+                        {
+                            "_id": "5f8648613a36b417e2f0f168",
+                            "photoUrl": "/public/uploads/05785d56ecb632ca-transparent-line-art-cartoon-head-nose-snout-telegram-ice-bear5dafc43a9ca098.0860380215718001226416.jpg"
+                        },
+                        {
+                            "_id": "5f863ff43a36b417e2f0f165",
+                            "photoUrl": "https://storage.googleapis.com/production-cicle-app/5f863ff43a36b417e2f0f165/9ce859788dd479999720fd96ed0261d6/WhatsApp_Image_2022-04-20_at_10.00.41_AM.jpeg"
+                        },
+                        {
+                            "_id": "5fcef83793be506800a0e63e",
+                            "photoUrl": "https://storage.googleapis.com/production-cicle-app/5fcef83793be506800a0e63e/bef2e55a31bab224be17ad0f5de7d59b/WhatsApp_Image_2022-03-14_at_11.53.27_AM.jpeg"
+                        }],
+                        "boards": [
+                            "622abda70e74e019ac0952ee"
+                        ]
+                    },
+                    {},
+                    {
+                        "archived": {
+                            "status": false
+                        },
+                        "_id": "635367ba699bc04871c0f855",
+                        "name": "Kelas A",
+                        "desc": "",
+                        "members": [{
+                            "_id": "635001379411977405a23eda",
+                            "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu26psG3sLpUkDRa9blKHR_Gu2SitSdQ1LArnaHU=s96-c"
+                        },
+                        {
+                            "_id": "62f63f5d93a55ccbaaaee181",
+                            "photoUrl": "https://lh3.googleusercontent.com/a-/AFdZucrnAjT3I6nzDMfohdc_LU1GY0dcaVMeXxORykNq=s96-c"
+                        },
+                        {
+                            "_id": "62f652fa98ae1e904837debf",
+                            "photoUrl": "https://lh3.googleusercontent.com/a-/AFdZucp3YKbkexnApOshS4YCTMudD8UOWLBf2H3RCgF08w=s96-c"
+                        },
+                        {
+                            "_id": "62f60e2ce646dee8e8cd5a65",
+                            "photoUrl": "https://lh3.googleusercontent.com/a-/AFdZucoAXeNCaxGmhR75ngyG1TL_SFrkMJIoVcAxgdbzEA=s96-c"
+                        },
+                        {
+                            "_id": "6214988e48c88f6184e24c76",
+                            "photoUrl": "https://lh3.googleusercontent.com/a-/AOh14Gg6XtIErfNY2UhMA5QkOyoYYtx-CC_nMPl3fUnvKg=s96-c"
+                        },
+                        {
+                            "_id": "635000bc2e20d88b28b61c00",
+                            "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu0-LlWrXjcsCDkEQiYetYJvs_MMhzEJePr83uyNxA=s96-c"
+                        },
+                        {
+                            "_id": "62f5f90d98ae1e90483795af",
+                            "photoUrl": "https://lh3.googleusercontent.com/a/AItbvmlTIcnLWAk3Ep8xozZU48XwfoeFlYtKjoAuzrBw=s96-c"
+                        }],
+                        "boards": [
+                            "635367ba699bc04871c0f858"
+                        ],
+                        "type": "team",
+                        "createdAt": "2022-10-22T03:47:06.238Z",
+                        "updatedAt": "2022-11-10T09:56:40.635Z",
+                        "__v": 0,
+                        "blast": "635367ba699bc04871c0f85a",
+                        "bucket": "635367ba699bc04871c0f85d",
+                        "checkIn": "635367ba699bc04871c0f85b",
+                        "groupChat": "635367ba699bc04871c0f859",
+                        "schedule": "635367ba699bc04871c0f85c"
+                    },
+                    {}],
+                    "name": "Sekolah QA Cilsy",
+                    "desc": "belajar QA di cilsy aja",
+                    "membersJoined": [{}],
+                    "createdAt": "2022-01-22T06:23:04.507Z",
+                    "updatedAt": "2022-11-15T06:34:57.828Z",
+                    "__v": 0
+                },
+                {
+                    "workloadCapacityDefault": {
+                        "value": 7,
+                        "measurement": "Hours"
+                    },
+                    "_id": "637359b066ccc7048f82ff35",
+                    "name": "Edit Company Name",
+                    "desc": "Company for API testing",
+                    "logo": "/public/images/company-default.png",
+                    "admins": [{
+                        "_id": "636a309d20de7c7a7f116719",
+                        "fullName": "Lulu Qorri Aina",
+                        "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c"
+                    }],
+                    "membersJoined": [{
+                        "member": "636a309d20de7c7a7f116719",
+                        "joinedAt": "2022-11-15T09:19:44.332Z",
+                        "_id": "637359b066ccc7048f82ff36"
+                    }],
+                    "members": [{
+                        "_id": "636a309d20de7c7a7f116719",
+                        "fullName": "Lulu Qorri Aina",
+                        "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c"
+                    }],
+                    "teams": [],
+                    "createdAt": "2022-11-15T09:19:44.338Z",
+                    "updatedAt": "2022-11-15T09:48:37.726Z",
+                    "__v": 0
+                },
+                {
+                    "workloadCapacityDefault": {
+                        "value": 7,
+                        "measurement": "Hours"
+                    },
+                    "_id": "63735a49fef0c6ab2e0cea77",
+                    "name": "Lulu's Company",
+                    "desc": "Company for API testing",
+                    "logo": "/public/images/company-default.png",
+                    "admins": [{
+                        "_id": "636a309d20de7c7a7f116719",
+                        "fullName": "Lulu Qorri Aina",
+                        "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c"
+                    }],
+                    "membersJoined": [{
+                        "member": "636a309d20de7c7a7f116719",
+                        "joinedAt": "2022-11-15T09:22:17.431Z",
+                        "_id": "63735a49fef0c6ab2e0cea78"
+                    }],
+                    "members": [{
+                        "_id": "636a309d20de7c7a7f116719",
+                        "fullName": "Lulu Qorri Aina",
+                        "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c"
+                    }],
+                    "teams": [],
+                    "createdAt": "2022-11-15T09:22:17.437Z",
+                    "updatedAt": "2022-11-15T09:22:17.437Z",
+                    "__v": 0
+                },
+                {
+                    "workloadCapacityDefault": {
+                        "value": 7,
+                        "measurement": "Hours"
+                    },
+                    "_id": "63735aea0a02aab479d7b76d",
+                    "name": "",
+                    "desc": "Company Without Name",
+                    "logo": "/public/images/company-default.png",
+                    "admins": [{
+                        "_id": "636a309d20de7c7a7f116719",
+                        "fullName": "Lulu Qorri Aina",
+                        "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c"
+                    }],
+                    "membersJoined": [{
+                        "member": "636a309d20de7c7a7f116719",
+                        "joinedAt": "2022-11-15T09:24:58.885Z",
+                        "_id": "63735aea0a02aab479d7b76e"
+                    }],
+                    "members": [{
+                        "_id": "636a309d20de7c7a7f116719",
+                        "fullName": "Lulu Qorri Aina",
+                        "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c"
+                    }],
+                    "teams": [],
+                    "createdAt": "2022-11-15T09:24:58.891Z",
+                    "updatedAt": "2022-11-15T09:24:58.891Z",
+                    "__v": 0
+                },
+                {
+                    "workloadCapacityDefault": {
+                        "value": 7,
+                        "measurement": "Hours"
+                    },
+                    "_id": "63735b9a66ccc7048f8300fd",
+                    "name": "",
+                    "desc": "Company Without Name",
+                    "logo": "/public/images/company-default.png",
+                    "admins": [{
+                        "_id": "636a309d20de7c7a7f116719",
+                        "fullName": "Lulu Qorri Aina",
+                        "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c"
+                    }],
+                    "membersJoined": [{
+                        "member": "636a309d20de7c7a7f116719",
+                        "joinedAt": "2022-11-15T09:27:54.570Z",
+                        "_id": "63735b9a66ccc7048f8300fe"
+                    }],
+                    "members": [{
+                        "_id": "636a309d20de7c7a7f116719",
+                        "fullName": "Lulu Qorri Aina",
+                        "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c"
+                    }],
+                    "teams": [],
+                    "createdAt": "2022-11-15T09:27:54.574Z",
+                    "updatedAt": "2022-11-15T09:27:54.574Z",
+                    "__v": 0
+                },
+                {
+                    "workloadCapacityDefault": {
+                        "value": 7,
+                        "measurement": "Hours"
+                    },
+                    "_id": "63735c6666ccc7048f83018a",
+                    "name": "Company Without Description",
+                    "desc": "",
+                    "logo": "/public/images/company-default.png",
+                    "admins": [{
+                        "_id": "636a309d20de7c7a7f116719",
+                        "fullName": "Lulu Qorri Aina",
+                        "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c"
+                    }],
+                    "membersJoined": [{
+                        "member": "636a309d20de7c7a7f116719",
+                        "joinedAt": "2022-11-15T09:31:18.931Z",
+                        "_id": "63735c6666ccc7048f83018b"
+                    }],
+                    "members": [{
+                        "_id": "636a309d20de7c7a7f116719",
+                        "fullName": "Lulu Qorri Aina",
+                        "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c"
+                    }],
+                    "teams": [],
+                    "createdAt": "2022-11-15T09:31:18.933Z",
+                    "updatedAt": "2022-11-15T09:31:18.933Z",
+                    "__v": 0
+                },
+                {
+                    "workloadCapacityDefault": {
+                        "value": 7,
+                        "measurement": "Hours"
+                    },
+                    "_id": "63735ce9fef0c6ab2e0cf2ba",
+                    "name": "Company Without Description",
+                    "desc": "",
+                    "logo": "/public/images/company-default.png",
+                    "admins": [{
+                        "_id": "636a309d20de7c7a7f116719",
+                        "fullName": "Lulu Qorri Aina",
+                        "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c"
+                    }],
+                    "membersJoined": [{
+                        "member": "636a309d20de7c7a7f116719",
+                        "joinedAt": "2022-11-15T09:33:29.202Z",
+                        "_id": "63735ce9fef0c6ab2e0cf2bb"
+                    }],
+                    "members": [{
+                        "_id": "636a309d20de7c7a7f116719",
+                        "fullName": "Lulu Qorri Aina",
+                        "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c"
+                    }],
+                    "teams": [],
+                    "createdAt": "2022-11-15T09:33:29.291Z",
+                    "updatedAt": "2022-11-15T09:33:29.291Z",
+                    "__v": 0
+                }]
+            },
+            "examples": [
+                [{
+                    "workloadCapacityDefault": {
+                        "value": 7,
+                        "measurement": "Hours"
+                    },
+                    "_id": "61eba2c85080f47b25ddc8f8",
+                    "logo": "https://storage.googleapis.com/production-cicle-app/61eba2c85080f47b25ddc8f8/c9030fb4ab8f92019eda8f6459b89f9e/Logo_Main_QA.png",
+                    "admins": [{
+                        "_id": "5f8640963a36b417e2f0f166",
+                        "fullName": "Ryry Rizky Asri",
+                        "photoUrl": "https://storage.googleapis.com/production-cicle-app/5f8640963a36b417e2f0f166/83be9ae63156f412a65485ce9a0e11d5/FBC52788-0F81-4482-A82B-A60948E3CA8C.jpeg"
+                    }],
+                    "members": [{},
+                    {
+                        "_id": "635000bc2e20d88b28b61c00",
+                        "fullName": "Nanda Dwi Mahendra",
+                        "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu0-LlWrXjcsCDkEQiYetYJvs_MMhzEJePr83uyNxA=s96-c"
+                    },
+                    {
+                        "_id": "635001379411977405a23eda",
+                        "fullName": "Aji Setyawan",
+                        "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu26psG3sLpUkDRa9blKHR_Gu2SitSdQ1LArnaHU=s96-c"
+                    },
+                    {
+                        "_id": "62f63f5d93a55ccbaaaee181",
+                        "fullName": "Moch Nova Setyawan",
+                        "photoUrl": "https://lh3.googleusercontent.com/a-/AFdZucrnAjT3I6nzDMfohdc_LU1GY0dcaVMeXxORykNq=s96-c"
+                    },
+                    {
+                        "_id": "62f65277e646dee8e8cd89d0",
+                        "fullName": "Muhammad Hafizh Abdillah",
+                        "photoUrl": "https://lh3.googleusercontent.com/a-/AFdZucr7Eu9VJ1FQWLBAQIaNCrrm43qhm7krTG_BAJJ2uzg=s96-c"
+                    },
+                    {
+                        "_id": "62f652fa98ae1e904837debf",
+                        "fullName": "nisa khoirun",
+                        "photoUrl": "https://lh3.googleusercontent.com/a-/AFdZucp3YKbkexnApOshS4YCTMudD8UOWLBf2H3RCgF08w=s96-c"
+                    },
+                    {
+                        "_id": "62f60e2ce646dee8e8cd5a65",
+                        "fullName": "Lulu Q.A.",
+                        "photoUrl": "https://lh3.googleusercontent.com/a-/AFdZucoAXeNCaxGmhR75ngyG1TL_SFrkMJIoVcAxgdbzEA=s96-c"
+                    },
+                    {
+                        "_id": "62f6526793a55ccbaaaeec13",
+                        "fullName": "Ghifari Naufal Rahman",
+                        "photoUrl": "https://lh3.googleusercontent.com/a/AItbvmnfmU_tKa9Fz4ArWWve4UGYHrkRxZ80rQVvhlPS=s96-c"
+                    },
+                    {},
+                    {
+                        "_id": "62f5f90d98ae1e90483795af",
+                        "fullName": "work business58",
+                        "photoUrl": "https://lh3.googleusercontent.com/a/AItbvmlTIcnLWAk3Ep8xozZU48XwfoeFlYtKjoAuzrBw=s96-c"
+                    },
+                    {
+                        "_id": "636639313e7ccfa63708d9fb",
+                        "fullName": "Moch Nova Setyawan",
+                        "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu0IstKQkHB2jaEfcZhrmOBjLcJXBDMbAXjnZkyI=s96-c"
+                    },
+                    {
+                        "_id": "62f64f9298ae1e904837d6f8",
+                        "fullName": "Qori'atul Maghfiroh",
+                        "photoUrl": "https://lh3.googleusercontent.com/a-/AFdZucrOT9d7asP-HXxcbgFKZf9i1a5PqEXLiVHtxOXM-4Y=s96-c"
+                    },
+                    {
+                        "_id": "6360974523737249aa5df5ac",
+                        "fullName": "test device001",
+                        "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu1JunzW9Q35S4vI5UO7NnucyJTvAApUDNLELwSr=s96-c"
+                    },
+                    {
+                        "_id": "6352a5782e20d88b28bcddd8",
+                        "fullName": "QA Testing",
+                        "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2yVMkTKlkETPFaZAgLZ3m3z_tfcSgzthTDgCGD=s96-c"
+                    },
+                    {
+                        "_id": "633fddd364aa3fb18abb4bc4",
+                        "fullName": "Sandi Kurnia",
+                        "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu0ZOHhoqZ9_iRXC40H8IFc6L_4_8mFP0PQuIWI6=s96-c"
+                    },
+                    {
+                        "_id": "636a309d20de7c7a7f116719",
+                        "fullName": "Lulu Qorri Aina",
+                        "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c"
+                    }],
+                    "teams": [{
+                        "archived": {
+                            "status": false
+                        },
+                        "_id": "61ebaf065080f41e1cdde13c",
+                        "members": [{
+                            "_id": "5f8634a83a36b417e2f0f15a",
+                            "photoUrl": "/public/uploads/df609e44f8b317832089c1f39987e728ee17f562eea158f18321c18a00b5c023433513c23fd26fc0719cf6d8f48f25c1a334c8f30eafcd2c33cd8f9e30c7daa7.png"
+                        },
+                        {
+                            "_id": "603359f77a297efcc3cd0a0b",
+                            "photoUrl": "https://lh5.googleusercontent.com/-pAz79_aRNbU/AAAAAAAAAAI/AAAAAAAAAAA/AMZuucmNpoIds_mGo_mEn6ETc6b9p2hmtg/s96-c/photo.jpg"
+                        },
+                        {
+                            "_id": "5f8670be3a36b417e2f0f326",
+                            "photoUrl": "https://storage.googleapis.com/production-cicle-app/5f8670be3a36b417e2f0f326/2ccbe4503d82122dd22891f8fbf5a0d8/_MG_9340.JPG"
+                        },
+                        {
+                            "_id": "5f8648613a36b417e2f0f168",
+                            "photoUrl": "/public/uploads/05785d56ecb632ca-transparent-line-art-cartoon-head-nose-snout-telegram-ice-bear5dafc43a9ca098.0860380215718001226416.jpg"
+                        },
+                        {
+                            "_id": "5f863ff43a36b417e2f0f165",
+                            "photoUrl": "https://storage.googleapis.com/production-cicle-app/5f863ff43a36b417e2f0f165/9ce859788dd479999720fd96ed0261d6/WhatsApp_Image_2022-04-20_at_10.00.41_AM.jpeg"
+                        },
+                        {
+                            "_id": "5fcef83793be506800a0e63e",
+                            "photoUrl": "https://storage.googleapis.com/production-cicle-app/5fcef83793be506800a0e63e/bef2e55a31bab224be17ad0f5de7d59b/WhatsApp_Image_2022-03-14_at_11.53.27_AM.jpeg"
+                        }],
+                        "boards": [
+                            "622abda70e74e019ac0952ee"
+                        ]
+                    },
+                    {},
+                    {
+                        "archived": {
+                            "status": false
+                        },
+                        "_id": "635367ba699bc04871c0f855",
+                        "name": "Kelas A",
+                        "desc": "",
+                        "members": [{
+                            "_id": "635001379411977405a23eda",
+                            "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu26psG3sLpUkDRa9blKHR_Gu2SitSdQ1LArnaHU=s96-c"
+                        },
+                        {
+                            "_id": "62f63f5d93a55ccbaaaee181",
+                            "photoUrl": "https://lh3.googleusercontent.com/a-/AFdZucrnAjT3I6nzDMfohdc_LU1GY0dcaVMeXxORykNq=s96-c"
+                        },
+                        {
+                            "_id": "62f652fa98ae1e904837debf",
+                            "photoUrl": "https://lh3.googleusercontent.com/a-/AFdZucp3YKbkexnApOshS4YCTMudD8UOWLBf2H3RCgF08w=s96-c"
+                        },
+                        {
+                            "_id": "62f60e2ce646dee8e8cd5a65",
+                            "photoUrl": "https://lh3.googleusercontent.com/a-/AFdZucoAXeNCaxGmhR75ngyG1TL_SFrkMJIoVcAxgdbzEA=s96-c"
+                        },
+                        {
+                            "_id": "6214988e48c88f6184e24c76",
+                            "photoUrl": "https://lh3.googleusercontent.com/a-/AOh14Gg6XtIErfNY2UhMA5QkOyoYYtx-CC_nMPl3fUnvKg=s96-c"
+                        },
+                        {
+                            "_id": "635000bc2e20d88b28b61c00",
+                            "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu0-LlWrXjcsCDkEQiYetYJvs_MMhzEJePr83uyNxA=s96-c"
+                        },
+                        {
+                            "_id": "62f5f90d98ae1e90483795af",
+                            "photoUrl": "https://lh3.googleusercontent.com/a/AItbvmlTIcnLWAk3Ep8xozZU48XwfoeFlYtKjoAuzrBw=s96-c"
+                        }],
+                        "boards": [
+                            "635367ba699bc04871c0f858"
+                        ],
+                        "type": "team",
+                        "createdAt": "2022-10-22T03:47:06.238Z",
+                        "updatedAt": "2022-11-10T09:56:40.635Z",
+                        "__v": 0,
+                        "blast": "635367ba699bc04871c0f85a",
+                        "bucket": "635367ba699bc04871c0f85d",
+                        "checkIn": "635367ba699bc04871c0f85b",
+                        "groupChat": "635367ba699bc04871c0f859",
+                        "schedule": "635367ba699bc04871c0f85c"
+                    },
+                    {}],
+                    "name": "Sekolah QA Cilsy",
+                    "desc": "belajar QA di cilsy aja",
+                    "membersJoined": [{}],
+                    "createdAt": "2022-01-22T06:23:04.507Z",
+                    "updatedAt": "2022-11-15T06:34:57.828Z",
+                    "__v": 0
+                },
+                {
+                    "workloadCapacityDefault": {
+                        "value": 7,
+                        "measurement": "Hours"
+                    },
+                    "_id": "637359b066ccc7048f82ff35",
+                    "name": "Edit Company Name",
+                    "desc": "Company for API testing",
+                    "logo": "/public/images/company-default.png",
+                    "admins": [{
+                        "_id": "636a309d20de7c7a7f116719",
+                        "fullName": "Lulu Qorri Aina",
+                        "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c"
+                    }],
+                    "membersJoined": [{
+                        "member": "636a309d20de7c7a7f116719",
+                        "joinedAt": "2022-11-15T09:19:44.332Z",
+                        "_id": "637359b066ccc7048f82ff36"
+                    }],
+                    "members": [{
+                        "_id": "636a309d20de7c7a7f116719",
+                        "fullName": "Lulu Qorri Aina",
+                        "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c"
+                    }],
+                    "teams": [],
+                    "createdAt": "2022-11-15T09:19:44.338Z",
+                    "updatedAt": "2022-11-15T09:48:37.726Z",
+                    "__v": 0
+                },
+                {
+                    "workloadCapacityDefault": {
+                        "value": 7,
+                        "measurement": "Hours"
+                    },
+                    "_id": "63735a49fef0c6ab2e0cea77",
+                    "name": "Lulu's Company",
+                    "desc": "Company for API testing",
+                    "logo": "/public/images/company-default.png",
+                    "admins": [{
+                        "_id": "636a309d20de7c7a7f116719",
+                        "fullName": "Lulu Qorri Aina",
+                        "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c"
+                    }],
+                    "membersJoined": [{
+                        "member": "636a309d20de7c7a7f116719",
+                        "joinedAt": "2022-11-15T09:22:17.431Z",
+                        "_id": "63735a49fef0c6ab2e0cea78"
+                    }],
+                    "members": [{
+                        "_id": "636a309d20de7c7a7f116719",
+                        "fullName": "Lulu Qorri Aina",
+                        "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c"
+                    }],
+                    "teams": [],
+                    "createdAt": "2022-11-15T09:22:17.437Z",
+                    "updatedAt": "2022-11-15T09:22:17.437Z",
+                    "__v": 0
+                },
+                {
+                    "workloadCapacityDefault": {
+                        "value": 7,
+                        "measurement": "Hours"
+                    },
+                    "_id": "63735aea0a02aab479d7b76d",
+                    "name": "",
+                    "desc": "Company Without Name",
+                    "logo": "/public/images/company-default.png",
+                    "admins": [{
+                        "_id": "636a309d20de7c7a7f116719",
+                        "fullName": "Lulu Qorri Aina",
+                        "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c"
+                    }],
+                    "membersJoined": [{
+                        "member": "636a309d20de7c7a7f116719",
+                        "joinedAt": "2022-11-15T09:24:58.885Z",
+                        "_id": "63735aea0a02aab479d7b76e"
+                    }],
+                    "members": [{
+                        "_id": "636a309d20de7c7a7f116719",
+                        "fullName": "Lulu Qorri Aina",
+                        "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c"
+                    }],
+                    "teams": [],
+                    "createdAt": "2022-11-15T09:24:58.891Z",
+                    "updatedAt": "2022-11-15T09:24:58.891Z",
+                    "__v": 0
+                },
+                {
+                    "workloadCapacityDefault": {
+                        "value": 7,
+                        "measurement": "Hours"
+                    },
+                    "_id": "63735b9a66ccc7048f8300fd",
+                    "name": "",
+                    "desc": "Company Without Name",
+                    "logo": "/public/images/company-default.png",
+                    "admins": [{
+                        "_id": "636a309d20de7c7a7f116719",
+                        "fullName": "Lulu Qorri Aina",
+                        "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c"
+                    }],
+                    "membersJoined": [{
+                        "member": "636a309d20de7c7a7f116719",
+                        "joinedAt": "2022-11-15T09:27:54.570Z",
+                        "_id": "63735b9a66ccc7048f8300fe"
+                    }],
+                    "members": [{
+                        "_id": "636a309d20de7c7a7f116719",
+                        "fullName": "Lulu Qorri Aina",
+                        "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c"
+                    }],
+                    "teams": [],
+                    "createdAt": "2022-11-15T09:27:54.574Z",
+                    "updatedAt": "2022-11-15T09:27:54.574Z",
+                    "__v": 0
+                },
+                {
+                    "workloadCapacityDefault": {
+                        "value": 7,
+                        "measurement": "Hours"
+                    },
+                    "_id": "63735c6666ccc7048f83018a",
+                    "name": "Company Without Description",
+                    "desc": "",
+                    "logo": "/public/images/company-default.png",
+                    "admins": [{
+                        "_id": "636a309d20de7c7a7f116719",
+                        "fullName": "Lulu Qorri Aina",
+                        "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c"
+                    }],
+                    "membersJoined": [{
+                        "member": "636a309d20de7c7a7f116719",
+                        "joinedAt": "2022-11-15T09:31:18.931Z",
+                        "_id": "63735c6666ccc7048f83018b"
+                    }],
+                    "members": [{
+                        "_id": "636a309d20de7c7a7f116719",
+                        "fullName": "Lulu Qorri Aina",
+                        "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c"
+                    }],
+                    "teams": [],
+                    "createdAt": "2022-11-15T09:31:18.933Z",
+                    "updatedAt": "2022-11-15T09:31:18.933Z",
+                    "__v": 0
+                },
+                {
+                    "workloadCapacityDefault": {
+                        "value": 7,
+                        "measurement": "Hours"
+                    },
+                    "_id": "63735ce9fef0c6ab2e0cf2ba",
+                    "name": "Company Without Description",
+                    "desc": "",
+                    "logo": "/public/images/company-default.png",
+                    "admins": [{
+                        "_id": "636a309d20de7c7a7f116719",
+                        "fullName": "Lulu Qorri Aina",
+                        "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c"
+                    }],
+                    "membersJoined": [{
+                        "member": "636a309d20de7c7a7f116719",
+                        "joinedAt": "2022-11-15T09:33:29.202Z",
+                        "_id": "63735ce9fef0c6ab2e0cf2bb"
+                    }],
+                    "members": [{
+                        "_id": "636a309d20de7c7a7f116719",
+                        "fullName": "Lulu Qorri Aina",
+                        "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c"
+                    }],
+                    "teams": [],
+                    "createdAt": "2022-11-15T09:33:29.291Z",
+                    "updatedAt": "2022-11-15T09:33:29.291Z",
+                    "__v": 0
+                }]
+            ]
+        },
+        "company": {
+            "type": "object",
+            "default": {},
+            "title": "The company Schema",
+            "required": [
+                "workloadCapacityDefault",
+                "_id",
+                "name",
+                "desc",
+                "logo",
+                "admins",
+                "membersJoined",
+                "members",
+                "teams",
+                "createdAt",
+                "updatedAt",
+                "__v"
+            ],
+            "properties": {
+                "workloadCapacityDefault": {
+                    "type": "object",
+                    "default": {},
+                    "title": "The workloadCapacityDefault Schema",
+                    "required": [
+                        "value",
+                        "measurement"
+                    ],
+                    "properties": {
+                        "value": {
+                            "type": "integer",
+                            "default": 0,
+                            "title": "The value Schema",
+                            "examples": [
+                                7
+                            ]
+                        },
+                        "measurement": {
+                            "type": "string",
+                            "default": "",
+                            "title": "The measurement Schema",
+                            "examples": [
+                                "Hours"
+                            ]
+                        }
+                    },
+                    "examples": [{
+                        "value": 7,
+                        "measurement": "Hours"
+                    }]
+                },
+                "_id": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The _id Schema",
+                    "examples": [
+                        "637359b066ccc7048f82ff35"
+                    ]
+                },
+                "name": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The name Schema",
+                    "examples": [
+                        "Edit Company Name"
+                    ]
+                },
+                "desc": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The desc Schema",
+                    "examples": [
+                        "Company for API testing"
+                    ]
+                },
+                "logo": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The logo Schema",
+                    "examples": [
+                        "/public/images/company-default.png"
+                    ]
+                },
+                "admins": {
+                    "type": "array",
+                    "default": [],
+                    "title": "The admins Schema",
+                    "items": {
+                        "type": "string",
+                        "default": "",
+                        "title": "A Schema",
+                        "examples": [
+                            "636a309d20de7c7a7f116719"
+                        ]
+                    },
+                    "examples": [
+                        [
+                            "636a309d20de7c7a7f116719"]
+                    ]
+                },
+                "membersJoined": {
+                    "type": "array",
+                    "default": [],
+                    "title": "The membersJoined Schema",
+                    "items": {
+                        "type": "object",
+                        "default": {},
+                        "title": "A Schema",
+                        "required": [
+                            "member",
+                            "joinedAt",
+                            "_id"
+                        ],
+                        "properties": {
+                            "member": {
+                                "type": "string",
+                                "default": "",
+                                "title": "The member Schema",
+                                "examples": [
+                                    "636a309d20de7c7a7f116719"
+                                ]
+                            },
+                            "joinedAt": {
+                                "type": "string",
+                                "default": "",
+                                "title": "The joinedAt Schema",
+                                "examples": [
+                                    "2022-11-15T09:19:44.332Z"
+                                ]
+                            },
+                            "_id": {
+                                "type": "string",
+                                "default": "",
+                                "title": "The _id Schema",
+                                "examples": [
+                                    "637359b066ccc7048f82ff36"
+                                ]
+                            }
+                        },
+                        "examples": [{
+                            "member": "636a309d20de7c7a7f116719",
+                            "joinedAt": "2022-11-15T09:19:44.332Z",
+                            "_id": "637359b066ccc7048f82ff36"
+                        }]
+                    },
+                    "examples": [
+                        [{
+                            "member": "636a309d20de7c7a7f116719",
+                            "joinedAt": "2022-11-15T09:19:44.332Z",
+                            "_id": "637359b066ccc7048f82ff36"
+                        }]
+                    ]
+                },
+                "members": {
+                    "type": "array",
+                    "default": [],
+                    "title": "The members Schema",
+                    "items": {
+                        "type": "string",
+                        "default": "",
+                        "title": "A Schema",
+                        "examples": [
+                            "636a309d20de7c7a7f116719"
+                        ]
+                    },
+                    "examples": [
+                        [
+                            "636a309d20de7c7a7f116719"]
+                    ]
+                },
+                "teams": {
+                    "type": "array",
+                    "default": [],
+                    "title": "The teams Schema",
+                    "items": {},
+                    "examples": [
+                        []
+                    ]
+                },
+                "createdAt": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The createdAt Schema",
+                    "examples": [
+                        "2022-11-15T09:19:44.338Z"
+                    ]
+                },
+                "updatedAt": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The updatedAt Schema",
+                    "examples": [
+                        "2022-11-15T09:48:37.726Z"
+                    ]
+                },
+                "__v": {
+                    "type": "integer",
+                    "default": 0,
+                    "title": "The __v Schema",
+                    "examples": [
+                        0
+                    ]
+                }
+            },
+            "examples": [{
+                "workloadCapacityDefault": {
+                    "value": 7,
+                    "measurement": "Hours"
+                },
+                "_id": "637359b066ccc7048f82ff35",
+                "name": "Edit Company Name",
+                "desc": "Company for API testing",
+                "logo": "/public/images/company-default.png",
+                "admins": [
+                    "636a309d20de7c7a7f116719"
+                ],
+                "membersJoined": [{
+                    "member": "636a309d20de7c7a7f116719",
+                    "joinedAt": "2022-11-15T09:19:44.332Z",
+                    "_id": "637359b066ccc7048f82ff36"
+                }],
+                "members": [
+                    "636a309d20de7c7a7f116719"
+                ],
+                "teams": [],
+                "createdAt": "2022-11-15T09:19:44.338Z",
+                "updatedAt": "2022-11-15T09:48:37.726Z",
+                "__v": 0
+            }]
+        }
+    },
+    "examples": [{
+        "companies": [{
+            "workloadCapacityDefault": {
+                "value": 7,
+                "measurement": "Hours"
+            },
+            "_id": "61eba2c85080f47b25ddc8f8",
+            "logo": "https://storage.googleapis.com/production-cicle-app/61eba2c85080f47b25ddc8f8/c9030fb4ab8f92019eda8f6459b89f9e/Logo_Main_QA.png",
+            "admins": [{
+                "_id": "5f8640963a36b417e2f0f166",
+                "fullName": "Ryry Rizky Asri",
+                "photoUrl": "https://storage.googleapis.com/production-cicle-app/5f8640963a36b417e2f0f166/83be9ae63156f412a65485ce9a0e11d5/FBC52788-0F81-4482-A82B-A60948E3CA8C.jpeg"
+            }],
+            "members": [{},
+            {
+                "_id": "635000bc2e20d88b28b61c00",
+                "fullName": "Nanda Dwi Mahendra",
+                "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu0-LlWrXjcsCDkEQiYetYJvs_MMhzEJePr83uyNxA=s96-c"
+            },
+            {
+                "_id": "635001379411977405a23eda",
+                "fullName": "Aji Setyawan",
+                "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu26psG3sLpUkDRa9blKHR_Gu2SitSdQ1LArnaHU=s96-c"
+            },
+            {
+                "_id": "62f63f5d93a55ccbaaaee181",
+                "fullName": "Moch Nova Setyawan",
+                "photoUrl": "https://lh3.googleusercontent.com/a-/AFdZucrnAjT3I6nzDMfohdc_LU1GY0dcaVMeXxORykNq=s96-c"
+            },
+            {
+                "_id": "62f65277e646dee8e8cd89d0",
+                "fullName": "Muhammad Hafizh Abdillah",
+                "photoUrl": "https://lh3.googleusercontent.com/a-/AFdZucr7Eu9VJ1FQWLBAQIaNCrrm43qhm7krTG_BAJJ2uzg=s96-c"
+            },
+            {
+                "_id": "62f652fa98ae1e904837debf",
+                "fullName": "nisa khoirun",
+                "photoUrl": "https://lh3.googleusercontent.com/a-/AFdZucp3YKbkexnApOshS4YCTMudD8UOWLBf2H3RCgF08w=s96-c"
+            },
+            {
+                "_id": "62f60e2ce646dee8e8cd5a65",
+                "fullName": "Lulu Q.A.",
+                "photoUrl": "https://lh3.googleusercontent.com/a-/AFdZucoAXeNCaxGmhR75ngyG1TL_SFrkMJIoVcAxgdbzEA=s96-c"
+            },
+            {
+                "_id": "62f6526793a55ccbaaaeec13",
+                "fullName": "Ghifari Naufal Rahman",
+                "photoUrl": "https://lh3.googleusercontent.com/a/AItbvmnfmU_tKa9Fz4ArWWve4UGYHrkRxZ80rQVvhlPS=s96-c"
+            },
+            {},
+            {
+                "_id": "62f5f90d98ae1e90483795af",
+                "fullName": "work business58",
+                "photoUrl": "https://lh3.googleusercontent.com/a/AItbvmlTIcnLWAk3Ep8xozZU48XwfoeFlYtKjoAuzrBw=s96-c"
+            },
+            {
+                "_id": "636639313e7ccfa63708d9fb",
+                "fullName": "Moch Nova Setyawan",
+                "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu0IstKQkHB2jaEfcZhrmOBjLcJXBDMbAXjnZkyI=s96-c"
+            },
+            {
+                "_id": "62f64f9298ae1e904837d6f8",
+                "fullName": "Qori'atul Maghfiroh",
+                "photoUrl": "https://lh3.googleusercontent.com/a-/AFdZucrOT9d7asP-HXxcbgFKZf9i1a5PqEXLiVHtxOXM-4Y=s96-c"
+            },
+            {
+                "_id": "6360974523737249aa5df5ac",
+                "fullName": "test device001",
+                "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu1JunzW9Q35S4vI5UO7NnucyJTvAApUDNLELwSr=s96-c"
+            },
+            {
+                "_id": "6352a5782e20d88b28bcddd8",
+                "fullName": "QA Testing",
+                "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2yVMkTKlkETPFaZAgLZ3m3z_tfcSgzthTDgCGD=s96-c"
+            },
+            {
+                "_id": "633fddd364aa3fb18abb4bc4",
+                "fullName": "Sandi Kurnia",
+                "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu0ZOHhoqZ9_iRXC40H8IFc6L_4_8mFP0PQuIWI6=s96-c"
+            },
+            {
+                "_id": "636a309d20de7c7a7f116719",
+                "fullName": "Lulu Qorri Aina",
+                "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c"
+            }],
+            "teams": [{
+                "archived": {
+                    "status": false
+                },
+                "_id": "61ebaf065080f41e1cdde13c",
+                "members": [{
+                    "_id": "5f8634a83a36b417e2f0f15a",
+                    "photoUrl": "/public/uploads/df609e44f8b317832089c1f39987e728ee17f562eea158f18321c18a00b5c023433513c23fd26fc0719cf6d8f48f25c1a334c8f30eafcd2c33cd8f9e30c7daa7.png"
+                },
+                {
+                    "_id": "603359f77a297efcc3cd0a0b",
+                    "photoUrl": "https://lh5.googleusercontent.com/-pAz79_aRNbU/AAAAAAAAAAI/AAAAAAAAAAA/AMZuucmNpoIds_mGo_mEn6ETc6b9p2hmtg/s96-c/photo.jpg"
+                },
+                {
+                    "_id": "5f8670be3a36b417e2f0f326",
+                    "photoUrl": "https://storage.googleapis.com/production-cicle-app/5f8670be3a36b417e2f0f326/2ccbe4503d82122dd22891f8fbf5a0d8/_MG_9340.JPG"
+                },
+                {
+                    "_id": "5f8648613a36b417e2f0f168",
+                    "photoUrl": "/public/uploads/05785d56ecb632ca-transparent-line-art-cartoon-head-nose-snout-telegram-ice-bear5dafc43a9ca098.0860380215718001226416.jpg"
+                },
+                {
+                    "_id": "5f863ff43a36b417e2f0f165",
+                    "photoUrl": "https://storage.googleapis.com/production-cicle-app/5f863ff43a36b417e2f0f165/9ce859788dd479999720fd96ed0261d6/WhatsApp_Image_2022-04-20_at_10.00.41_AM.jpeg"
+                },
+                {
+                    "_id": "5fcef83793be506800a0e63e",
+                    "photoUrl": "https://storage.googleapis.com/production-cicle-app/5fcef83793be506800a0e63e/bef2e55a31bab224be17ad0f5de7d59b/WhatsApp_Image_2022-03-14_at_11.53.27_AM.jpeg"
+                }],
+                "boards": [
+                    "622abda70e74e019ac0952ee"
+                ]
+            },
+            {},
+            {
+                "archived": {
+                    "status": false
+                },
+                "_id": "635367ba699bc04871c0f855",
+                "name": "Kelas A",
+                "desc": "",
+                "members": [{
+                    "_id": "635001379411977405a23eda",
+                    "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu26psG3sLpUkDRa9blKHR_Gu2SitSdQ1LArnaHU=s96-c"
+                },
+                {
+                    "_id": "62f63f5d93a55ccbaaaee181",
+                    "photoUrl": "https://lh3.googleusercontent.com/a-/AFdZucrnAjT3I6nzDMfohdc_LU1GY0dcaVMeXxORykNq=s96-c"
+                },
+                {
+                    "_id": "62f652fa98ae1e904837debf",
+                    "photoUrl": "https://lh3.googleusercontent.com/a-/AFdZucp3YKbkexnApOshS4YCTMudD8UOWLBf2H3RCgF08w=s96-c"
+                },
+                {
+                    "_id": "62f60e2ce646dee8e8cd5a65",
+                    "photoUrl": "https://lh3.googleusercontent.com/a-/AFdZucoAXeNCaxGmhR75ngyG1TL_SFrkMJIoVcAxgdbzEA=s96-c"
+                },
+                {
+                    "_id": "6214988e48c88f6184e24c76",
+                    "photoUrl": "https://lh3.googleusercontent.com/a-/AOh14Gg6XtIErfNY2UhMA5QkOyoYYtx-CC_nMPl3fUnvKg=s96-c"
+                },
+                {
+                    "_id": "635000bc2e20d88b28b61c00",
+                    "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu0-LlWrXjcsCDkEQiYetYJvs_MMhzEJePr83uyNxA=s96-c"
+                },
+                {
+                    "_id": "62f5f90d98ae1e90483795af",
+                    "photoUrl": "https://lh3.googleusercontent.com/a/AItbvmlTIcnLWAk3Ep8xozZU48XwfoeFlYtKjoAuzrBw=s96-c"
+                }],
+                "boards": [
+                    "635367ba699bc04871c0f858"
+                ],
+                "type": "team",
+                "createdAt": "2022-10-22T03:47:06.238Z",
+                "updatedAt": "2022-11-10T09:56:40.635Z",
+                "__v": 0,
+                "blast": "635367ba699bc04871c0f85a",
+                "bucket": "635367ba699bc04871c0f85d",
+                "checkIn": "635367ba699bc04871c0f85b",
+                "groupChat": "635367ba699bc04871c0f859",
+                "schedule": "635367ba699bc04871c0f85c"
+            },
+            {}],
+            "name": "Sekolah QA Cilsy",
+            "desc": "belajar QA di cilsy aja",
+            "membersJoined": [{}],
+            "createdAt": "2022-01-22T06:23:04.507Z",
+            "updatedAt": "2022-11-15T06:34:57.828Z",
+            "__v": 0
+        },
+        {
+            "workloadCapacityDefault": {
+                "value": 7,
+                "measurement": "Hours"
+            },
+            "_id": "637359b066ccc7048f82ff35",
+            "name": "Edit Company Name",
+            "desc": "Company for API testing",
+            "logo": "/public/images/company-default.png",
+            "admins": [{
+                "_id": "636a309d20de7c7a7f116719",
+                "fullName": "Lulu Qorri Aina",
+                "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c"
+            }],
+            "membersJoined": [{
+                "member": "636a309d20de7c7a7f116719",
+                "joinedAt": "2022-11-15T09:19:44.332Z",
+                "_id": "637359b066ccc7048f82ff36"
+            }],
+            "members": [{
+                "_id": "636a309d20de7c7a7f116719",
+                "fullName": "Lulu Qorri Aina",
+                "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c"
+            }],
+            "teams": [],
+            "createdAt": "2022-11-15T09:19:44.338Z",
+            "updatedAt": "2022-11-15T09:48:37.726Z",
+            "__v": 0
+        },
+        {
+            "workloadCapacityDefault": {
+                "value": 7,
+                "measurement": "Hours"
+            },
+            "_id": "63735a49fef0c6ab2e0cea77",
+            "name": "Lulu's Company",
+            "desc": "Company for API testing",
+            "logo": "/public/images/company-default.png",
+            "admins": [{
+                "_id": "636a309d20de7c7a7f116719",
+                "fullName": "Lulu Qorri Aina",
+                "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c"
+            }],
+            "membersJoined": [{
+                "member": "636a309d20de7c7a7f116719",
+                "joinedAt": "2022-11-15T09:22:17.431Z",
+                "_id": "63735a49fef0c6ab2e0cea78"
+            }],
+            "members": [{
+                "_id": "636a309d20de7c7a7f116719",
+                "fullName": "Lulu Qorri Aina",
+                "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c"
+            }],
+            "teams": [],
+            "createdAt": "2022-11-15T09:22:17.437Z",
+            "updatedAt": "2022-11-15T09:22:17.437Z",
+            "__v": 0
+        },
+        {
+            "workloadCapacityDefault": {
+                "value": 7,
+                "measurement": "Hours"
+            },
+            "_id": "63735aea0a02aab479d7b76d",
+            "name": "",
+            "desc": "Company Without Name",
+            "logo": "/public/images/company-default.png",
+            "admins": [{
+                "_id": "636a309d20de7c7a7f116719",
+                "fullName": "Lulu Qorri Aina",
+                "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c"
+            }],
+            "membersJoined": [{
+                "member": "636a309d20de7c7a7f116719",
+                "joinedAt": "2022-11-15T09:24:58.885Z",
+                "_id": "63735aea0a02aab479d7b76e"
+            }],
+            "members": [{
+                "_id": "636a309d20de7c7a7f116719",
+                "fullName": "Lulu Qorri Aina",
+                "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c"
+            }],
+            "teams": [],
+            "createdAt": "2022-11-15T09:24:58.891Z",
+            "updatedAt": "2022-11-15T09:24:58.891Z",
+            "__v": 0
+        },
+        {
+            "workloadCapacityDefault": {
+                "value": 7,
+                "measurement": "Hours"
+            },
+            "_id": "63735b9a66ccc7048f8300fd",
+            "name": "",
+            "desc": "Company Without Name",
+            "logo": "/public/images/company-default.png",
+            "admins": [{
+                "_id": "636a309d20de7c7a7f116719",
+                "fullName": "Lulu Qorri Aina",
+                "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c"
+            }],
+            "membersJoined": [{
+                "member": "636a309d20de7c7a7f116719",
+                "joinedAt": "2022-11-15T09:27:54.570Z",
+                "_id": "63735b9a66ccc7048f8300fe"
+            }],
+            "members": [{
+                "_id": "636a309d20de7c7a7f116719",
+                "fullName": "Lulu Qorri Aina",
+                "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c"
+            }],
+            "teams": [],
+            "createdAt": "2022-11-15T09:27:54.574Z",
+            "updatedAt": "2022-11-15T09:27:54.574Z",
+            "__v": 0
+        },
+        {
+            "workloadCapacityDefault": {
+                "value": 7,
+                "measurement": "Hours"
+            },
+            "_id": "63735c6666ccc7048f83018a",
+            "name": "Company Without Description",
+            "desc": "",
+            "logo": "/public/images/company-default.png",
+            "admins": [{
+                "_id": "636a309d20de7c7a7f116719",
+                "fullName": "Lulu Qorri Aina",
+                "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c"
+            }],
+            "membersJoined": [{
+                "member": "636a309d20de7c7a7f116719",
+                "joinedAt": "2022-11-15T09:31:18.931Z",
+                "_id": "63735c6666ccc7048f83018b"
+            }],
+            "members": [{
+                "_id": "636a309d20de7c7a7f116719",
+                "fullName": "Lulu Qorri Aina",
+                "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c"
+            }],
+            "teams": [],
+            "createdAt": "2022-11-15T09:31:18.933Z",
+            "updatedAt": "2022-11-15T09:31:18.933Z",
+            "__v": 0
+        },
+        {
+            "workloadCapacityDefault": {
+                "value": 7,
+                "measurement": "Hours"
+            },
+            "_id": "63735ce9fef0c6ab2e0cf2ba",
+            "name": "Company Without Description",
+            "desc": "",
+            "logo": "/public/images/company-default.png",
+            "admins": [{
+                "_id": "636a309d20de7c7a7f116719",
+                "fullName": "Lulu Qorri Aina",
+                "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c"
+            }],
+            "membersJoined": [{
+                "member": "636a309d20de7c7a7f116719",
+                "joinedAt": "2022-11-15T09:33:29.202Z",
+                "_id": "63735ce9fef0c6ab2e0cf2bb"
+            }],
+            "members": [{
+                "_id": "636a309d20de7c7a7f116719",
+                "fullName": "Lulu Qorri Aina",
+                "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c"
+            }],
+            "teams": [],
+            "createdAt": "2022-11-15T09:33:29.291Z",
+            "updatedAt": "2022-11-15T09:33:29.291Z",
+            "__v": 0
+        }],
+        "company": {
+            "workloadCapacityDefault": {
+                "value": 7,
+                "measurement": "Hours"
+            },
+            "_id": "637359b066ccc7048f82ff35",
+            "name": "Edit Company Name",
+            "desc": "Company for API testing",
+            "logo": "/public/images/company-default.png",
+            "admins": [
+                "636a309d20de7c7a7f116719"
+            ],
+            "membersJoined": [{
+                "member": "636a309d20de7c7a7f116719",
+                "joinedAt": "2022-11-15T09:19:44.332Z",
+                "_id": "637359b066ccc7048f82ff36"
+            }],
+            "members": [
+                "636a309d20de7c7a7f116719"
+            ],
+            "teams": [],
+            "createdAt": "2022-11-15T09:19:44.338Z",
+            "updatedAt": "2022-11-15T09:48:37.726Z",
+            "__v": 0
+        }
+    }]
+}

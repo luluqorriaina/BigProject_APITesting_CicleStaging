@@ -1,0 +1,2632 @@
+{
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "default": {},
+    "title": "Root Schema",
+    "required": [
+        "message",
+        "blast",
+        "currentTeam",
+        "currentCompany"
+    ],
+    "properties": {
+        "message": {
+            "type": "string",
+            "default": "",
+            "title": "The message Schema",
+            "examples": [
+                "Get Blast Detail successful"
+            ]
+        },
+        "blast": {
+            "type": "object",
+            "default": {},
+            "title": "The blast Schema",
+            "required": [
+                "_id",
+                "posts",
+                "createdAt",
+                "updatedAt",
+                "__v"
+            ],
+            "properties": {
+                "_id": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The _id Schema",
+                    "examples": [
+                        "6373b898fef0c6ab2e29fb18"
+                    ]
+                },
+                "posts": {
+                    "type": "array",
+                    "default": [],
+                    "title": "The posts Schema",
+                    "items": {},
+                    "examples": [
+                        []
+                    ]
+                },
+                "createdAt": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The createdAt Schema",
+                    "examples": [
+                        "2022-11-15T16:04:40.669Z"
+                    ]
+                },
+                "updatedAt": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The updatedAt Schema",
+                    "examples": [
+                        "2022-11-15T16:04:40.669Z"
+                    ]
+                },
+                "__v": {
+                    "type": "integer",
+                    "default": 0,
+                    "title": "The __v Schema",
+                    "examples": [
+                        0
+                    ]
+                }
+            },
+            "examples": [{
+                "_id": "6373b898fef0c6ab2e29fb18",
+                "posts": [],
+                "createdAt": "2022-11-15T16:04:40.669Z",
+                "updatedAt": "2022-11-15T16:04:40.669Z",
+                "__v": 0
+            }]
+        },
+        "currentTeam": {
+            "type": "object",
+            "default": {},
+            "title": "The currentTeam Schema",
+            "required": [
+                "archived",
+                "_id",
+                "name",
+                "desc",
+                "members",
+                "boards",
+                "type",
+                "createdAt",
+                "updatedAt",
+                "__v",
+                "blast",
+                "bucket",
+                "checkIn",
+                "groupChat",
+                "schedule"
+            ],
+            "properties": {
+                "archived": {
+                    "type": "object",
+                    "default": {},
+                    "title": "The archived Schema",
+                    "required": [
+                        "status"
+                    ],
+                    "properties": {
+                        "status": {
+                            "type": "boolean",
+                            "default": false,
+                            "title": "The status Schema",
+                            "examples": [
+                                false
+                            ]
+                        }
+                    },
+                    "examples": [{
+                        "status": false
+                    }]
+                },
+                "_id": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The _id Schema",
+                    "examples": [
+                        "6373b898fef0c6ab2e29fa9e"
+                    ]
+                },
+                "name": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The name Schema",
+                    "examples": [
+                        "Lulu's Team"
+                    ]
+                },
+                "desc": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The desc Schema",
+                    "examples": [
+                        "Team for API testing"
+                    ]
+                },
+                "members": {
+                    "type": "array",
+                    "default": [],
+                    "title": "The members Schema",
+                    "items": {
+                        "type": "object",
+                        "default": {},
+                        "title": "A Schema",
+                        "required": [
+                            "_id",
+                            "googleId",
+                            "email",
+                            "fullName",
+                            "photoUrl",
+                            "bio",
+                            "status",
+                            "companies",
+                            "createdAt",
+                            "updatedAt",
+                            "__v",
+                            "defaultCompany",
+                            "password"
+                        ],
+                        "properties": {
+                            "_id": {
+                                "type": "string",
+                                "default": "",
+                                "title": "The _id Schema",
+                                "examples": [
+                                    "636a309d20de7c7a7f116719"
+                                ]
+                            },
+                            "googleId": {
+                                "type": "string",
+                                "default": "",
+                                "title": "The googleId Schema",
+                                "examples": [
+                                    "114498059136746820038"
+                                ]
+                            },
+                            "email": {
+                                "type": "string",
+                                "default": "",
+                                "title": "The email Schema",
+                                "examples": [
+                                    "luluqatesting@gmail.com"
+                                ]
+                            },
+                            "fullName": {
+                                "type": "string",
+                                "default": "",
+                                "title": "The fullName Schema",
+                                "examples": [
+                                    "Lulu Q.A."
+                                ]
+                            },
+                            "photoUrl": {
+                                "type": "string",
+                                "default": "",
+                                "title": "The photoUrl Schema",
+                                "examples": [
+                                    "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c"
+                                ]
+                            },
+                            "bio": {
+                                "type": "string",
+                                "default": "",
+                                "title": "The bio Schema",
+                                "examples": [
+                                    "student"
+                                ]
+                            },
+                            "status": {
+                                "type": "string",
+                                "default": "",
+                                "title": "The status Schema",
+                                "examples": [
+                                    "a lifelong learner"
+                                ]
+                            },
+                            "companies": {
+                                "type": "array",
+                                "default": [],
+                                "title": "The companies Schema",
+                                "items": {},
+                                "examples": [
+                                    []
+                                ]
+                            },
+                            "createdAt": {
+                                "type": "string",
+                                "default": "",
+                                "title": "The createdAt Schema",
+                                "examples": [
+                                    "2022-11-08T10:34:05.472Z"
+                                ]
+                            },
+                            "updatedAt": {
+                                "type": "string",
+                                "default": "",
+                                "title": "The updatedAt Schema",
+                                "examples": [
+                                    "2022-11-16T04:10:59.597Z"
+                                ]
+                            },
+                            "__v": {
+                                "type": "integer",
+                                "default": 0,
+                                "title": "The __v Schema",
+                                "examples": [
+                                    0
+                                ]
+                            },
+                            "defaultCompany": {
+                                "type": "string",
+                                "default": "",
+                                "title": "The defaultCompany Schema",
+                                "examples": [
+                                    "637456a0fef0c6ab2e2b11c1"
+                                ]
+                            },
+                            "password": {
+                                "type": "string",
+                                "default": "",
+                                "title": "The password Schema",
+                                "examples": [
+                                    "$2b$10$BR5s8..DXywQAfQXjnPBUudk2woxi2/7ntP07Q0/1IUd8912DxbDS"
+                                ]
+                            }
+                        },
+                        "examples": [{
+                            "_id": "636a309d20de7c7a7f116719",
+                            "googleId": "114498059136746820038",
+                            "email": "luluqatesting@gmail.com",
+                            "fullName": "Lulu Q.A.",
+                            "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c",
+                            "bio": "student",
+                            "status": "a lifelong learner",
+                            "companies": [],
+                            "createdAt": "2022-11-08T10:34:05.472Z",
+                            "updatedAt": "2022-11-16T04:10:59.597Z",
+                            "__v": 0,
+                            "defaultCompany": "637456a0fef0c6ab2e2b11c1",
+                            "password": "$2b$10$BR5s8..DXywQAfQXjnPBUudk2woxi2/7ntP07Q0/1IUd8912DxbDS"
+                        }]
+                    },
+                    "examples": [
+                        [{
+                            "_id": "636a309d20de7c7a7f116719",
+                            "googleId": "114498059136746820038",
+                            "email": "luluqatesting@gmail.com",
+                            "fullName": "Lulu Q.A.",
+                            "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c",
+                            "bio": "student",
+                            "status": "a lifelong learner",
+                            "companies": [],
+                            "createdAt": "2022-11-08T10:34:05.472Z",
+                            "updatedAt": "2022-11-16T04:10:59.597Z",
+                            "__v": 0,
+                            "defaultCompany": "637456a0fef0c6ab2e2b11c1",
+                            "password": "$2b$10$BR5s8..DXywQAfQXjnPBUudk2woxi2/7ntP07Q0/1IUd8912DxbDS"
+                        }]
+                    ]
+                },
+                "boards": {
+                    "type": "array",
+                    "default": [],
+                    "title": "The boards Schema",
+                    "items": {
+                        "type": "object",
+                        "default": {},
+                        "title": "A Schema",
+                        "required": [
+                            "_id",
+                            "name",
+                            "desc",
+                            "lists",
+                            "labels",
+                            "createdAt",
+                            "updatedAt",
+                            "__v"
+                        ],
+                        "properties": {
+                            "_id": {
+                                "type": "string",
+                                "default": "",
+                                "title": "The _id Schema",
+                                "examples": [
+                                    "6373b898fef0c6ab2e29fb16"
+                                ]
+                            },
+                            "name": {
+                                "type": "string",
+                                "default": "",
+                                "title": "The name Schema",
+                                "examples": [
+                                    "Kanban Board"
+                                ]
+                            },
+                            "desc": {
+                                "type": "string",
+                                "default": "",
+                                "title": "The desc Schema",
+                                "examples": [
+                                    "Track progress with this Kanban-styled board"
+                                ]
+                            },
+                            "lists": {
+                                "type": "array",
+                                "default": [],
+                                "title": "The lists Schema",
+                                "items": {},
+                                "examples": [
+                                    []
+                                ]
+                            },
+                            "labels": {
+                                "type": "array",
+                                "default": [],
+                                "title": "The labels Schema",
+                                "items": {},
+                                "examples": [
+                                    []
+                                ]
+                            },
+                            "createdAt": {
+                                "type": "string",
+                                "default": "",
+                                "title": "The createdAt Schema",
+                                "examples": [
+                                    "2022-11-15T16:04:40.669Z"
+                                ]
+                            },
+                            "updatedAt": {
+                                "type": "string",
+                                "default": "",
+                                "title": "The updatedAt Schema",
+                                "examples": [
+                                    "2022-11-15T16:04:40.669Z"
+                                ]
+                            },
+                            "__v": {
+                                "type": "integer",
+                                "default": 0,
+                                "title": "The __v Schema",
+                                "examples": [
+                                    0
+                                ]
+                            }
+                        },
+                        "examples": [{
+                            "_id": "6373b898fef0c6ab2e29fb16",
+                            "name": "Kanban Board",
+                            "desc": "Track progress with this Kanban-styled board",
+                            "lists": [],
+                            "labels": [],
+                            "createdAt": "2022-11-15T16:04:40.669Z",
+                            "updatedAt": "2022-11-15T16:04:40.669Z",
+                            "__v": 0
+                        }]
+                    },
+                    "examples": [
+                        [{
+                            "_id": "6373b898fef0c6ab2e29fb16",
+                            "name": "Kanban Board",
+                            "desc": "Track progress with this Kanban-styled board",
+                            "lists": [],
+                            "labels": [],
+                            "createdAt": "2022-11-15T16:04:40.669Z",
+                            "updatedAt": "2022-11-15T16:04:40.669Z",
+                            "__v": 0
+                        }]
+                    ]
+                },
+                "type": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The type Schema",
+                    "examples": [
+                        "team"
+                    ]
+                },
+                "createdAt": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The createdAt Schema",
+                    "examples": [
+                        "2022-11-15T16:04:40.656Z"
+                    ]
+                },
+                "updatedAt": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The updatedAt Schema",
+                    "examples": [
+                        "2022-11-15T16:04:40.682Z"
+                    ]
+                },
+                "__v": {
+                    "type": "integer",
+                    "default": 0,
+                    "title": "The __v Schema",
+                    "examples": [
+                        0
+                    ]
+                },
+                "blast": {
+                    "type": "object",
+                    "default": {},
+                    "title": "The blast Schema",
+                    "required": [
+                        "_id",
+                        "posts",
+                        "createdAt",
+                        "updatedAt",
+                        "__v"
+                    ],
+                    "properties": {
+                        "_id": {
+                            "type": "string",
+                            "default": "",
+                            "title": "The _id Schema",
+                            "examples": [
+                                "6373b898fef0c6ab2e29fb18"
+                            ]
+                        },
+                        "posts": {
+                            "type": "array",
+                            "default": [],
+                            "title": "The posts Schema",
+                            "items": {},
+                            "examples": [
+                                []
+                            ]
+                        },
+                        "createdAt": {
+                            "type": "string",
+                            "default": "",
+                            "title": "The createdAt Schema",
+                            "examples": [
+                                "2022-11-15T16:04:40.669Z"
+                            ]
+                        },
+                        "updatedAt": {
+                            "type": "string",
+                            "default": "",
+                            "title": "The updatedAt Schema",
+                            "examples": [
+                                "2022-11-15T16:04:40.669Z"
+                            ]
+                        },
+                        "__v": {
+                            "type": "integer",
+                            "default": 0,
+                            "title": "The __v Schema",
+                            "examples": [
+                                0
+                            ]
+                        }
+                    },
+                    "examples": [{
+                        "_id": "6373b898fef0c6ab2e29fb18",
+                        "posts": [],
+                        "createdAt": "2022-11-15T16:04:40.669Z",
+                        "updatedAt": "2022-11-15T16:04:40.669Z",
+                        "__v": 0
+                    }]
+                },
+                "bucket": {
+                    "type": "object",
+                    "default": {},
+                    "title": "The bucket Schema",
+                    "required": [
+                        "archived",
+                        "_id",
+                        "docs",
+                        "buckets",
+                        "files",
+                        "title",
+                        "type",
+                        "isPublic",
+                        "subscribers",
+                        "createdAt",
+                        "updatedAt",
+                        "__v"
+                    ],
+                    "properties": {
+                        "archived": {
+                            "type": "object",
+                            "default": {},
+                            "title": "The archived Schema",
+                            "required": [
+                                "status"
+                            ],
+                            "properties": {
+                                "status": {
+                                    "type": "boolean",
+                                    "default": false,
+                                    "title": "The status Schema",
+                                    "examples": [
+                                        false
+                                    ]
+                                }
+                            },
+                            "examples": [{
+                                "status": false
+                            }]
+                        },
+                        "_id": {
+                            "type": "string",
+                            "default": "",
+                            "title": "The _id Schema",
+                            "examples": [
+                                "6373b898fef0c6ab2e29fb1b"
+                            ]
+                        },
+                        "docs": {
+                            "type": "array",
+                            "default": [],
+                            "title": "The docs Schema",
+                            "items": {},
+                            "examples": [
+                                []
+                            ]
+                        },
+                        "buckets": {
+                            "type": "array",
+                            "default": [],
+                            "title": "The buckets Schema",
+                            "items": {},
+                            "examples": [
+                                []
+                            ]
+                        },
+                        "files": {
+                            "type": "array",
+                            "default": [],
+                            "title": "The files Schema",
+                            "items": {},
+                            "examples": [
+                                []
+                            ]
+                        },
+                        "title": {
+                            "type": "string",
+                            "default": "",
+                            "title": "The title Schema",
+                            "examples": [
+                                "Docs \u0026 Files"
+                            ]
+                        },
+                        "type": {
+                            "type": "string",
+                            "default": "",
+                            "title": "The type Schema",
+                            "examples": [
+                                "main"
+                            ]
+                        },
+                        "isPublic": {
+                            "type": "boolean",
+                            "default": false,
+                            "title": "The isPublic Schema",
+                            "examples": [
+                                true
+                            ]
+                        },
+                        "subscribers": {
+                            "type": "array",
+                            "default": [],
+                            "title": "The subscribers Schema",
+                            "items": {},
+                            "examples": [
+                                []
+                            ]
+                        },
+                        "createdAt": {
+                            "type": "string",
+                            "default": "",
+                            "title": "The createdAt Schema",
+                            "examples": [
+                                "2022-11-15T16:04:40.670Z"
+                            ]
+                        },
+                        "updatedAt": {
+                            "type": "string",
+                            "default": "",
+                            "title": "The updatedAt Schema",
+                            "examples": [
+                                "2022-11-15T16:04:40.670Z"
+                            ]
+                        },
+                        "__v": {
+                            "type": "integer",
+                            "default": 0,
+                            "title": "The __v Schema",
+                            "examples": [
+                                0
+                            ]
+                        }
+                    },
+                    "examples": [{
+                        "archived": {
+                            "status": false
+                        },
+                        "_id": "6373b898fef0c6ab2e29fb1b",
+                        "docs": [],
+                        "buckets": [],
+                        "files": [],
+                        "title": "Docs \u0026 Files",
+                        "type": "main",
+                        "isPublic": true,
+                        "subscribers": [],
+                        "createdAt": "2022-11-15T16:04:40.670Z",
+                        "updatedAt": "2022-11-15T16:04:40.670Z",
+                        "__v": 0
+                    }]
+                },
+                "checkIn": {
+                    "type": "object",
+                    "default": {},
+                    "title": "The checkIn Schema",
+                    "required": [
+                        "_id",
+                        "questions",
+                        "createdAt",
+                        "updatedAt",
+                        "__v"
+                    ],
+                    "properties": {
+                        "_id": {
+                            "type": "string",
+                            "default": "",
+                            "title": "The _id Schema",
+                            "examples": [
+                                "6373b898fef0c6ab2e29fb19"
+                            ]
+                        },
+                        "questions": {
+                            "type": "array",
+                            "default": [],
+                            "title": "The questions Schema",
+                            "items": {},
+                            "examples": [
+                                []
+                            ]
+                        },
+                        "createdAt": {
+                            "type": "string",
+                            "default": "",
+                            "title": "The createdAt Schema",
+                            "examples": [
+                                "2022-11-15T16:04:40.669Z"
+                            ]
+                        },
+                        "updatedAt": {
+                            "type": "string",
+                            "default": "",
+                            "title": "The updatedAt Schema",
+                            "examples": [
+                                "2022-11-15T16:04:40.669Z"
+                            ]
+                        },
+                        "__v": {
+                            "type": "integer",
+                            "default": 0,
+                            "title": "The __v Schema",
+                            "examples": [
+                                0
+                            ]
+                        }
+                    },
+                    "examples": [{
+                        "_id": "6373b898fef0c6ab2e29fb19",
+                        "questions": [],
+                        "createdAt": "2022-11-15T16:04:40.669Z",
+                        "updatedAt": "2022-11-15T16:04:40.669Z",
+                        "__v": 0
+                    }]
+                },
+                "groupChat": {
+                    "type": "object",
+                    "default": {},
+                    "title": "The groupChat Schema",
+                    "required": [
+                        "_id",
+                        "messages",
+                        "attachments",
+                        "createdAt",
+                        "updatedAt",
+                        "__v"
+                    ],
+                    "properties": {
+                        "_id": {
+                            "type": "string",
+                            "default": "",
+                            "title": "The _id Schema",
+                            "examples": [
+                                "6373b898fef0c6ab2e29fb17"
+                            ]
+                        },
+                        "messages": {
+                            "type": "array",
+                            "default": [],
+                            "title": "The messages Schema",
+                            "items": {
+                                "type": "object",
+                                "title": "A Schema",
+                                "required": [
+                                    "_id",
+                                    "content",
+                                    "creator",
+                                    "isDeleted",
+                                    "createdAt",
+                                    "updatedAt",
+                                    "__v",
+                                    "deletedAt"
+                                ],
+                                "properties": {
+                                    "_id": {
+                                        "type": "string",
+                                        "title": "The _id Schema",
+                                        "examples": [
+                                            "63744d6afef0c6ab2e2b0069",
+                                            "63744ca7fef0c6ab2e2afb83",
+                                            "63744b8a66ccc7048fa0240c",
+                                            "63744abdfef0c6ab2e2af3e2"
+                                        ]
+                                    },
+                                    "content": {
+                                        "type": "string",
+                                        "title": "The content Schema",
+                                        "examples": [
+                                            "",
+                                            "This message was deleted",
+                                            "\u003cp\u003eIni pesan Lulu melalui API\u003c/p\u003e"
+                                        ]
+                                    },
+                                    "creator": {
+                                        "type": "object",
+                                        "title": "The creator Schema",
+                                        "required": [
+                                            "_id",
+                                            "googleId",
+                                            "email",
+                                            "fullName",
+                                            "photoUrl",
+                                            "bio",
+                                            "status",
+                                            "companies",
+                                            "createdAt",
+                                            "updatedAt",
+                                            "__v",
+                                            "defaultCompany",
+                                            "password"
+                                        ],
+                                        "properties": {
+                                            "_id": {
+                                                "type": "string",
+                                                "title": "The _id Schema",
+                                                "examples": [
+                                                    "636a309d20de7c7a7f116719"
+                                                ]
+                                            },
+                                            "googleId": {
+                                                "type": "string",
+                                                "title": "The googleId Schema",
+                                                "examples": [
+                                                    "114498059136746820038"
+                                                ]
+                                            },
+                                            "email": {
+                                                "type": "string",
+                                                "title": "The email Schema",
+                                                "examples": [
+                                                    "luluqatesting@gmail.com"
+                                                ]
+                                            },
+                                            "fullName": {
+                                                "type": "string",
+                                                "title": "The fullName Schema",
+                                                "examples": [
+                                                    "Lulu Q.A."
+                                                ]
+                                            },
+                                            "photoUrl": {
+                                                "type": "string",
+                                                "title": "The photoUrl Schema",
+                                                "examples": [
+                                                    "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c"
+                                                ]
+                                            },
+                                            "bio": {
+                                                "type": "string",
+                                                "title": "The bio Schema",
+                                                "examples": [
+                                                    "student"
+                                                ]
+                                            },
+                                            "status": {
+                                                "type": "string",
+                                                "title": "The status Schema",
+                                                "examples": [
+                                                    "a lifelong learner"
+                                                ]
+                                            },
+                                            "companies": {
+                                                "type": "array",
+                                                "title": "The companies Schema",
+                                                "items": {},
+                                                "examples": [
+                                                    [],
+                                                    [],
+                                                    [],
+                                                    []
+                                                ]
+                                            },
+                                            "createdAt": {
+                                                "type": "string",
+                                                "title": "The createdAt Schema",
+                                                "examples": [
+                                                    "2022-11-08T10:34:05.472Z"
+                                                ]
+                                            },
+                                            "updatedAt": {
+                                                "type": "string",
+                                                "title": "The updatedAt Schema",
+                                                "examples": [
+                                                    "2022-11-16T04:10:59.597Z"
+                                                ]
+                                            },
+                                            "__v": {
+                                                "type": "integer",
+                                                "title": "The __v Schema",
+                                                "examples": [
+                                                    0
+                                                ]
+                                            },
+                                            "defaultCompany": {
+                                                "type": "string",
+                                                "title": "The defaultCompany Schema",
+                                                "examples": [
+                                                    "637456a0fef0c6ab2e2b11c1"
+                                                ]
+                                            },
+                                            "password": {
+                                                "type": "string",
+                                                "title": "The password Schema",
+                                                "examples": [
+                                                    "$2b$10$BR5s8..DXywQAfQXjnPBUudk2woxi2/7ntP07Q0/1IUd8912DxbDS"
+                                                ]
+                                            }
+                                        },
+                                        "examples": [{
+                                            "_id": "636a309d20de7c7a7f116719",
+                                            "googleId": "114498059136746820038",
+                                            "email": "luluqatesting@gmail.com",
+                                            "fullName": "Lulu Q.A.",
+                                            "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c",
+                                            "bio": "student",
+                                            "status": "a lifelong learner",
+                                            "companies": [],
+                                            "createdAt": "2022-11-08T10:34:05.472Z",
+                                            "updatedAt": "2022-11-16T04:10:59.597Z",
+                                            "__v": 0,
+                                            "defaultCompany": "637456a0fef0c6ab2e2b11c1",
+                                            "password": "$2b$10$BR5s8..DXywQAfQXjnPBUudk2woxi2/7ntP07Q0/1IUd8912DxbDS"
+                                        },
+                                        {
+                                            "_id": "636a309d20de7c7a7f116719",
+                                            "googleId": "114498059136746820038",
+                                            "email": "luluqatesting@gmail.com",
+                                            "fullName": "Lulu Q.A.",
+                                            "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c",
+                                            "bio": "student",
+                                            "status": "a lifelong learner",
+                                            "companies": [],
+                                            "createdAt": "2022-11-08T10:34:05.472Z",
+                                            "updatedAt": "2022-11-16T04:10:59.597Z",
+                                            "__v": 0,
+                                            "defaultCompany": "637456a0fef0c6ab2e2b11c1",
+                                            "password": "$2b$10$BR5s8..DXywQAfQXjnPBUudk2woxi2/7ntP07Q0/1IUd8912DxbDS"
+                                        },
+                                        {
+                                            "_id": "636a309d20de7c7a7f116719",
+                                            "googleId": "114498059136746820038",
+                                            "email": "luluqatesting@gmail.com",
+                                            "fullName": "Lulu Q.A.",
+                                            "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c",
+                                            "bio": "student",
+                                            "status": "a lifelong learner",
+                                            "companies": [],
+                                            "createdAt": "2022-11-08T10:34:05.472Z",
+                                            "updatedAt": "2022-11-16T04:10:59.597Z",
+                                            "__v": 0,
+                                            "defaultCompany": "637456a0fef0c6ab2e2b11c1",
+                                            "password": "$2b$10$BR5s8..DXywQAfQXjnPBUudk2woxi2/7ntP07Q0/1IUd8912DxbDS"
+                                        },
+                                        {
+                                            "_id": "636a309d20de7c7a7f116719",
+                                            "googleId": "114498059136746820038",
+                                            "email": "luluqatesting@gmail.com",
+                                            "fullName": "Lulu Q.A.",
+                                            "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c",
+                                            "bio": "student",
+                                            "status": "a lifelong learner",
+                                            "companies": [],
+                                            "createdAt": "2022-11-08T10:34:05.472Z",
+                                            "updatedAt": "2022-11-16T04:10:59.597Z",
+                                            "__v": 0,
+                                            "defaultCompany": "637456a0fef0c6ab2e2b11c1",
+                                            "password": "$2b$10$BR5s8..DXywQAfQXjnPBUudk2woxi2/7ntP07Q0/1IUd8912DxbDS"
+                                        }]
+                                    },
+                                    "isDeleted": {
+                                        "type": "boolean",
+                                        "title": "The isDeleted Schema",
+                                        "examples": [
+                                            false,
+                                            true
+                                        ]
+                                    },
+                                    "createdAt": {
+                                        "type": "string",
+                                        "title": "The createdAt Schema",
+                                        "examples": [
+                                            "2022-11-16T02:39:38.763Z",
+                                            "2022-11-16T02:36:23.709Z",
+                                            "2022-11-16T02:31:38.159Z",
+                                            "2022-11-16T02:28:13.082Z"
+                                        ]
+                                    },
+                                    "updatedAt": {
+                                        "type": "string",
+                                        "title": "The updatedAt Schema",
+                                        "examples": [
+                                            "2022-11-16T02:39:38.763Z",
+                                            "2022-11-16T02:36:23.709Z",
+                                            "2022-11-16T02:48:53.349Z",
+                                            "2022-11-16T02:28:13.082Z"
+                                        ]
+                                    },
+                                    "__v": {
+                                        "type": "integer",
+                                        "title": "The __v Schema",
+                                        "examples": [
+                                            0
+                                        ]
+                                    },
+                                    "deletedAt": {
+                                        "type": "string",
+                                        "default": "",
+                                        "title": "The deletedAt Schema",
+                                        "examples": [
+                                            "2022-11-16T02:48:53.348Z"
+                                        ]
+                                    }
+                                },
+                                "examples": [{
+                                    "_id": "63744d6afef0c6ab2e2b0069",
+                                    "content": "",
+                                    "creator": {
+                                        "_id": "636a309d20de7c7a7f116719",
+                                        "googleId": "114498059136746820038",
+                                        "email": "luluqatesting@gmail.com",
+                                        "fullName": "Lulu Q.A.",
+                                        "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c",
+                                        "bio": "student",
+                                        "status": "a lifelong learner",
+                                        "companies": [],
+                                        "createdAt": "2022-11-08T10:34:05.472Z",
+                                        "updatedAt": "2022-11-16T04:10:59.597Z",
+                                        "__v": 0,
+                                        "defaultCompany": "637456a0fef0c6ab2e2b11c1",
+                                        "password": "$2b$10$BR5s8..DXywQAfQXjnPBUudk2woxi2/7ntP07Q0/1IUd8912DxbDS"
+                                    },
+                                    "isDeleted": false,
+                                    "createdAt": "2022-11-16T02:39:38.763Z",
+                                    "updatedAt": "2022-11-16T02:39:38.763Z",
+                                    "__v": 0
+                                },
+                                {
+                                    "_id": "63744ca7fef0c6ab2e2afb83",
+                                    "content": "",
+                                    "creator": {
+                                        "_id": "636a309d20de7c7a7f116719",
+                                        "googleId": "114498059136746820038",
+                                        "email": "luluqatesting@gmail.com",
+                                        "fullName": "Lulu Q.A.",
+                                        "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c",
+                                        "bio": "student",
+                                        "status": "a lifelong learner",
+                                        "companies": [],
+                                        "createdAt": "2022-11-08T10:34:05.472Z",
+                                        "updatedAt": "2022-11-16T04:10:59.597Z",
+                                        "__v": 0,
+                                        "defaultCompany": "637456a0fef0c6ab2e2b11c1",
+                                        "password": "$2b$10$BR5s8..DXywQAfQXjnPBUudk2woxi2/7ntP07Q0/1IUd8912DxbDS"
+                                    },
+                                    "isDeleted": false,
+                                    "createdAt": "2022-11-16T02:36:23.709Z",
+                                    "updatedAt": "2022-11-16T02:36:23.709Z",
+                                    "__v": 0
+                                },
+                                {
+                                    "_id": "63744b8a66ccc7048fa0240c",
+                                    "content": "This message was deleted",
+                                    "creator": {
+                                        "_id": "636a309d20de7c7a7f116719",
+                                        "googleId": "114498059136746820038",
+                                        "email": "luluqatesting@gmail.com",
+                                        "fullName": "Lulu Q.A.",
+                                        "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c",
+                                        "bio": "student",
+                                        "status": "a lifelong learner",
+                                        "companies": [],
+                                        "createdAt": "2022-11-08T10:34:05.472Z",
+                                        "updatedAt": "2022-11-16T04:10:59.597Z",
+                                        "__v": 0,
+                                        "defaultCompany": "637456a0fef0c6ab2e2b11c1",
+                                        "password": "$2b$10$BR5s8..DXywQAfQXjnPBUudk2woxi2/7ntP07Q0/1IUd8912DxbDS"
+                                    },
+                                    "isDeleted": true,
+                                    "createdAt": "2022-11-16T02:31:38.159Z",
+                                    "updatedAt": "2022-11-16T02:48:53.349Z",
+                                    "__v": 0,
+                                    "deletedAt": "2022-11-16T02:48:53.348Z"
+                                },
+                                {
+                                    "_id": "63744abdfef0c6ab2e2af3e2",
+                                    "content": "\u003cp\u003eIni pesan Lulu melalui API\u003c/p\u003e",
+                                    "creator": {
+                                        "_id": "636a309d20de7c7a7f116719",
+                                        "googleId": "114498059136746820038",
+                                        "email": "luluqatesting@gmail.com",
+                                        "fullName": "Lulu Q.A.",
+                                        "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c",
+                                        "bio": "student",
+                                        "status": "a lifelong learner",
+                                        "companies": [],
+                                        "createdAt": "2022-11-08T10:34:05.472Z",
+                                        "updatedAt": "2022-11-16T04:10:59.597Z",
+                                        "__v": 0,
+                                        "defaultCompany": "637456a0fef0c6ab2e2b11c1",
+                                        "password": "$2b$10$BR5s8..DXywQAfQXjnPBUudk2woxi2/7ntP07Q0/1IUd8912DxbDS"
+                                    },
+                                    "isDeleted": false,
+                                    "createdAt": "2022-11-16T02:28:13.082Z",
+                                    "updatedAt": "2022-11-16T02:28:13.082Z",
+                                    "__v": 0
+                                }]
+                            },
+                            "examples": [
+                                [{
+                                    "_id": "63744d6afef0c6ab2e2b0069",
+                                    "content": "",
+                                    "creator": {
+                                        "_id": "636a309d20de7c7a7f116719",
+                                        "googleId": "114498059136746820038",
+                                        "email": "luluqatesting@gmail.com",
+                                        "fullName": "Lulu Q.A.",
+                                        "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c",
+                                        "bio": "student",
+                                        "status": "a lifelong learner",
+                                        "companies": [],
+                                        "createdAt": "2022-11-08T10:34:05.472Z",
+                                        "updatedAt": "2022-11-16T04:10:59.597Z",
+                                        "__v": 0,
+                                        "defaultCompany": "637456a0fef0c6ab2e2b11c1",
+                                        "password": "$2b$10$BR5s8..DXywQAfQXjnPBUudk2woxi2/7ntP07Q0/1IUd8912DxbDS"
+                                    },
+                                    "isDeleted": false,
+                                    "createdAt": "2022-11-16T02:39:38.763Z",
+                                    "updatedAt": "2022-11-16T02:39:38.763Z",
+                                    "__v": 0
+                                },
+                                {
+                                    "_id": "63744ca7fef0c6ab2e2afb83",
+                                    "content": "",
+                                    "creator": {
+                                        "_id": "636a309d20de7c7a7f116719",
+                                        "googleId": "114498059136746820038",
+                                        "email": "luluqatesting@gmail.com",
+                                        "fullName": "Lulu Q.A.",
+                                        "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c",
+                                        "bio": "student",
+                                        "status": "a lifelong learner",
+                                        "companies": [],
+                                        "createdAt": "2022-11-08T10:34:05.472Z",
+                                        "updatedAt": "2022-11-16T04:10:59.597Z",
+                                        "__v": 0,
+                                        "defaultCompany": "637456a0fef0c6ab2e2b11c1",
+                                        "password": "$2b$10$BR5s8..DXywQAfQXjnPBUudk2woxi2/7ntP07Q0/1IUd8912DxbDS"
+                                    },
+                                    "isDeleted": false,
+                                    "createdAt": "2022-11-16T02:36:23.709Z",
+                                    "updatedAt": "2022-11-16T02:36:23.709Z",
+                                    "__v": 0
+                                },
+                                {
+                                    "_id": "63744b8a66ccc7048fa0240c",
+                                    "content": "This message was deleted",
+                                    "creator": {
+                                        "_id": "636a309d20de7c7a7f116719",
+                                        "googleId": "114498059136746820038",
+                                        "email": "luluqatesting@gmail.com",
+                                        "fullName": "Lulu Q.A.",
+                                        "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c",
+                                        "bio": "student",
+                                        "status": "a lifelong learner",
+                                        "companies": [],
+                                        "createdAt": "2022-11-08T10:34:05.472Z",
+                                        "updatedAt": "2022-11-16T04:10:59.597Z",
+                                        "__v": 0,
+                                        "defaultCompany": "637456a0fef0c6ab2e2b11c1",
+                                        "password": "$2b$10$BR5s8..DXywQAfQXjnPBUudk2woxi2/7ntP07Q0/1IUd8912DxbDS"
+                                    },
+                                    "isDeleted": true,
+                                    "createdAt": "2022-11-16T02:31:38.159Z",
+                                    "updatedAt": "2022-11-16T02:48:53.349Z",
+                                    "__v": 0,
+                                    "deletedAt": "2022-11-16T02:48:53.348Z"
+                                },
+                                {
+                                    "_id": "63744abdfef0c6ab2e2af3e2",
+                                    "content": "\u003cp\u003eIni pesan Lulu melalui API\u003c/p\u003e",
+                                    "creator": {
+                                        "_id": "636a309d20de7c7a7f116719",
+                                        "googleId": "114498059136746820038",
+                                        "email": "luluqatesting@gmail.com",
+                                        "fullName": "Lulu Q.A.",
+                                        "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c",
+                                        "bio": "student",
+                                        "status": "a lifelong learner",
+                                        "companies": [],
+                                        "createdAt": "2022-11-08T10:34:05.472Z",
+                                        "updatedAt": "2022-11-16T04:10:59.597Z",
+                                        "__v": 0,
+                                        "defaultCompany": "637456a0fef0c6ab2e2b11c1",
+                                        "password": "$2b$10$BR5s8..DXywQAfQXjnPBUudk2woxi2/7ntP07Q0/1IUd8912DxbDS"
+                                    },
+                                    "isDeleted": false,
+                                    "createdAt": "2022-11-16T02:28:13.082Z",
+                                    "updatedAt": "2022-11-16T02:28:13.082Z",
+                                    "__v": 0
+                                }]
+                            ]
+                        },
+                        "attachments": {
+                            "type": "array",
+                            "default": [],
+                            "title": "The attachments Schema",
+                            "items": {},
+                            "examples": [
+                                []
+                            ]
+                        },
+                        "createdAt": {
+                            "type": "string",
+                            "default": "",
+                            "title": "The createdAt Schema",
+                            "examples": [
+                                "2022-11-15T16:04:40.669Z"
+                            ]
+                        },
+                        "updatedAt": {
+                            "type": "string",
+                            "default": "",
+                            "title": "The updatedAt Schema",
+                            "examples": [
+                                "2022-11-16T02:39:38.770Z"
+                            ]
+                        },
+                        "__v": {
+                            "type": "integer",
+                            "default": 0,
+                            "title": "The __v Schema",
+                            "examples": [
+                                0
+                            ]
+                        }
+                    },
+                    "examples": [{
+                        "_id": "6373b898fef0c6ab2e29fb17",
+                        "messages": [{
+                            "_id": "63744d6afef0c6ab2e2b0069",
+                            "content": "",
+                            "creator": {
+                                "_id": "636a309d20de7c7a7f116719",
+                                "googleId": "114498059136746820038",
+                                "email": "luluqatesting@gmail.com",
+                                "fullName": "Lulu Q.A.",
+                                "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c",
+                                "bio": "student",
+                                "status": "a lifelong learner",
+                                "companies": [],
+                                "createdAt": "2022-11-08T10:34:05.472Z",
+                                "updatedAt": "2022-11-16T04:10:59.597Z",
+                                "__v": 0,
+                                "defaultCompany": "637456a0fef0c6ab2e2b11c1",
+                                "password": "$2b$10$BR5s8..DXywQAfQXjnPBUudk2woxi2/7ntP07Q0/1IUd8912DxbDS"
+                            },
+                            "isDeleted": false,
+                            "createdAt": "2022-11-16T02:39:38.763Z",
+                            "updatedAt": "2022-11-16T02:39:38.763Z",
+                            "__v": 0
+                        },
+                        {
+                            "_id": "63744ca7fef0c6ab2e2afb83",
+                            "content": "",
+                            "creator": {
+                                "_id": "636a309d20de7c7a7f116719",
+                                "googleId": "114498059136746820038",
+                                "email": "luluqatesting@gmail.com",
+                                "fullName": "Lulu Q.A.",
+                                "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c",
+                                "bio": "student",
+                                "status": "a lifelong learner",
+                                "companies": [],
+                                "createdAt": "2022-11-08T10:34:05.472Z",
+                                "updatedAt": "2022-11-16T04:10:59.597Z",
+                                "__v": 0,
+                                "defaultCompany": "637456a0fef0c6ab2e2b11c1",
+                                "password": "$2b$10$BR5s8..DXywQAfQXjnPBUudk2woxi2/7ntP07Q0/1IUd8912DxbDS"
+                            },
+                            "isDeleted": false,
+                            "createdAt": "2022-11-16T02:36:23.709Z",
+                            "updatedAt": "2022-11-16T02:36:23.709Z",
+                            "__v": 0
+                        },
+                        {
+                            "_id": "63744b8a66ccc7048fa0240c",
+                            "content": "This message was deleted",
+                            "creator": {
+                                "_id": "636a309d20de7c7a7f116719",
+                                "googleId": "114498059136746820038",
+                                "email": "luluqatesting@gmail.com",
+                                "fullName": "Lulu Q.A.",
+                                "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c",
+                                "bio": "student",
+                                "status": "a lifelong learner",
+                                "companies": [],
+                                "createdAt": "2022-11-08T10:34:05.472Z",
+                                "updatedAt": "2022-11-16T04:10:59.597Z",
+                                "__v": 0,
+                                "defaultCompany": "637456a0fef0c6ab2e2b11c1",
+                                "password": "$2b$10$BR5s8..DXywQAfQXjnPBUudk2woxi2/7ntP07Q0/1IUd8912DxbDS"
+                            },
+                            "isDeleted": true,
+                            "createdAt": "2022-11-16T02:31:38.159Z",
+                            "updatedAt": "2022-11-16T02:48:53.349Z",
+                            "__v": 0,
+                            "deletedAt": "2022-11-16T02:48:53.348Z"
+                        },
+                        {
+                            "_id": "63744abdfef0c6ab2e2af3e2",
+                            "content": "\u003cp\u003eIni pesan Lulu melalui API\u003c/p\u003e",
+                            "creator": {
+                                "_id": "636a309d20de7c7a7f116719",
+                                "googleId": "114498059136746820038",
+                                "email": "luluqatesting@gmail.com",
+                                "fullName": "Lulu Q.A.",
+                                "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c",
+                                "bio": "student",
+                                "status": "a lifelong learner",
+                                "companies": [],
+                                "createdAt": "2022-11-08T10:34:05.472Z",
+                                "updatedAt": "2022-11-16T04:10:59.597Z",
+                                "__v": 0,
+                                "defaultCompany": "637456a0fef0c6ab2e2b11c1",
+                                "password": "$2b$10$BR5s8..DXywQAfQXjnPBUudk2woxi2/7ntP07Q0/1IUd8912DxbDS"
+                            },
+                            "isDeleted": false,
+                            "createdAt": "2022-11-16T02:28:13.082Z",
+                            "updatedAt": "2022-11-16T02:28:13.082Z",
+                            "__v": 0
+                        }],
+                        "attachments": [],
+                        "createdAt": "2022-11-15T16:04:40.669Z",
+                        "updatedAt": "2022-11-16T02:39:38.770Z",
+                        "__v": 0
+                    }]
+                },
+                "schedule": {
+                    "type": "object",
+                    "default": {},
+                    "title": "The schedule Schema",
+                    "required": [
+                        "googleCalendar",
+                        "_id",
+                        "events",
+                        "setPublic",
+                        "createdAt",
+                        "updatedAt",
+                        "__v"
+                    ],
+                    "properties": {
+                        "googleCalendar": {
+                            "type": "object",
+                            "default": {},
+                            "title": "The googleCalendar Schema",
+                            "required": [
+                                "calendarId",
+                                "aclRuleId",
+                                "calendarIcsLink",
+                                "calendarHtmlLink"
+                            ],
+                            "properties": {
+                                "calendarId": {
+                                    "type": "null",
+                                    "default": null,
+                                    "title": "The calendarId Schema",
+                                    "examples": [
+                                        null
+                                    ]
+                                },
+                                "aclRuleId": {
+                                    "type": "null",
+                                    "default": null,
+                                    "title": "The aclRuleId Schema",
+                                    "examples": [
+                                        null
+                                    ]
+                                },
+                                "calendarIcsLink": {
+                                    "type": "null",
+                                    "default": null,
+                                    "title": "The calendarIcsLink Schema",
+                                    "examples": [
+                                        null
+                                    ]
+                                },
+                                "calendarHtmlLink": {
+                                    "type": "null",
+                                    "default": null,
+                                    "title": "The calendarHtmlLink Schema",
+                                    "examples": [
+                                        null
+                                    ]
+                                }
+                            },
+                            "examples": [{
+                                "calendarId": null,
+                                "aclRuleId": null,
+                                "calendarIcsLink": null,
+                                "calendarHtmlLink": null
+                            }]
+                        },
+                        "_id": {
+                            "type": "string",
+                            "default": "",
+                            "title": "The _id Schema",
+                            "examples": [
+                                "6373b898fef0c6ab2e29fb1a"
+                            ]
+                        },
+                        "events": {
+                            "type": "array",
+                            "default": [],
+                            "title": "The events Schema",
+                            "items": {},
+                            "examples": [
+                                []
+                            ]
+                        },
+                        "setPublic": {
+                            "type": "boolean",
+                            "default": false,
+                            "title": "The setPublic Schema",
+                            "examples": [
+                                false
+                            ]
+                        },
+                        "createdAt": {
+                            "type": "string",
+                            "default": "",
+                            "title": "The createdAt Schema",
+                            "examples": [
+                                "2022-11-15T16:04:40.669Z"
+                            ]
+                        },
+                        "updatedAt": {
+                            "type": "string",
+                            "default": "",
+                            "title": "The updatedAt Schema",
+                            "examples": [
+                                "2022-11-15T16:04:40.669Z"
+                            ]
+                        },
+                        "__v": {
+                            "type": "integer",
+                            "default": 0,
+                            "title": "The __v Schema",
+                            "examples": [
+                                0
+                            ]
+                        }
+                    },
+                    "examples": [{
+                        "googleCalendar": {
+                            "calendarId": null,
+                            "aclRuleId": null,
+                            "calendarIcsLink": null,
+                            "calendarHtmlLink": null
+                        },
+                        "_id": "6373b898fef0c6ab2e29fb1a",
+                        "events": [],
+                        "setPublic": false,
+                        "createdAt": "2022-11-15T16:04:40.669Z",
+                        "updatedAt": "2022-11-15T16:04:40.669Z",
+                        "__v": 0
+                    }]
+                }
+            },
+            "examples": [{
+                "archived": {
+                    "status": false
+                },
+                "_id": "6373b898fef0c6ab2e29fa9e",
+                "name": "Lulu's Team",
+                "desc": "Team for API testing",
+                "members": [{
+                    "_id": "636a309d20de7c7a7f116719",
+                    "googleId": "114498059136746820038",
+                    "email": "luluqatesting@gmail.com",
+                    "fullName": "Lulu Q.A.",
+                    "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c",
+                    "bio": "student",
+                    "status": "a lifelong learner",
+                    "companies": [],
+                    "createdAt": "2022-11-08T10:34:05.472Z",
+                    "updatedAt": "2022-11-16T04:10:59.597Z",
+                    "__v": 0,
+                    "defaultCompany": "637456a0fef0c6ab2e2b11c1",
+                    "password": "$2b$10$BR5s8..DXywQAfQXjnPBUudk2woxi2/7ntP07Q0/1IUd8912DxbDS"
+                }],
+                "boards": [{
+                    "_id": "6373b898fef0c6ab2e29fb16",
+                    "name": "Kanban Board",
+                    "desc": "Track progress with this Kanban-styled board",
+                    "lists": [],
+                    "labels": [],
+                    "createdAt": "2022-11-15T16:04:40.669Z",
+                    "updatedAt": "2022-11-15T16:04:40.669Z",
+                    "__v": 0
+                }],
+                "type": "team",
+                "createdAt": "2022-11-15T16:04:40.656Z",
+                "updatedAt": "2022-11-15T16:04:40.682Z",
+                "__v": 0,
+                "blast": {
+                    "_id": "6373b898fef0c6ab2e29fb18",
+                    "posts": [],
+                    "createdAt": "2022-11-15T16:04:40.669Z",
+                    "updatedAt": "2022-11-15T16:04:40.669Z",
+                    "__v": 0
+                },
+                "bucket": {
+                    "archived": {
+                        "status": false
+                    },
+                    "_id": "6373b898fef0c6ab2e29fb1b",
+                    "docs": [],
+                    "buckets": [],
+                    "files": [],
+                    "title": "Docs \u0026 Files",
+                    "type": "main",
+                    "isPublic": true,
+                    "subscribers": [],
+                    "createdAt": "2022-11-15T16:04:40.670Z",
+                    "updatedAt": "2022-11-15T16:04:40.670Z",
+                    "__v": 0
+                },
+                "checkIn": {
+                    "_id": "6373b898fef0c6ab2e29fb19",
+                    "questions": [],
+                    "createdAt": "2022-11-15T16:04:40.669Z",
+                    "updatedAt": "2022-11-15T16:04:40.669Z",
+                    "__v": 0
+                },
+                "groupChat": {
+                    "_id": "6373b898fef0c6ab2e29fb17",
+                    "messages": [{
+                        "_id": "63744d6afef0c6ab2e2b0069",
+                        "content": "",
+                        "creator": {
+                            "_id": "636a309d20de7c7a7f116719",
+                            "googleId": "114498059136746820038",
+                            "email": "luluqatesting@gmail.com",
+                            "fullName": "Lulu Q.A.",
+                            "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c",
+                            "bio": "student",
+                            "status": "a lifelong learner",
+                            "companies": [],
+                            "createdAt": "2022-11-08T10:34:05.472Z",
+                            "updatedAt": "2022-11-16T04:10:59.597Z",
+                            "__v": 0,
+                            "defaultCompany": "637456a0fef0c6ab2e2b11c1",
+                            "password": "$2b$10$BR5s8..DXywQAfQXjnPBUudk2woxi2/7ntP07Q0/1IUd8912DxbDS"
+                        },
+                        "isDeleted": false,
+                        "createdAt": "2022-11-16T02:39:38.763Z",
+                        "updatedAt": "2022-11-16T02:39:38.763Z",
+                        "__v": 0
+                    },
+                    {
+                        "_id": "63744ca7fef0c6ab2e2afb83",
+                        "content": "",
+                        "creator": {
+                            "_id": "636a309d20de7c7a7f116719",
+                            "googleId": "114498059136746820038",
+                            "email": "luluqatesting@gmail.com",
+                            "fullName": "Lulu Q.A.",
+                            "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c",
+                            "bio": "student",
+                            "status": "a lifelong learner",
+                            "companies": [],
+                            "createdAt": "2022-11-08T10:34:05.472Z",
+                            "updatedAt": "2022-11-16T04:10:59.597Z",
+                            "__v": 0,
+                            "defaultCompany": "637456a0fef0c6ab2e2b11c1",
+                            "password": "$2b$10$BR5s8..DXywQAfQXjnPBUudk2woxi2/7ntP07Q0/1IUd8912DxbDS"
+                        },
+                        "isDeleted": false,
+                        "createdAt": "2022-11-16T02:36:23.709Z",
+                        "updatedAt": "2022-11-16T02:36:23.709Z",
+                        "__v": 0
+                    },
+                    {
+                        "_id": "63744b8a66ccc7048fa0240c",
+                        "content": "This message was deleted",
+                        "creator": {
+                            "_id": "636a309d20de7c7a7f116719",
+                            "googleId": "114498059136746820038",
+                            "email": "luluqatesting@gmail.com",
+                            "fullName": "Lulu Q.A.",
+                            "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c",
+                            "bio": "student",
+                            "status": "a lifelong learner",
+                            "companies": [],
+                            "createdAt": "2022-11-08T10:34:05.472Z",
+                            "updatedAt": "2022-11-16T04:10:59.597Z",
+                            "__v": 0,
+                            "defaultCompany": "637456a0fef0c6ab2e2b11c1",
+                            "password": "$2b$10$BR5s8..DXywQAfQXjnPBUudk2woxi2/7ntP07Q0/1IUd8912DxbDS"
+                        },
+                        "isDeleted": true,
+                        "createdAt": "2022-11-16T02:31:38.159Z",
+                        "updatedAt": "2022-11-16T02:48:53.349Z",
+                        "__v": 0,
+                        "deletedAt": "2022-11-16T02:48:53.348Z"
+                    },
+                    {
+                        "_id": "63744abdfef0c6ab2e2af3e2",
+                        "content": "\u003cp\u003eIni pesan Lulu melalui API\u003c/p\u003e",
+                        "creator": {
+                            "_id": "636a309d20de7c7a7f116719",
+                            "googleId": "114498059136746820038",
+                            "email": "luluqatesting@gmail.com",
+                            "fullName": "Lulu Q.A.",
+                            "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c",
+                            "bio": "student",
+                            "status": "a lifelong learner",
+                            "companies": [],
+                            "createdAt": "2022-11-08T10:34:05.472Z",
+                            "updatedAt": "2022-11-16T04:10:59.597Z",
+                            "__v": 0,
+                            "defaultCompany": "637456a0fef0c6ab2e2b11c1",
+                            "password": "$2b$10$BR5s8..DXywQAfQXjnPBUudk2woxi2/7ntP07Q0/1IUd8912DxbDS"
+                        },
+                        "isDeleted": false,
+                        "createdAt": "2022-11-16T02:28:13.082Z",
+                        "updatedAt": "2022-11-16T02:28:13.082Z",
+                        "__v": 0
+                    }],
+                    "attachments": [],
+                    "createdAt": "2022-11-15T16:04:40.669Z",
+                    "updatedAt": "2022-11-16T02:39:38.770Z",
+                    "__v": 0
+                },
+                "schedule": {
+                    "googleCalendar": {
+                        "calendarId": null,
+                        "aclRuleId": null,
+                        "calendarIcsLink": null,
+                        "calendarHtmlLink": null
+                    },
+                    "_id": "6373b898fef0c6ab2e29fb1a",
+                    "events": [],
+                    "setPublic": false,
+                    "createdAt": "2022-11-15T16:04:40.669Z",
+                    "updatedAt": "2022-11-15T16:04:40.669Z",
+                    "__v": 0
+                }
+            }]
+        },
+        "currentCompany": {
+            "type": "object",
+            "default": {},
+            "title": "The currentCompany Schema",
+            "required": [
+                "_id",
+                "workloadCapacityDefault",
+                "logo",
+                "admins",
+                "members",
+                "teams",
+                "name",
+                "desc",
+                "membersJoined",
+                "createdAt",
+                "updatedAt",
+                "__v"
+            ],
+            "properties": {
+                "_id": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The _id Schema",
+                    "examples": [
+                        "61eba2c85080f47b25ddc8f8"
+                    ]
+                },
+                "workloadCapacityDefault": {
+                    "type": "object",
+                    "default": {},
+                    "title": "The workloadCapacityDefault Schema",
+                    "required": [
+                        "value",
+                        "measurement"
+                    ],
+                    "properties": {
+                        "value": {
+                            "type": "integer",
+                            "default": 0,
+                            "title": "The value Schema",
+                            "examples": [
+                                7
+                            ]
+                        },
+                        "measurement": {
+                            "type": "string",
+                            "default": "",
+                            "title": "The measurement Schema",
+                            "examples": [
+                                "Hours"
+                            ]
+                        }
+                    },
+                    "examples": [{
+                        "value": 7,
+                        "measurement": "Hours"
+                    }]
+                },
+                "logo": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The logo Schema",
+                    "examples": [
+                        "https://storage.googleapis.com/production-cicle-app/61eba2c85080f47b25ddc8f8/c9030fb4ab8f92019eda8f6459b89f9e/Logo_Main_QA.png"
+                    ]
+                },
+                "admins": {
+                    "type": "array",
+                    "default": [],
+                    "title": "The admins Schema",
+                    "items": {
+                        "type": "string",
+                        "default": "",
+                        "title": "A Schema",
+                        "examples": [
+                            "5f8640963a36b417e2f0f166"
+                        ]
+                    },
+                    "examples": [
+                        [
+                            "5f8640963a36b417e2f0f166"]
+                    ]
+                },
+                "members": {
+                    "type": "array",
+                    "default": [],
+                    "title": "The members Schema",
+                    "items": {
+                        "type": "object",
+                        "title": "A Schema",
+                        "required": [
+                            "_id",
+                            "fullName",
+                            "photoUrl"
+                        ],
+                        "properties": {
+                            "_id": {
+                                "type": "string",
+                                "title": "The _id Schema",
+                                "examples": [
+                                    "5f8634a83a36b417e2f0f15a",
+                                    "635000bc2e20d88b28b61c00",
+                                    "635001379411977405a23eda",
+                                    "62f63f5d93a55ccbaaaee181",
+                                    "62f65277e646dee8e8cd89d0",
+                                    "62f652fa98ae1e904837debf",
+                                    "62f60e2ce646dee8e8cd5a65",
+                                    "62f6526793a55ccbaaaeec13",
+                                    "6347b90e699bc04871a852ee",
+                                    "6346c4937ad5d6eb5b29cd1a",
+                                    "634577107deb4d8ba5ae883e",
+                                    "6346cd4b699bc04871a76cc3",
+                                    "6346c4917ad5d6eb5b29cd12",
+                                    "6346bfcd57577a1c948a844d",
+                                    "62f5f90d98ae1e90483795af",
+                                    "636639313e7ccfa63708d9fb",
+                                    "62f64f9298ae1e904837d6f8",
+                                    "6360974523737249aa5df5ac",
+                                    "6352a5782e20d88b28bcddd8",
+                                    "633fddd364aa3fb18abb4bc4",
+                                    "636a309d20de7c7a7f116719",
+                                    "62f29ec7eebca7d81cfad052"
+                                ]
+                            },
+                            "fullName": {
+                                "type": "string",
+                                "title": "The fullName Schema",
+                                "examples": [
+                                    "Rizki Alief Irfany",
+                                    "Nanda Dwi Mahendra",
+                                    "Aji Setyawan",
+                                    "Moch Nova Setyawan",
+                                    "Muhammad Hafizh Abdillah",
+                                    "nisa khoirun",
+                                    "Lulu Q.A.",
+                                    "Ghifari Naufal Rahman",
+                                    "Muhammad Arbi Minanda",
+                                    "Fenrisulfr Lokesson",
+                                    "Teja Pradipta",
+                                    "Faldi Oberton",
+                                    "Novika Dian Renanda",
+                                    "Anisatun Nafi'ah",
+                                    "work business58",
+                                    "Qori'atul Maghfiroh",
+                                    "test device001",
+                                    "QA Testing",
+                                    "Sandi Kurnia"
+                                ]
+                            },
+                            "photoUrl": {
+                                "type": "string",
+                                "title": "The photoUrl Schema",
+                                "examples": [
+                                    "/public/uploads/df609e44f8b317832089c1f39987e728ee17f562eea158f18321c18a00b5c023433513c23fd26fc0719cf6d8f48f25c1a334c8f30eafcd2c33cd8f9e30c7daa7.png",
+                                    "https://lh3.googleusercontent.com/a/ALm5wu0-LlWrXjcsCDkEQiYetYJvs_MMhzEJePr83uyNxA=s96-c",
+                                    "https://lh3.googleusercontent.com/a/ALm5wu26psG3sLpUkDRa9blKHR_Gu2SitSdQ1LArnaHU=s96-c",
+                                    "https://lh3.googleusercontent.com/a-/AFdZucrnAjT3I6nzDMfohdc_LU1GY0dcaVMeXxORykNq=s96-c",
+                                    "https://lh3.googleusercontent.com/a-/AFdZucr7Eu9VJ1FQWLBAQIaNCrrm43qhm7krTG_BAJJ2uzg=s96-c",
+                                    "https://lh3.googleusercontent.com/a-/AFdZucp3YKbkexnApOshS4YCTMudD8UOWLBf2H3RCgF08w=s96-c",
+                                    "https://lh3.googleusercontent.com/a-/AFdZucoAXeNCaxGmhR75ngyG1TL_SFrkMJIoVcAxgdbzEA=s96-c",
+                                    "https://lh3.googleusercontent.com/a/AItbvmnfmU_tKa9Fz4ArWWve4UGYHrkRxZ80rQVvhlPS=s96-c",
+                                    "https://lh3.googleusercontent.com/a/ALm5wu0eUFYz40jyzbTY6w091bBN4OfbaGie70fs-MN1sA=s96-c",
+                                    "https://lh3.googleusercontent.com/a/ALm5wu38jyuS3wuFGzgUS5EIJhAFlRL0WvsLmrFi0g8H=s96-c",
+                                    "https://lh3.googleusercontent.com/a/ALm5wu3UeSvCMvPgv8PnnbcnOaLcixBUDBOng6t8biogWQ=s96-c",
+                                    "https://lh3.googleusercontent.com/a/ALm5wu20IRwDPLnLirz0GQoeLfl9DOZU3Qrbt46PXRd8iQ=s96-c",
+                                    "https://lh3.googleusercontent.com/a/ALm5wu10Kp_bwBDbZ8PHdN5zla1XdbQvEVb5pNjFBrPMhA=s96-c",
+                                    "https://lh3.googleusercontent.com/a/ALm5wu24023NSQxDmxhRM1m0CtwxMVmvHZe3T2syE05z=s96-c",
+                                    "https://lh3.googleusercontent.com/a/AItbvmlTIcnLWAk3Ep8xozZU48XwfoeFlYtKjoAuzrBw=s96-c",
+                                    "https://lh3.googleusercontent.com/a/ALm5wu0IstKQkHB2jaEfcZhrmOBjLcJXBDMbAXjnZkyI=s96-c",
+                                    "https://lh3.googleusercontent.com/a-/AFdZucrOT9d7asP-HXxcbgFKZf9i1a5PqEXLiVHtxOXM-4Y=s96-c",
+                                    "https://lh3.googleusercontent.com/a/ALm5wu1JunzW9Q35S4vI5UO7NnucyJTvAApUDNLELwSr=s96-c",
+                                    "https://lh3.googleusercontent.com/a/ALm5wu2yVMkTKlkETPFaZAgLZ3m3z_tfcSgzthTDgCGD=s96-c",
+                                    "https://lh3.googleusercontent.com/a/ALm5wu0ZOHhoqZ9_iRXC40H8IFc6L_4_8mFP0PQuIWI6=s96-c",
+                                    "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c",
+                                    "https://lh3.googleusercontent.com/a-/AFdZucrjR4mdGUz5Y2WHMDbHTXRxAJxHOpkOF1nT6awqGw=s96-c"
+                                ]
+                            }
+                        },
+                        "examples": [{
+                            "_id": "5f8634a83a36b417e2f0f15a",
+                            "fullName": "Rizki Alief Irfany",
+                            "photoUrl": "/public/uploads/df609e44f8b317832089c1f39987e728ee17f562eea158f18321c18a00b5c023433513c23fd26fc0719cf6d8f48f25c1a334c8f30eafcd2c33cd8f9e30c7daa7.png"
+                        },
+                        {
+                            "_id": "635000bc2e20d88b28b61c00",
+                            "fullName": "Nanda Dwi Mahendra",
+                            "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu0-LlWrXjcsCDkEQiYetYJvs_MMhzEJePr83uyNxA=s96-c"
+                        },
+                        {
+                            "_id": "635001379411977405a23eda",
+                            "fullName": "Aji Setyawan",
+                            "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu26psG3sLpUkDRa9blKHR_Gu2SitSdQ1LArnaHU=s96-c"
+                        },
+                        {
+                            "_id": "62f63f5d93a55ccbaaaee181",
+                            "fullName": "Moch Nova Setyawan",
+                            "photoUrl": "https://lh3.googleusercontent.com/a-/AFdZucrnAjT3I6nzDMfohdc_LU1GY0dcaVMeXxORykNq=s96-c"
+                        },
+                        {
+                            "_id": "62f65277e646dee8e8cd89d0",
+                            "fullName": "Muhammad Hafizh Abdillah",
+                            "photoUrl": "https://lh3.googleusercontent.com/a-/AFdZucr7Eu9VJ1FQWLBAQIaNCrrm43qhm7krTG_BAJJ2uzg=s96-c"
+                        },
+                        {
+                            "_id": "62f652fa98ae1e904837debf",
+                            "fullName": "nisa khoirun",
+                            "photoUrl": "https://lh3.googleusercontent.com/a-/AFdZucp3YKbkexnApOshS4YCTMudD8UOWLBf2H3RCgF08w=s96-c"
+                        },
+                        {
+                            "_id": "62f60e2ce646dee8e8cd5a65",
+                            "fullName": "Lulu Q.A.",
+                            "photoUrl": "https://lh3.googleusercontent.com/a-/AFdZucoAXeNCaxGmhR75ngyG1TL_SFrkMJIoVcAxgdbzEA=s96-c"
+                        },
+                        {
+                            "_id": "62f6526793a55ccbaaaeec13",
+                            "fullName": "Ghifari Naufal Rahman",
+                            "photoUrl": "https://lh3.googleusercontent.com/a/AItbvmnfmU_tKa9Fz4ArWWve4UGYHrkRxZ80rQVvhlPS=s96-c"
+                        },
+                        {
+                            "_id": "6347b90e699bc04871a852ee",
+                            "fullName": "Muhammad Arbi Minanda",
+                            "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu0eUFYz40jyzbTY6w091bBN4OfbaGie70fs-MN1sA=s96-c"
+                        },
+                        {
+                            "_id": "6346c4937ad5d6eb5b29cd1a",
+                            "fullName": "Fenrisulfr Lokesson",
+                            "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu38jyuS3wuFGzgUS5EIJhAFlRL0WvsLmrFi0g8H=s96-c"
+                        },
+                        {
+                            "_id": "634577107deb4d8ba5ae883e",
+                            "fullName": "Teja Pradipta",
+                            "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu3UeSvCMvPgv8PnnbcnOaLcixBUDBOng6t8biogWQ=s96-c"
+                        },
+                        {
+                            "_id": "6346cd4b699bc04871a76cc3",
+                            "fullName": "Faldi Oberton",
+                            "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu20IRwDPLnLirz0GQoeLfl9DOZU3Qrbt46PXRd8iQ=s96-c"
+                        },
+                        {
+                            "_id": "6346c4917ad5d6eb5b29cd12",
+                            "fullName": "Novika Dian Renanda",
+                            "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu10Kp_bwBDbZ8PHdN5zla1XdbQvEVb5pNjFBrPMhA=s96-c"
+                        },
+                        {
+                            "_id": "6346bfcd57577a1c948a844d",
+                            "fullName": "Anisatun Nafi'ah",
+                            "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu24023NSQxDmxhRM1m0CtwxMVmvHZe3T2syE05z=s96-c"
+                        },
+                        {
+                            "_id": "62f5f90d98ae1e90483795af",
+                            "fullName": "work business58",
+                            "photoUrl": "https://lh3.googleusercontent.com/a/AItbvmlTIcnLWAk3Ep8xozZU48XwfoeFlYtKjoAuzrBw=s96-c"
+                        },
+                        {
+                            "_id": "636639313e7ccfa63708d9fb",
+                            "fullName": "Moch Nova Setyawan",
+                            "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu0IstKQkHB2jaEfcZhrmOBjLcJXBDMbAXjnZkyI=s96-c"
+                        },
+                        {
+                            "_id": "62f64f9298ae1e904837d6f8",
+                            "fullName": "Qori'atul Maghfiroh",
+                            "photoUrl": "https://lh3.googleusercontent.com/a-/AFdZucrOT9d7asP-HXxcbgFKZf9i1a5PqEXLiVHtxOXM-4Y=s96-c"
+                        },
+                        {
+                            "_id": "6360974523737249aa5df5ac",
+                            "fullName": "test device001",
+                            "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu1JunzW9Q35S4vI5UO7NnucyJTvAApUDNLELwSr=s96-c"
+                        },
+                        {
+                            "_id": "6352a5782e20d88b28bcddd8",
+                            "fullName": "QA Testing",
+                            "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2yVMkTKlkETPFaZAgLZ3m3z_tfcSgzthTDgCGD=s96-c"
+                        },
+                        {
+                            "_id": "633fddd364aa3fb18abb4bc4",
+                            "fullName": "Sandi Kurnia",
+                            "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu0ZOHhoqZ9_iRXC40H8IFc6L_4_8mFP0PQuIWI6=s96-c"
+                        },
+                        {
+                            "_id": "636a309d20de7c7a7f116719",
+                            "fullName": "Lulu Q.A.",
+                            "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c"
+                        },
+                        {
+                            "_id": "62f29ec7eebca7d81cfad052",
+                            "fullName": "Sandi Kurnia",
+                            "photoUrl": "https://lh3.googleusercontent.com/a-/AFdZucrjR4mdGUz5Y2WHMDbHTXRxAJxHOpkOF1nT6awqGw=s96-c"
+                        }]
+                    },
+                    "examples": [
+                        [{
+                            "_id": "5f8634a83a36b417e2f0f15a",
+                            "fullName": "Rizki Alief Irfany",
+                            "photoUrl": "/public/uploads/df609e44f8b317832089c1f39987e728ee17f562eea158f18321c18a00b5c023433513c23fd26fc0719cf6d8f48f25c1a334c8f30eafcd2c33cd8f9e30c7daa7.png"
+                        },
+                        {
+                            "_id": "635000bc2e20d88b28b61c00",
+                            "fullName": "Nanda Dwi Mahendra",
+                            "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu0-LlWrXjcsCDkEQiYetYJvs_MMhzEJePr83uyNxA=s96-c"
+                        },
+                        {
+                            "_id": "635001379411977405a23eda",
+                            "fullName": "Aji Setyawan",
+                            "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu26psG3sLpUkDRa9blKHR_Gu2SitSdQ1LArnaHU=s96-c"
+                        },
+                        {
+                            "_id": "62f63f5d93a55ccbaaaee181",
+                            "fullName": "Moch Nova Setyawan",
+                            "photoUrl": "https://lh3.googleusercontent.com/a-/AFdZucrnAjT3I6nzDMfohdc_LU1GY0dcaVMeXxORykNq=s96-c"
+                        },
+                        {
+                            "_id": "62f65277e646dee8e8cd89d0",
+                            "fullName": "Muhammad Hafizh Abdillah",
+                            "photoUrl": "https://lh3.googleusercontent.com/a-/AFdZucr7Eu9VJ1FQWLBAQIaNCrrm43qhm7krTG_BAJJ2uzg=s96-c"
+                        },
+                        {
+                            "_id": "62f652fa98ae1e904837debf",
+                            "fullName": "nisa khoirun",
+                            "photoUrl": "https://lh3.googleusercontent.com/a-/AFdZucp3YKbkexnApOshS4YCTMudD8UOWLBf2H3RCgF08w=s96-c"
+                        },
+                        {
+                            "_id": "62f60e2ce646dee8e8cd5a65",
+                            "fullName": "Lulu Q.A.",
+                            "photoUrl": "https://lh3.googleusercontent.com/a-/AFdZucoAXeNCaxGmhR75ngyG1TL_SFrkMJIoVcAxgdbzEA=s96-c"
+                        },
+                        {
+                            "_id": "62f6526793a55ccbaaaeec13",
+                            "fullName": "Ghifari Naufal Rahman",
+                            "photoUrl": "https://lh3.googleusercontent.com/a/AItbvmnfmU_tKa9Fz4ArWWve4UGYHrkRxZ80rQVvhlPS=s96-c"
+                        },
+                        {
+                            "_id": "6347b90e699bc04871a852ee",
+                            "fullName": "Muhammad Arbi Minanda",
+                            "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu0eUFYz40jyzbTY6w091bBN4OfbaGie70fs-MN1sA=s96-c"
+                        },
+                        {
+                            "_id": "6346c4937ad5d6eb5b29cd1a",
+                            "fullName": "Fenrisulfr Lokesson",
+                            "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu38jyuS3wuFGzgUS5EIJhAFlRL0WvsLmrFi0g8H=s96-c"
+                        },
+                        {
+                            "_id": "634577107deb4d8ba5ae883e",
+                            "fullName": "Teja Pradipta",
+                            "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu3UeSvCMvPgv8PnnbcnOaLcixBUDBOng6t8biogWQ=s96-c"
+                        },
+                        {
+                            "_id": "6346cd4b699bc04871a76cc3",
+                            "fullName": "Faldi Oberton",
+                            "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu20IRwDPLnLirz0GQoeLfl9DOZU3Qrbt46PXRd8iQ=s96-c"
+                        },
+                        {
+                            "_id": "6346c4917ad5d6eb5b29cd12",
+                            "fullName": "Novika Dian Renanda",
+                            "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu10Kp_bwBDbZ8PHdN5zla1XdbQvEVb5pNjFBrPMhA=s96-c"
+                        },
+                        {
+                            "_id": "6346bfcd57577a1c948a844d",
+                            "fullName": "Anisatun Nafi'ah",
+                            "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu24023NSQxDmxhRM1m0CtwxMVmvHZe3T2syE05z=s96-c"
+                        },
+                        {
+                            "_id": "62f5f90d98ae1e90483795af",
+                            "fullName": "work business58",
+                            "photoUrl": "https://lh3.googleusercontent.com/a/AItbvmlTIcnLWAk3Ep8xozZU48XwfoeFlYtKjoAuzrBw=s96-c"
+                        },
+                        {
+                            "_id": "636639313e7ccfa63708d9fb",
+                            "fullName": "Moch Nova Setyawan",
+                            "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu0IstKQkHB2jaEfcZhrmOBjLcJXBDMbAXjnZkyI=s96-c"
+                        },
+                        {
+                            "_id": "62f64f9298ae1e904837d6f8",
+                            "fullName": "Qori'atul Maghfiroh",
+                            "photoUrl": "https://lh3.googleusercontent.com/a-/AFdZucrOT9d7asP-HXxcbgFKZf9i1a5PqEXLiVHtxOXM-4Y=s96-c"
+                        },
+                        {
+                            "_id": "6360974523737249aa5df5ac",
+                            "fullName": "test device001",
+                            "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu1JunzW9Q35S4vI5UO7NnucyJTvAApUDNLELwSr=s96-c"
+                        },
+                        {
+                            "_id": "6352a5782e20d88b28bcddd8",
+                            "fullName": "QA Testing",
+                            "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2yVMkTKlkETPFaZAgLZ3m3z_tfcSgzthTDgCGD=s96-c"
+                        },
+                        {
+                            "_id": "633fddd364aa3fb18abb4bc4",
+                            "fullName": "Sandi Kurnia",
+                            "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu0ZOHhoqZ9_iRXC40H8IFc6L_4_8mFP0PQuIWI6=s96-c"
+                        },
+                        {
+                            "_id": "636a309d20de7c7a7f116719",
+                            "fullName": "Lulu Q.A.",
+                            "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c"
+                        },
+                        {
+                            "_id": "62f29ec7eebca7d81cfad052",
+                            "fullName": "Sandi Kurnia",
+                            "photoUrl": "https://lh3.googleusercontent.com/a-/AFdZucrjR4mdGUz5Y2WHMDbHTXRxAJxHOpkOF1nT6awqGw=s96-c"
+                        }]
+                    ]
+                },
+                "teams": {
+                    "type": "array",
+                    "default": [],
+                    "title": "The teams Schema",
+                    "items": {
+                        "type": "string",
+                        "title": "A Schema",
+                        "examples": [
+                            "61ebaf065080f41e1cdde13c",
+                            "61efb3e8d746c2346531daf7",
+                            "63745f460a02aab479f53d95",
+                            "63745f87fef0c6ab2e2b20a6"
+                        ]
+                    },
+                    "examples": [
+                        ["61ebaf065080f41e1cdde13c",
+                            "61efb3e8d746c2346531daf7",
+                            "63745f460a02aab479f53d95",
+                            "63745f87fef0c6ab2e2b20a6"
+                        ]
+                    ]
+                },
+                "name": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The name Schema",
+                    "examples": [
+                        "Sekolah QA Cilsy"
+                    ]
+                },
+                "desc": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The desc Schema",
+                    "examples": [
+                        "belajar QA di cilsy aja"
+                    ]
+                },
+                "membersJoined": {
+                    "type": "array",
+                    "default": [],
+                    "title": "The membersJoined Schema",
+                    "items": {
+                        "type": "object",
+                        "default": {},
+                        "title": "A Schema",
+                        "required": [
+                            "_id",
+                            "member",
+                            "joinedAt"
+                        ],
+                        "properties": {
+                            "_id": {
+                                "type": "string",
+                                "default": "",
+                                "title": "The _id Schema",
+                                "examples": [
+                                    "61ebaf9d557677d467bd60c8"
+                                ]
+                            },
+                            "member": {
+                                "type": "string",
+                                "default": "",
+                                "title": "The member Schema",
+                                "examples": [
+                                    "5f8634a83a36b417e2f0f15a"
+                                ]
+                            },
+                            "joinedAt": {
+                                "type": "string",
+                                "default": "",
+                                "title": "The joinedAt Schema",
+                                "examples": [
+                                    "2022-01-22T07:17:49.028Z"
+                                ]
+                            }
+                        },
+                        "examples": [{
+                            "_id": "61ebaf9d557677d467bd60c8",
+                            "member": "5f8634a83a36b417e2f0f15a",
+                            "joinedAt": "2022-01-22T07:17:49.028Z"
+                        }]
+                    },
+                    "examples": [
+                        [{
+                            "_id": "61ebaf9d557677d467bd60c8",
+                            "member": "5f8634a83a36b417e2f0f15a",
+                            "joinedAt": "2022-01-22T07:17:49.028Z"
+                        }]
+                    ]
+                },
+                "createdAt": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The createdAt Schema",
+                    "examples": [
+                        "2022-01-22T06:23:04.507Z"
+                    ]
+                },
+                "updatedAt": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The updatedAt Schema",
+                    "examples": [
+                        "2022-11-16T03:56:55.645Z"
+                    ]
+                },
+                "__v": {
+                    "type": "integer",
+                    "default": 0,
+                    "title": "The __v Schema",
+                    "examples": [
+                        0
+                    ]
+                }
+            },
+            "examples": [{
+                "_id": "61eba2c85080f47b25ddc8f8",
+                "workloadCapacityDefault": {
+                    "value": 7,
+                    "measurement": "Hours"
+                },
+                "logo": "https://storage.googleapis.com/production-cicle-app/61eba2c85080f47b25ddc8f8/c9030fb4ab8f92019eda8f6459b89f9e/Logo_Main_QA.png",
+                "admins": [
+                    "5f8640963a36b417e2f0f166"
+                ],
+                "members": [{
+                    "_id": "5f8634a83a36b417e2f0f15a",
+                    "fullName": "Rizki Alief Irfany",
+                    "photoUrl": "/public/uploads/df609e44f8b317832089c1f39987e728ee17f562eea158f18321c18a00b5c023433513c23fd26fc0719cf6d8f48f25c1a334c8f30eafcd2c33cd8f9e30c7daa7.png"
+                },
+                {
+                    "_id": "635000bc2e20d88b28b61c00",
+                    "fullName": "Nanda Dwi Mahendra",
+                    "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu0-LlWrXjcsCDkEQiYetYJvs_MMhzEJePr83uyNxA=s96-c"
+                },
+                {
+                    "_id": "635001379411977405a23eda",
+                    "fullName": "Aji Setyawan",
+                    "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu26psG3sLpUkDRa9blKHR_Gu2SitSdQ1LArnaHU=s96-c"
+                },
+                {
+                    "_id": "62f63f5d93a55ccbaaaee181",
+                    "fullName": "Moch Nova Setyawan",
+                    "photoUrl": "https://lh3.googleusercontent.com/a-/AFdZucrnAjT3I6nzDMfohdc_LU1GY0dcaVMeXxORykNq=s96-c"
+                },
+                {
+                    "_id": "62f65277e646dee8e8cd89d0",
+                    "fullName": "Muhammad Hafizh Abdillah",
+                    "photoUrl": "https://lh3.googleusercontent.com/a-/AFdZucr7Eu9VJ1FQWLBAQIaNCrrm43qhm7krTG_BAJJ2uzg=s96-c"
+                },
+                {
+                    "_id": "62f652fa98ae1e904837debf",
+                    "fullName": "nisa khoirun",
+                    "photoUrl": "https://lh3.googleusercontent.com/a-/AFdZucp3YKbkexnApOshS4YCTMudD8UOWLBf2H3RCgF08w=s96-c"
+                },
+                {
+                    "_id": "62f60e2ce646dee8e8cd5a65",
+                    "fullName": "Lulu Q.A.",
+                    "photoUrl": "https://lh3.googleusercontent.com/a-/AFdZucoAXeNCaxGmhR75ngyG1TL_SFrkMJIoVcAxgdbzEA=s96-c"
+                },
+                {
+                    "_id": "62f6526793a55ccbaaaeec13",
+                    "fullName": "Ghifari Naufal Rahman",
+                    "photoUrl": "https://lh3.googleusercontent.com/a/AItbvmnfmU_tKa9Fz4ArWWve4UGYHrkRxZ80rQVvhlPS=s96-c"
+                },
+                {
+                    "_id": "6347b90e699bc04871a852ee",
+                    "fullName": "Muhammad Arbi Minanda",
+                    "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu0eUFYz40jyzbTY6w091bBN4OfbaGie70fs-MN1sA=s96-c"
+                },
+                {
+                    "_id": "6346c4937ad5d6eb5b29cd1a",
+                    "fullName": "Fenrisulfr Lokesson",
+                    "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu38jyuS3wuFGzgUS5EIJhAFlRL0WvsLmrFi0g8H=s96-c"
+                },
+                {
+                    "_id": "634577107deb4d8ba5ae883e",
+                    "fullName": "Teja Pradipta",
+                    "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu3UeSvCMvPgv8PnnbcnOaLcixBUDBOng6t8biogWQ=s96-c"
+                },
+                {
+                    "_id": "6346cd4b699bc04871a76cc3",
+                    "fullName": "Faldi Oberton",
+                    "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu20IRwDPLnLirz0GQoeLfl9DOZU3Qrbt46PXRd8iQ=s96-c"
+                },
+                {
+                    "_id": "6346c4917ad5d6eb5b29cd12",
+                    "fullName": "Novika Dian Renanda",
+                    "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu10Kp_bwBDbZ8PHdN5zla1XdbQvEVb5pNjFBrPMhA=s96-c"
+                },
+                {
+                    "_id": "6346bfcd57577a1c948a844d",
+                    "fullName": "Anisatun Nafi'ah",
+                    "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu24023NSQxDmxhRM1m0CtwxMVmvHZe3T2syE05z=s96-c"
+                },
+                {
+                    "_id": "62f5f90d98ae1e90483795af",
+                    "fullName": "work business58",
+                    "photoUrl": "https://lh3.googleusercontent.com/a/AItbvmlTIcnLWAk3Ep8xozZU48XwfoeFlYtKjoAuzrBw=s96-c"
+                },
+                {
+                    "_id": "636639313e7ccfa63708d9fb",
+                    "fullName": "Moch Nova Setyawan",
+                    "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu0IstKQkHB2jaEfcZhrmOBjLcJXBDMbAXjnZkyI=s96-c"
+                },
+                {
+                    "_id": "62f64f9298ae1e904837d6f8",
+                    "fullName": "Qori'atul Maghfiroh",
+                    "photoUrl": "https://lh3.googleusercontent.com/a-/AFdZucrOT9d7asP-HXxcbgFKZf9i1a5PqEXLiVHtxOXM-4Y=s96-c"
+                },
+                {
+                    "_id": "6360974523737249aa5df5ac",
+                    "fullName": "test device001",
+                    "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu1JunzW9Q35S4vI5UO7NnucyJTvAApUDNLELwSr=s96-c"
+                },
+                {
+                    "_id": "6352a5782e20d88b28bcddd8",
+                    "fullName": "QA Testing",
+                    "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2yVMkTKlkETPFaZAgLZ3m3z_tfcSgzthTDgCGD=s96-c"
+                },
+                {
+                    "_id": "633fddd364aa3fb18abb4bc4",
+                    "fullName": "Sandi Kurnia",
+                    "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu0ZOHhoqZ9_iRXC40H8IFc6L_4_8mFP0PQuIWI6=s96-c"
+                },
+                {
+                    "_id": "636a309d20de7c7a7f116719",
+                    "fullName": "Lulu Q.A.",
+                    "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c"
+                },
+                {
+                    "_id": "62f29ec7eebca7d81cfad052",
+                    "fullName": "Sandi Kurnia",
+                    "photoUrl": "https://lh3.googleusercontent.com/a-/AFdZucrjR4mdGUz5Y2WHMDbHTXRxAJxHOpkOF1nT6awqGw=s96-c"
+                }],
+                "teams": [
+                    "61ebaf065080f41e1cdde13c",
+                    "61efb3e8d746c2346531daf7",
+                    "63745f460a02aab479f53d95",
+                    "63745f87fef0c6ab2e2b20a6"
+                ],
+                "name": "Sekolah QA Cilsy",
+                "desc": "belajar QA di cilsy aja",
+                "membersJoined": [{
+                    "_id": "61ebaf9d557677d467bd60c8",
+                    "member": "5f8634a83a36b417e2f0f15a",
+                    "joinedAt": "2022-01-22T07:17:49.028Z"
+                }],
+                "createdAt": "2022-01-22T06:23:04.507Z",
+                "updatedAt": "2022-11-16T03:56:55.645Z",
+                "__v": 0
+            }]
+        }
+    },
+    "examples": [{
+        "message": "Get Blast Detail successful",
+        "blast": {
+            "_id": "6373b898fef0c6ab2e29fb18",
+            "posts": [],
+            "createdAt": "2022-11-15T16:04:40.669Z",
+            "updatedAt": "2022-11-15T16:04:40.669Z",
+            "__v": 0
+        },
+        "currentTeam": {
+            "archived": {
+                "status": false
+            },
+            "_id": "6373b898fef0c6ab2e29fa9e",
+            "name": "Lulu's Team",
+            "desc": "Team for API testing",
+            "members": [{
+                "_id": "636a309d20de7c7a7f116719",
+                "googleId": "114498059136746820038",
+                "email": "luluqatesting@gmail.com",
+                "fullName": "Lulu Q.A.",
+                "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c",
+                "bio": "student",
+                "status": "a lifelong learner",
+                "companies": [],
+                "createdAt": "2022-11-08T10:34:05.472Z",
+                "updatedAt": "2022-11-16T04:10:59.597Z",
+                "__v": 0,
+                "defaultCompany": "637456a0fef0c6ab2e2b11c1",
+                "password": "$2b$10$BR5s8..DXywQAfQXjnPBUudk2woxi2/7ntP07Q0/1IUd8912DxbDS"
+            }],
+            "boards": [{
+                "_id": "6373b898fef0c6ab2e29fb16",
+                "name": "Kanban Board",
+                "desc": "Track progress with this Kanban-styled board",
+                "lists": [],
+                "labels": [],
+                "createdAt": "2022-11-15T16:04:40.669Z",
+                "updatedAt": "2022-11-15T16:04:40.669Z",
+                "__v": 0
+            }],
+            "type": "team",
+            "createdAt": "2022-11-15T16:04:40.656Z",
+            "updatedAt": "2022-11-15T16:04:40.682Z",
+            "__v": 0,
+            "blast": {
+                "_id": "6373b898fef0c6ab2e29fb18",
+                "posts": [],
+                "createdAt": "2022-11-15T16:04:40.669Z",
+                "updatedAt": "2022-11-15T16:04:40.669Z",
+                "__v": 0
+            },
+            "bucket": {
+                "archived": {
+                    "status": false
+                },
+                "_id": "6373b898fef0c6ab2e29fb1b",
+                "docs": [],
+                "buckets": [],
+                "files": [],
+                "title": "Docs \u0026 Files",
+                "type": "main",
+                "isPublic": true,
+                "subscribers": [],
+                "createdAt": "2022-11-15T16:04:40.670Z",
+                "updatedAt": "2022-11-15T16:04:40.670Z",
+                "__v": 0
+            },
+            "checkIn": {
+                "_id": "6373b898fef0c6ab2e29fb19",
+                "questions": [],
+                "createdAt": "2022-11-15T16:04:40.669Z",
+                "updatedAt": "2022-11-15T16:04:40.669Z",
+                "__v": 0
+            },
+            "groupChat": {
+                "_id": "6373b898fef0c6ab2e29fb17",
+                "messages": [{
+                    "_id": "63744d6afef0c6ab2e2b0069",
+                    "content": "",
+                    "creator": {
+                        "_id": "636a309d20de7c7a7f116719",
+                        "googleId": "114498059136746820038",
+                        "email": "luluqatesting@gmail.com",
+                        "fullName": "Lulu Q.A.",
+                        "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c",
+                        "bio": "student",
+                        "status": "a lifelong learner",
+                        "companies": [],
+                        "createdAt": "2022-11-08T10:34:05.472Z",
+                        "updatedAt": "2022-11-16T04:10:59.597Z",
+                        "__v": 0,
+                        "defaultCompany": "637456a0fef0c6ab2e2b11c1",
+                        "password": "$2b$10$BR5s8..DXywQAfQXjnPBUudk2woxi2/7ntP07Q0/1IUd8912DxbDS"
+                    },
+                    "isDeleted": false,
+                    "createdAt": "2022-11-16T02:39:38.763Z",
+                    "updatedAt": "2022-11-16T02:39:38.763Z",
+                    "__v": 0
+                },
+                {
+                    "_id": "63744ca7fef0c6ab2e2afb83",
+                    "content": "",
+                    "creator": {
+                        "_id": "636a309d20de7c7a7f116719",
+                        "googleId": "114498059136746820038",
+                        "email": "luluqatesting@gmail.com",
+                        "fullName": "Lulu Q.A.",
+                        "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c",
+                        "bio": "student",
+                        "status": "a lifelong learner",
+                        "companies": [],
+                        "createdAt": "2022-11-08T10:34:05.472Z",
+                        "updatedAt": "2022-11-16T04:10:59.597Z",
+                        "__v": 0,
+                        "defaultCompany": "637456a0fef0c6ab2e2b11c1",
+                        "password": "$2b$10$BR5s8..DXywQAfQXjnPBUudk2woxi2/7ntP07Q0/1IUd8912DxbDS"
+                    },
+                    "isDeleted": false,
+                    "createdAt": "2022-11-16T02:36:23.709Z",
+                    "updatedAt": "2022-11-16T02:36:23.709Z",
+                    "__v": 0
+                },
+                {
+                    "_id": "63744b8a66ccc7048fa0240c",
+                    "content": "This message was deleted",
+                    "creator": {
+                        "_id": "636a309d20de7c7a7f116719",
+                        "googleId": "114498059136746820038",
+                        "email": "luluqatesting@gmail.com",
+                        "fullName": "Lulu Q.A.",
+                        "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c",
+                        "bio": "student",
+                        "status": "a lifelong learner",
+                        "companies": [],
+                        "createdAt": "2022-11-08T10:34:05.472Z",
+                        "updatedAt": "2022-11-16T04:10:59.597Z",
+                        "__v": 0,
+                        "defaultCompany": "637456a0fef0c6ab2e2b11c1",
+                        "password": "$2b$10$BR5s8..DXywQAfQXjnPBUudk2woxi2/7ntP07Q0/1IUd8912DxbDS"
+                    },
+                    "isDeleted": true,
+                    "createdAt": "2022-11-16T02:31:38.159Z",
+                    "updatedAt": "2022-11-16T02:48:53.349Z",
+                    "__v": 0,
+                    "deletedAt": "2022-11-16T02:48:53.348Z"
+                },
+                {
+                    "_id": "63744abdfef0c6ab2e2af3e2",
+                    "content": "\u003cp\u003eIni pesan Lulu melalui API\u003c/p\u003e",
+                    "creator": {
+                        "_id": "636a309d20de7c7a7f116719",
+                        "googleId": "114498059136746820038",
+                        "email": "luluqatesting@gmail.com",
+                        "fullName": "Lulu Q.A.",
+                        "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c",
+                        "bio": "student",
+                        "status": "a lifelong learner",
+                        "companies": [],
+                        "createdAt": "2022-11-08T10:34:05.472Z",
+                        "updatedAt": "2022-11-16T04:10:59.597Z",
+                        "__v": 0,
+                        "defaultCompany": "637456a0fef0c6ab2e2b11c1",
+                        "password": "$2b$10$BR5s8..DXywQAfQXjnPBUudk2woxi2/7ntP07Q0/1IUd8912DxbDS"
+                    },
+                    "isDeleted": false,
+                    "createdAt": "2022-11-16T02:28:13.082Z",
+                    "updatedAt": "2022-11-16T02:28:13.082Z",
+                    "__v": 0
+                }],
+                "attachments": [],
+                "createdAt": "2022-11-15T16:04:40.669Z",
+                "updatedAt": "2022-11-16T02:39:38.770Z",
+                "__v": 0
+            },
+            "schedule": {
+                "googleCalendar": {
+                    "calendarId": null,
+                    "aclRuleId": null,
+                    "calendarIcsLink": null,
+                    "calendarHtmlLink": null
+                },
+                "_id": "6373b898fef0c6ab2e29fb1a",
+                "events": [],
+                "setPublic": false,
+                "createdAt": "2022-11-15T16:04:40.669Z",
+                "updatedAt": "2022-11-15T16:04:40.669Z",
+                "__v": 0
+            }
+        },
+        "currentCompany": {
+            "_id": "61eba2c85080f47b25ddc8f8",
+            "workloadCapacityDefault": {
+                "value": 7,
+                "measurement": "Hours"
+            },
+            "logo": "https://storage.googleapis.com/production-cicle-app/61eba2c85080f47b25ddc8f8/c9030fb4ab8f92019eda8f6459b89f9e/Logo_Main_QA.png",
+            "admins": [
+                "5f8640963a36b417e2f0f166"
+            ],
+            "members": [{
+                "_id": "5f8634a83a36b417e2f0f15a",
+                "fullName": "Rizki Alief Irfany",
+                "photoUrl": "/public/uploads/df609e44f8b317832089c1f39987e728ee17f562eea158f18321c18a00b5c023433513c23fd26fc0719cf6d8f48f25c1a334c8f30eafcd2c33cd8f9e30c7daa7.png"
+            },
+            {
+                "_id": "635000bc2e20d88b28b61c00",
+                "fullName": "Nanda Dwi Mahendra",
+                "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu0-LlWrXjcsCDkEQiYetYJvs_MMhzEJePr83uyNxA=s96-c"
+            },
+            {
+                "_id": "635001379411977405a23eda",
+                "fullName": "Aji Setyawan",
+                "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu26psG3sLpUkDRa9blKHR_Gu2SitSdQ1LArnaHU=s96-c"
+            },
+            {
+                "_id": "62f63f5d93a55ccbaaaee181",
+                "fullName": "Moch Nova Setyawan",
+                "photoUrl": "https://lh3.googleusercontent.com/a-/AFdZucrnAjT3I6nzDMfohdc_LU1GY0dcaVMeXxORykNq=s96-c"
+            },
+            {
+                "_id": "62f65277e646dee8e8cd89d0",
+                "fullName": "Muhammad Hafizh Abdillah",
+                "photoUrl": "https://lh3.googleusercontent.com/a-/AFdZucr7Eu9VJ1FQWLBAQIaNCrrm43qhm7krTG_BAJJ2uzg=s96-c"
+            },
+            {
+                "_id": "62f652fa98ae1e904837debf",
+                "fullName": "nisa khoirun",
+                "photoUrl": "https://lh3.googleusercontent.com/a-/AFdZucp3YKbkexnApOshS4YCTMudD8UOWLBf2H3RCgF08w=s96-c"
+            },
+            {
+                "_id": "62f60e2ce646dee8e8cd5a65",
+                "fullName": "Lulu Q.A.",
+                "photoUrl": "https://lh3.googleusercontent.com/a-/AFdZucoAXeNCaxGmhR75ngyG1TL_SFrkMJIoVcAxgdbzEA=s96-c"
+            },
+            {
+                "_id": "62f6526793a55ccbaaaeec13",
+                "fullName": "Ghifari Naufal Rahman",
+                "photoUrl": "https://lh3.googleusercontent.com/a/AItbvmnfmU_tKa9Fz4ArWWve4UGYHrkRxZ80rQVvhlPS=s96-c"
+            },
+            {
+                "_id": "6347b90e699bc04871a852ee",
+                "fullName": "Muhammad Arbi Minanda",
+                "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu0eUFYz40jyzbTY6w091bBN4OfbaGie70fs-MN1sA=s96-c"
+            },
+            {
+                "_id": "6346c4937ad5d6eb5b29cd1a",
+                "fullName": "Fenrisulfr Lokesson",
+                "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu38jyuS3wuFGzgUS5EIJhAFlRL0WvsLmrFi0g8H=s96-c"
+            },
+            {
+                "_id": "634577107deb4d8ba5ae883e",
+                "fullName": "Teja Pradipta",
+                "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu3UeSvCMvPgv8PnnbcnOaLcixBUDBOng6t8biogWQ=s96-c"
+            },
+            {
+                "_id": "6346cd4b699bc04871a76cc3",
+                "fullName": "Faldi Oberton",
+                "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu20IRwDPLnLirz0GQoeLfl9DOZU3Qrbt46PXRd8iQ=s96-c"
+            },
+            {
+                "_id": "6346c4917ad5d6eb5b29cd12",
+                "fullName": "Novika Dian Renanda",
+                "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu10Kp_bwBDbZ8PHdN5zla1XdbQvEVb5pNjFBrPMhA=s96-c"
+            },
+            {
+                "_id": "6346bfcd57577a1c948a844d",
+                "fullName": "Anisatun Nafi'ah",
+                "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu24023NSQxDmxhRM1m0CtwxMVmvHZe3T2syE05z=s96-c"
+            },
+            {
+                "_id": "62f5f90d98ae1e90483795af",
+                "fullName": "work business58",
+                "photoUrl": "https://lh3.googleusercontent.com/a/AItbvmlTIcnLWAk3Ep8xozZU48XwfoeFlYtKjoAuzrBw=s96-c"
+            },
+            {
+                "_id": "636639313e7ccfa63708d9fb",
+                "fullName": "Moch Nova Setyawan",
+                "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu0IstKQkHB2jaEfcZhrmOBjLcJXBDMbAXjnZkyI=s96-c"
+            },
+            {
+                "_id": "62f64f9298ae1e904837d6f8",
+                "fullName": "Qori'atul Maghfiroh",
+                "photoUrl": "https://lh3.googleusercontent.com/a-/AFdZucrOT9d7asP-HXxcbgFKZf9i1a5PqEXLiVHtxOXM-4Y=s96-c"
+            },
+            {
+                "_id": "6360974523737249aa5df5ac",
+                "fullName": "test device001",
+                "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu1JunzW9Q35S4vI5UO7NnucyJTvAApUDNLELwSr=s96-c"
+            },
+            {
+                "_id": "6352a5782e20d88b28bcddd8",
+                "fullName": "QA Testing",
+                "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2yVMkTKlkETPFaZAgLZ3m3z_tfcSgzthTDgCGD=s96-c"
+            },
+            {
+                "_id": "633fddd364aa3fb18abb4bc4",
+                "fullName": "Sandi Kurnia",
+                "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu0ZOHhoqZ9_iRXC40H8IFc6L_4_8mFP0PQuIWI6=s96-c"
+            },
+            {
+                "_id": "636a309d20de7c7a7f116719",
+                "fullName": "Lulu Q.A.",
+                "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c"
+            },
+            {
+                "_id": "62f29ec7eebca7d81cfad052",
+                "fullName": "Sandi Kurnia",
+                "photoUrl": "https://lh3.googleusercontent.com/a-/AFdZucrjR4mdGUz5Y2WHMDbHTXRxAJxHOpkOF1nT6awqGw=s96-c"
+            }],
+            "teams": [
+                "61ebaf065080f41e1cdde13c",
+                "61efb3e8d746c2346531daf7",
+                "63745f460a02aab479f53d95",
+                "63745f87fef0c6ab2e2b20a6"
+            ],
+            "name": "Sekolah QA Cilsy",
+            "desc": "belajar QA di cilsy aja",
+            "membersJoined": [{
+                "_id": "61ebaf9d557677d467bd60c8",
+                "member": "5f8634a83a36b417e2f0f15a",
+                "joinedAt": "2022-01-22T07:17:49.028Z"
+            }],
+            "createdAt": "2022-01-22T06:23:04.507Z",
+            "updatedAt": "2022-11-16T03:56:55.645Z",
+            "__v": 0
+        }
+    }]
+}

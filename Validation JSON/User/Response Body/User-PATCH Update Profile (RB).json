@@ -1,0 +1,21 @@
+{
+  "message":"Successfully update user",
+  "user":{
+    "_id":"636a309d20de7c7a7f116719",
+    "googleId":"114498059136746820038",
+    "email":"luluqatesting@gmail.com",
+    "fullName":"Lulu Q.A.",
+    "photoUrl":"https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c",
+    "bio":"student",
+    "status":"a lifelong learner",
+    "companies":[
+    ],
+    "createdAt":"2022-11-08T10:34:05.472Z",
+    "updatedAt":"2022-11-16T04:08:19.404Z",
+    "__v":0,
+    "defaultCompany":{
+      "_id":"637456a0fef0c6ab2e2b11c1"
+    }
+  },
+  "token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjYzNmEzMDlkMjBkZTdjN2E3ZjExNjcxOSIsImdvb2dsZUlkIjoiMTE0NDk4MDU5MTM2NzQ2ODIwMDM4IiwiZW1haWwiOiJsdWx1cWF0ZXN0aW5nQGdtYWlsLmNvbSIsImZ1bGxOYW1lIjoiTHVsdSBRLkEuIiwicGhvdG9VcmwiOiJodHRwczovL2xoMy5nb29nbGV1c2VyY29udGVudC5jb20vYS9BTG01d3UyaFZrb2JyZDE0YnE4a3ctR0hYTG12U3hLMzBFX3pkRzMwd05EVj1zOTYtYyIsImJpbyI6InN0dWRlbnQiLCJzdGF0dXMiOiJhIGxpZmVsb25nIGxlYXJuZXIiLCJjb21wYW5pZXMiOltdLCJjcmVhdGVkQXQiOiIyMDIyLTExLTA4VDEwOjM0OjA1LjQ3MloiLCJ1cGRhdGVkQXQiOiIyMDIyLTExLTE2VDA0OjA4OjE5LjQwNFoiLCJfX3YiOjAsImRlZmF1bHRDb21wYW55Ijp7Il9pZCI6IjYzNzQ1NmEwZmVmMGM2YWIyZTJiMTFjMSJ9fSwiaWF0IjoxNjY4NTcxNjk5LCJleHAiOjE2NzExNjM2OTl9.UxH60rez37w-2SVEEPzJ9l6ttOfv6vjOFeHABE237Ng"
+}

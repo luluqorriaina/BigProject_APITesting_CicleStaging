@@ -1,0 +1,27 @@
+{
+  "message":"Creating sub task is success",
+  "checklist":{
+    "name":"Main Parent Task 1",
+    "card":"6374a269fef0c6ab2e2d68a4",
+    "startDate":"2022-07-19T13:58:18.000Z",
+    "dueDate":"2022-07-20T13:58:18.000Z",
+    "checklists":[
+    ],
+    "complete":{
+      "status":false,
+      "type":null
+    },
+    "creator":"636a309d20de7c7a7f116719",
+    "type":"mainParent",
+    "isNotified":{
+      "startOneHour":false,
+      "startOneDay":false,
+      "dueOneHour":false,
+      "dueOneDay":false
+    },
+    "_id":"6375242066ccc7048fbc1cd6",
+    "createdAt":"2022-11-16T17:55:44.979Z",
+    "updatedAt":"2022-11-16T17:55:44.979Z",
+    "__v":0
+  }
+}

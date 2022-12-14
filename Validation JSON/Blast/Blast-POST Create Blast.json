@@ -1,0 +1,465 @@
+{
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "default": {},
+    "title": "Root Schema",
+    "required": [
+        "message",
+        "blast"
+    ],
+    "properties": {
+        "message": {
+            "type": "string",
+            "default": "",
+            "title": "The message Schema",
+            "examples": [
+                "Create post successful"
+            ]
+        },
+        "blast": {
+            "type": "object",
+            "default": {},
+            "title": "The blast Schema",
+            "required": [
+                "_id",
+                "posts",
+                "createdAt",
+                "updatedAt",
+                "__v"
+            ],
+            "properties": {
+                "_id": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The _id Schema",
+                    "examples": [
+                        "6373b898fef0c6ab2e29fb18"
+                    ]
+                },
+                "posts": {
+                    "type": "array",
+                    "default": [],
+                    "title": "The posts Schema",
+                    "items": {
+                        "type": "object",
+                        "default": {},
+                        "title": "A Schema",
+                        "required": [
+                            "_id",
+                            "title",
+                            "content",
+                            "creator",
+                            "comments",
+                            "cheers",
+                            "subscribers",
+                            "archived",
+                            "isPublic",
+                            "autoComplete",
+                            "isNotified",
+                            "complete",
+                            "createdAt",
+                            "updatedAt",
+                            "__v"
+                        ],
+                        "properties": {
+                            "_id": {
+                                "type": "string",
+                                "default": "",
+                                "title": "The _id Schema",
+                                "examples": [
+                                    "63747d20fef0c6ab2e2b6723"
+                                ]
+                            },
+                            "title": {
+                                "type": "string",
+                                "default": "",
+                                "title": "The title Schema",
+                                "examples": [
+                                    "Blast Lulu API"
+                                ]
+                            },
+                            "content": {
+                                "type": "string",
+                                "default": "",
+                                "title": "The content Schema",
+                                "examples": [
+                                    "\u003cp\u003eAPI testing\u003c/p\u003e"
+                                ]
+                            },
+                            "creator": {
+                                "type": "object",
+                                "default": {},
+                                "title": "The creator Schema",
+                                "required": [
+                                    "_id",
+                                    "fullName",
+                                    "photoUrl"
+                                ],
+                                "properties": {
+                                    "_id": {
+                                        "type": "string",
+                                        "default": "",
+                                        "title": "The _id Schema",
+                                        "examples": [
+                                            "636a309d20de7c7a7f116719"
+                                        ]
+                                    },
+                                    "fullName": {
+                                        "type": "string",
+                                        "default": "",
+                                        "title": "The fullName Schema",
+                                        "examples": [
+                                            "Lulu Q.A."
+                                        ]
+                                    },
+                                    "photoUrl": {
+                                        "type": "string",
+                                        "default": "",
+                                        "title": "The photoUrl Schema",
+                                        "examples": [
+                                            "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c"
+                                        ]
+                                    }
+                                },
+                                "examples": [{
+                                    "_id": "636a309d20de7c7a7f116719",
+                                    "fullName": "Lulu Q.A.",
+                                    "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c"
+                                }]
+                            },
+                            "comments": {
+                                "type": "array",
+                                "default": [],
+                                "title": "The comments Schema",
+                                "items": {},
+                                "examples": [
+                                    []
+                                ]
+                            },
+                            "cheers": {
+                                "type": "array",
+                                "default": [],
+                                "title": "The cheers Schema",
+                                "items": {},
+                                "examples": [
+                                    []
+                                ]
+                            },
+                            "subscribers": {
+                                "type": "array",
+                                "default": [],
+                                "title": "The subscribers Schema",
+                                "items": {},
+                                "examples": [
+                                    []
+                                ]
+                            },
+                            "archived": {
+                                "type": "object",
+                                "default": {},
+                                "title": "The archived Schema",
+                                "required": [
+                                    "status"
+                                ],
+                                "properties": {
+                                    "status": {
+                                        "type": "boolean",
+                                        "default": false,
+                                        "title": "The status Schema",
+                                        "examples": [
+                                            false
+                                        ]
+                                    }
+                                },
+                                "examples": [{
+                                    "status": false
+                                }]
+                            },
+                            "isPublic": {
+                                "type": "boolean",
+                                "default": false,
+                                "title": "The isPublic Schema",
+                                "examples": [
+                                    true
+                                ]
+                            },
+                            "autoComplete": {
+                                "type": "object",
+                                "default": {},
+                                "title": "The autoComplete Schema",
+                                "required": [
+                                    "status",
+                                    "date"
+                                ],
+                                "properties": {
+                                    "status": {
+                                        "type": "boolean",
+                                        "default": false,
+                                        "title": "The status Schema",
+                                        "examples": [
+                                            true
+                                        ]
+                                    },
+                                    "date": {
+                                        "type": "string",
+                                        "default": "",
+                                        "title": "The date Schema",
+                                        "examples": [
+                                            "2021-09-28T12:39:00.000Z"
+                                        ]
+                                    }
+                                },
+                                "examples": [{
+                                    "status": true,
+                                    "date": "2021-09-28T12:39:00.000Z"
+                                }]
+                            },
+                            "isNotified": {
+                                "type": "object",
+                                "default": {},
+                                "title": "The isNotified Schema",
+                                "required": [
+                                    "dueOneHour",
+                                    "dueOneDay"
+                                ],
+                                "properties": {
+                                    "dueOneHour": {
+                                        "type": "boolean",
+                                        "default": false,
+                                        "title": "The dueOneHour Schema",
+                                        "examples": [
+                                            false
+                                        ]
+                                    },
+                                    "dueOneDay": {
+                                        "type": "boolean",
+                                        "default": false,
+                                        "title": "The dueOneDay Schema",
+                                        "examples": [
+                                            false
+                                        ]
+                                    }
+                                },
+                                "examples": [{
+                                    "dueOneHour": false,
+                                    "dueOneDay": false
+                                }]
+                            },
+                            "complete": {
+                                "type": "object",
+                                "default": {},
+                                "title": "The complete Schema",
+                                "required": [
+                                    "status"
+                                ],
+                                "properties": {
+                                    "status": {
+                                        "type": "boolean",
+                                        "default": false,
+                                        "title": "The status Schema",
+                                        "examples": [
+                                            false
+                                        ]
+                                    }
+                                },
+                                "examples": [{
+                                    "status": false
+                                }]
+                            },
+                            "createdAt": {
+                                "type": "string",
+                                "default": "",
+                                "title": "The createdAt Schema",
+                                "examples": [
+                                    "2022-11-16T06:03:12.359Z"
+                                ]
+                            },
+                            "updatedAt": {
+                                "type": "string",
+                                "default": "",
+                                "title": "The updatedAt Schema",
+                                "examples": [
+                                    "2022-11-16T06:03:12.359Z"
+                                ]
+                            },
+                            "__v": {
+                                "type": "integer",
+                                "default": 0,
+                                "title": "The __v Schema",
+                                "examples": [
+                                    0
+                                ]
+                            }
+                        },
+                        "examples": [{
+                            "_id": "63747d20fef0c6ab2e2b6723",
+                            "title": "Blast Lulu API",
+                            "content": "\u003cp\u003eAPI testing\u003c/p\u003e",
+                            "creator": {
+                                "_id": "636a309d20de7c7a7f116719",
+                                "fullName": "Lulu Q.A.",
+                                "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c"
+                            },
+                            "comments": [],
+                            "cheers": [],
+                            "subscribers": [],
+                            "archived": {
+                                "status": false
+                            },
+                            "isPublic": true,
+                            "autoComplete": {
+                                "status": true,
+                                "date": "2021-09-28T12:39:00.000Z"
+                            },
+                            "isNotified": {
+                                "dueOneHour": false,
+                                "dueOneDay": false
+                            },
+                            "complete": {
+                                "status": false
+                            },
+                            "createdAt": "2022-11-16T06:03:12.359Z",
+                            "updatedAt": "2022-11-16T06:03:12.359Z",
+                            "__v": 0
+                        }]
+                    },
+                    "examples": [
+                        [{
+                            "_id": "63747d20fef0c6ab2e2b6723",
+                            "title": "Blast Lulu API",
+                            "content": "\u003cp\u003eAPI testing\u003c/p\u003e",
+                            "creator": {
+                                "_id": "636a309d20de7c7a7f116719",
+                                "fullName": "Lulu Q.A.",
+                                "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c"
+                            },
+                            "comments": [],
+                            "cheers": [],
+                            "subscribers": [],
+                            "archived": {
+                                "status": false
+                            },
+                            "isPublic": true,
+                            "autoComplete": {
+                                "status": true,
+                                "date": "2021-09-28T12:39:00.000Z"
+                            },
+                            "isNotified": {
+                                "dueOneHour": false,
+                                "dueOneDay": false
+                            },
+                            "complete": {
+                                "status": false
+                            },
+                            "createdAt": "2022-11-16T06:03:12.359Z",
+                            "updatedAt": "2022-11-16T06:03:12.359Z",
+                            "__v": 0
+                        }]
+                    ]
+                },
+                "createdAt": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The createdAt Schema",
+                    "examples": [
+                        "2022-11-15T16:04:40.669Z"
+                    ]
+                },
+                "updatedAt": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The updatedAt Schema",
+                    "examples": [
+                        "2022-11-16T06:03:12.367Z"
+                    ]
+                },
+                "__v": {
+                    "type": "integer",
+                    "default": 0,
+                    "title": "The __v Schema",
+                    "examples": [
+                        0
+                    ]
+                }
+            },
+            "examples": [{
+                "_id": "6373b898fef0c6ab2e29fb18",
+                "posts": [{
+                    "_id": "63747d20fef0c6ab2e2b6723",
+                    "title": "Blast Lulu API",
+                    "content": "\u003cp\u003eAPI testing\u003c/p\u003e",
+                    "creator": {
+                        "_id": "636a309d20de7c7a7f116719",
+                        "fullName": "Lulu Q.A.",
+                        "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c"
+                    },
+                    "comments": [],
+                    "cheers": [],
+                    "subscribers": [],
+                    "archived": {
+                        "status": false
+                    },
+                    "isPublic": true,
+                    "autoComplete": {
+                        "status": true,
+                        "date": "2021-09-28T12:39:00.000Z"
+                    },
+                    "isNotified": {
+                        "dueOneHour": false,
+                        "dueOneDay": false
+                    },
+                    "complete": {
+                        "status": false
+                    },
+                    "createdAt": "2022-11-16T06:03:12.359Z",
+                    "updatedAt": "2022-11-16T06:03:12.359Z",
+                    "__v": 0
+                }],
+                "createdAt": "2022-11-15T16:04:40.669Z",
+                "updatedAt": "2022-11-16T06:03:12.367Z",
+                "__v": 0
+            }]
+        }
+    },
+    "examples": [{
+        "message": "Create post successful",
+        "blast": {
+            "_id": "6373b898fef0c6ab2e29fb18",
+            "posts": [{
+                "_id": "63747d20fef0c6ab2e2b6723",
+                "title": "Blast Lulu API",
+                "content": "\u003cp\u003eAPI testing\u003c/p\u003e",
+                "creator": {
+                    "_id": "636a309d20de7c7a7f116719",
+                    "fullName": "Lulu Q.A.",
+                    "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c"
+                },
+                "comments": [],
+                "cheers": [],
+                "subscribers": [],
+                "archived": {
+                    "status": false
+                },
+                "isPublic": true,
+                "autoComplete": {
+                    "status": true,
+                    "date": "2021-09-28T12:39:00.000Z"
+                },
+                "isNotified": {
+                    "dueOneHour": false,
+                    "dueOneDay": false
+                },
+                "complete": {
+                    "status": false
+                },
+                "createdAt": "2022-11-16T06:03:12.359Z",
+                "updatedAt": "2022-11-16T06:03:12.359Z",
+                "__v": 0
+            }],
+            "createdAt": "2022-11-15T16:04:40.669Z",
+            "updatedAt": "2022-11-16T06:03:12.367Z",
+            "__v": 0
+        }
+    }]
+}

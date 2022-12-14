@@ -1,0 +1,370 @@
+{
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "default": {},
+    "title": "Root Schema",
+    "required": [
+        "message",
+        "data"
+    ],
+    "properties": {
+        "message": {
+            "type": "string",
+            "default": "",
+            "title": "The message Schema",
+            "examples": [
+                "Creating card is success"
+            ]
+        },
+        "data": {
+            "type": "object",
+            "default": {},
+            "title": "The data Schema",
+            "required": [
+                "name",
+                "creator",
+                "members",
+                "checklists",
+                "cheers",
+                "comments",
+                "labels",
+                "attachments",
+                "complete",
+                "isNotified",
+                "archived",
+                "isPublic",
+                "workload",
+                "_id",
+                "createdAt",
+                "updatedAt",
+                "__v"
+            ],
+            "properties": {
+                "name": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The name Schema",
+                    "examples": [
+                        "New card from API"
+                    ]
+                },
+                "creator": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The creator Schema",
+                    "examples": [
+                        "636a309d20de7c7a7f116719"
+                    ]
+                },
+                "members": {
+                    "type": "array",
+                    "default": [],
+                    "title": "The members Schema",
+                    "items": {
+                        "type": "string",
+                        "default": "",
+                        "title": "A Schema",
+                        "examples": [
+                            "636a309d20de7c7a7f116719"
+                        ]
+                    },
+                    "examples": [
+                        [
+                            "636a309d20de7c7a7f116719"]
+                    ]
+                },
+                "checklists": {
+                    "type": "array",
+                    "default": [],
+                    "title": "The checklists Schema",
+                    "items": {},
+                    "examples": [
+                        []
+                    ]
+                },
+                "cheers": {
+                    "type": "array",
+                    "default": [],
+                    "title": "The cheers Schema",
+                    "items": {},
+                    "examples": [
+                        []
+                    ]
+                },
+                "comments": {
+                    "type": "array",
+                    "default": [],
+                    "title": "The comments Schema",
+                    "items": {},
+                    "examples": [
+                        []
+                    ]
+                },
+                "labels": {
+                    "type": "array",
+                    "default": [],
+                    "title": "The labels Schema",
+                    "items": {},
+                    "examples": [
+                        []
+                    ]
+                },
+                "attachments": {
+                    "type": "array",
+                    "default": [],
+                    "title": "The attachments Schema",
+                    "items": {},
+                    "examples": [
+                        []
+                    ]
+                },
+                "complete": {
+                    "type": "object",
+                    "default": {},
+                    "title": "The complete Schema",
+                    "required": [
+                        "status",
+                        "type"
+                    ],
+                    "properties": {
+                        "status": {
+                            "type": "boolean",
+                            "default": false,
+                            "title": "The status Schema",
+                            "examples": [
+                                false
+                            ]
+                        },
+                        "type": {
+                            "type": "null",
+                            "default": null,
+                            "title": "The type Schema",
+                            "examples": [
+                                null
+                            ]
+                        }
+                    },
+                    "examples": [{
+                        "status": false,
+                        "type": null
+                    }]
+                },
+                "isNotified": {
+                    "type": "object",
+                    "default": {},
+                    "title": "The isNotified Schema",
+                    "required": [
+                        "startOneHour",
+                        "startOneDay",
+                        "dueOneHour",
+                        "dueOneDay"
+                    ],
+                    "properties": {
+                        "startOneHour": {
+                            "type": "boolean",
+                            "default": false,
+                            "title": "The startOneHour Schema",
+                            "examples": [
+                                false
+                            ]
+                        },
+                        "startOneDay": {
+                            "type": "boolean",
+                            "default": false,
+                            "title": "The startOneDay Schema",
+                            "examples": [
+                                false
+                            ]
+                        },
+                        "dueOneHour": {
+                            "type": "boolean",
+                            "default": false,
+                            "title": "The dueOneHour Schema",
+                            "examples": [
+                                false
+                            ]
+                        },
+                        "dueOneDay": {
+                            "type": "boolean",
+                            "default": false,
+                            "title": "The dueOneDay Schema",
+                            "examples": [
+                                false
+                            ]
+                        }
+                    },
+                    "examples": [{
+                        "startOneHour": false,
+                        "startOneDay": false,
+                        "dueOneHour": false,
+                        "dueOneDay": false
+                    }]
+                },
+                "archived": {
+                    "type": "object",
+                    "default": {},
+                    "title": "The archived Schema",
+                    "required": [
+                        "status"
+                    ],
+                    "properties": {
+                        "status": {
+                            "type": "boolean",
+                            "default": false,
+                            "title": "The status Schema",
+                            "examples": [
+                                false
+                            ]
+                        }
+                    },
+                    "examples": [{
+                        "status": false
+                    }]
+                },
+                "isPublic": {
+                    "type": "boolean",
+                    "default": false,
+                    "title": "The isPublic Schema",
+                    "examples": [
+                        true
+                    ]
+                },
+                "workload": {
+                    "type": "object",
+                    "default": {},
+                    "title": "The workload Schema",
+                    "required": [
+                        "value",
+                        "measurement"
+                    ],
+                    "properties": {
+                        "value": {
+                            "type": "null",
+                            "default": null,
+                            "title": "The value Schema",
+                            "examples": [
+                                null
+                            ]
+                        },
+                        "measurement": {
+                            "type": "string",
+                            "default": "",
+                            "title": "The measurement Schema",
+                            "examples": [
+                                "Hours"
+                            ]
+                        }
+                    },
+                    "examples": [{
+                        "value": null,
+                        "measurement": "Hours"
+                    }]
+                },
+                "_id": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The _id Schema",
+                    "examples": [
+                        "6374a269fef0c6ab2e2d68a4"
+                    ]
+                },
+                "createdAt": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The createdAt Schema",
+                    "examples": [
+                        "2022-11-16T08:42:17.352Z"
+                    ]
+                },
+                "updatedAt": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The updatedAt Schema",
+                    "examples": [
+                        "2022-11-16T08:42:17.352Z"
+                    ]
+                },
+                "__v": {
+                    "type": "integer",
+                    "default": 0,
+                    "title": "The __v Schema",
+                    "examples": [
+                        0
+                    ]
+                }
+            },
+            "examples": [{
+                "name": "New card from API",
+                "creator": "636a309d20de7c7a7f116719",
+                "members": [
+                    "636a309d20de7c7a7f116719"
+                ],
+                "checklists": [],
+                "cheers": [],
+                "comments": [],
+                "labels": [],
+                "attachments": [],
+                "complete": {
+                    "status": false,
+                    "type": null
+                },
+                "isNotified": {
+                    "startOneHour": false,
+                    "startOneDay": false,
+                    "dueOneHour": false,
+                    "dueOneDay": false
+                },
+                "archived": {
+                    "status": false
+                },
+                "isPublic": true,
+                "workload": {
+                    "value": null,
+                    "measurement": "Hours"
+                },
+                "_id": "6374a269fef0c6ab2e2d68a4",
+                "createdAt": "2022-11-16T08:42:17.352Z",
+                "updatedAt": "2022-11-16T08:42:17.352Z",
+                "__v": 0
+            }]
+        }
+    },
+    "examples": [{
+        "message": "Creating card is success",
+        "data": {
+            "name": "New card from API",
+            "creator": "636a309d20de7c7a7f116719",
+            "members": [
+                "636a309d20de7c7a7f116719"
+            ],
+            "checklists": [],
+            "cheers": [],
+            "comments": [],
+            "labels": [],
+            "attachments": [],
+            "complete": {
+                "status": false,
+                "type": null
+            },
+            "isNotified": {
+                "startOneHour": false,
+                "startOneDay": false,
+                "dueOneHour": false,
+                "dueOneDay": false
+            },
+            "archived": {
+                "status": false
+            },
+            "isPublic": true,
+            "workload": {
+                "value": null,
+                "measurement": "Hours"
+            },
+            "_id": "6374a269fef0c6ab2e2d68a4",
+            "createdAt": "2022-11-16T08:42:17.352Z",
+            "updatedAt": "2022-11-16T08:42:17.352Z",
+            "__v": 0
+        }
+    }]
+}

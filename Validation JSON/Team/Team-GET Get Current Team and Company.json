@@ -1,0 +1,849 @@
+{
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "default": {},
+    "title": "Root Schema",
+    "required": [
+        "currentTeam"
+    ],
+    "properties": {
+        "currentTeam": {
+            "type": "object",
+            "default": {},
+            "title": "The currentTeam Schema",
+            "required": [
+                "_id",
+                "name",
+                "desc",
+                "members",
+                "boards",
+                "type",
+                "archived",
+                "createdAt",
+                "updatedAt",
+                "__v",
+                "blast",
+                "bucket",
+                "checkIn",
+                "groupChat",
+                "schedule"
+            ],
+            "properties": {
+                "_id": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The _id Schema",
+                    "examples": [
+                        "6373b898fef0c6ab2e29fa9e"
+                    ]
+                },
+                "name": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The name Schema",
+                    "examples": [
+                        "Lulu's Team"
+                    ]
+                },
+                "desc": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The desc Schema",
+                    "examples": [
+                        "Team for API testing"
+                    ]
+                },
+                "members": {
+                    "type": "array",
+                    "default": [],
+                    "title": "The members Schema",
+                    "items": {
+                        "type": "object",
+                        "default": {},
+                        "title": "A Schema",
+                        "required": [
+                            "_id",
+                            "email",
+                            "fullName",
+                            "photoUrl"
+                        ],
+                        "properties": {
+                            "_id": {
+                                "type": "string",
+                                "default": "",
+                                "title": "The _id Schema",
+                                "examples": [
+                                    "636a309d20de7c7a7f116719"
+                                ]
+                            },
+                            "email": {
+                                "type": "string",
+                                "default": "",
+                                "title": "The email Schema",
+                                "examples": [
+                                    "luluqatesting@gmail.com"
+                                ]
+                            },
+                            "fullName": {
+                                "type": "string",
+                                "default": "",
+                                "title": "The fullName Schema",
+                                "examples": [
+                                    "Lulu Qorri Aina"
+                                ]
+                            },
+                            "photoUrl": {
+                                "type": "string",
+                                "default": "",
+                                "title": "The photoUrl Schema",
+                                "examples": [
+                                    "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c"
+                                ]
+                            }
+                        },
+                        "examples": [{
+                            "_id": "636a309d20de7c7a7f116719",
+                            "email": "luluqatesting@gmail.com",
+                            "fullName": "Lulu Qorri Aina",
+                            "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c"
+                        }]
+                    },
+                    "examples": [
+                        [{
+                            "_id": "636a309d20de7c7a7f116719",
+                            "email": "luluqatesting@gmail.com",
+                            "fullName": "Lulu Qorri Aina",
+                            "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c"
+                        }]
+                    ]
+                },
+                "boards": {
+                    "type": "array",
+                    "default": [],
+                    "title": "The boards Schema",
+                    "items": {
+                        "type": "object",
+                        "default": {},
+                        "title": "A Schema",
+                        "required": [
+                            "_id",
+                            "name",
+                            "desc",
+                            "lists"
+                        ],
+                        "properties": {
+                            "_id": {
+                                "type": "string",
+                                "default": "",
+                                "title": "The _id Schema",
+                                "examples": [
+                                    "6373b898fef0c6ab2e29fb16"
+                                ]
+                            },
+                            "name": {
+                                "type": "string",
+                                "default": "",
+                                "title": "The name Schema",
+                                "examples": [
+                                    "Kanban Board"
+                                ]
+                            },
+                            "desc": {
+                                "type": "string",
+                                "default": "",
+                                "title": "The desc Schema",
+                                "examples": [
+                                    "Track progress with this Kanban-styled board"
+                                ]
+                            },
+                            "lists": {
+                                "type": "array",
+                                "default": [],
+                                "title": "The lists Schema",
+                                "items": {},
+                                "examples": [
+                                    []
+                                ]
+                            }
+                        },
+                        "examples": [{
+                            "_id": "6373b898fef0c6ab2e29fb16",
+                            "name": "Kanban Board",
+                            "desc": "Track progress with this Kanban-styled board",
+                            "lists": []
+                        }]
+                    },
+                    "examples": [
+                        [{
+                            "_id": "6373b898fef0c6ab2e29fb16",
+                            "name": "Kanban Board",
+                            "desc": "Track progress with this Kanban-styled board",
+                            "lists": []
+                        }]
+                    ]
+                },
+                "type": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The type Schema",
+                    "examples": [
+                        "team"
+                    ]
+                },
+                "archived": {
+                    "type": "object",
+                    "default": {},
+                    "title": "The archived Schema",
+                    "required": [
+                        "status"
+                    ],
+                    "properties": {
+                        "status": {
+                            "type": "boolean",
+                            "default": false,
+                            "title": "The status Schema",
+                            "examples": [
+                                false
+                            ]
+                        }
+                    },
+                    "examples": [{
+                        "status": false
+                    }]
+                },
+                "createdAt": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The createdAt Schema",
+                    "examples": [
+                        "2022-11-15T16:04:40.656Z"
+                    ]
+                },
+                "updatedAt": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The updatedAt Schema",
+                    "examples": [
+                        "2022-11-15T16:04:40.682Z"
+                    ]
+                },
+                "__v": {
+                    "type": "integer",
+                    "default": 0,
+                    "title": "The __v Schema",
+                    "examples": [
+                        0
+                    ]
+                },
+                "blast": {
+                    "type": "object",
+                    "default": {},
+                    "title": "The blast Schema",
+                    "required": [
+                        "_id",
+                        "posts",
+                        "createdAt",
+                        "updatedAt"
+                    ],
+                    "properties": {
+                        "_id": {
+                            "type": "string",
+                            "default": "",
+                            "title": "The _id Schema",
+                            "examples": [
+                                "6373b898fef0c6ab2e29fb18"
+                            ]
+                        },
+                        "posts": {
+                            "type": "array",
+                            "default": [],
+                            "title": "The posts Schema",
+                            "items": {},
+                            "examples": [
+                                []
+                            ]
+                        },
+                        "createdAt": {
+                            "type": "string",
+                            "default": "",
+                            "title": "The createdAt Schema",
+                            "examples": [
+                                "2022-11-15T16:04:40.669Z"
+                            ]
+                        },
+                        "updatedAt": {
+                            "type": "string",
+                            "default": "",
+                            "title": "The updatedAt Schema",
+                            "examples": [
+                                "2022-11-15T16:04:40.669Z"
+                            ]
+                        }
+                    },
+                    "examples": [{
+                        "_id": "6373b898fef0c6ab2e29fb18",
+                        "posts": [],
+                        "createdAt": "2022-11-15T16:04:40.669Z",
+                        "updatedAt": "2022-11-15T16:04:40.669Z"
+                    }]
+                },
+                "bucket": {
+                    "type": "object",
+                    "default": {},
+                    "title": "The bucket Schema",
+                    "required": [
+                        "_id",
+                        "docs",
+                        "buckets",
+                        "files",
+                        "title",
+                        "type",
+                        "archived",
+                        "isPublic",
+                        "subscribers",
+                        "createdAt",
+                        "updatedAt",
+                        "__v"
+                    ],
+                    "properties": {
+                        "_id": {
+                            "type": "string",
+                            "default": "",
+                            "title": "The _id Schema",
+                            "examples": [
+                                "6373b898fef0c6ab2e29fb1b"
+                            ]
+                        },
+                        "docs": {
+                            "type": "array",
+                            "default": [],
+                            "title": "The docs Schema",
+                            "items": {},
+                            "examples": [
+                                []
+                            ]
+                        },
+                        "buckets": {
+                            "type": "array",
+                            "default": [],
+                            "title": "The buckets Schema",
+                            "items": {},
+                            "examples": [
+                                []
+                            ]
+                        },
+                        "files": {
+                            "type": "array",
+                            "default": [],
+                            "title": "The files Schema",
+                            "items": {},
+                            "examples": [
+                                []
+                            ]
+                        },
+                        "title": {
+                            "type": "string",
+                            "default": "",
+                            "title": "The title Schema",
+                            "examples": [
+                                "Docs \u0026 Files"
+                            ]
+                        },
+                        "type": {
+                            "type": "string",
+                            "default": "",
+                            "title": "The type Schema",
+                            "examples": [
+                                "main"
+                            ]
+                        },
+                        "archived": {
+                            "type": "object",
+                            "default": {},
+                            "title": "The archived Schema",
+                            "required": [
+                                "status"
+                            ],
+                            "properties": {
+                                "status": {
+                                    "type": "boolean",
+                                    "default": false,
+                                    "title": "The status Schema",
+                                    "examples": [
+                                        false
+                                    ]
+                                }
+                            },
+                            "examples": [{
+                                "status": false
+                            }]
+                        },
+                        "isPublic": {
+                            "type": "boolean",
+                            "default": false,
+                            "title": "The isPublic Schema",
+                            "examples": [
+                                true
+                            ]
+                        },
+                        "subscribers": {
+                            "type": "array",
+                            "default": [],
+                            "title": "The subscribers Schema",
+                            "items": {},
+                            "examples": [
+                                []
+                            ]
+                        },
+                        "createdAt": {
+                            "type": "string",
+                            "default": "",
+                            "title": "The createdAt Schema",
+                            "examples": [
+                                "2022-11-15T16:04:40.670Z"
+                            ]
+                        },
+                        "updatedAt": {
+                            "type": "string",
+                            "default": "",
+                            "title": "The updatedAt Schema",
+                            "examples": [
+                                "2022-11-15T16:04:40.670Z"
+                            ]
+                        },
+                        "__v": {
+                            "type": "integer",
+                            "default": 0,
+                            "title": "The __v Schema",
+                            "examples": [
+                                0
+                            ]
+                        }
+                    },
+                    "examples": [{
+                        "_id": "6373b898fef0c6ab2e29fb1b",
+                        "docs": [],
+                        "buckets": [],
+                        "files": [],
+                        "title": "Docs \u0026 Files",
+                        "type": "main",
+                        "archived": {
+                            "status": false
+                        },
+                        "isPublic": true,
+                        "subscribers": [],
+                        "createdAt": "2022-11-15T16:04:40.670Z",
+                        "updatedAt": "2022-11-15T16:04:40.670Z",
+                        "__v": 0
+                    }]
+                },
+                "checkIn": {
+                    "type": "object",
+                    "default": {},
+                    "title": "The checkIn Schema",
+                    "required": [
+                        "_id",
+                        "questions"
+                    ],
+                    "properties": {
+                        "_id": {
+                            "type": "string",
+                            "default": "",
+                            "title": "The _id Schema",
+                            "examples": [
+                                "6373b898fef0c6ab2e29fb19"
+                            ]
+                        },
+                        "questions": {
+                            "type": "array",
+                            "default": [],
+                            "title": "The questions Schema",
+                            "items": {},
+                            "examples": [
+                                []
+                            ]
+                        }
+                    },
+                    "examples": [{
+                        "_id": "6373b898fef0c6ab2e29fb19",
+                        "questions": []
+                    }]
+                },
+                "groupChat": {
+                    "type": "object",
+                    "default": {},
+                    "title": "The groupChat Schema",
+                    "required": [
+                        "_id",
+                        "messages",
+                        "attachments",
+                        "createdAt",
+                        "updatedAt",
+                        "__v"
+                    ],
+                    "properties": {
+                        "_id": {
+                            "type": "string",
+                            "default": "",
+                            "title": "The _id Schema",
+                            "examples": [
+                                "6373b898fef0c6ab2e29fb17"
+                            ]
+                        },
+                        "messages": {
+                            "type": "array",
+                            "default": [],
+                            "title": "The messages Schema",
+                            "items": {},
+                            "examples": [
+                                []
+                            ]
+                        },
+                        "attachments": {
+                            "type": "array",
+                            "default": [],
+                            "title": "The attachments Schema",
+                            "items": {},
+                            "examples": [
+                                []
+                            ]
+                        },
+                        "createdAt": {
+                            "type": "string",
+                            "default": "",
+                            "title": "The createdAt Schema",
+                            "examples": [
+                                "2022-11-15T16:04:40.669Z"
+                            ]
+                        },
+                        "updatedAt": {
+                            "type": "string",
+                            "default": "",
+                            "title": "The updatedAt Schema",
+                            "examples": [
+                                "2022-11-15T16:04:40.669Z"
+                            ]
+                        },
+                        "__v": {
+                            "type": "integer",
+                            "default": 0,
+                            "title": "The __v Schema",
+                            "examples": [
+                                0
+                            ]
+                        }
+                    },
+                    "examples": [{
+                        "_id": "6373b898fef0c6ab2e29fb17",
+                        "messages": [],
+                        "attachments": [],
+                        "createdAt": "2022-11-15T16:04:40.669Z",
+                        "updatedAt": "2022-11-15T16:04:40.669Z",
+                        "__v": 0
+                    }]
+                },
+                "schedule": {
+                    "type": "object",
+                    "default": {},
+                    "title": "The schedule Schema",
+                    "required": [
+                        "_id",
+                        "googleCalendar",
+                        "events",
+                        "setPublic",
+                        "createdAt",
+                        "updatedAt",
+                        "__v",
+                        "fromDate",
+                        "untilDate"
+                    ],
+                    "properties": {
+                        "_id": {
+                            "type": "string",
+                            "default": "",
+                            "title": "The _id Schema",
+                            "examples": [
+                                "6373b898fef0c6ab2e29fb1a"
+                            ]
+                        },
+                        "googleCalendar": {
+                            "type": "object",
+                            "default": {},
+                            "title": "The googleCalendar Schema",
+                            "required": [
+                                "calendarId",
+                                "aclRuleId",
+                                "calendarIcsLink",
+                                "calendarHtmlLink"
+                            ],
+                            "properties": {
+                                "calendarId": {
+                                    "type": "null",
+                                    "default": null,
+                                    "title": "The calendarId Schema",
+                                    "examples": [
+                                        null
+                                    ]
+                                },
+                                "aclRuleId": {
+                                    "type": "null",
+                                    "default": null,
+                                    "title": "The aclRuleId Schema",
+                                    "examples": [
+                                        null
+                                    ]
+                                },
+                                "calendarIcsLink": {
+                                    "type": "null",
+                                    "default": null,
+                                    "title": "The calendarIcsLink Schema",
+                                    "examples": [
+                                        null
+                                    ]
+                                },
+                                "calendarHtmlLink": {
+                                    "type": "null",
+                                    "default": null,
+                                    "title": "The calendarHtmlLink Schema",
+                                    "examples": [
+                                        null
+                                    ]
+                                }
+                            },
+                            "examples": [{
+                                "calendarId": null,
+                                "aclRuleId": null,
+                                "calendarIcsLink": null,
+                                "calendarHtmlLink": null
+                            }]
+                        },
+                        "events": {
+                            "type": "array",
+                            "default": [],
+                            "title": "The events Schema",
+                            "items": {},
+                            "examples": [
+                                []
+                            ]
+                        },
+                        "setPublic": {
+                            "type": "boolean",
+                            "default": false,
+                            "title": "The setPublic Schema",
+                            "examples": [
+                                false
+                            ]
+                        },
+                        "createdAt": {
+                            "type": "string",
+                            "default": "",
+                            "title": "The createdAt Schema",
+                            "examples": [
+                                "2022-11-15T16:04:40.669Z"
+                            ]
+                        },
+                        "updatedAt": {
+                            "type": "string",
+                            "default": "",
+                            "title": "The updatedAt Schema",
+                            "examples": [
+                                "2022-11-15T16:04:40.669Z"
+                            ]
+                        },
+                        "__v": {
+                            "type": "integer",
+                            "default": 0,
+                            "title": "The __v Schema",
+                            "examples": [
+                                0
+                            ]
+                        },
+                        "fromDate": {
+                            "type": "string",
+                            "default": "",
+                            "title": "The fromDate Schema",
+                            "examples": [
+                                "2022-11-15T18:21:17.549Z"
+                            ]
+                        },
+                        "untilDate": {
+                            "type": "string",
+                            "default": "",
+                            "title": "The untilDate Schema",
+                            "examples": [
+                                "2022-12-16T18:21:17.549Z"
+                            ]
+                        }
+                    },
+                    "examples": [{
+                        "_id": "6373b898fef0c6ab2e29fb1a",
+                        "googleCalendar": {
+                            "calendarId": null,
+                            "aclRuleId": null,
+                            "calendarIcsLink": null,
+                            "calendarHtmlLink": null
+                        },
+                        "events": [],
+                        "setPublic": false,
+                        "createdAt": "2022-11-15T16:04:40.669Z",
+                        "updatedAt": "2022-11-15T16:04:40.669Z",
+                        "__v": 0,
+                        "fromDate": "2022-11-15T18:21:17.549Z",
+                        "untilDate": "2022-12-16T18:21:17.549Z"
+                    }]
+                }
+            },
+            "examples": [{
+                "_id": "6373b898fef0c6ab2e29fa9e",
+                "name": "Lulu's Team",
+                "desc": "Team for API testing",
+                "members": [{
+                    "_id": "636a309d20de7c7a7f116719",
+                    "email": "luluqatesting@gmail.com",
+                    "fullName": "Lulu Qorri Aina",
+                    "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c"
+                }],
+                "boards": [{
+                    "_id": "6373b898fef0c6ab2e29fb16",
+                    "name": "Kanban Board",
+                    "desc": "Track progress with this Kanban-styled board",
+                    "lists": []
+                }],
+                "type": "team",
+                "archived": {
+                    "status": false
+                },
+                "createdAt": "2022-11-15T16:04:40.656Z",
+                "updatedAt": "2022-11-15T16:04:40.682Z",
+                "__v": 0,
+                "blast": {
+                    "_id": "6373b898fef0c6ab2e29fb18",
+                    "posts": [],
+                    "createdAt": "2022-11-15T16:04:40.669Z",
+                    "updatedAt": "2022-11-15T16:04:40.669Z"
+                },
+                "bucket": {
+                    "_id": "6373b898fef0c6ab2e29fb1b",
+                    "docs": [],
+                    "buckets": [],
+                    "files": [],
+                    "title": "Docs \u0026 Files",
+                    "type": "main",
+                    "archived": {
+                        "status": false
+                    },
+                    "isPublic": true,
+                    "subscribers": [],
+                    "createdAt": "2022-11-15T16:04:40.670Z",
+                    "updatedAt": "2022-11-15T16:04:40.670Z",
+                    "__v": 0
+                },
+                "checkIn": {
+                    "_id": "6373b898fef0c6ab2e29fb19",
+                    "questions": []
+                },
+                "groupChat": {
+                    "_id": "6373b898fef0c6ab2e29fb17",
+                    "messages": [],
+                    "attachments": [],
+                    "createdAt": "2022-11-15T16:04:40.669Z",
+                    "updatedAt": "2022-11-15T16:04:40.669Z",
+                    "__v": 0
+                },
+                "schedule": {
+                    "_id": "6373b898fef0c6ab2e29fb1a",
+                    "googleCalendar": {
+                        "calendarId": null,
+                        "aclRuleId": null,
+                        "calendarIcsLink": null,
+                        "calendarHtmlLink": null
+                    },
+                    "events": [],
+                    "setPublic": false,
+                    "createdAt": "2022-11-15T16:04:40.669Z",
+                    "updatedAt": "2022-11-15T16:04:40.669Z",
+                    "__v": 0,
+                    "fromDate": "2022-11-15T18:21:17.549Z",
+                    "untilDate": "2022-12-16T18:21:17.549Z"
+                }
+            }]
+        }
+    },
+    "examples": [{
+        "currentTeam": {
+            "_id": "6373b898fef0c6ab2e29fa9e",
+            "name": "Lulu's Team",
+            "desc": "Team for API testing",
+            "members": [{
+                "_id": "636a309d20de7c7a7f116719",
+                "email": "luluqatesting@gmail.com",
+                "fullName": "Lulu Qorri Aina",
+                "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c"
+            }],
+            "boards": [{
+                "_id": "6373b898fef0c6ab2e29fb16",
+                "name": "Kanban Board",
+                "desc": "Track progress with this Kanban-styled board",
+                "lists": []
+            }],
+            "type": "team",
+            "archived": {
+                "status": false
+            },
+            "createdAt": "2022-11-15T16:04:40.656Z",
+            "updatedAt": "2022-11-15T16:04:40.682Z",
+            "__v": 0,
+            "blast": {
+                "_id": "6373b898fef0c6ab2e29fb18",
+                "posts": [],
+                "createdAt": "2022-11-15T16:04:40.669Z",
+                "updatedAt": "2022-11-15T16:04:40.669Z"
+            },
+            "bucket": {
+                "_id": "6373b898fef0c6ab2e29fb1b",
+                "docs": [],
+                "buckets": [],
+                "files": [],
+                "title": "Docs \u0026 Files",
+                "type": "main",
+                "archived": {
+                    "status": false
+                },
+                "isPublic": true,
+                "subscribers": [],
+                "createdAt": "2022-11-15T16:04:40.670Z",
+                "updatedAt": "2022-11-15T16:04:40.670Z",
+                "__v": 0
+            },
+            "checkIn": {
+                "_id": "6373b898fef0c6ab2e29fb19",
+                "questions": []
+            },
+            "groupChat": {
+                "_id": "6373b898fef0c6ab2e29fb17",
+                "messages": [],
+                "attachments": [],
+                "createdAt": "2022-11-15T16:04:40.669Z",
+                "updatedAt": "2022-11-15T16:04:40.669Z",
+                "__v": 0
+            },
+            "schedule": {
+                "_id": "6373b898fef0c6ab2e29fb1a",
+                "googleCalendar": {
+                    "calendarId": null,
+                    "aclRuleId": null,
+                    "calendarIcsLink": null,
+                    "calendarHtmlLink": null
+                },
+                "events": [],
+                "setPublic": false,
+                "createdAt": "2022-11-15T16:04:40.669Z",
+                "updatedAt": "2022-11-15T16:04:40.669Z",
+                "__v": 0,
+                "fromDate": "2022-11-15T18:21:17.549Z",
+                "untilDate": "2022-12-16T18:21:17.549Z"
+            }
+        }
+    }]
+}

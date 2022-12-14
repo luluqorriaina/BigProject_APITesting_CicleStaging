@@ -1,0 +1,263 @@
+{
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "default": {},
+    "title": "Root Schema",
+    "required": [
+        "message",
+        "checklist"
+    ],
+    "properties": {
+        "message": {
+            "type": "string",
+            "default": "",
+            "title": "The message Schema",
+            "examples": [
+                "Creating sub task is success"
+            ]
+        },
+        "checklist": {
+            "type": "object",
+            "default": {},
+            "title": "The checklist Schema",
+            "required": [
+                "name",
+                "card",
+                "startDate",
+                "dueDate",
+                "checklists",
+                "complete",
+                "creator",
+                "type",
+                "isNotified",
+                "_id",
+                "createdAt",
+                "updatedAt",
+                "__v"
+            ],
+            "properties": {
+                "name": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The name Schema",
+                    "examples": [
+                        "Main Parent Task 1"
+                    ]
+                },
+                "card": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The card Schema",
+                    "examples": [
+                        "6374a269fef0c6ab2e2d68a4"
+                    ]
+                },
+                "startDate": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The startDate Schema",
+                    "examples": [
+                        "2022-07-19T13:58:18.000Z"
+                    ]
+                },
+                "dueDate": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The dueDate Schema",
+                    "examples": [
+                        "2022-07-20T13:58:18.000Z"
+                    ]
+                },
+                "checklists": {
+                    "type": "array",
+                    "default": [],
+                    "title": "The checklists Schema",
+                    "items": {},
+                    "examples": [
+                        []
+                    ]
+                },
+                "complete": {
+                    "type": "object",
+                    "default": {},
+                    "title": "The complete Schema",
+                    "required": [
+                        "status",
+                        "type"
+                    ],
+                    "properties": {
+                        "status": {
+                            "type": "boolean",
+                            "default": false,
+                            "title": "The status Schema",
+                            "examples": [
+                                false
+                            ]
+                        },
+                        "type": {
+                            "type": "null",
+                            "default": null,
+                            "title": "The type Schema",
+                            "examples": [
+                                null
+                            ]
+                        }
+                    },
+                    "examples": [{
+                        "status": false,
+                        "type": null
+                    }]
+                },
+                "creator": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The creator Schema",
+                    "examples": [
+                        "636a309d20de7c7a7f116719"
+                    ]
+                },
+                "type": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The type Schema",
+                    "examples": [
+                        "mainParent"
+                    ]
+                },
+                "isNotified": {
+                    "type": "object",
+                    "default": {},
+                    "title": "The isNotified Schema",
+                    "required": [
+                        "startOneHour",
+                        "startOneDay",
+                        "dueOneHour",
+                        "dueOneDay"
+                    ],
+                    "properties": {
+                        "startOneHour": {
+                            "type": "boolean",
+                            "default": false,
+                            "title": "The startOneHour Schema",
+                            "examples": [
+                                false
+                            ]
+                        },
+                        "startOneDay": {
+                            "type": "boolean",
+                            "default": false,
+                            "title": "The startOneDay Schema",
+                            "examples": [
+                                false
+                            ]
+                        },
+                        "dueOneHour": {
+                            "type": "boolean",
+                            "default": false,
+                            "title": "The dueOneHour Schema",
+                            "examples": [
+                                false
+                            ]
+                        },
+                        "dueOneDay": {
+                            "type": "boolean",
+                            "default": false,
+                            "title": "The dueOneDay Schema",
+                            "examples": [
+                                false
+                            ]
+                        }
+                    },
+                    "examples": [{
+                        "startOneHour": false,
+                        "startOneDay": false,
+                        "dueOneHour": false,
+                        "dueOneDay": false
+                    }]
+                },
+                "_id": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The _id Schema",
+                    "examples": [
+                        "6375242066ccc7048fbc1cd6"
+                    ]
+                },
+                "createdAt": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The createdAt Schema",
+                    "examples": [
+                        "2022-11-16T17:55:44.979Z"
+                    ]
+                },
+                "updatedAt": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The updatedAt Schema",
+                    "examples": [
+                        "2022-11-16T17:55:44.979Z"
+                    ]
+                },
+                "__v": {
+                    "type": "integer",
+                    "default": 0,
+                    "title": "The __v Schema",
+                    "examples": [
+                        0
+                    ]
+                }
+            },
+            "examples": [{
+                "name": "Main Parent Task 1",
+                "card": "6374a269fef0c6ab2e2d68a4",
+                "startDate": "2022-07-19T13:58:18.000Z",
+                "dueDate": "2022-07-20T13:58:18.000Z",
+                "checklists": [],
+                "complete": {
+                    "status": false,
+                    "type": null
+                },
+                "creator": "636a309d20de7c7a7f116719",
+                "type": "mainParent",
+                "isNotified": {
+                    "startOneHour": false,
+                    "startOneDay": false,
+                    "dueOneHour": false,
+                    "dueOneDay": false
+                },
+                "_id": "6375242066ccc7048fbc1cd6",
+                "createdAt": "2022-11-16T17:55:44.979Z",
+                "updatedAt": "2022-11-16T17:55:44.979Z",
+                "__v": 0
+            }]
+        }
+    },
+    "examples": [{
+        "message": "Creating sub task is success",
+        "checklist": {
+            "name": "Main Parent Task 1",
+            "card": "6374a269fef0c6ab2e2d68a4",
+            "startDate": "2022-07-19T13:58:18.000Z",
+            "dueDate": "2022-07-20T13:58:18.000Z",
+            "checklists": [],
+            "complete": {
+                "status": false,
+                "type": null
+            },
+            "creator": "636a309d20de7c7a7f116719",
+            "type": "mainParent",
+            "isNotified": {
+                "startOneHour": false,
+                "startOneDay": false,
+                "dueOneHour": false,
+                "dueOneDay": false
+            },
+            "_id": "6375242066ccc7048fbc1cd6",
+            "createdAt": "2022-11-16T17:55:44.979Z",
+            "updatedAt": "2022-11-16T17:55:44.979Z",
+            "__v": 0
+        }
+    }]
+}

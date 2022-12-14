@@ -1,0 +1,13 @@
+{
+  "message":"Get group chat Detail successful",
+  "groupChat":{
+    "_id":"6373b898fef0c6ab2e29fb17",
+    "messages":[
+    ],
+    "attachments":[
+    ],
+    "createdAt":"2022-11-15T16:04:40.669Z",
+    "updatedAt":"2022-11-15T16:04:40.669Z",
+    "__v":0
+  }
+}

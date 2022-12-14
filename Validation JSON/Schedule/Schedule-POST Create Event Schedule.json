@@ -1,0 +1,821 @@
+{
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "default": {},
+    "title": "Root Schema",
+    "required": [
+        "message",
+        "schedule"
+    ],
+    "properties": {
+        "message": {
+            "type": "string",
+            "default": "",
+            "title": "The message Schema",
+            "examples": [
+                "Create event successful"
+            ]
+        },
+        "schedule": {
+            "type": "object",
+            "default": {},
+            "title": "The schedule Schema",
+            "required": [
+                "_id",
+                "googleCalendar",
+                "events",
+                "setPublic",
+                "createdAt",
+                "updatedAt",
+                "__v"
+            ],
+            "properties": {
+                "_id": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The _id Schema",
+                    "examples": [
+                        "6373b898fef0c6ab2e29fb1a"
+                    ]
+                },
+                "googleCalendar": {
+                    "type": "object",
+                    "default": {},
+                    "title": "The googleCalendar Schema",
+                    "required": [
+                        "calendarId",
+                        "aclRuleId",
+                        "calendarIcsLink",
+                        "calendarHtmlLink"
+                    ],
+                    "properties": {
+                        "calendarId": {
+                            "type": "null",
+                            "default": null,
+                            "title": "The calendarId Schema",
+                            "examples": [
+                                null
+                            ]
+                        },
+                        "aclRuleId": {
+                            "type": "null",
+                            "default": null,
+                            "title": "The aclRuleId Schema",
+                            "examples": [
+                                null
+                            ]
+                        },
+                        "calendarIcsLink": {
+                            "type": "null",
+                            "default": null,
+                            "title": "The calendarIcsLink Schema",
+                            "examples": [
+                                null
+                            ]
+                        },
+                        "calendarHtmlLink": {
+                            "type": "null",
+                            "default": null,
+                            "title": "The calendarHtmlLink Schema",
+                            "examples": [
+                                null
+                            ]
+                        }
+                    },
+                    "examples": [{
+                        "calendarId": null,
+                        "aclRuleId": null,
+                        "calendarIcsLink": null,
+                        "calendarHtmlLink": null
+                    }]
+                },
+                "events": {
+                    "type": "array",
+                    "default": [],
+                    "title": "The events Schema",
+                    "items": {
+                        "type": "object",
+                        "title": "A Schema",
+                        "required": [
+                            "_id",
+                            "title",
+                            "content",
+                            "creator",
+                            "comments",
+                            "subscribers",
+                            "cheers",
+                            "startDate",
+                            "endDate",
+                            "duration",
+                            "isNotified",
+                            "archived",
+                            "googleCalendar",
+                            "isAllday",
+                            "isRecurring",
+                            "recurrence",
+                            "isPublic",
+                            "createdAt",
+                            "updatedAt",
+                            "__v",
+                            "status"
+                        ],
+                        "properties": {
+                            "_id": {
+                                "type": "string",
+                                "title": "The _id Schema",
+                                "examples": [
+                                    "6377539e66ccc7048fbe5940",
+                                    "637753ec0a02aab47914e26d"
+                                ]
+                            },
+                            "title": {
+                                "type": "string",
+                                "title": "The title Schema",
+                                "examples": [
+                                    "Event Schedule Lulu"
+                                ]
+                            },
+                            "content": {
+                                "type": "string",
+                                "title": "The content Schema",
+                                "examples": [
+                                    "\u003cp\u003efrom API\u003c/p\u003e"
+                                ]
+                            },
+                            "creator": {
+                                "type": "string",
+                                "title": "The creator Schema",
+                                "examples": [
+                                    "636a309d20de7c7a7f116719"
+                                ]
+                            },
+                            "comments": {
+                                "type": "array",
+                                "title": "The comments Schema",
+                                "items": {},
+                                "examples": [
+                                    [],
+                                    []
+                                ]
+                            },
+                            "subscribers": {
+                                "type": "array",
+                                "title": "The subscribers Schema",
+                                "items": {},
+                                "examples": [
+                                    [],
+                                    []
+                                ]
+                            },
+                            "cheers": {
+                                "type": "array",
+                                "title": "The cheers Schema",
+                                "items": {},
+                                "examples": [
+                                    [],
+                                    []
+                                ]
+                            },
+                            "startDate": {
+                                "type": "string",
+                                "title": "The startDate Schema",
+                                "examples": [
+                                    "2022-12-01T15:43:20.446Z"
+                                ]
+                            },
+                            "endDate": {
+                                "type": "string",
+                                "title": "The endDate Schema",
+                                "examples": [
+                                    "2022-12-01T15:43:20.446Z"
+                                ]
+                            },
+                            "duration": {
+                                "type": "null",
+                                "title": "The duration Schema",
+                                "examples": [
+                                    null
+                                ]
+                            },
+                            "isNotified": {
+                                "type": "object",
+                                "title": "The isNotified Schema",
+                                "required": [
+                                    "dueOneHour",
+                                    "dueOneDay",
+                                    "lastNotifiedRecurringOneDay",
+                                    "lastNotifiedRecurringOneHour"
+                                ],
+                                "properties": {
+                                    "dueOneHour": {
+                                        "type": "boolean",
+                                        "title": "The dueOneHour Schema",
+                                        "examples": [
+                                            false
+                                        ]
+                                    },
+                                    "dueOneDay": {
+                                        "type": "boolean",
+                                        "title": "The dueOneDay Schema",
+                                        "examples": [
+                                            false
+                                        ]
+                                    },
+                                    "lastNotifiedRecurringOneDay": {
+                                        "type": "null",
+                                        "title": "The lastNotifiedRecurringOneDay Schema",
+                                        "examples": [
+                                            null
+                                        ]
+                                    },
+                                    "lastNotifiedRecurringOneHour": {
+                                        "type": "null",
+                                        "title": "The lastNotifiedRecurringOneHour Schema",
+                                        "examples": [
+                                            null
+                                        ]
+                                    }
+                                },
+                                "examples": [{
+                                    "dueOneHour": false,
+                                    "dueOneDay": false,
+                                    "lastNotifiedRecurringOneDay": null,
+                                    "lastNotifiedRecurringOneHour": null
+                                },
+                                {
+                                    "dueOneHour": false,
+                                    "dueOneDay": false,
+                                    "lastNotifiedRecurringOneDay": null,
+                                    "lastNotifiedRecurringOneHour": null
+                                }]
+                            },
+                            "archived": {
+                                "type": "object",
+                                "title": "The archived Schema",
+                                "required": [
+                                    "status"
+                                ],
+                                "properties": {
+                                    "status": {
+                                        "type": "boolean",
+                                        "title": "The status Schema",
+                                        "examples": [
+                                            false
+                                        ]
+                                    }
+                                },
+                                "examples": [{
+                                    "status": false
+                                },
+                                {
+                                    "status": false
+                                }]
+                            },
+                            "googleCalendar": {
+                                "type": "object",
+                                "title": "The googleCalendar Schema",
+                                "required": [
+                                    "eventGCalTemplateLink",
+                                    "eventIcsLink"
+                                ],
+                                "properties": {
+                                    "eventGCalTemplateLink": {
+                                        "type": "string",
+                                        "title": "The eventGCalTemplateLink Schema",
+                                        "examples": [
+                                            "https://www.google.com/calendar/event?action=TEMPLATE\u0026text=Event+Schedule+Lulu\u0026details=View+this+on+Cicle%3A+https%3A%2F%2Fstaging.cicle.app%2Fevents%2F6377539e66ccc7048fbe5940\u0026dates=20221201T154320Z%2F20221201T154320Z",
+                                            "https://www.google.com/calendar/event?action=TEMPLATE\u0026text=Event+Schedule+Lulu\u0026details=View+this+on+Cicle%3A+https%3A%2F%2Fstaging.cicle.app%2Fevents%2F637753ec0a02aab47914e26d\u0026dates=20221201T154320Z%2F20221201T154320Z"
+                                        ]
+                                    },
+                                    "eventIcsLink": {
+                                        "type": "string",
+                                        "title": "The eventIcsLink Schema",
+                                        "examples": [
+                                            "/public/uploads/event-6377539e66ccc7048fbe5940.ics",
+                                            "/public/uploads/event-637753ec0a02aab47914e26d.ics"
+                                        ]
+                                    }
+                                },
+                                "examples": [{
+                                    "eventGCalTemplateLink": "https://www.google.com/calendar/event?action=TEMPLATE\u0026text=Event+Schedule+Lulu\u0026details=View+this+on+Cicle%3A+https%3A%2F%2Fstaging.cicle.app%2Fevents%2F6377539e66ccc7048fbe5940\u0026dates=20221201T154320Z%2F20221201T154320Z",
+                                    "eventIcsLink": "/public/uploads/event-6377539e66ccc7048fbe5940.ics"
+                                },
+                                {
+                                    "eventGCalTemplateLink": "https://www.google.com/calendar/event?action=TEMPLATE\u0026text=Event+Schedule+Lulu\u0026details=View+this+on+Cicle%3A+https%3A%2F%2Fstaging.cicle.app%2Fevents%2F637753ec0a02aab47914e26d\u0026dates=20221201T154320Z%2F20221201T154320Z",
+                                    "eventIcsLink": "/public/uploads/event-637753ec0a02aab47914e26d.ics"
+                                }]
+                            },
+                            "isAllday": {
+                                "type": "boolean",
+                                "title": "The isAllday Schema",
+                                "examples": [
+                                    false
+                                ]
+                            },
+                            "isRecurring": {
+                                "type": "boolean",
+                                "title": "The isRecurring Schema",
+                                "examples": [
+                                    false
+                                ]
+                            },
+                            "recurrence": {
+                                "type": "object",
+                                "title": "The recurrence Schema",
+                                "required": [
+                                    "pattern",
+                                    "gCalPattern",
+                                    "readableText",
+                                    "startDate",
+                                    "endDate",
+                                    "code"
+                                ],
+                                "properties": {
+                                    "pattern": {
+                                        "type": "null",
+                                        "title": "The pattern Schema",
+                                        "examples": [
+                                            null
+                                        ]
+                                    },
+                                    "gCalPattern": {
+                                        "type": "null",
+                                        "title": "The gCalPattern Schema",
+                                        "examples": [
+                                            null
+                                        ]
+                                    },
+                                    "readableText": {
+                                        "type": "null",
+                                        "title": "The readableText Schema",
+                                        "examples": [
+                                            null
+                                        ]
+                                    },
+                                    "startDate": {
+                                        "type": "null",
+                                        "title": "The startDate Schema",
+                                        "examples": [
+                                            null
+                                        ]
+                                    },
+                                    "endDate": {
+                                        "type": "null",
+                                        "title": "The endDate Schema",
+                                        "examples": [
+                                            null
+                                        ]
+                                    },
+                                    "code": {
+                                        "type": "null",
+                                        "title": "The code Schema",
+                                        "examples": [
+                                            null
+                                        ]
+                                    }
+                                },
+                                "examples": [{
+                                    "pattern": null,
+                                    "gCalPattern": null,
+                                    "readableText": null,
+                                    "startDate": null,
+                                    "endDate": null,
+                                    "code": null
+                                },
+                                {
+                                    "pattern": null,
+                                    "gCalPattern": null,
+                                    "readableText": null,
+                                    "startDate": null,
+                                    "endDate": null,
+                                    "code": null
+                                }]
+                            },
+                            "isPublic": {
+                                "type": "boolean",
+                                "title": "The isPublic Schema",
+                                "examples": [
+                                    true
+                                ]
+                            },
+                            "createdAt": {
+                                "type": "string",
+                                "title": "The createdAt Schema",
+                                "examples": [
+                                    "2022-11-18T09:42:54.326Z",
+                                    "2022-11-18T09:44:12.364Z"
+                                ]
+                            },
+                            "updatedAt": {
+                                "type": "string",
+                                "title": "The updatedAt Schema",
+                                "examples": [
+                                    "2022-11-18T09:42:54.390Z",
+                                    "2022-11-18T09:44:12.435Z"
+                                ]
+                            },
+                            "__v": {
+                                "type": "integer",
+                                "title": "The __v Schema",
+                                "examples": [
+                                    0
+                                ]
+                            },
+                            "status": {
+                                "type": "string",
+                                "title": "The status Schema",
+                                "examples": [
+                                    "sameDay"
+                                ]
+                            }
+                        },
+                        "examples": [{
+                            "_id": "6377539e66ccc7048fbe5940",
+                            "title": "Event Schedule Lulu",
+                            "content": "\u003cp\u003efrom API\u003c/p\u003e",
+                            "creator": "636a309d20de7c7a7f116719",
+                            "comments": [],
+                            "subscribers": [],
+                            "cheers": [],
+                            "startDate": "2022-12-01T15:43:20.446Z",
+                            "endDate": "2022-12-01T15:43:20.446Z",
+                            "duration": null,
+                            "isNotified": {
+                                "dueOneHour": false,
+                                "dueOneDay": false,
+                                "lastNotifiedRecurringOneDay": null,
+                                "lastNotifiedRecurringOneHour": null
+                            },
+                            "archived": {
+                                "status": false
+                            },
+                            "googleCalendar": {
+                                "eventGCalTemplateLink": "https://www.google.com/calendar/event?action=TEMPLATE\u0026text=Event+Schedule+Lulu\u0026details=View+this+on+Cicle%3A+https%3A%2F%2Fstaging.cicle.app%2Fevents%2F6377539e66ccc7048fbe5940\u0026dates=20221201T154320Z%2F20221201T154320Z",
+                                "eventIcsLink": "/public/uploads/event-6377539e66ccc7048fbe5940.ics"
+                            },
+                            "isAllday": false,
+                            "isRecurring": false,
+                            "recurrence": {
+                                "pattern": null,
+                                "gCalPattern": null,
+                                "readableText": null,
+                                "startDate": null,
+                                "endDate": null,
+                                "code": null
+                            },
+                            "isPublic": true,
+                            "createdAt": "2022-11-18T09:42:54.326Z",
+                            "updatedAt": "2022-11-18T09:42:54.390Z",
+                            "__v": 0,
+                            "status": "sameDay"
+                        },
+                        {
+                            "_id": "637753ec0a02aab47914e26d",
+                            "title": "Event Schedule Lulu",
+                            "content": "\u003cp\u003efrom API\u003c/p\u003e",
+                            "creator": "636a309d20de7c7a7f116719",
+                            "comments": [],
+                            "subscribers": [],
+                            "cheers": [],
+                            "startDate": "2022-12-01T15:43:20.446Z",
+                            "endDate": "2022-12-01T15:43:20.446Z",
+                            "duration": null,
+                            "isNotified": {
+                                "dueOneHour": false,
+                                "dueOneDay": false,
+                                "lastNotifiedRecurringOneDay": null,
+                                "lastNotifiedRecurringOneHour": null
+                            },
+                            "archived": {
+                                "status": false
+                            },
+                            "googleCalendar": {
+                                "eventGCalTemplateLink": "https://www.google.com/calendar/event?action=TEMPLATE\u0026text=Event+Schedule+Lulu\u0026details=View+this+on+Cicle%3A+https%3A%2F%2Fstaging.cicle.app%2Fevents%2F637753ec0a02aab47914e26d\u0026dates=20221201T154320Z%2F20221201T154320Z",
+                                "eventIcsLink": "/public/uploads/event-637753ec0a02aab47914e26d.ics"
+                            },
+                            "isAllday": false,
+                            "isRecurring": false,
+                            "recurrence": {
+                                "pattern": null,
+                                "gCalPattern": null,
+                                "readableText": null,
+                                "startDate": null,
+                                "endDate": null,
+                                "code": null
+                            },
+                            "isPublic": true,
+                            "createdAt": "2022-11-18T09:44:12.364Z",
+                            "updatedAt": "2022-11-18T09:44:12.435Z",
+                            "__v": 0,
+                            "status": "sameDay"
+                        }]
+                    },
+                    "examples": [
+                        [{
+                            "_id": "6377539e66ccc7048fbe5940",
+                            "title": "Event Schedule Lulu",
+                            "content": "\u003cp\u003efrom API\u003c/p\u003e",
+                            "creator": "636a309d20de7c7a7f116719",
+                            "comments": [],
+                            "subscribers": [],
+                            "cheers": [],
+                            "startDate": "2022-12-01T15:43:20.446Z",
+                            "endDate": "2022-12-01T15:43:20.446Z",
+                            "duration": null,
+                            "isNotified": {
+                                "dueOneHour": false,
+                                "dueOneDay": false,
+                                "lastNotifiedRecurringOneDay": null,
+                                "lastNotifiedRecurringOneHour": null
+                            },
+                            "archived": {
+                                "status": false
+                            },
+                            "googleCalendar": {
+                                "eventGCalTemplateLink": "https://www.google.com/calendar/event?action=TEMPLATE\u0026text=Event+Schedule+Lulu\u0026details=View+this+on+Cicle%3A+https%3A%2F%2Fstaging.cicle.app%2Fevents%2F6377539e66ccc7048fbe5940\u0026dates=20221201T154320Z%2F20221201T154320Z",
+                                "eventIcsLink": "/public/uploads/event-6377539e66ccc7048fbe5940.ics"
+                            },
+                            "isAllday": false,
+                            "isRecurring": false,
+                            "recurrence": {
+                                "pattern": null,
+                                "gCalPattern": null,
+                                "readableText": null,
+                                "startDate": null,
+                                "endDate": null,
+                                "code": null
+                            },
+                            "isPublic": true,
+                            "createdAt": "2022-11-18T09:42:54.326Z",
+                            "updatedAt": "2022-11-18T09:42:54.390Z",
+                            "__v": 0,
+                            "status": "sameDay"
+                        },
+                        {
+                            "_id": "637753ec0a02aab47914e26d",
+                            "title": "Event Schedule Lulu",
+                            "content": "\u003cp\u003efrom API\u003c/p\u003e",
+                            "creator": "636a309d20de7c7a7f116719",
+                            "comments": [],
+                            "subscribers": [],
+                            "cheers": [],
+                            "startDate": "2022-12-01T15:43:20.446Z",
+                            "endDate": "2022-12-01T15:43:20.446Z",
+                            "duration": null,
+                            "isNotified": {
+                                "dueOneHour": false,
+                                "dueOneDay": false,
+                                "lastNotifiedRecurringOneDay": null,
+                                "lastNotifiedRecurringOneHour": null
+                            },
+                            "archived": {
+                                "status": false
+                            },
+                            "googleCalendar": {
+                                "eventGCalTemplateLink": "https://www.google.com/calendar/event?action=TEMPLATE\u0026text=Event+Schedule+Lulu\u0026details=View+this+on+Cicle%3A+https%3A%2F%2Fstaging.cicle.app%2Fevents%2F637753ec0a02aab47914e26d\u0026dates=20221201T154320Z%2F20221201T154320Z",
+                                "eventIcsLink": "/public/uploads/event-637753ec0a02aab47914e26d.ics"
+                            },
+                            "isAllday": false,
+                            "isRecurring": false,
+                            "recurrence": {
+                                "pattern": null,
+                                "gCalPattern": null,
+                                "readableText": null,
+                                "startDate": null,
+                                "endDate": null,
+                                "code": null
+                            },
+                            "isPublic": true,
+                            "createdAt": "2022-11-18T09:44:12.364Z",
+                            "updatedAt": "2022-11-18T09:44:12.435Z",
+                            "__v": 0,
+                            "status": "sameDay"
+                        }]
+                    ]
+                },
+                "setPublic": {
+                    "type": "boolean",
+                    "default": false,
+                    "title": "The setPublic Schema",
+                    "examples": [
+                        false
+                    ]
+                },
+                "createdAt": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The createdAt Schema",
+                    "examples": [
+                        "2022-11-15T16:04:40.669Z"
+                    ]
+                },
+                "updatedAt": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The updatedAt Schema",
+                    "examples": [
+                        "2022-11-18T09:44:12.374Z"
+                    ]
+                },
+                "__v": {
+                    "type": "integer",
+                    "default": 0,
+                    "title": "The __v Schema",
+                    "examples": [
+                        0
+                    ]
+                }
+            },
+            "examples": [{
+                "_id": "6373b898fef0c6ab2e29fb1a",
+                "googleCalendar": {
+                    "calendarId": null,
+                    "aclRuleId": null,
+                    "calendarIcsLink": null,
+                    "calendarHtmlLink": null
+                },
+                "events": [{
+                    "_id": "6377539e66ccc7048fbe5940",
+                    "title": "Event Schedule Lulu",
+                    "content": "\u003cp\u003efrom API\u003c/p\u003e",
+                    "creator": "636a309d20de7c7a7f116719",
+                    "comments": [],
+                    "subscribers": [],
+                    "cheers": [],
+                    "startDate": "2022-12-01T15:43:20.446Z",
+                    "endDate": "2022-12-01T15:43:20.446Z",
+                    "duration": null,
+                    "isNotified": {
+                        "dueOneHour": false,
+                        "dueOneDay": false,
+                        "lastNotifiedRecurringOneDay": null,
+                        "lastNotifiedRecurringOneHour": null
+                    },
+                    "archived": {
+                        "status": false
+                    },
+                    "googleCalendar": {
+                        "eventGCalTemplateLink": "https://www.google.com/calendar/event?action=TEMPLATE\u0026text=Event+Schedule+Lulu\u0026details=View+this+on+Cicle%3A+https%3A%2F%2Fstaging.cicle.app%2Fevents%2F6377539e66ccc7048fbe5940\u0026dates=20221201T154320Z%2F20221201T154320Z",
+                        "eventIcsLink": "/public/uploads/event-6377539e66ccc7048fbe5940.ics"
+                    },
+                    "isAllday": false,
+                    "isRecurring": false,
+                    "recurrence": {
+                        "pattern": null,
+                        "gCalPattern": null,
+                        "readableText": null,
+                        "startDate": null,
+                        "endDate": null,
+                        "code": null
+                    },
+                    "isPublic": true,
+                    "createdAt": "2022-11-18T09:42:54.326Z",
+                    "updatedAt": "2022-11-18T09:42:54.390Z",
+                    "__v": 0,
+                    "status": "sameDay"
+                },
+                {
+                    "_id": "637753ec0a02aab47914e26d",
+                    "title": "Event Schedule Lulu",
+                    "content": "\u003cp\u003efrom API\u003c/p\u003e",
+                    "creator": "636a309d20de7c7a7f116719",
+                    "comments": [],
+                    "subscribers": [],
+                    "cheers": [],
+                    "startDate": "2022-12-01T15:43:20.446Z",
+                    "endDate": "2022-12-01T15:43:20.446Z",
+                    "duration": null,
+                    "isNotified": {
+                        "dueOneHour": false,
+                        "dueOneDay": false,
+                        "lastNotifiedRecurringOneDay": null,
+                        "lastNotifiedRecurringOneHour": null
+                    },
+                    "archived": {
+                        "status": false
+                    },
+                    "googleCalendar": {
+                        "eventGCalTemplateLink": "https://www.google.com/calendar/event?action=TEMPLATE\u0026text=Event+Schedule+Lulu\u0026details=View+this+on+Cicle%3A+https%3A%2F%2Fstaging.cicle.app%2Fevents%2F637753ec0a02aab47914e26d\u0026dates=20221201T154320Z%2F20221201T154320Z",
+                        "eventIcsLink": "/public/uploads/event-637753ec0a02aab47914e26d.ics"
+                    },
+                    "isAllday": false,
+                    "isRecurring": false,
+                    "recurrence": {
+                        "pattern": null,
+                        "gCalPattern": null,
+                        "readableText": null,
+                        "startDate": null,
+                        "endDate": null,
+                        "code": null
+                    },
+                    "isPublic": true,
+                    "createdAt": "2022-11-18T09:44:12.364Z",
+                    "updatedAt": "2022-11-18T09:44:12.435Z",
+                    "__v": 0,
+                    "status": "sameDay"
+                }],
+                "setPublic": false,
+                "createdAt": "2022-11-15T16:04:40.669Z",
+                "updatedAt": "2022-11-18T09:44:12.374Z",
+                "__v": 0
+            }]
+        }
+    },
+    "examples": [{
+        "message": "Create event successful",
+        "schedule": {
+            "_id": "6373b898fef0c6ab2e29fb1a",
+            "googleCalendar": {
+                "calendarId": null,
+                "aclRuleId": null,
+                "calendarIcsLink": null,
+                "calendarHtmlLink": null
+            },
+            "events": [{
+                "_id": "6377539e66ccc7048fbe5940",
+                "title": "Event Schedule Lulu",
+                "content": "\u003cp\u003efrom API\u003c/p\u003e",
+                "creator": "636a309d20de7c7a7f116719",
+                "comments": [],
+                "subscribers": [],
+                "cheers": [],
+                "startDate": "2022-12-01T15:43:20.446Z",
+                "endDate": "2022-12-01T15:43:20.446Z",
+                "duration": null,
+                "isNotified": {
+                    "dueOneHour": false,
+                    "dueOneDay": false,
+                    "lastNotifiedRecurringOneDay": null,
+                    "lastNotifiedRecurringOneHour": null
+                },
+                "archived": {
+                    "status": false
+                },
+                "googleCalendar": {
+                    "eventGCalTemplateLink": "https://www.google.com/calendar/event?action=TEMPLATE\u0026text=Event+Schedule+Lulu\u0026details=View+this+on+Cicle%3A+https%3A%2F%2Fstaging.cicle.app%2Fevents%2F6377539e66ccc7048fbe5940\u0026dates=20221201T154320Z%2F20221201T154320Z",
+                    "eventIcsLink": "/public/uploads/event-6377539e66ccc7048fbe5940.ics"
+                },
+                "isAllday": false,
+                "isRecurring": false,
+                "recurrence": {
+                    "pattern": null,
+                    "gCalPattern": null,
+                    "readableText": null,
+                    "startDate": null,
+                    "endDate": null,
+                    "code": null
+                },
+                "isPublic": true,
+                "createdAt": "2022-11-18T09:42:54.326Z",
+                "updatedAt": "2022-11-18T09:42:54.390Z",
+                "__v": 0,
+                "status": "sameDay"
+            },
+            {
+                "_id": "637753ec0a02aab47914e26d",
+                "title": "Event Schedule Lulu",
+                "content": "\u003cp\u003efrom API\u003c/p\u003e",
+                "creator": "636a309d20de7c7a7f116719",
+                "comments": [],
+                "subscribers": [],
+                "cheers": [],
+                "startDate": "2022-12-01T15:43:20.446Z",
+                "endDate": "2022-12-01T15:43:20.446Z",
+                "duration": null,
+                "isNotified": {
+                    "dueOneHour": false,
+                    "dueOneDay": false,
+                    "lastNotifiedRecurringOneDay": null,
+                    "lastNotifiedRecurringOneHour": null
+                },
+                "archived": {
+                    "status": false
+                },
+                "googleCalendar": {
+                    "eventGCalTemplateLink": "https://www.google.com/calendar/event?action=TEMPLATE\u0026text=Event+Schedule+Lulu\u0026details=View+this+on+Cicle%3A+https%3A%2F%2Fstaging.cicle.app%2Fevents%2F637753ec0a02aab47914e26d\u0026dates=20221201T154320Z%2F20221201T154320Z",
+                    "eventIcsLink": "/public/uploads/event-637753ec0a02aab47914e26d.ics"
+                },
+                "isAllday": false,
+                "isRecurring": false,
+                "recurrence": {
+                    "pattern": null,
+                    "gCalPattern": null,
+                    "readableText": null,
+                    "startDate": null,
+                    "endDate": null,
+                    "code": null
+                },
+                "isPublic": true,
+                "createdAt": "2022-11-18T09:44:12.364Z",
+                "updatedAt": "2022-11-18T09:44:12.435Z",
+                "__v": 0,
+                "status": "sameDay"
+            }],
+            "setPublic": false,
+            "createdAt": "2022-11-15T16:04:40.669Z",
+            "updatedAt": "2022-11-18T09:44:12.374Z",
+            "__v": 0
+        }
+    }]
+}

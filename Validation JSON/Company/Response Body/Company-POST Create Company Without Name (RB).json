@@ -1,0 +1,79 @@
+{
+  "message":"Successfully create company user",
+  "user":{
+    "_id":"636a309d20de7c7a7f116719",
+    "googleId":"114498059136746820038",
+    "email":"luluqatesting@gmail.com",
+    "fullName":"Lulu Q.A.",
+    "photoUrl":"https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c",
+    "bio":"student",
+    "status":"a lifelong learner",
+    "companies":[
+    ],
+    "createdAt":"2022-11-08T10:34:05.472Z",
+    "updatedAt":"2022-11-16T03:17:37.922Z",
+    "__v":0,
+    "defaultCompany":{
+      "workloadCapacityDefault":{
+        "value":7,
+        "measurement":"Hours"
+      },
+      "_id":"6374565166ccc7048fa02e5c",
+      "name":"",
+      "desc":"Company Without Name",
+      "logo":"/public/images/company-default.png",
+      "admins":[
+        "636a309d20de7c7a7f116719"],
+      "membersJoined":[
+        {
+          "member":"636a309d20de7c7a7f116719",
+          "joinedAt":"2022-11-16T03:17:37.911Z",
+          "_id":"6374565166ccc7048fa02e5d"
+        }],
+      "members":[
+        "636a309d20de7c7a7f116719"],
+      "teams":[
+      ],
+      "createdAt":"2022-11-16T03:17:37.913Z",
+      "updatedAt":"2022-11-16T03:17:37.913Z",
+      "__v":0
+    },
+    "password":"$2b$10$nXwAMFh2Ms6qiAobo4a0S.mqaOsWUBfd9bOrmPygK5xqxDMMxEKVO"
+  },
+  "newCompany":{
+    "workloadCapacityDefault":{
+      "value":7,
+      "measurement":"Hours"
+    },
+    "_id":"6374565166ccc7048fa02e5c",
+    "name":"",
+    "desc":"Company Without Name",
+    "logo":"/public/images/company-default.png",
+    "admins":[
+      {
+        "_id":"636a309d20de7c7a7f116719",
+        "fullName":"Lulu Q.A.",
+        "photoUrl":"https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c"
+      }],
+    "membersJoined":[
+      {
+        "member":"636a309d20de7c7a7f116719",
+        "joinedAt":"2022-11-16T03:17:37.911Z",
+        "_id":"6374565166ccc7048fa02e5d"
+      }],
+    "members":[
+      {
+        "_id":"636a309d20de7c7a7f116719",
+        "fullName":"Lulu Q.A.",
+        "photoUrl":"https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c",
+        "bio":"student",
+        "status":"a lifelong learner"
+      }],
+    "teams":[
+    ],
+    "createdAt":"2022-11-16T03:17:37.913Z",
+    "updatedAt":"2022-11-16T03:17:37.913Z",
+    "__v":0
+  },
+  "token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjYzNmEzMDlkMjBkZTdjN2E3ZjExNjcxOSIsImdvb2dsZUlkIjoiMTE0NDk4MDU5MTM2NzQ2ODIwMDM4IiwiZW1haWwiOiJsdWx1cWF0ZXN0aW5nQGdtYWlsLmNvbSIsImZ1bGxOYW1lIjoiTHVsdSBRLkEuIiwicGhvdG9VcmwiOiJodHRwczovL2xoMy5nb29nbGV1c2VyY29udGVudC5jb20vYS9BTG01d3UyaFZrb2JyZDE0YnE4a3ctR0hYTG12U3hLMzBFX3pkRzMwd05EVj1zOTYtYyIsImJpbyI6InN0dWRlbnQiLCJzdGF0dXMiOiJhIGxpZmVsb25nIGxlYXJuZXIiLCJjcmVhdGVkQXQiOiIyMDIyLTExLTA4VDEwOjM0OjA1LjQ3MloiLCJ1cGRhdGVkQXQiOiIyMDIyLTExLTE2VDAzOjE3OjM3LjkyMloiLCJfX3YiOjAsImRlZmF1bHRDb21wYW55IjoiNjM3NDU2NTE2NmNjYzcwNDhmYTAyZTVjIn0sImlhdCI6MTY2ODU2ODY1NywiZXhwIjoxNjcxMTYwNjU3fQ.fTFN25zBiLdiVYNODyyD3jPAySb-R3iOwIV2Cx4MQLk"
+}

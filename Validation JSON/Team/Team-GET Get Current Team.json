@@ -1,0 +1,928 @@
+{
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "default": {},
+    "title": "Root Schema",
+    "required": [
+        "teams"
+    ],
+    "properties": {
+        "teams": {
+            "type": "array",
+            "default": [],
+            "title": "The teams Schema",
+            "items": {
+                "type": "object",
+                "title": "A Schema",
+                "required": [
+                    "archived",
+                    "_id",
+                    "name",
+                    "desc",
+                    "members",
+                    "boards",
+                    "type",
+                    "createdAt",
+                    "updatedAt",
+                    "__v",
+                    "blast",
+                    "bucket",
+                    "checkIn",
+                    "groupChat",
+                    "schedule"
+                ],
+                "properties": {
+                    "archived": {
+                        "type": "object",
+                        "title": "The archived Schema",
+                        "required": [
+                            "status"
+                        ],
+                        "properties": {
+                            "status": {
+                                "type": "boolean",
+                                "title": "The status Schema",
+                                "examples": [
+                                    false
+                                ]
+                            }
+                        },
+                        "examples": [{
+                            "status": false
+                        },
+                        {
+                            "status": false
+                        },
+                        {
+                            "status": false
+                        },
+                        {
+                            "status": false
+                        },
+                        {
+                            "status": false
+                        },
+                        {
+                            "status": false
+                        },
+                        {
+                            "status": false
+                        }]
+                    },
+                    "_id": {
+                        "type": "string",
+                        "title": "The _id Schema",
+                        "examples": [
+                            "636a31c920de7c7a7f116733",
+                            "636c09292bd710faf9cf3786",
+                            "636c78bf2bd710faf9d7cc74",
+                            "636c7bc361d764a07af58d9b",
+                            "636c7be861d764a07af58dbf",
+                            "636c803f2bd710faf9d9855a",
+                            "636c805d2bd710faf9d98b83"
+                        ]
+                    },
+                    "name": {
+                        "type": "string",
+                        "title": "The name Schema",
+                        "examples": [
+                            "Kelas A",
+                            "",
+                            "Create Team Without Description"
+                        ]
+                    },
+                    "desc": {
+                        "type": "string",
+                        "title": "The desc Schema",
+                        "examples": [
+                            "Lulu's personal team for API testing",
+                            "Lulu's personal room for API testing",
+                            "Edit Team Description",
+                            "Create Team Without Name",
+                            ""
+                        ]
+                    },
+                    "members": {
+                        "type": "array",
+                        "title": "The members Schema",
+                        "items": {
+                            "type": "object",
+                            "title": "A Schema",
+                            "required": [
+                                "_id",
+                                "photoUrl",
+                                "bio",
+                                "status"
+                            ],
+                            "properties": {
+                                "_id": {
+                                    "type": "string",
+                                    "title": "The _id Schema",
+                                    "examples": [
+                                        "636a309d20de7c7a7f116719"
+                                    ]
+                                },
+                                "photoUrl": {
+                                    "type": "string",
+                                    "title": "The photoUrl Schema",
+                                    "examples": [
+                                        "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c"
+                                    ]
+                                },
+                                "bio": {
+                                    "type": "string",
+                                    "title": "The bio Schema",
+                                    "examples": [
+                                        ""
+                                    ]
+                                },
+                                "status": {
+                                    "type": "string",
+                                    "title": "The status Schema",
+                                    "examples": [
+                                        ""
+                                    ]
+                                }
+                            },
+                            "examples": [{
+                                "_id": "636a309d20de7c7a7f116719",
+                                "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c",
+                                "bio": "",
+                                "status": ""
+                            },
+                            {
+                                "_id": "636a309d20de7c7a7f116719",
+                                "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c",
+                                "bio": "",
+                                "status": ""
+                            },
+                            {
+                                "_id": "636a309d20de7c7a7f116719",
+                                "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c",
+                                "bio": "",
+                                "status": ""
+                            },
+                            {
+                                "_id": "636a309d20de7c7a7f116719",
+                                "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c",
+                                "bio": "",
+                                "status": ""
+                            },
+                            {
+                                "_id": "636a309d20de7c7a7f116719",
+                                "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c",
+                                "bio": "",
+                                "status": ""
+                            },
+                            {
+                                "_id": "636a309d20de7c7a7f116719",
+                                "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c",
+                                "bio": "",
+                                "status": ""
+                            },
+                            {
+                                "_id": "636a309d20de7c7a7f116719",
+                                "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c",
+                                "bio": "",
+                                "status": ""
+                            }]
+                        },
+                        "examples": [
+                            [{
+                                "_id": "636a309d20de7c7a7f116719",
+                                "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c",
+                                "bio": "",
+                                "status": ""
+                            }],
+                            [{
+                                "_id": "636a309d20de7c7a7f116719",
+                                "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c",
+                                "bio": "",
+                                "status": ""
+                            }],
+                            [{
+                                "_id": "636a309d20de7c7a7f116719",
+                                "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c",
+                                "bio": "",
+                                "status": ""
+                            }],
+                            [{
+                                "_id": "636a309d20de7c7a7f116719",
+                                "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c",
+                                "bio": "",
+                                "status": ""
+                            }],
+                            [{
+                                "_id": "636a309d20de7c7a7f116719",
+                                "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c",
+                                "bio": "",
+                                "status": ""
+                            }],
+                            [{
+                                "_id": "636a309d20de7c7a7f116719",
+                                "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c",
+                                "bio": "",
+                                "status": ""
+                            }],
+                            [{
+                                "_id": "636a309d20de7c7a7f116719",
+                                "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c",
+                                "bio": "",
+                                "status": ""
+                            }]
+                        ]
+                    },
+                    "boards": {
+                        "type": "array",
+                        "title": "The boards Schema",
+                        "items": {
+                            "type": "string",
+                            "title": "A Schema",
+                            "examples": [
+                                "636a31c920de7c7a7f116737",
+                                "636c092a2bd710faf9cf378e",
+                                "636c78bf2bd710faf9d7cceb",
+                                "636c7bc361d764a07af58d9f",
+                                "636c7be861d764a07af58dc3",
+                                "636c80412bd710faf9d98560",
+                                "636c805d2bd710faf9d98b8a"
+                            ]
+                        },
+                        "examples": [
+                            [
+                                "636a31c920de7c7a7f116737"],
+                            [
+                                "636c092a2bd710faf9cf378e"],
+                            [
+                                "636c78bf2bd710faf9d7cceb"],
+                            [
+                                "636c7bc361d764a07af58d9f"],
+                            [
+                                "636c7be861d764a07af58dc3"],
+                            [
+                                "636c80412bd710faf9d98560"],
+                            [
+                                "636c805d2bd710faf9d98b8a"]
+                        ]
+                    },
+                    "type": {
+                        "type": "string",
+                        "title": "The type Schema",
+                        "examples": [
+                            "team"
+                        ]
+                    },
+                    "createdAt": {
+                        "type": "string",
+                        "title": "The createdAt Schema",
+                        "examples": [
+                            "2022-11-08T10:39:05.245Z",
+                            "2022-11-09T20:10:18.010Z",
+                            "2022-11-10T04:06:23.566Z",
+                            "2022-11-10T04:19:15.646Z",
+                            "2022-11-10T04:19:52.818Z",
+                            "2022-11-10T04:38:23.560Z",
+                            "2022-11-10T04:38:53.239Z"
+                        ]
+                    },
+                    "updatedAt": {
+                        "type": "string",
+                        "title": "The updatedAt Schema",
+                        "examples": [
+                            "2022-11-08T10:39:05.266Z",
+                            "2022-11-09T20:10:18.081Z",
+                            "2022-11-10T05:04:15.277Z",
+                            "2022-11-10T04:19:15.747Z",
+                            "2022-11-10T04:19:54.296Z",
+                            "2022-11-10T04:38:27.999Z",
+                            "2022-11-10T04:38:54.803Z"
+                        ]
+                    },
+                    "__v": {
+                        "type": "integer",
+                        "title": "The __v Schema",
+                        "examples": [
+                            0
+                        ]
+                    },
+                    "blast": {
+                        "type": "string",
+                        "title": "The blast Schema",
+                        "examples": [
+                            "636a31c920de7c7a7f116739",
+                            "636c092a2bd710faf9cf3790",
+                            "636c78bf2bd710faf9d7cced",
+                            "636c7bc361d764a07af58da1",
+                            "636c7be961d764a07af58dc5",
+                            "636c80422bd710faf9d98562",
+                            "636c805d2bd710faf9d98b8c"
+                        ]
+                    },
+                    "bucket": {
+                        "type": "string",
+                        "title": "The bucket Schema",
+                        "examples": [
+                            "636a31c920de7c7a7f11673c",
+                            "636c092a2bd710faf9cf3793",
+                            "636c78bf2bd710faf9d7ccf0",
+                            "636c7bc361d764a07af58da4",
+                            "636c7be961d764a07af58dc8",
+                            "636c80422bd710faf9d98565",
+                            "636c805d2bd710faf9d98b8f"
+                        ]
+                    },
+                    "checkIn": {
+                        "type": "string",
+                        "title": "The checkIn Schema",
+                        "examples": [
+                            "636a31c920de7c7a7f11673a",
+                            "636c092a2bd710faf9cf3791",
+                            "636c78bf2bd710faf9d7ccee",
+                            "636c7bc361d764a07af58da2",
+                            "636c7be961d764a07af58dc6",
+                            "636c80422bd710faf9d98563",
+                            "636c805d2bd710faf9d98b8d"
+                        ]
+                    },
+                    "groupChat": {
+                        "type": "string",
+                        "title": "The groupChat Schema",
+                        "examples": [
+                            "636a31c920de7c7a7f116738",
+                            "636c092a2bd710faf9cf378f",
+                            "636c78bf2bd710faf9d7ccec",
+                            "636c7bc361d764a07af58da0",
+                            "636c7be961d764a07af58dc4",
+                            "636c80412bd710faf9d98561",
+                            "636c805d2bd710faf9d98b8b"
+                        ]
+                    },
+                    "schedule": {
+                        "type": "string",
+                        "title": "The schedule Schema",
+                        "examples": [
+                            "636a31c920de7c7a7f11673b",
+                            "636c092a2bd710faf9cf3792",
+                            "636c78bf2bd710faf9d7ccef",
+                            "636c7bc361d764a07af58da3",
+                            "636c7be961d764a07af58dc7",
+                            "636c80422bd710faf9d98564",
+                            "636c805d2bd710faf9d98b8e"
+                        ]
+                    }
+                },
+                "examples": [{
+                    "archived": {
+                        "status": false
+                    },
+                    "_id": "636a31c920de7c7a7f116733",
+                    "name": "Kelas A",
+                    "desc": "Lulu's personal team for API testing",
+                    "members": [{
+                        "_id": "636a309d20de7c7a7f116719",
+                        "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c",
+                        "bio": "",
+                        "status": ""
+                    }],
+                    "boards": [
+                        "636a31c920de7c7a7f116737"
+                    ],
+                    "type": "team",
+                    "createdAt": "2022-11-08T10:39:05.245Z",
+                    "updatedAt": "2022-11-08T10:39:05.266Z",
+                    "__v": 0,
+                    "blast": "636a31c920de7c7a7f116739",
+                    "bucket": "636a31c920de7c7a7f11673c",
+                    "checkIn": "636a31c920de7c7a7f11673a",
+                    "groupChat": "636a31c920de7c7a7f116738",
+                    "schedule": "636a31c920de7c7a7f11673b"
+                },
+                {
+                    "archived": {
+                        "status": false
+                    },
+                    "_id": "636c09292bd710faf9cf3786",
+                    "name": "Kelas A",
+                    "desc": "Lulu's personal room for API testing",
+                    "members": [{
+                        "_id": "636a309d20de7c7a7f116719",
+                        "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c",
+                        "bio": "",
+                        "status": ""
+                    }],
+                    "boards": [
+                        "636c092a2bd710faf9cf378e"
+                    ],
+                    "type": "team",
+                    "createdAt": "2022-11-09T20:10:18.010Z",
+                    "updatedAt": "2022-11-09T20:10:18.081Z",
+                    "__v": 0,
+                    "blast": "636c092a2bd710faf9cf3790",
+                    "bucket": "636c092a2bd710faf9cf3793",
+                    "checkIn": "636c092a2bd710faf9cf3791",
+                    "groupChat": "636c092a2bd710faf9cf378f",
+                    "schedule": "636c092a2bd710faf9cf3792"
+                },
+                {
+                    "archived": {
+                        "status": false
+                    },
+                    "_id": "636c78bf2bd710faf9d7cc74",
+                    "name": "Kelas A",
+                    "desc": "Edit Team Description",
+                    "members": [{
+                        "_id": "636a309d20de7c7a7f116719",
+                        "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c",
+                        "bio": "",
+                        "status": ""
+                    }],
+                    "boards": [
+                        "636c78bf2bd710faf9d7cceb"
+                    ],
+                    "type": "team",
+                    "createdAt": "2022-11-10T04:06:23.566Z",
+                    "updatedAt": "2022-11-10T05:04:15.277Z",
+                    "__v": 0,
+                    "blast": "636c78bf2bd710faf9d7cced",
+                    "bucket": "636c78bf2bd710faf9d7ccf0",
+                    "checkIn": "636c78bf2bd710faf9d7ccee",
+                    "groupChat": "636c78bf2bd710faf9d7ccec",
+                    "schedule": "636c78bf2bd710faf9d7ccef"
+                },
+                {
+                    "archived": {
+                        "status": false
+                    },
+                    "_id": "636c7bc361d764a07af58d9b",
+                    "name": "",
+                    "desc": "Create Team Without Name",
+                    "members": [{
+                        "_id": "636a309d20de7c7a7f116719",
+                        "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c",
+                        "bio": "",
+                        "status": ""
+                    }],
+                    "boards": [
+                        "636c7bc361d764a07af58d9f"
+                    ],
+                    "type": "team",
+                    "createdAt": "2022-11-10T04:19:15.646Z",
+                    "updatedAt": "2022-11-10T04:19:15.747Z",
+                    "__v": 0,
+                    "blast": "636c7bc361d764a07af58da1",
+                    "bucket": "636c7bc361d764a07af58da4",
+                    "checkIn": "636c7bc361d764a07af58da2",
+                    "groupChat": "636c7bc361d764a07af58da0",
+                    "schedule": "636c7bc361d764a07af58da3"
+                },
+                {
+                    "archived": {
+                        "status": false
+                    },
+                    "_id": "636c7be861d764a07af58dbf",
+                    "name": "Create Team Without Description",
+                    "desc": "",
+                    "members": [{
+                        "_id": "636a309d20de7c7a7f116719",
+                        "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c",
+                        "bio": "",
+                        "status": ""
+                    }],
+                    "boards": [
+                        "636c7be861d764a07af58dc3"
+                    ],
+                    "type": "team",
+                    "createdAt": "2022-11-10T04:19:52.818Z",
+                    "updatedAt": "2022-11-10T04:19:54.296Z",
+                    "__v": 0,
+                    "blast": "636c7be961d764a07af58dc5",
+                    "bucket": "636c7be961d764a07af58dc8",
+                    "checkIn": "636c7be961d764a07af58dc6",
+                    "groupChat": "636c7be961d764a07af58dc4",
+                    "schedule": "636c7be961d764a07af58dc7"
+                },
+                {
+                    "archived": {
+                        "status": false
+                    },
+                    "_id": "636c803f2bd710faf9d9855a",
+                    "name": "",
+                    "desc": "Create Team Without Name",
+                    "members": [{
+                        "_id": "636a309d20de7c7a7f116719",
+                        "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c",
+                        "bio": "",
+                        "status": ""
+                    }],
+                    "boards": [
+                        "636c80412bd710faf9d98560"
+                    ],
+                    "type": "team",
+                    "createdAt": "2022-11-10T04:38:23.560Z",
+                    "updatedAt": "2022-11-10T04:38:27.999Z",
+                    "__v": 0,
+                    "blast": "636c80422bd710faf9d98562",
+                    "bucket": "636c80422bd710faf9d98565",
+                    "checkIn": "636c80422bd710faf9d98563",
+                    "groupChat": "636c80412bd710faf9d98561",
+                    "schedule": "636c80422bd710faf9d98564"
+                },
+                {
+                    "archived": {
+                        "status": false
+                    },
+                    "_id": "636c805d2bd710faf9d98b83",
+                    "name": "Create Team Without Description",
+                    "desc": "",
+                    "members": [{
+                        "_id": "636a309d20de7c7a7f116719",
+                        "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c",
+                        "bio": "",
+                        "status": ""
+                    }],
+                    "boards": [
+                        "636c805d2bd710faf9d98b8a"
+                    ],
+                    "type": "team",
+                    "createdAt": "2022-11-10T04:38:53.239Z",
+                    "updatedAt": "2022-11-10T04:38:54.803Z",
+                    "__v": 0,
+                    "blast": "636c805d2bd710faf9d98b8c",
+                    "bucket": "636c805d2bd710faf9d98b8f",
+                    "checkIn": "636c805d2bd710faf9d98b8d",
+                    "groupChat": "636c805d2bd710faf9d98b8b",
+                    "schedule": "636c805d2bd710faf9d98b8e"
+                }]
+            },
+            "examples": [
+                [{
+                    "archived": {
+                        "status": false
+                    },
+                    "_id": "636a31c920de7c7a7f116733",
+                    "name": "Kelas A",
+                    "desc": "Lulu's personal team for API testing",
+                    "members": [{
+                        "_id": "636a309d20de7c7a7f116719",
+                        "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c",
+                        "bio": "",
+                        "status": ""
+                    }],
+                    "boards": [
+                        "636a31c920de7c7a7f116737"
+                    ],
+                    "type": "team",
+                    "createdAt": "2022-11-08T10:39:05.245Z",
+                    "updatedAt": "2022-11-08T10:39:05.266Z",
+                    "__v": 0,
+                    "blast": "636a31c920de7c7a7f116739",
+                    "bucket": "636a31c920de7c7a7f11673c",
+                    "checkIn": "636a31c920de7c7a7f11673a",
+                    "groupChat": "636a31c920de7c7a7f116738",
+                    "schedule": "636a31c920de7c7a7f11673b"
+                },
+                {
+                    "archived": {
+                        "status": false
+                    },
+                    "_id": "636c09292bd710faf9cf3786",
+                    "name": "Kelas A",
+                    "desc": "Lulu's personal room for API testing",
+                    "members": [{
+                        "_id": "636a309d20de7c7a7f116719",
+                        "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c",
+                        "bio": "",
+                        "status": ""
+                    }],
+                    "boards": [
+                        "636c092a2bd710faf9cf378e"
+                    ],
+                    "type": "team",
+                    "createdAt": "2022-11-09T20:10:18.010Z",
+                    "updatedAt": "2022-11-09T20:10:18.081Z",
+                    "__v": 0,
+                    "blast": "636c092a2bd710faf9cf3790",
+                    "bucket": "636c092a2bd710faf9cf3793",
+                    "checkIn": "636c092a2bd710faf9cf3791",
+                    "groupChat": "636c092a2bd710faf9cf378f",
+                    "schedule": "636c092a2bd710faf9cf3792"
+                },
+                {
+                    "archived": {
+                        "status": false
+                    },
+                    "_id": "636c78bf2bd710faf9d7cc74",
+                    "name": "Kelas A",
+                    "desc": "Edit Team Description",
+                    "members": [{
+                        "_id": "636a309d20de7c7a7f116719",
+                        "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c",
+                        "bio": "",
+                        "status": ""
+                    }],
+                    "boards": [
+                        "636c78bf2bd710faf9d7cceb"
+                    ],
+                    "type": "team",
+                    "createdAt": "2022-11-10T04:06:23.566Z",
+                    "updatedAt": "2022-11-10T05:04:15.277Z",
+                    "__v": 0,
+                    "blast": "636c78bf2bd710faf9d7cced",
+                    "bucket": "636c78bf2bd710faf9d7ccf0",
+                    "checkIn": "636c78bf2bd710faf9d7ccee",
+                    "groupChat": "636c78bf2bd710faf9d7ccec",
+                    "schedule": "636c78bf2bd710faf9d7ccef"
+                },
+                {
+                    "archived": {
+                        "status": false
+                    },
+                    "_id": "636c7bc361d764a07af58d9b",
+                    "name": "",
+                    "desc": "Create Team Without Name",
+                    "members": [{
+                        "_id": "636a309d20de7c7a7f116719",
+                        "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c",
+                        "bio": "",
+                        "status": ""
+                    }],
+                    "boards": [
+                        "636c7bc361d764a07af58d9f"
+                    ],
+                    "type": "team",
+                    "createdAt": "2022-11-10T04:19:15.646Z",
+                    "updatedAt": "2022-11-10T04:19:15.747Z",
+                    "__v": 0,
+                    "blast": "636c7bc361d764a07af58da1",
+                    "bucket": "636c7bc361d764a07af58da4",
+                    "checkIn": "636c7bc361d764a07af58da2",
+                    "groupChat": "636c7bc361d764a07af58da0",
+                    "schedule": "636c7bc361d764a07af58da3"
+                },
+                {
+                    "archived": {
+                        "status": false
+                    },
+                    "_id": "636c7be861d764a07af58dbf",
+                    "name": "Create Team Without Description",
+                    "desc": "",
+                    "members": [{
+                        "_id": "636a309d20de7c7a7f116719",
+                        "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c",
+                        "bio": "",
+                        "status": ""
+                    }],
+                    "boards": [
+                        "636c7be861d764a07af58dc3"
+                    ],
+                    "type": "team",
+                    "createdAt": "2022-11-10T04:19:52.818Z",
+                    "updatedAt": "2022-11-10T04:19:54.296Z",
+                    "__v": 0,
+                    "blast": "636c7be961d764a07af58dc5",
+                    "bucket": "636c7be961d764a07af58dc8",
+                    "checkIn": "636c7be961d764a07af58dc6",
+                    "groupChat": "636c7be961d764a07af58dc4",
+                    "schedule": "636c7be961d764a07af58dc7"
+                },
+                {
+                    "archived": {
+                        "status": false
+                    },
+                    "_id": "636c803f2bd710faf9d9855a",
+                    "name": "",
+                    "desc": "Create Team Without Name",
+                    "members": [{
+                        "_id": "636a309d20de7c7a7f116719",
+                        "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c",
+                        "bio": "",
+                        "status": ""
+                    }],
+                    "boards": [
+                        "636c80412bd710faf9d98560"
+                    ],
+                    "type": "team",
+                    "createdAt": "2022-11-10T04:38:23.560Z",
+                    "updatedAt": "2022-11-10T04:38:27.999Z",
+                    "__v": 0,
+                    "blast": "636c80422bd710faf9d98562",
+                    "bucket": "636c80422bd710faf9d98565",
+                    "checkIn": "636c80422bd710faf9d98563",
+                    "groupChat": "636c80412bd710faf9d98561",
+                    "schedule": "636c80422bd710faf9d98564"
+                },
+                {
+                    "archived": {
+                        "status": false
+                    },
+                    "_id": "636c805d2bd710faf9d98b83",
+                    "name": "Create Team Without Description",
+                    "desc": "",
+                    "members": [{
+                        "_id": "636a309d20de7c7a7f116719",
+                        "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c",
+                        "bio": "",
+                        "status": ""
+                    }],
+                    "boards": [
+                        "636c805d2bd710faf9d98b8a"
+                    ],
+                    "type": "team",
+                    "createdAt": "2022-11-10T04:38:53.239Z",
+                    "updatedAt": "2022-11-10T04:38:54.803Z",
+                    "__v": 0,
+                    "blast": "636c805d2bd710faf9d98b8c",
+                    "bucket": "636c805d2bd710faf9d98b8f",
+                    "checkIn": "636c805d2bd710faf9d98b8d",
+                    "groupChat": "636c805d2bd710faf9d98b8b",
+                    "schedule": "636c805d2bd710faf9d98b8e"
+                }]
+            ]
+        }
+    },
+    "examples": [{
+        "teams": [{
+            "archived": {
+                "status": false
+            },
+            "_id": "636a31c920de7c7a7f116733",
+            "name": "Kelas A",
+            "desc": "Lulu's personal team for API testing",
+            "members": [{
+                "_id": "636a309d20de7c7a7f116719",
+                "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c",
+                "bio": "",
+                "status": ""
+            }],
+            "boards": [
+                "636a31c920de7c7a7f116737"
+            ],
+            "type": "team",
+            "createdAt": "2022-11-08T10:39:05.245Z",
+            "updatedAt": "2022-11-08T10:39:05.266Z",
+            "__v": 0,
+            "blast": "636a31c920de7c7a7f116739",
+            "bucket": "636a31c920de7c7a7f11673c",
+            "checkIn": "636a31c920de7c7a7f11673a",
+            "groupChat": "636a31c920de7c7a7f116738",
+            "schedule": "636a31c920de7c7a7f11673b"
+        },
+        {
+            "archived": {
+                "status": false
+            },
+            "_id": "636c09292bd710faf9cf3786",
+            "name": "Kelas A",
+            "desc": "Lulu's personal room for API testing",
+            "members": [{
+                "_id": "636a309d20de7c7a7f116719",
+                "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c",
+                "bio": "",
+                "status": ""
+            }],
+            "boards": [
+                "636c092a2bd710faf9cf378e"
+            ],
+            "type": "team",
+            "createdAt": "2022-11-09T20:10:18.010Z",
+            "updatedAt": "2022-11-09T20:10:18.081Z",
+            "__v": 0,
+            "blast": "636c092a2bd710faf9cf3790",
+            "bucket": "636c092a2bd710faf9cf3793",
+            "checkIn": "636c092a2bd710faf9cf3791",
+            "groupChat": "636c092a2bd710faf9cf378f",
+            "schedule": "636c092a2bd710faf9cf3792"
+        },
+        {
+            "archived": {
+                "status": false
+            },
+            "_id": "636c78bf2bd710faf9d7cc74",
+            "name": "Kelas A",
+            "desc": "Edit Team Description",
+            "members": [{
+                "_id": "636a309d20de7c7a7f116719",
+                "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c",
+                "bio": "",
+                "status": ""
+            }],
+            "boards": [
+                "636c78bf2bd710faf9d7cceb"
+            ],
+            "type": "team",
+            "createdAt": "2022-11-10T04:06:23.566Z",
+            "updatedAt": "2022-11-10T05:04:15.277Z",
+            "__v": 0,
+            "blast": "636c78bf2bd710faf9d7cced",
+            "bucket": "636c78bf2bd710faf9d7ccf0",
+            "checkIn": "636c78bf2bd710faf9d7ccee",
+            "groupChat": "636c78bf2bd710faf9d7ccec",
+            "schedule": "636c78bf2bd710faf9d7ccef"
+        },
+        {
+            "archived": {
+                "status": false
+            },
+            "_id": "636c7bc361d764a07af58d9b",
+            "name": "",
+            "desc": "Create Team Without Name",
+            "members": [{
+                "_id": "636a309d20de7c7a7f116719",
+                "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c",
+                "bio": "",
+                "status": ""
+            }],
+            "boards": [
+                "636c7bc361d764a07af58d9f"
+            ],
+            "type": "team",
+            "createdAt": "2022-11-10T04:19:15.646Z",
+            "updatedAt": "2022-11-10T04:19:15.747Z",
+            "__v": 0,
+            "blast": "636c7bc361d764a07af58da1",
+            "bucket": "636c7bc361d764a07af58da4",
+            "checkIn": "636c7bc361d764a07af58da2",
+            "groupChat": "636c7bc361d764a07af58da0",
+            "schedule": "636c7bc361d764a07af58da3"
+        },
+        {
+            "archived": {
+                "status": false
+            },
+            "_id": "636c7be861d764a07af58dbf",
+            "name": "Create Team Without Description",
+            "desc": "",
+            "members": [{
+                "_id": "636a309d20de7c7a7f116719",
+                "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c",
+                "bio": "",
+                "status": ""
+            }],
+            "boards": [
+                "636c7be861d764a07af58dc3"
+            ],
+            "type": "team",
+            "createdAt": "2022-11-10T04:19:52.818Z",
+            "updatedAt": "2022-11-10T04:19:54.296Z",
+            "__v": 0,
+            "blast": "636c7be961d764a07af58dc5",
+            "bucket": "636c7be961d764a07af58dc8",
+            "checkIn": "636c7be961d764a07af58dc6",
+            "groupChat": "636c7be961d764a07af58dc4",
+            "schedule": "636c7be961d764a07af58dc7"
+        },
+        {
+            "archived": {
+                "status": false
+            },
+            "_id": "636c803f2bd710faf9d9855a",
+            "name": "",
+            "desc": "Create Team Without Name",
+            "members": [{
+                "_id": "636a309d20de7c7a7f116719",
+                "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c",
+                "bio": "",
+                "status": ""
+            }],
+            "boards": [
+                "636c80412bd710faf9d98560"
+            ],
+            "type": "team",
+            "createdAt": "2022-11-10T04:38:23.560Z",
+            "updatedAt": "2022-11-10T04:38:27.999Z",
+            "__v": 0,
+            "blast": "636c80422bd710faf9d98562",
+            "bucket": "636c80422bd710faf9d98565",
+            "checkIn": "636c80422bd710faf9d98563",
+            "groupChat": "636c80412bd710faf9d98561",
+            "schedule": "636c80422bd710faf9d98564"
+        },
+        {
+            "archived": {
+                "status": false
+            },
+            "_id": "636c805d2bd710faf9d98b83",
+            "name": "Create Team Without Description",
+            "desc": "",
+            "members": [{
+                "_id": "636a309d20de7c7a7f116719",
+                "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c",
+                "bio": "",
+                "status": ""
+            }],
+            "boards": [
+                "636c805d2bd710faf9d98b8a"
+            ],
+            "type": "team",
+            "createdAt": "2022-11-10T04:38:53.239Z",
+            "updatedAt": "2022-11-10T04:38:54.803Z",
+            "__v": 0,
+            "blast": "636c805d2bd710faf9d98b8c",
+            "bucket": "636c805d2bd710faf9d98b8f",
+            "checkIn": "636c805d2bd710faf9d98b8d",
+            "groupChat": "636c805d2bd710faf9d98b8b",
+            "schedule": "636c805d2bd710faf9d98b8e"
+        }]
+    }]
+}

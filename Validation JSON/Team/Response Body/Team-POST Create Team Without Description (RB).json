@@ -1,0 +1,23 @@
+{
+  "newTeam":{
+    "archived":{
+      "status":false
+    },
+    "_id":"63745f87fef0c6ab2e2b20a6",
+    "name":"Create Team Without Description",
+    "desc":"",
+    "members":[
+      "636a309d20de7c7a7f116719"],
+    "boards":[
+      "63745f87fef0c6ab2e2b211e"],
+    "type":"team",
+    "createdAt":"2022-11-16T03:56:55.643Z",
+    "updatedAt":"2022-11-16T03:56:55.670Z",
+    "__v":0,
+    "blast":"63745f87fef0c6ab2e2b2120",
+    "bucket":"63745f87fef0c6ab2e2b2123",
+    "checkIn":"63745f87fef0c6ab2e2b2121",
+    "groupChat":"63745f87fef0c6ab2e2b211f",
+    "schedule":"63745f87fef0c6ab2e2b2122"
+  }
+}

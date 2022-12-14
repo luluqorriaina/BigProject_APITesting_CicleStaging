@@ -1,0 +1,476 @@
+{
+        
+    "companies": [{
+            "workloadCapacityDefault": {
+                "value": 7,
+                "measurement": "Hours"
+            },
+            "_id": "61eba2c85080f47b25ddc8f8",
+            "logo": "https://storage.googleapis.com/production-cicle-app/61eba2c85080f47b25ddc8f8/c9030fb4ab8f92019eda8f6459b89f9e/Logo_Main_QA.png",
+            "admins": [{
+                "companies": [],
+                "_id": "5f8640963a36b417e2f0f166",
+                "defaultCompany": "5f8402fcf4cc864e3addac77",
+                "googleId": "104398470258591418510",
+                "email": "ryryrizkiasri@gmail.com",
+                "fullName": "Ryry Rizky Asri",
+                "photoUrl": "https://storage.googleapis.com/production-cicle-app/5f8640963a36b417e2f0f166/83be9ae63156f412a65485ce9a0e11d5/FBC52788-0F81-4482-A82B-A60948E3CA8C.jpeg",
+                "bio": "Cilsy Fiolution",
+                "status": "Lead of School",
+                "createdAt": "2020-10-14T00:04:38.234Z",
+                "updatedAt": "2022-05-11T07:48:40.464Z",
+                "__v": 0
+            }],
+            "members": [{
+                   
+                
+                },
+                {
+                    "_id": "62f60e2ce646dee8e8cd5a65",
+                    "googleId": "111588961729394926865",
+                    "email": "luluqorriaina@gmail.com",
+                    "fullName": "Lulu Q.A.",
+                    "photoUrl": "https://lh3.googleusercontent.com/a-/AFdZucoAXeNCaxGmhR75ngyG1TL_SFrkMJIoVcAxgdbzEA=s96-c",
+                    "bio": "student",
+                    "status": "PQA15",
+                    "defaultCompany": "636bfb661a3e8065f11eb69c",
+                    "companies": [],
+                    "createdAt": "2022-08-12T08:24:12.064Z",
+                    "updatedAt": "2022-11-09T19:11:34.615Z",
+                    "__v": 0
+               
+                },
+                {
+                    "_id": "636a309d20de7c7a7f116719",
+                    "googleId": "114498059136746820038",
+                    "email": "luluqatesting@gmail.com",
+                    "fullName": "Lulu Qorri Aina",
+                    "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c",
+                    "bio": "a lifelong learner",
+                    "status": "student",
+                    "companies": [],
+                    "createdAt": "2022-11-08T10:34:05.472Z",
+                    "updatedAt": "2022-11-15T09:33:29.520Z",
+                    "__v": 0,
+                    "defaultCompany": "63735ce9fef0c6ab2e0cf2ba",
+                    "password": "$2b$10$Jgwx2Tv0mPgQUDtlqnBKuekT6u..IIN37F1zXcxcuz.q6ifHkWRi6"
+                }
+            ],
+            "teams": [{
+                    "archived": {
+                        "status": false
+                    },
+                    "_id": "61ebaf065080f41e1cdde13c",
+                    "members": [{
+                            "companies": [],
+                            "_id": "5f8634a83a36b417e2f0f15a",
+                            "googleId": "105289791029632939617",
+                            "email": "rivermaya.fs@gmail.com",
+                            "fullName": "Rizki Alief Irfany",
+                            "photoUrl": "/public/uploads/df609e44f8b317832089c1f39987e728ee17f562eea158f18321c18a00b5c023433513c23fd26fc0719cf6d8f48f25c1a334c8f30eafcd2c33cd8f9e30c7daa7.png",
+                            "bio": "Fast response after 12 PM",
+                            "status": "Chief Marketing Officer",
+                            "createdAt": "2020-10-13T23:13:44.551Z",
+                            "updatedAt": "2022-05-11T16:31:55.161Z",
+                            "__v": 0,
+                            "defaultCompany": "5f8402fcf4cc864e3addac77"
+                        }
+                    ],
+                    "boards": [
+                        "61ebaf065080f4790fdde13f"
+                    ],
+                    "name": "Sekolah QA HQ",
+                    "desc": "Tempat kumpul seluruh alumni dan Instruktur Sekolah QA",
+                    "type": "hq",
+                    "createdAt": "2022-01-22T07:15:18.477Z",
+                    "updatedAt": "2022-11-10T09:56:40.635Z",
+                    "__v": 0,
+                    "blast": "61ebaf065080f4e1e6dde143",
+                    "bucket": "61ebaf065080f4c5f1dde149",
+                    "checkIn": "61ebaf065080f4cc7cdde145",
+                    "groupChat": "61ebaf065080f4722adde141",
+                    "schedule": "61ebaf065080f46330dde147"
+                },
+                {
+                    "archived": {
+                        "status": true,
+                        "archivedAt": "2022-03-18T04:18:07.618Z"
+                    },
+                    "_id": "61efb3e8d746c2346531daf7",
+                    "members": [{
+                            "companies": [],
+                            "_id": "5f8670be3a36b417e2f0f326",
+                            "defaultCompany": "5f8402fcf4cc864e3addac77",
+                            "googleId": "101172753228315044671",
+                            "email": "tresna.widiyaman@gmail.com",
+                            "fullName": "Tresna Widiyaman",
+                            "photoUrl": "https://storage.googleapis.com/production-cicle-app/5f8670be3a36b417e2f0f326/2ccbe4503d82122dd22891f8fbf5a0d8/_MG_9340.JPG",
+                            "bio": "09.00-11.45 & 13.00-16.00 WIB | Personal Message kalau butuh urgent.",
+                            "status": "Supervisor of Product Development",
+                            "createdAt": "2020-10-14T03:30:06.821Z",
+                            "updatedAt": "2022-05-11T13:46:53.294Z",
+                            "__v": 0
+                        }
+                    
+                    ],
+                    "boards": [
+                        "633f86f93a23d3e794944a34"
+                    ],
+                    "type": "team",
+                    "createdAt": "2022-10-07T01:55:05.601Z",
+                    "updatedAt": "2022-11-10T09:56:40.635Z",
+                    "__v": 0,
+                    "blast": "633f86f93a23d3e794944a36",
+                    "bucket": "633f86f93a23d3e794944a39",
+                    "checkIn": "633f86f93a23d3e794944a37",
+                    "groupChat": "633f86f93a23d3e794944a35",
+                    "schedule": "633f86f93a23d3e794944a38"
+                },
+                {
+                    "archived": {
+                        "status": false
+                    },
+                    "_id": "635367ba699bc04871c0f855",
+                    "name": "Kelas A",
+                    "desc": "",
+                    "members": [{
+                            "_id": "635001379411977405a23eda",
+                            "googleId": "112845617384493011028",
+                            "email": "ajisetyawans@gmail.com",
+                            "fullName": "Aji Setyawan",
+                            "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu26psG3sLpUkDRa9blKHR_Gu2SitSdQ1LArnaHU=s96-c",
+                            "bio": "Aji Setyawan",
+                            "status": "Software Engineersssss",
+                            "companies": [],
+                            "createdAt": "2022-10-19T13:52:55.157Z",
+                            "updatedAt": "2022-11-12T02:38:17.176Z",
+                            "__v": 0,
+                            "defaultCompany": "636f0719f0d9372bfbf94933"
+                        },
+                        {
+                            "_id": "62f63f5d93a55ccbaaaee181",
+                            "googleId": "117903096486356928707",
+                            "email": "mnovasetyawan@gmail.com",
+                            "fullName": "Moch Nova Setyawan",
+                            "photoUrl": "https://lh3.googleusercontent.com/a-/AFdZucrnAjT3I6nzDMfohdc_LU1GY0dcaVMeXxORykNq=s96-c",
+                            "bio": "sudah di takdirkan maha pencipta",
+                            "status": "single selamanya",
+                            "defaultCompany": null,
+                            "companies": [],
+                            "createdAt": "2022-08-12T11:54:05.094Z",
+                            "updatedAt": "2022-11-11T20:11:00.631Z",
+                            "__v": 0
+                        },
+                        {
+                            "_id": "62f652fa98ae1e904837debf",
+                            "googleId": "101738403701622725929",
+                            "email": "nisak9617@gmail.com",
+                            "fullName": "nisa khoirun",
+                            "photoUrl": "https://lh3.googleusercontent.com/a-/AFdZucp3YKbkexnApOshS4YCTMudD8UOWLBf2H3RCgF08w=s96-c",
+                            "bio": "",
+                            "status": "",
+                            "companies": [],
+                            "createdAt": "2022-08-12T13:17:46.437Z",
+                            "updatedAt": "2022-11-12T07:34:41.759Z",
+                            "__v": 0,
+                            "defaultCompany": "636f4c91f0d9372bfbf9a5e2"
+                        },
+                        {
+                            "_id": "62f60e2ce646dee8e8cd5a65",
+                            "googleId": "111588961729394926865",
+                            "email": "luluqorriaina@gmail.com",
+                            "fullName": "Lulu Q.A.",
+                            "photoUrl": "https://lh3.googleusercontent.com/a-/AFdZucoAXeNCaxGmhR75ngyG1TL_SFrkMJIoVcAxgdbzEA=s96-c",
+                            "bio": "student",
+                            "status": "PQA15",
+                            "defaultCompany": "636bfb661a3e8065f11eb69c",
+                            "companies": [],
+                            "createdAt": "2022-08-12T08:24:12.064Z",
+                            "updatedAt": "2022-11-09T19:11:34.615Z",
+                            "__v": 0
+                        },
+                        {
+                            "_id": "6214988e48c88f6184e24c76",
+                            "defaultCompany": "61eba2c85080f47b25ddc8f8",
+                            "companies": [],
+                            "googleId": "104848530226922364460",
+                            "email": "trustoim@gmail.com",
+                            "fullName": "Oim",
+                            "photoUrl": "https://lh3.googleusercontent.com/a-/AOh14Gg6XtIErfNY2UhMA5QkOyoYYtx-CC_nMPl3fUnvKg=s96-c",
+                            "bio": "Mentor",
+                            "status": "Test Engineer",
+                            "createdAt": "2022-02-22T08:02:22.282Z",
+                            "updatedAt": "2022-10-24T12:44:04.753Z",
+                            "__v": 0
+                        },
+                        {
+                            "_id": "635000bc2e20d88b28b61c00",
+                            "googleId": "103333607480682677529",
+                            "email": "dwimahendrananda@gmail.com",
+                            "fullName": "Nanda Dwi Mahendra",
+                            "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu0-LlWrXjcsCDkEQiYetYJvs_MMhzEJePr83uyNxA=s96-c",
+                            "bio": "",
+                            "status": "",
+                            "defaultCompany": "63705555b9fe9bae7d7e00d2",
+                            "companies": [],
+                            "createdAt": "2022-10-19T13:50:52.856Z",
+                            "updatedAt": "2022-11-13T02:24:21.277Z",
+                            "__v": 0
+                        },
+                        {
+                            "_id": "62f5f90d98ae1e90483795af",
+                            "googleId": "114403458148389919657",
+                            "email": "workbusiness5858@gmail.com",
+                            "fullName": "work business58",
+                            "photoUrl": "https://lh3.googleusercontent.com/a/AItbvmlTIcnLWAk3Ep8xozZU48XwfoeFlYtKjoAuzrBw=s96-c",
+                            "bio": "",
+                            "status": "",
+                            "defaultCompany": "61eba2c85080f47b25ddc8f8",
+                            "companies": [],
+                            "createdAt": "2022-08-12T06:54:05.966Z",
+                            "updatedAt": "2022-10-25T11:14:12.599Z",
+                            "__v": 0
+                        }
+                    ],
+                    "boards": [
+                        "635367ba699bc04871c0f858"
+                    ],
+                    "type": "team",
+                    "createdAt": "2022-10-22T03:47:06.238Z",
+                    "updatedAt": "2022-11-10T09:56:40.635Z",
+                    "__v": 0,
+                    "blast": "635367ba699bc04871c0f85a",
+                    "bucket": "635367ba699bc04871c0f85d",
+                    "checkIn": "635367ba699bc04871c0f85b",
+                    "groupChat": "635367ba699bc04871c0f859",
+                    "schedule": "635367ba699bc04871c0f85c"
+                },
+                {    
+                    "archived": {
+                        "status": false
+                    }
+                    }],
+                    "boards": [
+                        "6373916366ccc7048f832dcf"
+                    ],
+                    "type": "team",
+                    "createdAt": "2022-11-15T13:17:23.426Z",
+                    "updatedAt": "2022-11-15T13:17:23.452Z",
+                    "__v": 0,
+                    "blast": "6373916366ccc7048f832dd1",
+                    "bucket": "6373916366ccc7048f832dd4",
+                    "checkIn": "6373916366ccc7048f832dd2",
+                    "groupChat": "6373916366ccc7048f832dd0",
+                    "schedule": "6373916366ccc7048f832dd3"
+                }
+            ],
+            "name": "Sekolah QA Cilsy",
+            "desc": "belajar QA di cilsy aja",
+            "membersJoined": [{
+                    "_id": "61ebaf9d557677d467bd60c8",
+                    "member": "5f8634a83a36b417e2f0f15a",
+                    "joinedAt": "2022-01-22T07:17:49.028Z"
+                },
+                {
+                }
+            ],
+            "createdAt": "2022-01-22T06:23:04.507Z",
+            "updatedAt": "2022-11-15T13:17:23.429Z",
+            "__v": 0
+        },
+        {
+            "workloadCapacityDefault": {
+                "value": 7,
+                "measurement": "Hours"
+            },
+            "_id": "637359b066ccc7048f82ff35",
+            "name": "Lulu's Company",
+            "desc": "Edit Company Description",
+            "logo": "/public/images/company-default.png",
+            "admins": [{
+                "_id": "636a309d20de7c7a7f116719",
+                "googleId": "114498059136746820038",
+                "email": "luluqatesting@gmail.com",
+                "fullName": "Lulu Qorri Aina",
+                "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c",
+                "bio": "a lifelong learner",
+                "status": "student",
+                "companies": [],
+                "createdAt": "2022-11-08T10:34:05.472Z",
+                "updatedAt": "2022-11-15T09:33:29.520Z",
+                "__v": 0,
+                "defaultCompany": "63735ce9fef0c6ab2e0cf2ba",
+                "password": "$2b$10$Jgwx2Tv0mPgQUDtlqnBKuekT6u..IIN37F1zXcxcuz.q6ifHkWRi6"
+            }],
+            "membersJoined": [{
+                "member": "636a309d20de7c7a7f116719",
+                "joinedAt": "2022-11-15T09:19:44.332Z",
+                "_id": "637359b066ccc7048f82ff36"
+            }],
+            "members": [{
+                "_id": "636a309d20de7c7a7f116719",
+                "googleId": "114498059136746820038",
+                "email": "luluqatesting@gmail.com",
+                "fullName": "Lulu Qorri Aina",
+                "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c",
+                "bio": "a lifelong learner",
+                "status": "student",
+                "companies": [],
+                "createdAt": "2022-11-08T10:34:05.472Z",
+                "updatedAt": "2022-11-15T09:33:29.520Z",
+                "__v": 0,
+                "defaultCompany": "63735ce9fef0c6ab2e0cf2ba",
+                "password": "$2b$10$Jgwx2Tv0mPgQUDtlqnBKuekT6u..IIN37F1zXcxcuz.q6ifHkWRi6"
+            }],
+            "teams": [],
+            "createdAt": "2022-11-15T09:19:44.338Z",
+            "updatedAt": "2022-11-15T12:45:28.099Z",
+            "__v": 0
+        },
+        {
+            "workloadCapacityDefault": {
+                "value": 7,
+                "measurement": "Hours"
+            },
+            "_id": "63735a49fef0c6ab2e0cea77",
+            "name": "Lulu's Company",
+            "desc": "Company for API testing",
+            "logo": "/public/images/company-default.png",
+            "admins": [{
+                "_id": "636a309d20de7c7a7f116719",
+                "googleId": "114498059136746820038",
+                "email": "luluqatesting@gmail.com",
+                "fullName": "Lulu Qorri Aina",
+                "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c",
+                "bio": "a lifelong learner",
+                "status": "student",
+                "companies": [],
+                "createdAt": "2022-11-08T10:34:05.472Z",
+                "updatedAt": "2022-11-15T09:33:29.520Z",
+                "__v": 0,
+                "defaultCompany": "63735ce9fef0c6ab2e0cf2ba",
+                "password": "$2b$10$Jgwx2Tv0mPgQUDtlqnBKuekT6u..IIN37F1zXcxcuz.q6ifHkWRi6"
+            }],
+            "membersJoined": [{
+                "member": "636a309d20de7c7a7f116719",
+                "joinedAt": "2022-11-15T09:22:17.431Z",
+                "_id": "63735a49fef0c6ab2e0cea78"
+            }],
+            "members": [{
+                "_id": "636a309d20de7c7a7f116719",
+                "googleId": "114498059136746820038",
+                "email": "luluqatesting@gmail.com",
+                "fullName": "Lulu Qorri Aina",
+                "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c",
+                "bio": "a lifelong learner",
+                "status": "student",
+                "companies": [],
+                "createdAt": "2022-11-08T10:34:05.472Z",
+                "updatedAt": "2022-11-15T09:33:29.520Z",
+                "__v": 0,
+                "defaultCompany": "63735ce9fef0c6ab2e0cf2ba",
+                "password": "$2b$10$Jgwx2Tv0mPgQUDtlqnBKuekT6u..IIN37F1zXcxcuz.q6ifHkWRi6"
+            }],
+            "teams": [],
+            "createdAt": "2022-11-15T09:22:17.437Z",
+            "updatedAt": "2022-11-15T09:22:17.437Z",
+            "__v": 0
+        },
+        {
+            "workloadCapacityDefault": {
+                "value": 7,
+                "measurement": "Hours"
+            },
+            "_id": "63735aea0a02aab479d7b76d",
+            "name": "",
+            "desc": "Company Without Name",
+            "logo": "/public/images/company-default.png",
+            "admins": [{
+                "_id": "636a309d20de7c7a7f116719",
+                "googleId": "114498059136746820038",
+                "email": "luluqatesting@gmail.com",
+                "fullName": "Lulu Qorri Aina",
+                "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c",
+                "bio": "a lifelong learner",
+                "status": "student",
+                "companies": [],
+                "createdAt": "2022-11-08T10:34:05.472Z",
+                "updatedAt": "2022-11-15T09:33:29.520Z",
+                "__v": 0,
+                "defaultCompany": "63735ce9fef0c6ab2e0cf2ba",
+                "password": "$2b$10$Jgwx2Tv0mPgQUDtlqnBKuekT6u..IIN37F1zXcxcuz.q6ifHkWRi6"
+            }],
+            "membersJoined": [{
+                "member": "636a309d20de7c7a7f116719",
+                "joinedAt": "2022-11-15T09:24:58.885Z",
+                "_id": "63735aea0a02aab479d7b76e"
+            }],
+            "members": [{
+                "_id": "636a309d20de7c7a7f116719",
+                "googleId": "114498059136746820038",
+                "email": "luluqatesting@gmail.com",
+                "fullName": "Lulu Qorri Aina",
+                "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c",
+                "bio": "a lifelong learner",
+                "status": "student",
+                "companies": [],
+                "createdAt": "2022-11-08T10:34:05.472Z",
+                "updatedAt": "2022-11-15T09:33:29.520Z",
+                "__v": 0,
+                "defaultCompany": "63735ce9fef0c6ab2e0cf2ba",
+                "password": "$2b$10$Jgwx2Tv0mPgQUDtlqnBKuekT6u..IIN37F1zXcxcuz.q6ifHkWRi6"
+            }],
+            "teams": [],
+            "createdAt": "2022-11-15T09:24:58.891Z",
+            "updatedAt": "2022-11-15T09:24:58.891Z",
+            "__v": 0
+        },
+        {
+            "workloadCapacityDefault": {
+                "value": 7,
+                "measurement": "Hours"
+            },
+            "_id": "63735b9a66ccc7048f8300fd",
+            "name": "",
+            "desc": "Company Without Name",
+            "logo": "/public/images/company-default.png",
+            "admins": [{
+                "_id": "636a309d20de7c7a7f116719",
+                "googleId": "114498059136746820038",
+                "email": "luluqatesting@gmail.com",
+                "fullName": "Lulu Qorri Aina",
+                "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c",
+                "bio": "a lifelong learner",
+                "status": "student",
+                "companies": [],
+                "createdAt": "2022-11-08T10:34:05.472Z",
+                "updatedAt": "2022-11-15T09:33:29.520Z",
+                "__v": 0,
+                "defaultCompany": "63735ce9fef0c6ab2e0cf2ba",
+                "password": "$2b$10$Jgwx2Tv0mPgQUDtlqnBKuekT6u..IIN37F1zXcxcuz.q6ifHkWRi6"
+            }],
+            "membersJoined": [{
+                "member": "636a309d20de7c7a7f116719",
+                "joinedAt": "2022-11-15T09:27:54.570Z",
+                "_id": "63735b9a66ccc7048f8300fe"
+            }],
+            "members": [{
+                "_id": "636a309d20de7c7a7f116719",
+                "googleId": "114498059136746820038",
+                "email": "luluqatesting@gmail.com",
+                "fullName": "Lulu Qorri Aina",
+                "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c",
+                "bio": "a lifelong learner",
+                "status": "student",
+                "companies": [],
+                "createdAt": "2022-11-08T10:34:05.472Z",
+                "updatedAt": "2022-11-15T09:33:29.520Z",
+                "__v": 0,
+                "defaultCompany": "63735ce9fef0c6ab2e0cf2ba",
+                "password": "$2b$10$Jgwx2Tv0mPgQUDtlqnBKuekT6u..IIN37F1zXcxcuz.q6ifHkWRi6"
+            }],
+            "teams": [],
+            "createdAt": "2022-11-15T09:27:54.574Z",
+            "updatedAt": "2022-11-15T09:27:54.574Z",
+            "__v": 0
+        }        

@@ -1,0 +1,431 @@
+{
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "default": {},
+    "title": "Root Schema",
+    "required": [
+        "message",
+        "card"
+    ],
+    "properties": {
+        "message": {
+            "type": "string",
+            "default": "",
+            "title": "The message Schema",
+            "examples": [
+                "Update card is success"
+            ]
+        },
+        "card": {
+            "type": "object",
+            "default": {},
+            "title": "The card Schema",
+            "required": [
+                "_id",
+                "name",
+                "creator",
+                "members",
+                "checklists",
+                "cheers",
+                "comments",
+                "labels",
+                "attachments",
+                "complete",
+                "isNotified",
+                "archived",
+                "isPublic",
+                "workload",
+                "createdAt",
+                "updatedAt",
+                "__v",
+                "dueDate",
+                "startDate"
+            ],
+            "properties": {
+                "_id": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The _id Schema",
+                    "examples": [
+                        "6374a269fef0c6ab2e2d68a4"
+                    ]
+                },
+                "name": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The name Schema",
+                    "examples": [
+                        "Update Card from API"
+                    ]
+                },
+                "creator": {
+                    "type": "object",
+                    "default": {},
+                    "title": "The creator Schema",
+                    "required": [
+                        "_id",
+                        "fullName",
+                        "photoUrl"
+                    ],
+                    "properties": {
+                        "_id": {
+                            "type": "string",
+                            "default": "",
+                            "title": "The _id Schema",
+                            "examples": [
+                                "636a309d20de7c7a7f116719"
+                            ]
+                        },
+                        "fullName": {
+                            "type": "string",
+                            "default": "",
+                            "title": "The fullName Schema",
+                            "examples": [
+                                "Lulu Q.A."
+                            ]
+                        },
+                        "photoUrl": {
+                            "type": "string",
+                            "default": "",
+                            "title": "The photoUrl Schema",
+                            "examples": [
+                                "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c"
+                            ]
+                        }
+                    },
+                    "examples": [{
+                        "_id": "636a309d20de7c7a7f116719",
+                        "fullName": "Lulu Q.A.",
+                        "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c"
+                    }]
+                },
+                "members": {
+                    "type": "array",
+                    "default": [],
+                    "title": "The members Schema",
+                    "items": {
+                        "type": "object",
+                        "default": {},
+                        "title": "A Schema",
+                        "required": [
+                            "_id",
+                            "photoUrl"
+                        ],
+                        "properties": {
+                            "_id": {
+                                "type": "string",
+                                "default": "",
+                                "title": "The _id Schema",
+                                "examples": [
+                                    "636a309d20de7c7a7f116719"
+                                ]
+                            },
+                            "photoUrl": {
+                                "type": "string",
+                                "default": "",
+                                "title": "The photoUrl Schema",
+                                "examples": [
+                                    "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c"
+                                ]
+                            }
+                        },
+                        "examples": [{
+                            "_id": "636a309d20de7c7a7f116719",
+                            "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c"
+                        }]
+                    },
+                    "examples": [
+                        [{
+                            "_id": "636a309d20de7c7a7f116719",
+                            "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c"
+                        }]
+                    ]
+                },
+                "checklists": {
+                    "type": "array",
+                    "default": [],
+                    "title": "The checklists Schema",
+                    "items": {},
+                    "examples": [
+                        []
+                    ]
+                },
+                "cheers": {
+                    "type": "array",
+                    "default": [],
+                    "title": "The cheers Schema",
+                    "items": {},
+                    "examples": [
+                        []
+                    ]
+                },
+                "comments": {
+                    "type": "array",
+                    "default": [],
+                    "title": "The comments Schema",
+                    "items": {},
+                    "examples": [
+                        []
+                    ]
+                },
+                "labels": {
+                    "type": "array",
+                    "default": [],
+                    "title": "The labels Schema",
+                    "items": {},
+                    "examples": [
+                        []
+                    ]
+                },
+                "attachments": {
+                    "type": "array",
+                    "default": [],
+                    "title": "The attachments Schema",
+                    "items": {},
+                    "examples": [
+                        []
+                    ]
+                },
+                "complete": {
+                    "type": "object",
+                    "default": {},
+                    "title": "The complete Schema",
+                    "required": [
+                        "status",
+                        "type"
+                    ],
+                    "properties": {
+                        "status": {
+                            "type": "boolean",
+                            "default": false,
+                            "title": "The status Schema",
+                            "examples": [
+                                false
+                            ]
+                        },
+                        "type": {
+                            "type": "null",
+                            "default": null,
+                            "title": "The type Schema",
+                            "examples": [
+                                null
+                            ]
+                        }
+                    },
+                    "examples": [{
+                        "status": false,
+                        "type": null
+                    }]
+                },
+                "isNotified": {
+                    "type": "object",
+                    "default": {},
+                    "title": "The isNotified Schema",
+                    "required": [
+                        "startOneDay",
+                        "startOneHour",
+                        "dueOneDay",
+                        "dueOneHour"
+                    ],
+                    "properties": {
+                        "startOneDay": {
+                            "type": "boolean",
+                            "default": false,
+                            "title": "The startOneDay Schema",
+                            "examples": [
+                                false
+                            ]
+                        },
+                        "startOneHour": {
+                            "type": "boolean",
+                            "default": false,
+                            "title": "The startOneHour Schema",
+                            "examples": [
+                                false
+                            ]
+                        },
+                        "dueOneDay": {
+                            "type": "boolean",
+                            "default": false,
+                            "title": "The dueOneDay Schema",
+                            "examples": [
+                                false
+                            ]
+                        },
+                        "dueOneHour": {
+                            "type": "boolean",
+                            "default": false,
+                            "title": "The dueOneHour Schema",
+                            "examples": [
+                                false
+                            ]
+                        }
+                    },
+                    "examples": [{
+                        "startOneDay": false,
+                        "startOneHour": false,
+                        "dueOneDay": false,
+                        "dueOneHour": false
+                    }]
+                },
+                "archived": {
+                    "type": "object",
+                    "default": {},
+                    "title": "The archived Schema",
+                    "required": [
+                        "status"
+                    ],
+                    "properties": {
+                        "status": {
+                            "type": "boolean",
+                            "default": false,
+                            "title": "The status Schema",
+                            "examples": [
+                                false
+                            ]
+                        }
+                    },
+                    "examples": [{
+                        "status": false
+                    }]
+                },
+                "isPublic": {
+                    "type": "boolean",
+                    "default": false,
+                    "title": "The isPublic Schema",
+                    "examples": [
+                        true
+                    ]
+                },
+                "workload": {
+                    "type": "integer",
+                    "default": 0,
+                    "title": "The workload Schema",
+                    "examples": [
+                        4
+                    ]
+                },
+                "createdAt": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The createdAt Schema",
+                    "examples": [
+                        "2022-11-16T08:42:17.352Z"
+                    ]
+                },
+                "updatedAt": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The updatedAt Schema",
+                    "examples": [
+                        "2022-11-16T08:57:24.389Z"
+                    ]
+                },
+                "__v": {
+                    "type": "integer",
+                    "default": 0,
+                    "title": "The __v Schema",
+                    "examples": [
+                        0
+                    ]
+                },
+                "dueDate": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The dueDate Schema",
+                    "examples": [
+                        "2021-09-16T17:00:00.000Z"
+                    ]
+                },
+                "startDate": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The startDate Schema",
+                    "examples": [
+                        "2021-09-13T17:00:00.000Z"
+                    ]
+                }
+            },
+            "examples": [{
+                "_id": "6374a269fef0c6ab2e2d68a4",
+                "name": "Update Card from API",
+                "creator": {
+                    "_id": "636a309d20de7c7a7f116719",
+                    "fullName": "Lulu Q.A.",
+                    "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c"
+                },
+                "members": [{
+                    "_id": "636a309d20de7c7a7f116719",
+                    "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c"
+                }],
+                "checklists": [],
+                "cheers": [],
+                "comments": [],
+                "labels": [],
+                "attachments": [],
+                "complete": {
+                    "status": false,
+                    "type": null
+                },
+                "isNotified": {
+                    "startOneDay": false,
+                    "startOneHour": false,
+                    "dueOneDay": false,
+                    "dueOneHour": false
+                },
+                "archived": {
+                    "status": false
+                },
+                "isPublic": true,
+                "workload": 4,
+                "createdAt": "2022-11-16T08:42:17.352Z",
+                "updatedAt": "2022-11-16T08:57:24.389Z",
+                "__v": 0,
+                "dueDate": "2021-09-16T17:00:00.000Z",
+                "startDate": "2021-09-13T17:00:00.000Z"
+            }]
+        }
+    },
+    "examples": [{
+        "message": "Update card is success",
+        "card": {
+            "_id": "6374a269fef0c6ab2e2d68a4",
+            "name": "Update Card from API",
+            "creator": {
+                "_id": "636a309d20de7c7a7f116719",
+                "fullName": "Lulu Q.A.",
+                "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c"
+            },
+            "members": [{
+                "_id": "636a309d20de7c7a7f116719",
+                "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c"
+            }],
+            "checklists": [],
+            "cheers": [],
+            "comments": [],
+            "labels": [],
+            "attachments": [],
+            "complete": {
+                "status": false,
+                "type": null
+            },
+            "isNotified": {
+                "startOneDay": false,
+                "startOneHour": false,
+                "dueOneDay": false,
+                "dueOneHour": false
+            },
+            "archived": {
+                "status": false
+            },
+            "isPublic": true,
+            "workload": 4,
+            "createdAt": "2022-11-16T08:42:17.352Z",
+            "updatedAt": "2022-11-16T08:57:24.389Z",
+            "__v": 0,
+            "dueDate": "2021-09-16T17:00:00.000Z",
+            "startDate": "2021-09-13T17:00:00.000Z"
+        }
+    }]
+}

@@ -1,0 +1,140 @@
+{
+  "currentTeam":{
+    "_id":"6373b898fef0c6ab2e29fa9e",
+    "name":"Lulu's Team",
+    "desc":"Team for API testing",
+    "members":[
+      {
+        "_id":"636a309d20de7c7a7f116719",
+        "email":"luluqatesting@gmail.com",
+        "fullName":"Lulu Q.A.",
+        "photoUrl":"https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c"
+      }],
+    "boards":[
+      {
+        "_id":"6373b898fef0c6ab2e29fb16",
+        "name":"Kanban Board",
+        "desc":"Track progress with this Kanban-styled board",
+        "lists":[
+        ]
+      }],
+    "type":"team",
+    "archived":{
+      "status":false
+    },
+    "createdAt":"2022-11-15T16:04:40.656Z",
+    "updatedAt":"2022-11-15T16:04:40.682Z",
+    "__v":0,
+    "blast":{
+      "_id":"6373b898fef0c6ab2e29fb18",
+      "posts":[
+      ],
+      "createdAt":"2022-11-15T16:04:40.669Z",
+      "updatedAt":"2022-11-15T16:04:40.669Z"
+    },
+    "bucket":{
+      "_id":"6373b898fef0c6ab2e29fb1b",
+      "docs":[
+      ],
+      "buckets":[
+      ],
+      "files":[
+      ],
+      "title":"Docs & Files",
+      "type":"main",
+      "archived":{
+        "status":false
+      },
+      "isPublic":true,
+      "subscribers":[
+      ],
+      "createdAt":"2022-11-15T16:04:40.670Z",
+      "updatedAt":"2022-11-15T16:04:40.670Z",
+      "__v":0
+    },
+    "checkIn":{
+      "_id":"6373b898fef0c6ab2e29fb19",
+      "questions":[
+      ]
+    },
+    "groupChat":{
+      "_id":"6373b898fef0c6ab2e29fb17",
+      "messages":[
+        {
+          "_id":"63744d6afef0c6ab2e2b0069",
+          "content":"",
+          "creator":{
+            "_id":"636a309d20de7c7a7f116719",
+            "fullName":"Lulu Q.A.",
+            "photoUrl":"https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c"
+          },
+          "isDeleted":false,
+          "createdAt":"2022-11-16T02:39:38.763Z",
+          "updatedAt":"2022-11-16T02:39:38.763Z",
+          "__v":0
+        },
+        {
+          "_id":"63744ca7fef0c6ab2e2afb83",
+          "content":"",
+          "creator":{
+            "_id":"636a309d20de7c7a7f116719",
+            "fullName":"Lulu Q.A.",
+            "photoUrl":"https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c"
+          },
+          "isDeleted":false,
+          "createdAt":"2022-11-16T02:36:23.709Z",
+          "updatedAt":"2022-11-16T02:36:23.709Z",
+          "__v":0
+        },
+        {
+          "_id":"63744b8a66ccc7048fa0240c",
+          "content":"This message was deleted",
+          "creator":{
+            "_id":"636a309d20de7c7a7f116719",
+            "fullName":"Lulu Q.A.",
+            "photoUrl":"https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c"
+          },
+          "isDeleted":true,
+          "createdAt":"2022-11-16T02:31:38.159Z",
+          "updatedAt":"2022-11-16T02:48:53.349Z",
+          "__v":0,
+          "deletedAt":"2022-11-16T02:48:53.348Z"
+        },
+        {
+          "_id":"63744abdfef0c6ab2e2af3e2",
+          "content":"<p>Ini pesan Lulu melalui API</p>",
+          "creator":{
+            "_id":"636a309d20de7c7a7f116719",
+            "fullName":"Lulu Q.A.",
+            "photoUrl":"https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c"
+          },
+          "isDeleted":false,
+          "createdAt":"2022-11-16T02:28:13.082Z",
+          "updatedAt":"2022-11-16T02:28:13.082Z",
+          "__v":0
+        }],
+      "attachments":[
+      ],
+      "createdAt":"2022-11-15T16:04:40.669Z",
+      "updatedAt":"2022-11-16T02:39:38.770Z",
+      "__v":0
+    },
+    "schedule":{
+      "_id":"6373b898fef0c6ab2e29fb1a",
+      "googleCalendar":{
+        "calendarId":null,
+        "aclRuleId":null,
+        "calendarIcsLink":null,
+        "calendarHtmlLink":null
+      },
+      "events":[
+      ],
+      "setPublic":false,
+      "createdAt":"2022-11-15T16:04:40.669Z",
+      "updatedAt":"2022-11-15T16:04:40.669Z",
+      "__v":0,
+      "fromDate":"2022-11-16T03:50:14.720Z",
+      "untilDate":"2022-12-17T03:50:14.720Z"
+    }
+  }
+}

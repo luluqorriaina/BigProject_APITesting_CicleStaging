@@ -1,0 +1,348 @@
+{
+    "message":"Get Blast Detail successful",
+    "blast":{
+      "_id":"6373b898fef0c6ab2e29fb18",
+      "posts":[
+      ],
+      "createdAt":"2022-11-15T16:04:40.669Z",
+      "updatedAt":"2022-11-15T16:04:40.669Z",
+      "__v":0
+    },
+    "currentTeam":{
+      "archived":{
+        "status":false
+      },
+      "_id":"6373b898fef0c6ab2e29fa9e",
+      "name":"Lulu's Team",
+      "desc":"Team for API testing",
+      "members":[
+        {
+          "_id":"636a309d20de7c7a7f116719",
+          "googleId":"114498059136746820038",
+          "email":"luluqatesting@gmail.com",
+          "fullName":"Lulu Q.A.",
+          "photoUrl":"https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c",
+          "bio":"student",
+          "status":"a lifelong learner",
+          "companies":[
+          ],
+          "createdAt":"2022-11-08T10:34:05.472Z",
+          "updatedAt":"2022-11-16T04:10:59.597Z",
+          "__v":0,
+          "defaultCompany":"637456a0fef0c6ab2e2b11c1",
+          "password":"$2b$10$BR5s8..DXywQAfQXjnPBUudk2woxi2/7ntP07Q0/1IUd8912DxbDS"
+        }],
+      "boards":[
+        {
+          "_id":"6373b898fef0c6ab2e29fb16",
+          "name":"Kanban Board",
+          "desc":"Track progress with this Kanban-styled board",
+          "lists":[
+          ],
+          "labels":[
+          ],
+          "createdAt":"2022-11-15T16:04:40.669Z",
+          "updatedAt":"2022-11-15T16:04:40.669Z",
+          "__v":0
+        }],
+      "type":"team",
+      "createdAt":"2022-11-15T16:04:40.656Z",
+      "updatedAt":"2022-11-15T16:04:40.682Z",
+      "__v":0,
+      "blast":{
+        "_id":"6373b898fef0c6ab2e29fb18",
+        "posts":[
+        ],
+        "createdAt":"2022-11-15T16:04:40.669Z",
+        "updatedAt":"2022-11-15T16:04:40.669Z",
+        "__v":0
+      },
+      "bucket":{
+        "archived":{
+          "status":false
+        },
+        "_id":"6373b898fef0c6ab2e29fb1b",
+        "docs":[
+        ],
+        "buckets":[
+        ],
+        "files":[
+        ],
+        "title":"Docs & Files",
+        "type":"main",
+        "isPublic":true,
+        "subscribers":[
+        ],
+        "createdAt":"2022-11-15T16:04:40.670Z",
+        "updatedAt":"2022-11-15T16:04:40.670Z",
+        "__v":0
+      },
+      "checkIn":{
+        "_id":"6373b898fef0c6ab2e29fb19",
+        "questions":[
+        ],
+        "createdAt":"2022-11-15T16:04:40.669Z",
+        "updatedAt":"2022-11-15T16:04:40.669Z",
+        "__v":0
+      },
+      "groupChat":{
+        "_id":"6373b898fef0c6ab2e29fb17",
+        "messages":[
+          {
+            "_id":"63744d6afef0c6ab2e2b0069",
+            "content":"",
+            "creator":{
+              "_id":"636a309d20de7c7a7f116719",
+              "googleId":"114498059136746820038",
+              "email":"luluqatesting@gmail.com",
+              "fullName":"Lulu Q.A.",
+              "photoUrl":"https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c",
+              "bio":"student",
+              "status":"a lifelong learner",
+              "companies":[
+              ],
+              "createdAt":"2022-11-08T10:34:05.472Z",
+              "updatedAt":"2022-11-16T04:10:59.597Z",
+              "__v":0,
+              "defaultCompany":"637456a0fef0c6ab2e2b11c1",
+              "password":"$2b$10$BR5s8..DXywQAfQXjnPBUudk2woxi2/7ntP07Q0/1IUd8912DxbDS"
+            },
+            "isDeleted":false,
+            "createdAt":"2022-11-16T02:39:38.763Z",
+            "updatedAt":"2022-11-16T02:39:38.763Z",
+            "__v":0
+          },
+          {
+            "_id":"63744ca7fef0c6ab2e2afb83",
+            "content":"",
+            "creator":{
+              "_id":"636a309d20de7c7a7f116719",
+              "googleId":"114498059136746820038",
+              "email":"luluqatesting@gmail.com",
+              "fullName":"Lulu Q.A.",
+              "photoUrl":"https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c",
+              "bio":"student",
+              "status":"a lifelong learner",
+              "companies":[
+              ],
+              "createdAt":"2022-11-08T10:34:05.472Z",
+              "updatedAt":"2022-11-16T04:10:59.597Z",
+              "__v":0,
+              "defaultCompany":"637456a0fef0c6ab2e2b11c1",
+              "password":"$2b$10$BR5s8..DXywQAfQXjnPBUudk2woxi2/7ntP07Q0/1IUd8912DxbDS"
+            },
+            "isDeleted":false,
+            "createdAt":"2022-11-16T02:36:23.709Z",
+            "updatedAt":"2022-11-16T02:36:23.709Z",
+            "__v":0
+          },
+          {
+            "_id":"63744b8a66ccc7048fa0240c",
+            "content":"This message was deleted",
+            "creator":{
+              "_id":"636a309d20de7c7a7f116719",
+              "googleId":"114498059136746820038",
+              "email":"luluqatesting@gmail.com",
+              "fullName":"Lulu Q.A.",
+              "photoUrl":"https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c",
+              "bio":"student",
+              "status":"a lifelong learner",
+              "companies":[
+              ],
+              "createdAt":"2022-11-08T10:34:05.472Z",
+              "updatedAt":"2022-11-16T04:10:59.597Z",
+              "__v":0,
+              "defaultCompany":"637456a0fef0c6ab2e2b11c1",
+              "password":"$2b$10$BR5s8..DXywQAfQXjnPBUudk2woxi2/7ntP07Q0/1IUd8912DxbDS"
+            },
+            "isDeleted":true,
+            "createdAt":"2022-11-16T02:31:38.159Z",
+            "updatedAt":"2022-11-16T02:48:53.349Z",
+            "__v":0,
+            "deletedAt":"2022-11-16T02:48:53.348Z"
+          },
+          {
+            "_id":"63744abdfef0c6ab2e2af3e2",
+            "content":"<p>Ini pesan Lulu melalui API</p>",
+            "creator":{
+              "_id":"636a309d20de7c7a7f116719",
+              "googleId":"114498059136746820038",
+              "email":"luluqatesting@gmail.com",
+              "fullName":"Lulu Q.A.",
+              "photoUrl":"https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c",
+              "bio":"student",
+              "status":"a lifelong learner",
+              "companies":[
+              ],
+              "createdAt":"2022-11-08T10:34:05.472Z",
+              "updatedAt":"2022-11-16T04:10:59.597Z",
+              "__v":0,
+              "defaultCompany":"637456a0fef0c6ab2e2b11c1",
+              "password":"$2b$10$BR5s8..DXywQAfQXjnPBUudk2woxi2/7ntP07Q0/1IUd8912DxbDS"
+            },
+            "isDeleted":false,
+            "createdAt":"2022-11-16T02:28:13.082Z",
+            "updatedAt":"2022-11-16T02:28:13.082Z",
+            "__v":0
+          }],
+        "attachments":[
+        ],
+        "createdAt":"2022-11-15T16:04:40.669Z",
+        "updatedAt":"2022-11-16T02:39:38.770Z",
+        "__v":0
+      },
+      "schedule":{
+        "googleCalendar":{
+          "calendarId":null,
+          "aclRuleId":null,
+          "calendarIcsLink":null,
+          "calendarHtmlLink":null
+        },
+        "_id":"6373b898fef0c6ab2e29fb1a",
+        "events":[
+        ],
+        "setPublic":false,
+        "createdAt":"2022-11-15T16:04:40.669Z",
+        "updatedAt":"2022-11-15T16:04:40.669Z",
+        "__v":0
+      }
+    },
+    "currentCompany":{
+      "_id":"61eba2c85080f47b25ddc8f8",
+      "workloadCapacityDefault":{
+        "value":7,
+        "measurement":"Hours"
+      },
+      "logo":"https://storage.googleapis.com/production-cicle-app/61eba2c85080f47b25ddc8f8/c9030fb4ab8f92019eda8f6459b89f9e/Logo_Main_QA.png",
+      "admins":[
+        "5f8640963a36b417e2f0f166"],
+      "members":[
+        {
+          "_id":"5f8634a83a36b417e2f0f15a",
+          "fullName":"Rizki Alief Irfany",
+          "photoUrl":"/public/uploads/df609e44f8b317832089c1f39987e728ee17f562eea158f18321c18a00b5c023433513c23fd26fc0719cf6d8f48f25c1a334c8f30eafcd2c33cd8f9e30c7daa7.png"
+        },
+        {
+          "_id":"635000bc2e20d88b28b61c00",
+          "fullName":"Nanda Dwi Mahendra",
+          "photoUrl":"https://lh3.googleusercontent.com/a/ALm5wu0-LlWrXjcsCDkEQiYetYJvs_MMhzEJePr83uyNxA=s96-c"
+        },
+        {
+          "_id":"635001379411977405a23eda",
+          "fullName":"Aji Setyawan",
+          "photoUrl":"https://lh3.googleusercontent.com/a/ALm5wu26psG3sLpUkDRa9blKHR_Gu2SitSdQ1LArnaHU=s96-c"
+        },
+        {
+          "_id":"62f63f5d93a55ccbaaaee181",
+          "fullName":"Moch Nova Setyawan",
+          "photoUrl":"https://lh3.googleusercontent.com/a-/AFdZucrnAjT3I6nzDMfohdc_LU1GY0dcaVMeXxORykNq=s96-c"
+        },
+        {
+          "_id":"62f65277e646dee8e8cd89d0",
+          "fullName":"Muhammad Hafizh Abdillah",
+          "photoUrl":"https://lh3.googleusercontent.com/a-/AFdZucr7Eu9VJ1FQWLBAQIaNCrrm43qhm7krTG_BAJJ2uzg=s96-c"
+        },
+        {
+          "_id":"62f652fa98ae1e904837debf",
+          "fullName":"nisa khoirun",
+          "photoUrl":"https://lh3.googleusercontent.com/a-/AFdZucp3YKbkexnApOshS4YCTMudD8UOWLBf2H3RCgF08w=s96-c"
+        },
+        {
+          "_id":"62f60e2ce646dee8e8cd5a65",
+          "fullName":"Lulu Q.A.",
+          "photoUrl":"https://lh3.googleusercontent.com/a-/AFdZucoAXeNCaxGmhR75ngyG1TL_SFrkMJIoVcAxgdbzEA=s96-c"
+        },
+        {
+          "_id":"62f6526793a55ccbaaaeec13",
+          "fullName":"Ghifari Naufal Rahman",
+          "photoUrl":"https://lh3.googleusercontent.com/a/AItbvmnfmU_tKa9Fz4ArWWve4UGYHrkRxZ80rQVvhlPS=s96-c"
+        },
+        {
+          "_id":"6347b90e699bc04871a852ee",
+          "fullName":"Muhammad Arbi Minanda",
+          "photoUrl":"https://lh3.googleusercontent.com/a/ALm5wu0eUFYz40jyzbTY6w091bBN4OfbaGie70fs-MN1sA=s96-c"
+        },
+        {
+          "_id":"6346c4937ad5d6eb5b29cd1a",
+          "fullName":"Fenrisulfr Lokesson",
+          "photoUrl":"https://lh3.googleusercontent.com/a/ALm5wu38jyuS3wuFGzgUS5EIJhAFlRL0WvsLmrFi0g8H=s96-c"
+        },
+        {
+          "_id":"634577107deb4d8ba5ae883e",
+          "fullName":"Teja Pradipta",
+          "photoUrl":"https://lh3.googleusercontent.com/a/ALm5wu3UeSvCMvPgv8PnnbcnOaLcixBUDBOng6t8biogWQ=s96-c"
+        },
+        {
+          "_id":"6346cd4b699bc04871a76cc3",
+          "fullName":"Faldi Oberton",
+          "photoUrl":"https://lh3.googleusercontent.com/a/ALm5wu20IRwDPLnLirz0GQoeLfl9DOZU3Qrbt46PXRd8iQ=s96-c"
+        },
+        {
+          "_id":"6346c4917ad5d6eb5b29cd12",
+          "fullName":"Novika Dian Renanda",
+          "photoUrl":"https://lh3.googleusercontent.com/a/ALm5wu10Kp_bwBDbZ8PHdN5zla1XdbQvEVb5pNjFBrPMhA=s96-c"
+        },
+        {
+          "_id":"6346bfcd57577a1c948a844d",
+          "fullName":"Anisatun Nafi'ah",
+          "photoUrl":"https://lh3.googleusercontent.com/a/ALm5wu24023NSQxDmxhRM1m0CtwxMVmvHZe3T2syE05z=s96-c"
+        },
+        {
+          "_id":"62f5f90d98ae1e90483795af",
+          "fullName":"work business58",
+          "photoUrl":"https://lh3.googleusercontent.com/a/AItbvmlTIcnLWAk3Ep8xozZU48XwfoeFlYtKjoAuzrBw=s96-c"
+        },
+        {
+          "_id":"636639313e7ccfa63708d9fb",
+          "fullName":"Moch Nova Setyawan",
+          "photoUrl":"https://lh3.googleusercontent.com/a/ALm5wu0IstKQkHB2jaEfcZhrmOBjLcJXBDMbAXjnZkyI=s96-c"
+        },
+        {
+          "_id":"62f64f9298ae1e904837d6f8",
+          "fullName":"Qori'atul Maghfiroh",
+          "photoUrl":"https://lh3.googleusercontent.com/a-/AFdZucrOT9d7asP-HXxcbgFKZf9i1a5PqEXLiVHtxOXM-4Y=s96-c"
+        },
+        {
+          "_id":"6360974523737249aa5df5ac",
+          "fullName":"test device001",
+          "photoUrl":"https://lh3.googleusercontent.com/a/ALm5wu1JunzW9Q35S4vI5UO7NnucyJTvAApUDNLELwSr=s96-c"
+        },
+        {
+          "_id":"6352a5782e20d88b28bcddd8",
+          "fullName":"QA Testing",
+          "photoUrl":"https://lh3.googleusercontent.com/a/ALm5wu2yVMkTKlkETPFaZAgLZ3m3z_tfcSgzthTDgCGD=s96-c"
+        },
+        {
+          "_id":"633fddd364aa3fb18abb4bc4",
+          "fullName":"Sandi Kurnia",
+          "photoUrl":"https://lh3.googleusercontent.com/a/ALm5wu0ZOHhoqZ9_iRXC40H8IFc6L_4_8mFP0PQuIWI6=s96-c"
+        },
+        {
+          "_id":"636a309d20de7c7a7f116719",
+          "fullName":"Lulu Q.A.",
+          "photoUrl":"https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c"
+        },
+        {
+          "_id":"62f29ec7eebca7d81cfad052",
+          "fullName":"Sandi Kurnia",
+          "photoUrl":"https://lh3.googleusercontent.com/a-/AFdZucrjR4mdGUz5Y2WHMDbHTXRxAJxHOpkOF1nT6awqGw=s96-c"
+        }],
+      "teams":[
+        "61ebaf065080f41e1cdde13c",
+        "61efb3e8d746c2346531daf7",
+        "63745f460a02aab479f53d95",
+        "63745f87fef0c6ab2e2b20a6"],
+      "name":"Sekolah QA Cilsy",
+      "desc":"belajar QA di cilsy aja",
+      "membersJoined":[
+        {
+          "_id":"61ebaf9d557677d467bd60c8",
+          "member":"5f8634a83a36b417e2f0f15a",
+          "joinedAt":"2022-01-22T07:17:49.028Z"
+        }],
+      "createdAt":"2022-01-22T06:23:04.507Z",
+      "updatedAt":"2022-11-16T03:56:55.645Z",
+      "__v":0
+    }
+  }
+  

@@ -1,0 +1,41 @@
+{
+  "message":"Creating card is success",
+  "data":{
+    "name":"",
+    "creator":"636a309d20de7c7a7f116719",
+    "members":[
+      "636a309d20de7c7a7f116719"],
+    "checklists":[
+    ],
+    "cheers":[
+    ],
+    "comments":[
+    ],
+    "labels":[
+    ],
+    "attachments":[
+    ],
+    "complete":{
+      "status":false,
+      "type":null
+    },
+    "isNotified":{
+      "startOneHour":false,
+      "startOneDay":false,
+      "dueOneHour":false,
+      "dueOneDay":false
+    },
+    "archived":{
+      "status":false
+    },
+    "isPublic":true,
+    "workload":{
+      "value":null,
+      "measurement":"Hours"
+    },
+    "_id":"6374a43866ccc7048fa245ff",
+    "createdAt":"2022-11-16T08:50:00.443Z",
+    "updatedAt":"2022-11-16T08:50:00.443Z",
+    "__v":0
+  }
+}

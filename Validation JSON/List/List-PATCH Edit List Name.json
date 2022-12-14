@@ -1,0 +1,172 @@
+{
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "default": {},
+    "title": "Root Schema",
+    "required": [
+        "message",
+        "currentList"
+    ],
+    "properties": {
+        "message": {
+            "type": "string",
+            "default": "",
+            "title": "The message Schema",
+            "examples": [
+                "Update list is success"
+            ]
+        },
+        "currentList": {
+            "type": "object",
+            "default": {},
+            "title": "The currentList Schema",
+            "required": [
+                "_id",
+                "name",
+                "cards",
+                "archived",
+                "complete",
+                "createdAt",
+                "updatedAt",
+                "__v"
+            ],
+            "properties": {
+                "_id": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The _id Schema",
+                    "examples": [
+                        "63748f4f0a02aab479f58953"
+                    ]
+                },
+                "name": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The name Schema",
+                    "examples": [
+                        "Edit List Name from API"
+                    ]
+                },
+                "cards": {
+                    "type": "array",
+                    "default": [],
+                    "title": "The cards Schema",
+                    "items": {},
+                    "examples": [
+                        []
+                    ]
+                },
+                "archived": {
+                    "type": "object",
+                    "default": {},
+                    "title": "The archived Schema",
+                    "required": [
+                        "status"
+                    ],
+                    "properties": {
+                        "status": {
+                            "type": "boolean",
+                            "default": false,
+                            "title": "The status Schema",
+                            "examples": [
+                                false
+                            ]
+                        }
+                    },
+                    "examples": [{
+                        "status": false
+                    }]
+                },
+                "complete": {
+                    "type": "object",
+                    "default": {},
+                    "title": "The complete Schema",
+                    "required": [
+                        "status",
+                        "type"
+                    ],
+                    "properties": {
+                        "status": {
+                            "type": "boolean",
+                            "default": false,
+                            "title": "The status Schema",
+                            "examples": [
+                                false
+                            ]
+                        },
+                        "type": {
+                            "type": "null",
+                            "default": null,
+                            "title": "The type Schema",
+                            "examples": [
+                                null
+                            ]
+                        }
+                    },
+                    "examples": [{
+                        "status": false,
+                        "type": null
+                    }]
+                },
+                "createdAt": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The createdAt Schema",
+                    "examples": [
+                        "2022-11-16T07:20:47.443Z"
+                    ]
+                },
+                "updatedAt": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The updatedAt Schema",
+                    "examples": [
+                        "2022-11-16T08:13:16.242Z"
+                    ]
+                },
+                "__v": {
+                    "type": "integer",
+                    "default": 0,
+                    "title": "The __v Schema",
+                    "examples": [
+                        0
+                    ]
+                }
+            },
+            "examples": [{
+                "_id": "63748f4f0a02aab479f58953",
+                "name": "Edit List Name from API",
+                "cards": [],
+                "archived": {
+                    "status": false
+                },
+                "complete": {
+                    "status": false,
+                    "type": null
+                },
+                "createdAt": "2022-11-16T07:20:47.443Z",
+                "updatedAt": "2022-11-16T08:13:16.242Z",
+                "__v": 0
+            }]
+        }
+    },
+    "examples": [{
+        "message": "Update list is success",
+        "currentList": {
+            "_id": "63748f4f0a02aab479f58953",
+            "name": "Edit List Name from API",
+            "cards": [],
+            "archived": {
+                "status": false
+            },
+            "complete": {
+                "status": false,
+                "type": null
+            },
+            "createdAt": "2022-11-16T07:20:47.443Z",
+            "updatedAt": "2022-11-16T08:13:16.242Z",
+            "__v": 0
+        }
+    }]
+}

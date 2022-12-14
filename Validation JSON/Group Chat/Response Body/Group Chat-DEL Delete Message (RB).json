@@ -1,0 +1,29 @@
+{
+  "message":"Delete group chat message success",
+  "data":{
+    "_id":"63744b8a66ccc7048fa0240c",
+    "content":"This message was deleted",
+    "creator":{
+      "_id":"636a309d20de7c7a7f116719",
+      "googleId":"114498059136746820038",
+      "email":"luluqatesting@gmail.com",
+      "fullName":"Lulu Q.A.",
+      "photoUrl":"https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c",
+      "bio":"student",
+      "status":"a lifelong learner",
+      "companies":[
+      ],
+      "createdAt":"2022-11-08T10:34:05.472Z",
+      "updatedAt":"2022-11-15T19:09:14.062Z",
+      "__v":0,
+      "defaultCompany":"63735ce9fef0c6ab2e0cf2ba",
+      "password":"$2b$10$nXwAMFh2Ms6qiAobo4a0S.mqaOsWUBfd9bOrmPygK5xqxDMMxEKVO"
+    },
+    "isDeleted":true,
+    "createdAt":"2022-11-16T02:31:38.159Z",
+    "updatedAt":"2022-11-16T02:45:49.196Z",
+    "__v":0,
+    "deletedAt":"2022-11-16T02:45:49.183Z",
+    "type":"message"
+  }
+}

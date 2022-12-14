@@ -1,0 +1,235 @@
+{
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "default": {},
+    "title": "Root Schema",
+    "required": [
+        "newTeam"
+    ],
+    "properties": {
+        "newTeam": {
+            "type": "object",
+            "default": {},
+            "title": "The newTeam Schema",
+            "required": [
+                "archived",
+                "_id",
+                "name",
+                "desc",
+                "members",
+                "boards",
+                "type",
+                "createdAt",
+                "updatedAt",
+                "__v",
+                "blast",
+                "bucket",
+                "checkIn",
+                "groupChat",
+                "schedule"
+            ],
+            "properties": {
+                "archived": {
+                    "type": "object",
+                    "default": {},
+                    "title": "The archived Schema",
+                    "required": [
+                        "status"
+                    ],
+                    "properties": {
+                        "status": {
+                            "type": "boolean",
+                            "default": false,
+                            "title": "The status Schema",
+                            "examples": [
+                                false
+                            ]
+                        }
+                    },
+                    "examples": [{
+                        "status": false
+                    }]
+                },
+                "_id": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The _id Schema",
+                    "examples": [
+                        "6373bd160a02aab479f469dc"
+                    ]
+                },
+                "name": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The name Schema",
+                    "examples": [
+                        ""
+                    ]
+                },
+                "desc": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The desc Schema",
+                    "examples": [
+                        "Create Team Without Name"
+                    ]
+                },
+                "members": {
+                    "type": "array",
+                    "default": [],
+                    "title": "The members Schema",
+                    "items": {
+                        "type": "string",
+                        "default": "",
+                        "title": "A Schema",
+                        "examples": [
+                            "636a309d20de7c7a7f116719"
+                        ]
+                    },
+                    "examples": [
+                        [
+                            "636a309d20de7c7a7f116719"]
+                    ]
+                },
+                "boards": {
+                    "type": "array",
+                    "default": [],
+                    "title": "The boards Schema",
+                    "items": {
+                        "type": "string",
+                        "default": "",
+                        "title": "A Schema",
+                        "examples": [
+                            "6373bd160a02aab479f46a54"
+                        ]
+                    },
+                    "examples": [
+                        [
+                            "6373bd160a02aab479f46a54"]
+                    ]
+                },
+                "type": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The type Schema",
+                    "examples": [
+                        "team"
+                    ]
+                },
+                "createdAt": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The createdAt Schema",
+                    "examples": [
+                        "2022-11-15T16:23:50.459Z"
+                    ]
+                },
+                "updatedAt": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The updatedAt Schema",
+                    "examples": [
+                        "2022-11-15T16:23:50.563Z"
+                    ]
+                },
+                "__v": {
+                    "type": "integer",
+                    "default": 0,
+                    "title": "The __v Schema",
+                    "examples": [
+                        0
+                    ]
+                },
+                "blast": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The blast Schema",
+                    "examples": [
+                        "6373bd160a02aab479f46a56"
+                    ]
+                },
+                "bucket": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The bucket Schema",
+                    "examples": [
+                        "6373bd160a02aab479f46a59"
+                    ]
+                },
+                "checkIn": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The checkIn Schema",
+                    "examples": [
+                        "6373bd160a02aab479f46a57"
+                    ]
+                },
+                "groupChat": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The groupChat Schema",
+                    "examples": [
+                        "6373bd160a02aab479f46a55"
+                    ]
+                },
+                "schedule": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The schedule Schema",
+                    "examples": [
+                        "6373bd160a02aab479f46a58"
+                    ]
+                }
+            },
+            "examples": [{
+                "archived": {
+                    "status": false
+                },
+                "_id": "6373bd160a02aab479f469dc",
+                "name": "",
+                "desc": "Create Team Without Name",
+                "members": [
+                    "636a309d20de7c7a7f116719"
+                ],
+                "boards": [
+                    "6373bd160a02aab479f46a54"
+                ],
+                "type": "team",
+                "createdAt": "2022-11-15T16:23:50.459Z",
+                "updatedAt": "2022-11-15T16:23:50.563Z",
+                "__v": 0,
+                "blast": "6373bd160a02aab479f46a56",
+                "bucket": "6373bd160a02aab479f46a59",
+                "checkIn": "6373bd160a02aab479f46a57",
+                "groupChat": "6373bd160a02aab479f46a55",
+                "schedule": "6373bd160a02aab479f46a58"
+            }]
+        }
+    },
+    "examples": [{
+        "newTeam": {
+            "archived": {
+                "status": false
+            },
+            "_id": "6373bd160a02aab479f469dc",
+            "name": "",
+            "desc": "Create Team Without Name",
+            "members": [
+                "636a309d20de7c7a7f116719"
+            ],
+            "boards": [
+                "6373bd160a02aab479f46a54"
+            ],
+            "type": "team",
+            "createdAt": "2022-11-15T16:23:50.459Z",
+            "updatedAt": "2022-11-15T16:23:50.563Z",
+            "__v": 0,
+            "blast": "6373bd160a02aab479f46a56",
+            "bucket": "6373bd160a02aab479f46a59",
+            "checkIn": "6373bd160a02aab479f46a57",
+            "groupChat": "6373bd160a02aab479f46a55",
+            "schedule": "6373bd160a02aab479f46a58"
+        }
+    }]
+}

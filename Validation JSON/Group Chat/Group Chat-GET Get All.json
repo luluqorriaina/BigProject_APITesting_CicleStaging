@@ -1,0 +1,105 @@
+{
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "default": {},
+    "title": "Root Schema",
+    "required": [
+        "message",
+        "groupChat"
+    ],
+    "properties": {
+        "message": {
+            "type": "string",
+            "default": "",
+            "title": "The message Schema",
+            "examples": [
+                "Get group chat Detail successful"
+            ]
+        },
+        "groupChat": {
+            "type": "object",
+            "default": {},
+            "title": "The groupChat Schema",
+            "required": [
+                "_id",
+                "messages",
+                "attachments",
+                "createdAt",
+                "updatedAt",
+                "__v"
+            ],
+            "properties": {
+                "_id": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The _id Schema",
+                    "examples": [
+                        "6373b898fef0c6ab2e29fb17"
+                    ]
+                },
+                "messages": {
+                    "type": "array",
+                    "default": [],
+                    "title": "The messages Schema",
+                    "items": {},
+                    "examples": [
+                        []
+                    ]
+                },
+                "attachments": {
+                    "type": "array",
+                    "default": [],
+                    "title": "The attachments Schema",
+                    "items": {},
+                    "examples": [
+                        []
+                    ]
+                },
+                "createdAt": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The createdAt Schema",
+                    "examples": [
+                        "2022-11-15T16:04:40.669Z"
+                    ]
+                },
+                "updatedAt": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The updatedAt Schema",
+                    "examples": [
+                        "2022-11-15T16:04:40.669Z"
+                    ]
+                },
+                "__v": {
+                    "type": "integer",
+                    "default": 0,
+                    "title": "The __v Schema",
+                    "examples": [
+                        0
+                    ]
+                }
+            },
+            "examples": [{
+                "_id": "6373b898fef0c6ab2e29fb17",
+                "messages": [],
+                "attachments": [],
+                "createdAt": "2022-11-15T16:04:40.669Z",
+                "updatedAt": "2022-11-15T16:04:40.669Z",
+                "__v": 0
+            }]
+        }
+    },
+    "examples": [{
+        "message": "Get group chat Detail successful",
+        "groupChat": {
+            "_id": "6373b898fef0c6ab2e29fb17",
+            "messages": [],
+            "attachments": [],
+            "createdAt": "2022-11-15T16:04:40.669Z",
+            "updatedAt": "2022-11-15T16:04:40.669Z",
+            "__v": 0
+        }
+    }]
+}

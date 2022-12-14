@@ -1,0 +1,429 @@
+{
+  "message":"Fetching current board is success",
+  "board":{
+    "_id":"6373b898fef0c6ab2e29fb16",
+    "name":"Kanban Board",
+    "desc":"Track progress with this Kanban-styled board",
+    "lists":[
+    ],
+    "labels":[
+    ],
+    "createdAt":"2022-11-15T16:04:40.669Z",
+    "updatedAt":"2022-11-15T16:04:40.669Z",
+    "__v":0
+  },
+  "currentCompany":{
+    "_id":"61eba2c85080f47b25ddc8f8",
+    "workloadCapacityDefault":{
+      "value":7,
+      "measurement":"Hours"
+    },
+    "logo":"https://storage.googleapis.com/production-cicle-app/61eba2c85080f47b25ddc8f8/c9030fb4ab8f92019eda8f6459b89f9e/Logo_Main_QA.png",
+    "admins":[
+      "5f8640963a36b417e2f0f166"],
+    "members":[
+      {
+        "_id":"5f8634a83a36b417e2f0f15a",
+        "googleId":"105289791029632939617",
+        "email":"rivermaya.fs@gmail.com",
+        "fullName":"Rizki Alief Irfany",
+        "photoUrl":"/public/uploads/df609e44f8b317832089c1f39987e728ee17f562eea158f18321c18a00b5c023433513c23fd26fc0719cf6d8f48f25c1a334c8f30eafcd2c33cd8f9e30c7daa7.png",
+        "bio":"Fast response after 12 PM",
+        "status":"Chief Marketing Officer",
+        "createdAt":"2020-10-13T23:13:44.551Z",
+        "updatedAt":"2022-05-11T16:31:55.161Z",
+        "__v":0,
+        "defaultCompany":"5f8402fcf4cc864e3addac77"
+      },
+      {
+        "_id":"636a309d20de7c7a7f116719",
+        "googleId":"114498059136746820038",
+        "email":"luluqatesting@gmail.com",
+        "fullName":"Lulu Q.A.",
+        "photoUrl":"https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c",
+        "bio":"student",
+        "status":"a lifelong learner",
+        "companies":[
+        ],
+        "createdAt":"2022-11-08T10:34:05.472Z",
+        "updatedAt":"2022-11-16T04:10:59.597Z",
+        "__v":0,
+        "defaultCompany":"637456a0fef0c6ab2e2b11c1",
+        "password":"$2b$10$BR5s8..DXywQAfQXjnPBUudk2woxi2/7ntP07Q0/1IUd8912DxbDS"
+      },
+      {
+        "_id":"62f29ec7eebca7d81cfad052",
+        "googleId":"113932671680692608929",
+        "email":"sandikurniaaa@gmail.com",
+        "fullName":"Sandi Kurnia",
+        "photoUrl":"https://lh3.googleusercontent.com/a-/AFdZucrjR4mdGUz5Y2WHMDbHTXRxAJxHOpkOF1nT6awqGw=s96-c",
+        "bio":"tech enthusiast",
+        "status":"mage",
+        "defaultCompany":"61eba2c85080f47b25ddc8f8",
+        "companies":[
+        ],
+        "createdAt":"2022-08-09T17:52:07.836Z",
+        "updatedAt":"2022-11-15T14:37:56.233Z",
+        "__v":0
+      }],
+    "teams":[
+      "61ebaf065080f41e1cdde13c",
+      "63745f460a02aab479f53d95",
+      "63745f87fef0c6ab2e2b20a6"],
+    "name":"Sekolah QA Cilsy",
+    "desc":"belajar QA di cilsy aja",
+    "membersJoined":[
+      {
+        "_id":"61ebaf9d557677d467bd60c8",
+        "member":"5f8634a83a36b417e2f0f15a",
+        "joinedAt":"2022-01-22T07:17:49.028Z"
+      },
+      {
+        "member":"636a309d20de7c7a7f116719",
+        "joinedAt":"2022-11-15T06:34:57.802Z",
+        "_id":"637333110a02aab479d795ef"
+      },
+      {
+        "member":"62f29ec7eebca7d81cfad052",
+        "joinedAt":"2022-11-15T14:37:56.219Z",
+        "_id":"6373a44466ccc7048f83934f"
+      }],
+    "createdAt":"2022-01-22T06:23:04.507Z",
+    "updatedAt":"2022-11-16T03:56:55.645Z",
+    "__v":0
+  },
+  "currentTeam":{
+    "archived":{
+      "status":false
+    },
+    "_id":"6373b898fef0c6ab2e29fa9e",
+    "name":"Lulu's Team",
+    "desc":"Team for API testing",
+    "members":[
+      {
+        "_id":"636a309d20de7c7a7f116719",
+        "googleId":"114498059136746820038",
+        "email":"luluqatesting@gmail.com",
+        "fullName":"Lulu Q.A.",
+        "photoUrl":"https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c",
+        "bio":"student",
+        "status":"a lifelong learner",
+        "companies":[
+        ],
+        "createdAt":"2022-11-08T10:34:05.472Z",
+        "updatedAt":"2022-11-16T04:10:59.597Z",
+        "__v":0,
+        "defaultCompany":"637456a0fef0c6ab2e2b11c1",
+        "password":"$2b$10$BR5s8..DXywQAfQXjnPBUudk2woxi2/7ntP07Q0/1IUd8912DxbDS"
+      }],
+    "boards":[
+      {
+        "_id":"6373b898fef0c6ab2e29fb16",
+        "name":"Kanban Board",
+        "desc":"Track progress with this Kanban-styled board",
+        "lists":[
+        ],
+        "labels":[
+        ],
+        "createdAt":"2022-11-15T16:04:40.669Z",
+        "updatedAt":"2022-11-15T16:04:40.669Z",
+        "__v":0
+      }],
+    "type":"team",
+    "createdAt":"2022-11-15T16:04:40.656Z",
+    "updatedAt":"2022-11-15T16:04:40.682Z",
+    "__v":0,
+    "blast":{
+      "_id":"6373b898fef0c6ab2e29fb18",
+      "posts":[
+        {
+          "archived":{
+            "status":false
+          },
+          "autoComplete":{
+            "status":true,
+            "date":"2022-11-17T06:34:29.959Z"
+          },
+          "isNotified":{
+            "dueOneHour":false,
+            "dueOneDay":false
+          },
+          "complete":{
+            "status":false
+          },
+          "_id":"637484290a02aab479f56b58",
+          "title":"Blast Without Content (from website)",
+          "content":"",
+          "creator":{
+            "_id":"636a309d20de7c7a7f116719",
+            "googleId":"114498059136746820038",
+            "email":"luluqatesting@gmail.com",
+            "fullName":"Lulu Q.A.",
+            "photoUrl":"https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c",
+            "bio":"student",
+            "status":"a lifelong learner",
+            "companies":[
+            ],
+            "createdAt":"2022-11-08T10:34:05.472Z",
+            "updatedAt":"2022-11-16T04:10:59.597Z",
+            "__v":0,
+            "defaultCompany":"637456a0fef0c6ab2e2b11c1",
+            "password":"$2b$10$BR5s8..DXywQAfQXjnPBUudk2woxi2/7ntP07Q0/1IUd8912DxbDS"
+          },
+          "comments":[
+          ],
+          "cheers":[
+          ],
+          "subscribers":[
+            "636a309d20de7c7a7f116719"],
+          "isPublic":true,
+          "dueDate":null,
+          "createdAt":"2022-11-16T06:33:13.466Z",
+          "updatedAt":"2022-11-16T06:34:31.789Z",
+          "__v":0
+        },
+        {
+          "archived":{
+            "status":false
+          },
+          "autoComplete":{
+            "status":true,
+            "date":"2021-09-28T12:39:00.000Z"
+          },
+          "isNotified":{
+            "dueOneHour":false,
+            "dueOneDay":false
+          },
+          "complete":{
+            "status":false
+          },
+          "_id":"637481100a02aab479f563b0",
+          "title":"Blast Lulu API",
+          "content":"<p>API testing</p>",
+          "creator":{
+            "_id":"636a309d20de7c7a7f116719",
+            "googleId":"114498059136746820038",
+            "email":"luluqatesting@gmail.com",
+            "fullName":"Lulu Q.A.",
+            "photoUrl":"https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c",
+            "bio":"student",
+            "status":"a lifelong learner",
+            "companies":[
+            ],
+            "createdAt":"2022-11-08T10:34:05.472Z",
+            "updatedAt":"2022-11-16T04:10:59.597Z",
+            "__v":0,
+            "defaultCompany":"637456a0fef0c6ab2e2b11c1",
+            "password":"$2b$10$BR5s8..DXywQAfQXjnPBUudk2woxi2/7ntP07Q0/1IUd8912DxbDS"
+          },
+          "comments":[
+          ],
+          "cheers":[
+          ],
+          "subscribers":[
+          ],
+          "isPublic":true,
+          "createdAt":"2022-11-16T06:20:00.529Z",
+          "updatedAt":"2022-11-16T06:20:00.529Z",
+          "__v":0
+        },
+        {
+          "archived":{
+            "status":false
+          },
+          "autoComplete":{
+            "status":true,
+            "date":"2021-09-28T12:39:00.000Z"
+          },
+          "isNotified":{
+            "dueOneHour":false,
+            "dueOneDay":false
+          },
+          "complete":{
+            "status":false
+          },
+          "_id":"63747d20fef0c6ab2e2b6723",
+          "title":"Blast Lulu API",
+          "content":"<p>API testing</p>",
+          "creator":{
+            "_id":"636a309d20de7c7a7f116719",
+            "googleId":"114498059136746820038",
+            "email":"luluqatesting@gmail.com",
+            "fullName":"Lulu Q.A.",
+            "photoUrl":"https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c",
+            "bio":"student",
+            "status":"a lifelong learner",
+            "companies":[
+            ],
+            "createdAt":"2022-11-08T10:34:05.472Z",
+            "updatedAt":"2022-11-16T04:10:59.597Z",
+            "__v":0,
+            "defaultCompany":"637456a0fef0c6ab2e2b11c1",
+            "password":"$2b$10$BR5s8..DXywQAfQXjnPBUudk2woxi2/7ntP07Q0/1IUd8912DxbDS"
+          },
+          "comments":[
+          ],
+          "cheers":[
+          ],
+          "subscribers":[
+          ],
+          "isPublic":true,
+          "createdAt":"2022-11-16T06:03:12.359Z",
+          "updatedAt":"2022-11-16T06:03:12.359Z",
+          "__v":0
+        }],
+      "createdAt":"2022-11-15T16:04:40.669Z",
+      "updatedAt":"2022-11-16T06:33:13.472Z",
+      "__v":0
+    },
+    "bucket":{
+      "archived":{
+        "status":false
+      },
+      "_id":"6373b898fef0c6ab2e29fb1b",
+      "docs":[
+      ],
+      "buckets":[
+      ],
+      "files":[
+      ],
+      "title":"Docs & Files",
+      "type":"main",
+      "isPublic":true,
+      "subscribers":[
+      ],
+      "createdAt":"2022-11-15T16:04:40.670Z",
+      "updatedAt":"2022-11-15T16:04:40.670Z",
+      "__v":0
+    },
+    "checkIn":{
+      "_id":"6373b898fef0c6ab2e29fb19",
+      "questions":[
+      ],
+      "createdAt":"2022-11-15T16:04:40.669Z",
+      "updatedAt":"2022-11-15T16:04:40.669Z",
+      "__v":0
+    },
+    "groupChat":{
+      "_id":"6373b898fef0c6ab2e29fb17",
+      "messages":[
+        {
+          "_id":"63744d6afef0c6ab2e2b0069",
+          "content":"",
+          "creator":{
+            "_id":"636a309d20de7c7a7f116719",
+            "googleId":"114498059136746820038",
+            "email":"luluqatesting@gmail.com",
+            "fullName":"Lulu Q.A.",
+            "photoUrl":"https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c",
+            "bio":"student",
+            "status":"a lifelong learner",
+            "companies":[
+            ],
+            "createdAt":"2022-11-08T10:34:05.472Z",
+            "updatedAt":"2022-11-16T04:10:59.597Z",
+            "__v":0,
+            "defaultCompany":"637456a0fef0c6ab2e2b11c1",
+            "password":"$2b$10$BR5s8..DXywQAfQXjnPBUudk2woxi2/7ntP07Q0/1IUd8912DxbDS"
+          },
+          "isDeleted":false,
+          "createdAt":"2022-11-16T02:39:38.763Z",
+          "updatedAt":"2022-11-16T02:39:38.763Z",
+          "__v":0
+        },
+        {
+          "_id":"63744ca7fef0c6ab2e2afb83",
+          "content":"",
+          "creator":{
+            "_id":"636a309d20de7c7a7f116719",
+            "googleId":"114498059136746820038",
+            "email":"luluqatesting@gmail.com",
+            "fullName":"Lulu Q.A.",
+            "photoUrl":"https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c",
+            "bio":"student",
+            "status":"a lifelong learner",
+            "companies":[
+            ],
+            "createdAt":"2022-11-08T10:34:05.472Z",
+            "updatedAt":"2022-11-16T04:10:59.597Z",
+            "__v":0,
+            "defaultCompany":"637456a0fef0c6ab2e2b11c1",
+            "password":"$2b$10$BR5s8..DXywQAfQXjnPBUudk2woxi2/7ntP07Q0/1IUd8912DxbDS"
+          },
+          "isDeleted":false,
+          "createdAt":"2022-11-16T02:36:23.709Z",
+          "updatedAt":"2022-11-16T02:36:23.709Z",
+          "__v":0
+        },
+        {
+          "_id":"63744b8a66ccc7048fa0240c",
+          "content":"This message was deleted",
+          "creator":{
+            "_id":"636a309d20de7c7a7f116719",
+            "googleId":"114498059136746820038",
+            "email":"luluqatesting@gmail.com",
+            "fullName":"Lulu Q.A.",
+            "photoUrl":"https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c",
+            "bio":"student",
+            "status":"a lifelong learner",
+            "companies":[
+            ],
+            "createdAt":"2022-11-08T10:34:05.472Z",
+            "updatedAt":"2022-11-16T04:10:59.597Z",
+            "__v":0,
+            "defaultCompany":"637456a0fef0c6ab2e2b11c1",
+            "password":"$2b$10$BR5s8..DXywQAfQXjnPBUudk2woxi2/7ntP07Q0/1IUd8912DxbDS"
+          },
+          "isDeleted":true,
+          "createdAt":"2022-11-16T02:31:38.159Z",
+          "updatedAt":"2022-11-16T02:48:53.349Z",
+          "__v":0,
+          "deletedAt":"2022-11-16T02:48:53.348Z"
+        },
+        {
+          "_id":"63744abdfef0c6ab2e2af3e2",
+          "content":"<p>Ini pesan Lulu melalui API</p>",
+          "creator":{
+            "_id":"636a309d20de7c7a7f116719",
+            "googleId":"114498059136746820038",
+            "email":"luluqatesting@gmail.com",
+            "fullName":"Lulu Q.A.",
+            "photoUrl":"https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c",
+            "bio":"student",
+            "status":"a lifelong learner",
+            "companies":[
+            ],
+            "createdAt":"2022-11-08T10:34:05.472Z",
+            "updatedAt":"2022-11-16T04:10:59.597Z",
+            "__v":0,
+            "defaultCompany":"637456a0fef0c6ab2e2b11c1",
+            "password":"$2b$10$BR5s8..DXywQAfQXjnPBUudk2woxi2/7ntP07Q0/1IUd8912DxbDS"
+          },
+          "isDeleted":false,
+          "createdAt":"2022-11-16T02:28:13.082Z",
+          "updatedAt":"2022-11-16T02:28:13.082Z",
+          "__v":0
+        }],
+      "attachments":[
+      ],
+      "createdAt":"2022-11-15T16:04:40.669Z",
+      "updatedAt":"2022-11-16T02:39:38.770Z",
+      "__v":0
+    },
+    "schedule":{
+      "googleCalendar":{
+        "calendarId":null,
+        "aclRuleId":null,
+        "calendarIcsLink":null,
+        "calendarHtmlLink":null
+      },
+      "_id":"6373b898fef0c6ab2e29fb1a",
+      "events":[
+      ],
+      "setPublic":false,
+      "createdAt":"2022-11-15T16:04:40.669Z",
+      "updatedAt":"2022-11-15T16:04:40.669Z",
+      "__v":0
+    }
+  }
+}

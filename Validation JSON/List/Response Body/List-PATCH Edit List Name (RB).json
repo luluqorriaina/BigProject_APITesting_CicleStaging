@@ -1,0 +1,19 @@
+{
+  "message":"Update list is success",
+  "currentList":{
+    "_id":"63748f4f0a02aab479f58953",
+    "name":"Edit List Name from API",
+    "cards":[
+    ],
+    "archived":{
+      "status":false
+    },
+    "complete":{
+      "status":false,
+      "type":null
+    },
+    "createdAt":"2022-11-16T07:20:47.443Z",
+    "updatedAt":"2022-11-16T08:13:16.242Z",
+    "__v":0
+  }
+}

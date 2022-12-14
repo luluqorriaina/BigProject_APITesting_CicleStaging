@@ -1,0 +1,47 @@
+{
+  "message":"Update card is success",
+  "card":{
+    "_id":"6374a269fef0c6ab2e2d68a4",
+    "name":"Update Card from API",
+    "creator":{
+      "_id":"636a309d20de7c7a7f116719",
+      "fullName":"Lulu Q.A.",
+      "photoUrl":"https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c"
+    },
+    "members":[
+      {
+        "_id":"636a309d20de7c7a7f116719",
+        "photoUrl":"https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c"
+      }],
+    "checklists":[
+    ],
+    "cheers":[
+    ],
+    "comments":[
+    ],
+    "labels":[
+    ],
+    "attachments":[
+    ],
+    "complete":{
+      "status":false,
+      "type":null
+    },
+    "isNotified":{
+      "startOneDay":false,
+      "startOneHour":false,
+      "dueOneDay":false,
+      "dueOneHour":false
+    },
+    "archived":{
+      "status":false
+    },
+    "isPublic":true,
+    "workload":4,
+    "createdAt":"2022-11-16T08:42:17.352Z",
+    "updatedAt":"2022-11-16T08:57:24.389Z",
+    "__v":0,
+    "dueDate":"2021-09-16T17:00:00.000Z",
+    "startDate":"2021-09-13T17:00:00.000Z"
+  }
+}

@@ -1,0 +1,298 @@
+{
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "default": {},
+    "title": "Root Schema",
+    "required": [
+        "message",
+        "data"
+    ],
+    "properties": {
+        "message": {
+            "type": "string",
+            "default": "",
+            "title": "The message Schema",
+            "examples": [
+                "Delete group chat message success"
+            ]
+        },
+        "data": {
+            "type": "object",
+            "default": {},
+            "title": "The data Schema",
+            "required": [
+                "_id",
+                "content",
+                "creator",
+                "isDeleted",
+                "createdAt",
+                "updatedAt",
+                "__v",
+                "deletedAt",
+                "type"
+            ],
+            "properties": {
+                "_id": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The _id Schema",
+                    "examples": [
+                        "63744b8a66ccc7048fa0240c"
+                    ]
+                },
+                "content": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The content Schema",
+                    "examples": [
+                        "This message was deleted"
+                    ]
+                },
+                "creator": {
+                    "type": "object",
+                    "default": {},
+                    "title": "The creator Schema",
+                    "required": [
+                        "_id",
+                        "googleId",
+                        "email",
+                        "fullName",
+                        "photoUrl",
+                        "bio",
+                        "status",
+                        "companies",
+                        "createdAt",
+                        "updatedAt",
+                        "__v",
+                        "defaultCompany",
+                        "password"
+                    ],
+                    "properties": {
+                        "_id": {
+                            "type": "string",
+                            "default": "",
+                            "title": "The _id Schema",
+                            "examples": [
+                                "636a309d20de7c7a7f116719"
+                            ]
+                        },
+                        "googleId": {
+                            "type": "string",
+                            "default": "",
+                            "title": "The googleId Schema",
+                            "examples": [
+                                "114498059136746820038"
+                            ]
+                        },
+                        "email": {
+                            "type": "string",
+                            "default": "",
+                            "title": "The email Schema",
+                            "examples": [
+                                "luluqatesting@gmail.com"
+                            ]
+                        },
+                        "fullName": {
+                            "type": "string",
+                            "default": "",
+                            "title": "The fullName Schema",
+                            "examples": [
+                                "Lulu Q.A."
+                            ]
+                        },
+                        "photoUrl": {
+                            "type": "string",
+                            "default": "",
+                            "title": "The photoUrl Schema",
+                            "examples": [
+                                "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c"
+                            ]
+                        },
+                        "bio": {
+                            "type": "string",
+                            "default": "",
+                            "title": "The bio Schema",
+                            "examples": [
+                                "student"
+                            ]
+                        },
+                        "status": {
+                            "type": "string",
+                            "default": "",
+                            "title": "The status Schema",
+                            "examples": [
+                                "a lifelong learner"
+                            ]
+                        },
+                        "companies": {
+                            "type": "array",
+                            "default": [],
+                            "title": "The companies Schema",
+                            "items": {},
+                            "examples": [
+                                []
+                            ]
+                        },
+                        "createdAt": {
+                            "type": "string",
+                            "default": "",
+                            "title": "The createdAt Schema",
+                            "examples": [
+                                "2022-11-08T10:34:05.472Z"
+                            ]
+                        },
+                        "updatedAt": {
+                            "type": "string",
+                            "default": "",
+                            "title": "The updatedAt Schema",
+                            "examples": [
+                                "2022-11-15T19:09:14.062Z"
+                            ]
+                        },
+                        "__v": {
+                            "type": "integer",
+                            "default": 0,
+                            "title": "The __v Schema",
+                            "examples": [
+                                0
+                            ]
+                        },
+                        "defaultCompany": {
+                            "type": "string",
+                            "default": "",
+                            "title": "The defaultCompany Schema",
+                            "examples": [
+                                "63735ce9fef0c6ab2e0cf2ba"
+                            ]
+                        },
+                        "password": {
+                            "type": "string",
+                            "default": "",
+                            "title": "The password Schema",
+                            "examples": [
+                                "$2b$10$nXwAMFh2Ms6qiAobo4a0S.mqaOsWUBfd9bOrmPygK5xqxDMMxEKVO"
+                            ]
+                        }
+                    },
+                    "examples": [{
+                        "_id": "636a309d20de7c7a7f116719",
+                        "googleId": "114498059136746820038",
+                        "email": "luluqatesting@gmail.com",
+                        "fullName": "Lulu Q.A.",
+                        "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c",
+                        "bio": "student",
+                        "status": "a lifelong learner",
+                        "companies": [],
+                        "createdAt": "2022-11-08T10:34:05.472Z",
+                        "updatedAt": "2022-11-15T19:09:14.062Z",
+                        "__v": 0,
+                        "defaultCompany": "63735ce9fef0c6ab2e0cf2ba",
+                        "password": "$2b$10$nXwAMFh2Ms6qiAobo4a0S.mqaOsWUBfd9bOrmPygK5xqxDMMxEKVO"
+                    }]
+                },
+                "isDeleted": {
+                    "type": "boolean",
+                    "default": false,
+                    "title": "The isDeleted Schema",
+                    "examples": [
+                        true
+                    ]
+                },
+                "createdAt": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The createdAt Schema",
+                    "examples": [
+                        "2022-11-16T02:31:38.159Z"
+                    ]
+                },
+                "updatedAt": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The updatedAt Schema",
+                    "examples": [
+                        "2022-11-16T02:45:49.196Z"
+                    ]
+                },
+                "__v": {
+                    "type": "integer",
+                    "default": 0,
+                    "title": "The __v Schema",
+                    "examples": [
+                        0
+                    ]
+                },
+                "deletedAt": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The deletedAt Schema",
+                    "examples": [
+                        "2022-11-16T02:45:49.183Z"
+                    ]
+                },
+                "type": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The type Schema",
+                    "examples": [
+                        "message"
+                    ]
+                }
+            },
+            "examples": [{
+                "_id": "63744b8a66ccc7048fa0240c",
+                "content": "This message was deleted",
+                "creator": {
+                    "_id": "636a309d20de7c7a7f116719",
+                    "googleId": "114498059136746820038",
+                    "email": "luluqatesting@gmail.com",
+                    "fullName": "Lulu Q.A.",
+                    "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c",
+                    "bio": "student",
+                    "status": "a lifelong learner",
+                    "companies": [],
+                    "createdAt": "2022-11-08T10:34:05.472Z",
+                    "updatedAt": "2022-11-15T19:09:14.062Z",
+                    "__v": 0,
+                    "defaultCompany": "63735ce9fef0c6ab2e0cf2ba",
+                    "password": "$2b$10$nXwAMFh2Ms6qiAobo4a0S.mqaOsWUBfd9bOrmPygK5xqxDMMxEKVO"
+                },
+                "isDeleted": true,
+                "createdAt": "2022-11-16T02:31:38.159Z",
+                "updatedAt": "2022-11-16T02:45:49.196Z",
+                "__v": 0,
+                "deletedAt": "2022-11-16T02:45:49.183Z",
+                "type": "message"
+            }]
+        }
+    },
+    "examples": [{
+        "message": "Delete group chat message success",
+        "data": {
+            "_id": "63744b8a66ccc7048fa0240c",
+            "content": "This message was deleted",
+            "creator": {
+                "_id": "636a309d20de7c7a7f116719",
+                "googleId": "114498059136746820038",
+                "email": "luluqatesting@gmail.com",
+                "fullName": "Lulu Q.A.",
+                "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c",
+                "bio": "student",
+                "status": "a lifelong learner",
+                "companies": [],
+                "createdAt": "2022-11-08T10:34:05.472Z",
+                "updatedAt": "2022-11-15T19:09:14.062Z",
+                "__v": 0,
+                "defaultCompany": "63735ce9fef0c6ab2e0cf2ba",
+                "password": "$2b$10$nXwAMFh2Ms6qiAobo4a0S.mqaOsWUBfd9bOrmPygK5xqxDMMxEKVO"
+            },
+            "isDeleted": true,
+            "createdAt": "2022-11-16T02:31:38.159Z",
+            "updatedAt": "2022-11-16T02:45:49.196Z",
+            "__v": 0,
+            "deletedAt": "2022-11-16T02:45:49.183Z",
+            "type": "message"
+        }
+    }]
+}

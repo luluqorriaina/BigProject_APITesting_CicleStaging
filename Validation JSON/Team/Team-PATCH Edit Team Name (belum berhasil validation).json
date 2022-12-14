@@ -1,0 +1,466 @@
+{
+    "currentTeam": {
+        "_id": "6373b4ab0a02aab479ee865f",
+        "name": "Edit Team Name",
+        "desc": "Team for API testing",
+        "members": [{
+            "_id": "636a309d20de7c7a7f116719",
+            "email": "luluqatesting@gmail.com",
+            "fullName": "Lulu Qorri Aina",
+            "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c"
+        }],
+        "boards": [{
+            "_id": "6373b4ac0a02aab479ee87d8",
+            "name": "Kanban Board",
+            "desc": "Track progress with this Kanban-styled board",
+            "lists": []
+        }],
+        "type": "team",
+        "archived": {
+            "status": false
+        },
+        "createdAt": "2022-11-15T15:47:55.506Z",
+        "updatedAt": "2022-11-15T16:36:53.349Z",
+        "__v": 0,
+        "blast": {
+            "_id": "6373b4ac0a02aab479ee87da",
+            "posts": [],
+            "createdAt": "2022-11-15T15:47:56.275Z",
+            "updatedAt": "2022-11-15T15:47:56.275Z"
+        },
+        "bucket": {
+            "_id": "6373b4ac0a02aab479ee87dd",
+            "docs": [],
+            "buckets": [],
+            "files": [],
+            "title": "Docs & Files",
+            "type": "main",
+            "archived": {
+                "status": false
+            },
+            "isPublic": true,
+            "subscribers": [],
+            "createdAt": "2022-11-15T15:47:56.312Z",
+            "updatedAt": "2022-11-15T15:47:56.312Z",
+            "__v": 0
+        },
+        "checkIn": {
+            "_id": "6373b4ac0a02aab479ee87db",
+            "questions": []
+        },
+        "groupChat": {
+            "_id": "6373b4ac0a02aab479ee87d9",
+            "messages": [],
+            "attachments": [],
+            "createdAt": "2022-11-15T15:47:56.275Z",
+            "updatedAt": "2022-11-15T15:47:56.275Z",
+            "__v": 0
+        },
+        "schedule": {
+            "_id": "6373b4ac0a02aab479ee87dc",
+            "googleCalendar": {
+                "calendarId": null,
+                "aclRuleId": null,
+                "calendarIcsLink": null,
+                "calendarHtmlLink": null
+            },
+            "events": [],
+            "setPublic": false,
+            "createdAt": "2022-11-15T15:47:56.312Z",
+            "updatedAt": "2022-11-15T15:47:56.312Z",
+            "__v": 0,
+            "fromDate": "2022-11-15T16:36:53.952Z",
+            "untilDate": "2022-12-16T16:36:53.952Z"
+        }
+    },
+    "currentCompany": {
+        "workloadCapacityDefault": {
+            "value": 7,
+            "measurement": "Hours"
+        },
+        "_id": "61eba2c85080f47b25ddc8f8",
+        "logo": "https://storage.googleapis.com/production-cicle-app/61eba2c85080f47b25ddc8f8/c9030fb4ab8f92019eda8f6459b89f9e/Logo_Main_QA.png",
+        "admins": [{
+            "companies": [],
+            "_id": "5f8640963a36b417e2f0f166",
+            "defaultCompany": "5f8402fcf4cc864e3addac77",
+            "googleId": "104398470258591418510",
+            "email": "ryryrizkiasri@gmail.com",
+            "fullName": "Ryry Rizky Asri",
+            "photoUrl": "https://storage.googleapis.com/production-cicle-app/5f8640963a36b417e2f0f166/83be9ae63156f412a65485ce9a0e11d5/FBC52788-0F81-4482-A82B-A60948E3CA8C.jpeg",
+            "bio": "Cilsy Fiolution",
+            "status": "Lead of School",
+            "createdAt": "2020-10-14T00:04:38.234Z",
+            "updatedAt": "2022-05-11T07:48:40.464Z",
+            "__v": 0
+        }],
+        "members": [{
+                "companies": [],
+                "_id": "5f8634a83a36b417e2f0f15a",
+                "googleId": "105289791029632939617",
+                "email": "rivermaya.fs@gmail.com",
+                "fullName": "Rizki Alief Irfany",
+                "photoUrl": "/public/uploads/df609e44f8b317832089c1f39987e728ee17f562eea158f18321c18a00b5c023433513c23fd26fc0719cf6d8f48f25c1a334c8f30eafcd2c33cd8f9e30c7daa7.png",
+                "bio": "Fast response after 12 PM",
+                "status": "Chief Marketing Officer",
+                "createdAt": "2020-10-13T23:13:44.551Z",
+                "updatedAt": "2022-05-11T16:31:55.161Z",
+                "__v": 0,
+                "defaultCompany": "5f8402fcf4cc864e3addac77"
+            }
+        ],
+        "teams": [{
+                "archived": {
+                    "status": false
+                },
+                "_id": "61ebaf065080f41e1cdde13c",
+                "members": [{
+                        "companies": [],
+                        "_id": "5f8634a83a36b417e2f0f15a",
+                        "googleId": "105289791029632939617",
+                        "email": "rivermaya.fs@gmail.com",
+                        "fullName": "Rizki Alief Irfany",
+                        "photoUrl": "/public/uploads/df609e44f8b317832089c1f39987e728ee17f562eea158f18321c18a00b5c023433513c23fd26fc0719cf6d8f48f25c1a334c8f30eafcd2c33cd8f9e30c7daa7.png",
+                        "bio": "Fast response after 12 PM",
+                        "status": "Chief Marketing Officer",
+                        "createdAt": "2020-10-13T23:13:44.551Z",
+                        "updatedAt": "2022-05-11T16:31:55.161Z",
+                        "__v": 0,
+                        "defaultCompany": "5f8402fcf4cc864e3addac77"
+                    }
+                ],
+                "boards": [
+                    "61ebaf065080f4790fdde13f"
+                ],
+                "name": "Sekolah QA HQ",
+                "desc": "Tempat kumpul seluruh alumni dan Instruktur Sekolah QA",
+                "type": "hq",
+                "createdAt": "2022-01-22T07:15:18.477Z",
+                "updatedAt": "2022-11-10T09:56:40.635Z",
+                "__v": 0,
+                "blast": "61ebaf065080f4e1e6dde143",
+                "bucket": "61ebaf065080f4c5f1dde149",
+                "checkIn": "61ebaf065080f4cc7cdde145",
+                "groupChat": "61ebaf065080f4722adde141",
+                "schedule": "61ebaf065080f46330dde147"
+            }],
+            {
+                "archived": {
+                    "status": true,
+                    "archivedAt": "2022-03-18T04:18:07.618Z"
+                },
+                "_id": "61efb3e8d746c2346531daf7",
+                "members": [{
+                        "companies": [],
+                        "_id": "5f8670be3a36b417e2f0f326",
+                        "defaultCompany": "5f8402fcf4cc864e3addac77",
+                        "googleId": "101172753228315044671",
+                        "email": "tresna.widiyaman@gmail.com",
+                        "fullName": "Tresna Widiyaman",
+                        "photoUrl": "https://storage.googleapis.com/production-cicle-app/5f8670be3a36b417e2f0f326/2ccbe4503d82122dd22891f8fbf5a0d8/_MG_9340.JPG",
+                        "bio": "09.00-11.45 & 13.00-16.00 WIB | Personal Message kalau butuh urgent.",
+                        "status": "Supervisor of Product Development",
+                        "createdAt": "2020-10-14T03:30:06.821Z",
+                        "updatedAt": "2022-05-11T13:46:53.294Z",
+                        "__v": 0
+            }],
+            [
+                "archived": {
+                    "status": false
+                },
+                "_id": "62f8d580358a28742526b652",
+                "name": "bp3",
+                "desc": "bp3",
+                "members": [{
+                    "_id": "62f4d893f1a809958795558b",
+                    "googleId": "114632579613938187948",
+                    "email": "coolcendol3@gmail.com",
+                    "fullName": "cool",
+                    "photoUrl": "https://lh3.googleusercontent.com/a/AItbvml0ZigB46emO-XzFUwMnrB8D70ETop-1SdvSmIG=s96-c",
+                    "bio": "Test",
+                    "status": "Student",
+                    "defaultCompany": "61eba2c85080f47b25ddc8f8",
+                    "companies": [],
+                    "createdAt": "2022-08-11T10:23:15.004Z",
+                    "updatedAt": "2022-08-15T07:02:41.790Z",
+                    "__v": 0
+                }],
+            {
+                
+                }],
+                "boards": [
+                    "636df57c4191fad0c7c27f45"
+                ]
+            }
+                },
+                "boards": [
+                    "6373916366ccc7048f832dcf"
+                ],
+                "type": "team",
+                "createdAt": "2022-11-15T13:17:23.426Z",
+                "updatedAt": "2022-11-15T13:17:23.452Z",
+                "__v": 0,
+                "blast": "6373916366ccc7048f832dd1",
+                "bucket": "6373916366ccc7048f832dd4",
+                "checkIn": "6373916366ccc7048f832dd2",
+                "groupChat": "6373916366ccc7048f832dd0",
+                "schedule": "6373916366ccc7048f832dd3"
+            },
+            {
+                "archived": {
+                    "status": false
+                },
+                "_id": "6373b4ab0a02aab479ee865f",
+                "name": "Edit Team Name",
+                "desc": "Team for API testing",
+                "members": [{
+                    "_id": "636a309d20de7c7a7f116719",
+                    "googleId": "114498059136746820038",
+                    "email": "luluqatesting@gmail.com",
+                    "fullName": "Lulu Qorri Aina",
+                    "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c",
+                    "bio": "a lifelong learner",
+                    "status": "student",
+                    "companies": [],
+                    "createdAt": "2022-11-08T10:34:05.472Z",
+                    "updatedAt": "2022-11-15T09:33:29.520Z",
+                    "__v": 0,
+                    "defaultCompany": "63735ce9fef0c6ab2e0cf2ba",
+                    "password": "$2b$10$Jgwx2Tv0mPgQUDtlqnBKuekT6u..IIN37F1zXcxcuz.q6ifHkWRi6"
+                }],
+                "boards": [
+                    "6373b4ac0a02aab479ee87d8"
+                ],
+                "type": "team",
+                "createdAt": "2022-11-15T15:47:55.506Z",
+                "updatedAt": "2022-11-15T16:36:53.349Z",
+                "__v": 0,
+                "blast": "6373b4ac0a02aab479ee87da",
+                "bucket": "6373b4ac0a02aab479ee87dd",
+                "checkIn": "6373b4ac0a02aab479ee87db",
+                "groupChat": "6373b4ac0a02aab479ee87d9",
+                "schedule": "6373b4ac0a02aab479ee87dc"
+            },
+            {
+                "archived": {
+                    "status": false
+                },
+                "_id": "6373b898fef0c6ab2e29fa9e",
+                "name": "Lulu's Team",
+                "desc": "Team for API testing",
+                "members": [{
+                    "_id": "636a309d20de7c7a7f116719",
+                    "googleId": "114498059136746820038",
+                    "email": "luluqatesting@gmail.com",
+                    "fullName": "Lulu Qorri Aina",
+                    "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c",
+                    "bio": "a lifelong learner",
+                    "status": "student",
+                    "companies": [],
+                    "createdAt": "2022-11-08T10:34:05.472Z",
+                    "updatedAt": "2022-11-15T09:33:29.520Z",
+                    "__v": 0,
+                    "defaultCompany": "63735ce9fef0c6ab2e0cf2ba",
+                    "password": "$2b$10$Jgwx2Tv0mPgQUDtlqnBKuekT6u..IIN37F1zXcxcuz.q6ifHkWRi6"
+                }],
+                "boards": [
+                    "6373b898fef0c6ab2e29fb16"
+                ],
+                "type": "team",
+                "createdAt": "2022-11-15T16:04:40.656Z",
+                "updatedAt": "2022-11-15T16:04:40.682Z",
+                "__v": 0,
+                "blast": "6373b898fef0c6ab2e29fb18",
+                "bucket": "6373b898fef0c6ab2e29fb1b",
+                "checkIn": "6373b898fef0c6ab2e29fb19",
+                "groupChat": "6373b898fef0c6ab2e29fb17",
+                "schedule": "6373b898fef0c6ab2e29fb1a"
+            },
+            {
+                "archived": {
+                    "status": false
+                },
+                "_id": "6373b9440a02aab479f45968",
+                "name": "Lulu's Team",
+                "desc": "Team for API testing",
+                "members": [{
+                    "_id": "636a309d20de7c7a7f116719",
+                    "googleId": "114498059136746820038",
+                    "email": "luluqatesting@gmail.com",
+                    "fullName": "Lulu Qorri Aina",
+                    "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c",
+                    "bio": "a lifelong learner",
+                    "status": "student",
+                    "companies": [],
+                    "createdAt": "2022-11-08T10:34:05.472Z",
+                    "updatedAt": "2022-11-15T09:33:29.520Z",
+                    "__v": 0,
+                    "defaultCompany": "63735ce9fef0c6ab2e0cf2ba",
+                    "password": "$2b$10$Jgwx2Tv0mPgQUDtlqnBKuekT6u..IIN37F1zXcxcuz.q6ifHkWRi6"
+                }],
+                "boards": [
+                    "6373b9440a02aab479f459e0"
+                ],
+                "type": "team",
+                "createdAt": "2022-11-15T16:07:32.560Z",
+                "updatedAt": "2022-11-15T16:07:32.606Z",
+                "__v": 0,
+                "blast": "6373b9440a02aab479f459e2",
+                "bucket": "6373b9440a02aab479f459e5",
+                "checkIn": "6373b9440a02aab479f459e3",
+                "groupChat": "6373b9440a02aab479f459e1",
+                "schedule": "6373b9440a02aab479f459e4"
+            },
+            {
+                "archived": {
+                    "status": false
+                },
+                "_id": "6373bd160a02aab479f469dc",
+                "name": "",
+                "desc": "Create Team Without Name",
+                "members": [{
+                    "_id": "636a309d20de7c7a7f116719",
+                    "googleId": "114498059136746820038",
+                    "email": "luluqatesting@gmail.com",
+                    "fullName": "Lulu Qorri Aina",
+                    "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c",
+                    "bio": "a lifelong learner",
+                    "status": "student",
+                    "companies": [],
+                    "createdAt": "2022-11-08T10:34:05.472Z",
+                    "updatedAt": "2022-11-15T09:33:29.520Z",
+                    "__v": 0,
+                    "defaultCompany": "63735ce9fef0c6ab2e0cf2ba",
+                    "password": "$2b$10$Jgwx2Tv0mPgQUDtlqnBKuekT6u..IIN37F1zXcxcuz.q6ifHkWRi6"
+                }],
+                "boards": [
+                    "6373bd160a02aab479f46a54"
+                ],
+                "type": "team",
+                "createdAt": "2022-11-15T16:23:50.459Z",
+                "updatedAt": "2022-11-15T16:23:50.563Z",
+                "__v": 0,
+                "blast": "6373bd160a02aab479f46a56",
+                "bucket": "6373bd160a02aab479f46a59",
+                "checkIn": "6373bd160a02aab479f46a57",
+                "groupChat": "6373bd160a02aab479f46a55",
+                "schedule": "6373bd160a02aab479f46a58"
+            },
+            {
+                "archived": {
+                    "status": false
+                },
+                "_id": "6373bda966ccc7048f9f78ab",
+                "name": "",
+                "desc": "Create Team Without Name",
+                "members": [{
+                    "_id": "636a309d20de7c7a7f116719",
+                    "googleId": "114498059136746820038",
+                    "email": "luluqatesting@gmail.com",
+                    "fullName": "Lulu Qorri Aina",
+                    "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c",
+                    "bio": "a lifelong learner",
+                    "status": "student",
+                    "companies": [],
+                    "createdAt": "2022-11-08T10:34:05.472Z",
+                    "updatedAt": "2022-11-15T09:33:29.520Z",
+                    "__v": 0,
+                    "defaultCompany": "63735ce9fef0c6ab2e0cf2ba",
+                    "password": "$2b$10$Jgwx2Tv0mPgQUDtlqnBKuekT6u..IIN37F1zXcxcuz.q6ifHkWRi6"
+                }],
+                "boards": [
+                    "6373bda966ccc7048f9f7923"
+                ],
+                "type": "team",
+                "createdAt": "2022-11-15T16:26:17.792Z",
+                "updatedAt": "2022-11-15T16:26:17.850Z",
+                "__v": 0,
+                "blast": "6373bda966ccc7048f9f7925",
+                "bucket": "6373bda966ccc7048f9f7928",
+                "checkIn": "6373bda966ccc7048f9f7926",
+                "groupChat": "6373bda966ccc7048f9f7924",
+                "schedule": "6373bda966ccc7048f9f7927"
+            },
+            {
+                "archived": {
+                    "status": false
+                },
+                "_id": "6373be2366ccc7048f9f7a28",
+                "name": "Create Team Without Description",
+                "desc": "",
+                "members": [{
+                    "_id": "636a309d20de7c7a7f116719",
+                    "googleId": "114498059136746820038",
+                    "email": "luluqatesting@gmail.com",
+                    "fullName": "Lulu Qorri Aina",
+                    "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c",
+                    "bio": "a lifelong learner",
+                    "status": "student",
+                    "companies": [],
+                    "createdAt": "2022-11-08T10:34:05.472Z",
+                    "updatedAt": "2022-11-15T09:33:29.520Z",
+                    "__v": 0,
+                    "defaultCompany": "63735ce9fef0c6ab2e0cf2ba",
+                    "password": "$2b$10$Jgwx2Tv0mPgQUDtlqnBKuekT6u..IIN37F1zXcxcuz.q6ifHkWRi6"
+                }],
+                "boards": [
+                    "6373be2366ccc7048f9f7aa0"
+                ],
+                "type": "team",
+                "createdAt": "2022-11-15T16:28:19.588Z",
+                "updatedAt": "2022-11-15T16:28:19.640Z",
+                "__v": 0,
+                "blast": "6373be2366ccc7048f9f7aa2",
+                "bucket": "6373be2366ccc7048f9f7aa5",
+                "checkIn": "6373be2366ccc7048f9f7aa3",
+                "groupChat": "6373be2366ccc7048f9f7aa1",
+                "schedule": "6373be2366ccc7048f9f7aa4"
+            },
+            {
+                "archived": {
+                    "status": false
+                },
+                "_id": "6373be9466ccc7048f9f7c03",
+                "name": "Create Team Without Description",
+                "desc": "",
+                "members": [{
+                    "_id": "636a309d20de7c7a7f116719",
+                    "googleId": "114498059136746820038",
+                    "email": "luluqatesting@gmail.com",
+                    "fullName": "Lulu Qorri Aina",
+                    "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu2hVkobrd14bq8kw-GHXLmvSxK30E_zdG30wNDV=s96-c",
+                    "bio": "a lifelong learner",
+                    "status": "student",
+                    "companies": [],
+                    "createdAt": "2022-11-08T10:34:05.472Z",
+                    "updatedAt": "2022-11-15T09:33:29.520Z",
+                    "__v": 0,
+                    "defaultCompany": "63735ce9fef0c6ab2e0cf2ba",
+                    "password": "$2b$10$Jgwx2Tv0mPgQUDtlqnBKuekT6u..IIN37F1zXcxcuz.q6ifHkWRi6"
+                }],
+                "boards": [
+                    "6373be9466ccc7048f9f7c7b"
+                ],
+                "type": "team",
+                "createdAt": "2022-11-15T16:30:12.704Z",
+                "updatedAt": "2022-11-15T16:30:12.787Z",
+                "__v": 0,
+                "blast": "6373be9466ccc7048f9f7c7d",
+                "bucket": "6373be9466ccc7048f9f7c80",
+                "checkIn": "6373be9466ccc7048f9f7c7e",
+                "groupChat": "6373be9466ccc7048f9f7c7c",
+                "schedule": "6373be9466ccc7048f9f7c7f"
+            },
+        "name": "Sekolah QA Cilsy",
+        "desc": "belajar QA di cilsy aja",
+        "membersJoined": [{
+                "_id": "61ebaf9d557677d467bd60c8",
+                "member": "5f8634a83a36b417e2f0f15a",
+                "joinedAt": "2022-01-22T07:17:49.028Z"
+            }
+        ],
+        "createdAt": "2022-01-22T06:23:04.507Z",
+        "updatedAt": "2022-11-15T16:30:12.713Z",
+        "__v": 0
+    }
+}
